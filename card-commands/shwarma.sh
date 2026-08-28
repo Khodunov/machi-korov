@@ -11,7 +11,7 @@ python skills/generate-card/scripts/card_compositor.py \
   --activation-number 7 \
   --title 'Шавуха' \
   --title-color '#58100E' \
-  --bottom-text $'Возьмите 1 монету у голодного активного игрока.\nВ ход другого игрока' \
+  --bottom-text $'Возьмите 1 монету у голодного игрока,\nбросившего кубики\nВ ход другого игрока.' \
   --bottom-text-y-frac 0.81 \
   --bottom-text-spacing-px 6 \
   --title-font fonts/Boingster-Regular.ttf \
