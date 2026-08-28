@@ -1,0 +1,81 @@
+{
+  "spec_version": "1.0",
+  "title": "Machi Koro-style top icon spec",
+  "purpose": "Reusable specification for generating a small category icon to be placed before the top card title. The icon should match the simple, flat, friendly board-game style used by the rest of the card system.",
+  "integration_context": {
+    "target_use": "Generate only the icon asset, to be composited later into the title row of a Machi Koro-style card.",
+    "background": "transparent",
+    "canvas_shape": "square",
+    "composition": "single centered icon with generous padding around it",
+    "output_preference": "PNG with transparent background"
+  },
+  "style_goal": {
+    "primary_rule": "Match the same clean, flat, simple vector/board-game icon language as the rest of the card UI.",
+    "secondary_rule": "Keep it minimal and highly legible at small size.",
+    "visual_character": "friendly, compact, geometric, slightly rounded, simple and iconic"
+  },
+  "content": {
+    "subject": "simple house logo",
+    "description": "A small, clean pictogram of a house: triangular roof, rectangular body, and simple door/window structure. The icon should read instantly as a house.",
+    "silhouette_priority": "The silhouette must remain clear and recognizable even at very small size."
+  },
+  "shape_language": {
+    "construction": [
+      "use a small number of large clean shapes",
+      "slightly rounded corners are welcome",
+      "keep geometry balanced and compact",
+      "use simple cutouts or negative-space windows if helpful"
+    ],
+    "detail_level": "very low",
+    "avoid": [
+      "fine architectural detail",
+      "realistic perspective",
+      "3D rendering",
+      "texture",
+      "shadows with realism",
+      "ornamental decoration",
+      "thin fragile lines"
+    ]
+  },
+  "color": {
+    "parameter_name": "icon_color",
+    "type": "hex color string",
+    "default": "#0D3F78",
+    "description": "Single main icon color supplied as a hex value. For the first icon, use the same dark blue family as the card footer.",
+    "current_request_value": "#0D3F78",
+    "usage_rule": "Render the icon primarily in this supplied color. If needed, allow only tiny tonal variation within the same family, but keep the icon effectively single-color."
+  },
+  "rendering": {
+    "style": "flat vector-style icon",
+    "linework": "prefer filled shapes over outlined drawing; if outlines are used, keep them bold and clean",
+    "lighting": "none or extremely minimal",
+    "texture": "none",
+    "finish": "clean UI asset, production-ready"
+  },
+  "scalability": {
+    "small_size_behavior": "The icon should stay readable when reduced to a small badge size.",
+    "legibility_rule": "Prioritize bold silhouette and simple internal structure over detail."
+  },
+  "future_generalization": {
+    "replaceable_fields": [
+      "subject",
+      "icon_color"
+    ],
+    "stable_rules": [
+      "transparent square asset",
+      "single centered pictogram",
+      "flat simple board-game style",
+      "low detail",
+      "high legibility"
+    ]
+  },
+  "anti_patterns": [
+    "do not generate a full card",
+    "do not add text or labels",
+    "do not add a circular badge background unless explicitly requested later",
+    "do not use gradients or realistic shading",
+    "do not make the icon look like clip-art from a different style family",
+    "do not place the icon off-center"
+  ],
+  "final_prompt_summary": "Generate a square icon asset with a transparent background. Draw a simple centered house pictogram in a clean flat board-game/vector style, matching the friendly minimal UI language of Machi Koro-like card furniture. Use the supplied hex color as the main icon color; for now use the same dark blue as the card footer. Keep the icon highly legible, compact, and production-ready, with a clear house silhouette and very low detail."
+}

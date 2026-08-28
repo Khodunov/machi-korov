@@ -1,0 +1,150 @@
+{
+  "spec_version": "1.0",
+  "title": "Floating Machi Koro-style central illustration spec",
+  "purpose": "Reusable specification for the central subject illustration that will be composited onto a blank Machi Koro-style card furniture template. The generated art should reproduce the iconic 'floating miniature scene' look of Machi Koro while adapting the depicted subject matter to grim, recognizable Russian/post-Soviet everyday reality.",
+  "integration_context": {
+    "target_use": "Generate only the central content illustration to be pasted onto an existing blank blue card template.",
+    "background_requirement": "Prefer transparent background if possible. If transparency is not used, the background should remain fully absent or easy to mask: no sky, no header, no footer, no card furniture, no text, no coin, no icon, no frame.",
+    "card_relationship": "The art should sit like a floating miniature object or sticker inside the middle of the card, leaving generous empty sky around it.",
+    "central_positioning": "The subject should be centered and self-contained, with enough margin around it so it can be placed in the open central sky region of the card."
+  },
+  "style_goal": {
+    "primary_rule": "Match the illustration language of the original Machi Koro establishment art.",
+    "secondary_rule": "Depict Russian/post-Soviet subjects and atmosphere without making the rendering more realistic.",
+    "core_formula": "Cute, simplified tabletop-game miniature scene + bleak, recognizable Russian everyday subject matter."
+  },
+  "what_machi_koro_art_looks_like": {
+    "miniature_scene_feel": "The subject is not a full landscape or realistic environment. It is a small isolated toy-like scene, almost like a board-game token, sticker, or floating diorama.",
+    "shape_language": "Large clean shapes, simple geometry, and compact clustered forms. Each object is simplified into a few readable masses.",
+    "perspective": "Loose playful three-quarter perspective. Enough depth to feel dimensional, but not strict architectural or camera-accurate perspective.",
+    "linework": "Clear outlines or sharp separations between forms. Interior detail lines should be sparse.",
+    "shading": "Simple graphic shading using one or two darker tones. No realistic lighting model.",
+    "materials": "Concrete, wood, leaves, roofs, metal, dirt, and glass should be communicated mostly by color and silhouette, not by texture or realistic rendering.",
+    "detail_density": "Low to moderate. Every important feature should remain readable at small card size.",
+    "silhouette_priority": "The outer silhouette of the subject must read instantly and be visually iconic.",
+    "scene_boundary": "The subject should feel self-contained, often resting on a small stylized ground base or compact support shape rather than blending into a large background."
+  },
+  "visual_composition": {
+    "occupancy": "The content illustration should usually occupy roughly the middle 30-45% of the card height when composited, with wide air around it.",
+    "shape": "Prefer compact clustered compositions rather than tall full-frame scenes.",
+    "floating_behavior": "The scene should visually float in open space, not connect to the bottom skyline strip of the card.",
+    "base": "When appropriate, place the subject on a small stylized ground slab, courtyard patch, platform, or tiny environmental base that belongs to the object itself.",
+    "background": "No full background scenery. At most, include only tiny integral elements that belong to the miniature scene."
+  },
+  "russian_grimness_rules": {
+    "principle": "Russian grimness must come from the things being depicted, not from realistic rendering technique.",
+    "use": [
+      "cold blue-gray and concrete-gray palette",
+      "utilitarian post-Soviet forms",
+      "worn but simplified everyday structures",
+      "mismatched repairs or colors",
+      "bare trees or sparse vegetation when relevant",
+      "isolated warm-lit windows when appropriate",
+      "deadpan humor and familiar urban bleakness"
+    ],
+    "do_not_use": [
+      "photorealism",
+      "architectural-visualization detail",
+      "gritty material texture",
+      "cinematic lighting",
+      "dense grime or realistic dirt",
+      "atmospheric realism"
+    ],
+    "guardrail": "If there is a choice between making the subject more Russian or more Machi Koro-like, preserve Machi Koro rendering first and express Russianness through object choice, colors, and a few culturally diagnostic details."
+  },
+  "palette": {
+    "base": [
+      "muted blue-gray",
+      "cold concrete gray",
+      "desaturated navy",
+      "powder blue",
+      "slate blue"
+    ],
+    "secondary": [
+      "muted olive",
+      "dull teal",
+      "faded rust-brown",
+      "dirty beige"
+    ],
+    "warm_accents": [
+      "a few amber-yellow lit windows",
+      "small warm details only where helpful"
+    ],
+    "saturation": "low to moderate",
+    "overall_brightness": "somewhat darker and duller than standard Machi Koro art, but still clean and readable"
+  },
+  "allowed_subject_types": {
+    "examples": [
+      "panel apartment blocks",
+      "kiosks",
+      "garages",
+      "playgrounds",
+      "tram stops",
+      "bus shelters",
+      "corner shops",
+      "courtyard utilities",
+      "small Soviet-era service buildings",
+      "other Russian/post-Soviet everyday urban or peri-urban archetypes"
+    ],
+    "selection_rule": "Choose subjects that are instantly recognizable and culturally specific, but still simple enough to become iconic miniatures."
+  },
+  "subject_construction_rules": {
+    "general": [
+      "Reduce the subject to a compact iconic miniature.",
+      "Choose only the few details needed for recognition.",
+      "Exaggerate or simplify proportions slightly when useful.",
+      "Keep objects chunky and readable.",
+      "Use a compact number of forms."
+    ],
+    "building_specific": [
+      "A building should read as a toy-like block, not as a carefully rendered facade.",
+      "Windows should be simplified rectangles, not detailed constructions.",
+      "Balconies should be simplified into blocky protrusions or colored panels.",
+      "Roof details should be few and clear.",
+      "Panel seams or other repetitive structure should be present only in a small number of major lines."
+    ],
+    "environment_specific": [
+      "Trees should be graphic silhouettes or simplified masses.",
+      "Ground should be a small stylized patch rather than a full realistic courtyard.",
+      "Props should be few and iconic."
+    ]
+  },
+  "panelka_example": {
+    "subject": "A five-story Soviet/post-Soviet panel apartment block.",
+    "desired_read": "A floating Machi Koro-style miniature scene of a grim but familiar Russian panelka.",
+    "keep": [
+      "gray concrete slab form",
+      "several balcony stacks with mismatched muted colors",
+      "flat roof",
+      "3-5 simplified TV antennas",
+      "2-4 warm yellow windows",
+      "small base patch suggesting a yard or paved courtyard",
+      "optionally one or two bare trees or a tiny playground shape integrated into the base"
+    ],
+    "simplify": [
+      "panel seams as only a few major straight lines",
+      "windows as repeated simple rectangles",
+      "balconies as colored blocks",
+      "entryway as a small dark opening or simple porch"
+    ],
+    "omit": [
+      "realistic facade weathering",
+      "fine railings",
+      "accurate window construction",
+      "complex pipes",
+      "dense rooftop equipment",
+      "detailed pavement or landscaping"
+    ],
+    "target_impression": "It should look like the same illustrator who drew the farm, forest, and orchard cards was asked to draw a depressing Soviet apartment block without changing their drawing technique."
+  },
+  "anti_patterns": [
+    "Do not generate a full card.",
+    "Do not generate sky, clouds, footer, or any fixed furniture.",
+    "Do not create a realistic painting of a building.",
+    "Do not create a full cityscape background.",
+    "Do not make the scene connect visually to the bottom of the card.",
+    "Do not turn the subject into generic clip-art with no Russian specificity.",
+    "Do not use heavy textures or gritty realism."
+  ],
+  "final_prompt_summary": "Generate only the central subject illustration for a Machi Koro-style establishment card. The result should be a small floating miniature scene with no card furniture or text. Match the original Machi Koro illustration language: compact self-contained composition, loose playful perspective, chunky simplified shapes, low detail density, clean outlines, and simple graphic shading. The subject matter should be a recognizable Russian/post-Soviet everyday archetype rendered in a colder, grimmer palette, but without increasing realism. If the subject is a panel apartment block, depict it as a toy-like five-story concrete slab with a few balcony stacks, a few panel seams, several simple rooftop antennas, a few warm-lit windows, and a small attached yard base. Preserve the cute board-game miniature style while letting the object itself carry the post-Soviet bleakness."
+}
