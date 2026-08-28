@@ -55,24 +55,24 @@
   },
   "palette": {
     "base": [
-      "muted blue-gray",
+      "muted brick red",
       "cold concrete gray",
-      "desaturated navy",
-      "powder blue",
-      "slate blue"
+      "deep desaturated burgundy",
+      "dusty salmon red",
+      "slate blue-gray"
     ],
     "secondary": [
       "muted olive",
-      "dull teal",
+      "dull cream",
       "faded rust-brown",
       "dirty beige"
     ],
     "warm_accents": [
-      "a few amber-yellow lit windows",
-      "small warm details only where helpful"
+      "a soft amber glow from the serving window and rotisserie",
+      "small crimson-red details that harmonize with a red card template"
     ],
     "saturation": "low to moderate",
-    "overall_brightness": "somewhat darker and duller than standard Machi Koro art, but still clean and readable"
+    "overall_brightness": "somewhat darker and duller than standard Machi Koro art, but still clean and readable; red should be a recurring accent rather than an overwhelming wash"
   },
   "allowed_subject_types": {
     "examples": [
@@ -112,24 +112,33 @@
     ]
   },
   "content": {
-    "subject": "{{SUBJECT}}",
-    "description": "{{SUBJECT_DESCRIPTION}}",
-    "desired_read": "{{DESIRED_READ}}",
+    "subject": "A small Russian/post-Soviet street shawarma store.",
+    "description": "A compact, slightly shabby fast-food kiosk or tiny storefront with a muted red awning and completely plain red fascia, a broad serving window, stainless-steel counter surfaces, and a warm glowing vertical shawarma rotisserie visible inside. Every surface is free of writing, symbols, logos, and text-like marks.",
+    "desired_read": "A floating Machi Koro-style miniature of a familiar neighborhood shawarma shop: cheap, inviting, slightly grim, and instantly recognizable.",
     "recognition_details": [
-      "{{RECOGNITION_DETAIL_1}}",
-      "{{RECOGNITION_DETAIL_2}}",
-      "{{RECOGNITION_DETAIL_3}}"
+      "muted brick-red awning and completely plain red fascia with no marks or symbols",
+      "wide serving hatch with a simple stainless-steel counter",
+      "warm-lit vertical shawarma spit visible through the window",
+      "one or two plain geometric wall panels used only as color accents, not as signs or menus",
+      "small roof vent or exhaust hood",
+      "one tiny utilitarian prop such as a bin, plastic chair, or stack of flatbread"
     ],
-    "miniature_base": "{{MINIATURE_BASE_DESCRIPTION}}",
+    "miniature_base": "A small cracked-pavement patch with a short curb, belonging entirely to the floating kiosk miniature.",
     "simplify": [
-      "{{SIMPLIFICATION_1}}",
-      "{{SIMPLIFICATION_2}}"
+      "storefront and kiosk body as a few chunky rectangular forms",
+      "awning, plain fascia, counter, and wall panels as bold unmarked flat shapes",
+      "rotisserie as one readable warm vertical shape rather than detailed food",
+      "wear and repairs as a few restrained color patches"
     ],
     "omit": [
-      "{{SUBJECT_SPECIFIC_OMISSION_1}}",
-      "{{SUBJECT_SPECIFIC_OMISSION_2}}"
+      "all writing and text-like content, including letters, numbers, prices, menus, logos, labels, graffiti, pseudo-glyphs, and decorative marks that resemble writing",
+      "signboards, menu boards, posters, branded packaging, and license plates",
+      "realistic food photography or detailed meat texture",
+      "customers, staff portraits, or a crowded street scene",
+      "dense kitchen equipment and clutter",
+      "bright fast-food-chain saturation or glossy commercial polish"
     ],
-    "target_impression": "{{TARGET_IMPRESSION}}"
+    "target_impression": "It should look like the same illustrator who drew the farm, forest, and bakery cards was asked to draw a humble post-Soviet shawarma kiosk, with slightly warmer red accents chosen to sit naturally on a red establishment card."
   },
   "anti_patterns": [
     "Do not generate a full card.",
@@ -141,5 +150,5 @@
     "Do not turn the subject into generic clip-art with no Russian specificity.",
     "Do not use heavy textures or gritty realism."
   ],
-  "final_prompt_summary": "Generate only the central subject illustration defined in the content section for a Machi Koro-style establishment card. The result should be a small floating miniature scene with no card furniture. The illustration must contain absolutely no text or text-like marks: no letters, numbers, words, prices, menus, labels, logos, signage, graffiti, license-plate characters, or pseudo-glyphs on any surface. Replace signage with blank color panels or simple geometric decoration. Match the original Machi Koro illustration language: compact self-contained composition, loose playful perspective, chunky simplified shapes, low detail density, clean outlines, and simple graphic shading. Render the supplied Russian/post-Soviet everyday subject in a colder, grimmer palette without increasing realism. Preserve the cute board-game miniature style while letting the chosen object and its recognition details carry the post-Soviet bleakness."
+  "final_prompt_summary": "Generate only a small floating Russian/post-Soviet street shawarma store for the central illustration of a Machi Koro-style establishment card. Show a compact, slightly shabby kiosk or storefront with a muted brick-red awning and completely plain red fascia, a broad serving hatch, simple stainless-steel counter, warm-lit vertical shawarma rotisserie, small exhaust vent, and a tiny cracked-pavement base. Every visible surface must contain absolutely no text or text-like marks: no letters, numbers, words, prices, menus, labels, logos, signage, posters, graffiti, license-plate characters, brand marks, or pseudo-glyphs. Do not include signboards or menu boards; use only blank color fields and simple geometric panels. Use loose playful three-quarter perspective, chunky simplified shapes, sparse clean details, clear outlines, and simple graphic shading. Favor cold concrete and dirty beige balanced by slightly stronger muted brick-red, burgundy, rust, and dusty salmon accents so the artwork harmonizes with a red card without becoming saturated. Include no people, card furniture, sky, footer, or background scene. Preserve the cute board-game miniature style and express the grim post-Soviet atmosphere through the humble subject and utilitarian details rather than realism."
 }

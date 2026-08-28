@@ -24,7 +24,7 @@
     },
     "subject": {
       "type": "string",
-      "default": "{{ICON_SUBJECT}}",
+      "default": "simple house",
       "description": "The white pictogram drawn inside the colored circle."
     }
   },
@@ -36,8 +36,8 @@
   },
   "pictogram": {
     "color": "#FFFFFF",
-    "subject": "{{ICON_SUBJECT}}",
-    "description": "{{ICON_DESCRIPTION}}",
+    "subject": "simple house",
+    "description": "A bold white house pictogram with a clear roof and building body; optionally one simple door or window cutout if it remains legible.",
     "size": "approximately 50-58% of the circle diameter",
     "position": "precisely centered inside the circle",
     "shape_language": "very simple, chunky, geometric, slightly rounded, icon-like",
@@ -66,8 +66,8 @@
   ],
   "current_icon": {
     "icon_color": "#0D3F78",
-    "subject": "{{ICON_SUBJECT}}",
-    "expected_result": "{{EXPECTED_RESULT}}"
+    "subject": "simple house",
+    "expected_result": "A dark-blue solid circle with a simple bold white house pictogram centered inside it, on a transparent square canvas."
   },
-  "final_prompt_summary": "Generate only a small Machi Koro-style category badge on a transparent square canvas. Create one perfect solid circle in the supplied hex color, filling roughly 85% of the canvas. Inside it, center a very simple bold white pictogram of the subject defined in the parameters and pictogram sections. The result must be flat two-color vector-style artwork: colored circle plus white symbol, no border, no text, no shading, no gradient, no texture, no 3D effects, and no background."
+  "final_prompt_summary": "Generate only a small Machi Koro-style category badge on a transparent square canvas. Create one perfect solid circle in the supplied hex color, filling roughly 85% of the canvas. Inside it, center a very simple bold white pictogram of the requested subject; for this version use a house. The result must be flat two-color vector-style artwork: colored circle plus white symbol, no border, no text, no shading, no gradient, no texture, no 3D effects, and no background."
 }

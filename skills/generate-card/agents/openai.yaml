@@ -1,0 +1,4 @@
+interface:
+  display_name: "Generate Card"
+  short_description: "Generate and refine a complete game card"
+  default_prompt: "Use $generate-card to create a new card from prompts through a rendered preview."

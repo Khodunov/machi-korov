@@ -1,123 +1,103 @@
 # Machi Koro Card Compositor
 
-This small toolchain helps assemble custom **Machi Koro-style cards** from reusable pieces:
+This repository is a small asset-generation and compositing toolchain for custom **Machi Koro-style cards**. The bundled `$generate-card` skill drives the complete workflow: collecting card parameters, creating prompts, generating artwork, composing a reproducible card, presenting the preview, and iterating on feedback.
 
-- a **blank card furniture template** (header, dice, sky, skyline, footer, coin)
-- a **floating central illustration** (for example, a panelka building)
-- optional **top bar number**
-- optional **title**
-- optional **icon before the title**
-- optional **coin number**
-- optional **bottom rules text**
+## Project structure
 
-The main script is:
+```text
+card_compositor.py                  # Composites one final card
+requirements.txt
+backgrounds/                        # Blank card templates by card color
+prompts/
+  central-illustration.json         # Reusable central-art prompt template
+  building-type-icon.json           # Reusable title-icon prompt template
+  machi-koro-icon-spec-v1.1.json    # Known-good source specification for round icons
+  central-illustrations/
+    panelka.json                     # Filled prompt for the panelka artwork
+    shwarma-store.json               # Filled prompt for a red-card shawarma shop
+  icons/
+    house.json                       # Filled prompt for the house icon
+    shwarma.json                     # Filled dark-red shawarma icon prompt
+buildings/                           # Generated transparent central illustrations
+icons/                               # Generated transparent title icons
+fonts/                               # Fonts used by card commands
+card-commands/
+  panelka.sh                         # Reproducible composition settings for one card
+  shwarma.sh                         # Red shawarma-card composition settings
+cards/                               # Generated final cards; ignored by Git
+skills/generate-card/
+  SKILL.md                           # End-to-end card creation workflow
+  scripts/card_compositor.py         # Compositor used by card commands
+```
 
-- `composite_machi_koro_card.py`
-
-It composites a transparent PNG illustration onto a template card and draws the configurable text layers on top.
-
----
+`prompts/central-illustration.json` and `prompts/building-type-icon.json` are the working templates. Their style, composition, palette, and rendering rules are meant to stay stable. `prompts/machi-koro-icon-spec-v1.1.json` is the known-good source specification from which the icon template is generalized. Copy a working template into the appropriate subdirectory and replace only its `{{CONTENT_PLACEHOLDERS}}` when designing a new asset. The files in `prompts/central-illustrations/` and `prompts/icons/` are filled, generation-ready prompts and provide working examples.
 
 ## Requirements
 
-- Python 3.10+ recommended
-- Dependencies listed in `requirements.txt`
+- Python 3.10+
+- Pillow, installed from `requirements.txt`
 
-Install dependencies:
+From the repository root:
 
 ```bash
+python -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Current Python dependency:
+## Creating a card with the skill
 
-- `Pillow`
+Invoke the repository skill in Codex:
 
----
-
-## Files in this setup
-
-### Main script
-
-- `composite_machi_koro_card.py` — composites the artwork and draws text/icon elements.
-
-### Optional/generated assets
-
-Typical inputs:
-
-- a blank card template PNG
-- a floating illustration PNG with transparency
-- an optional icon PNG with transparency
-
-Typical output:
-
-- a final composed card PNG
-
----
-
-## What the script can do
-
-### Artwork compositing
-
-- place a floating illustration onto the card
-- automatically trim transparent margins from the overlay
-- scale the overlay
-- move the overlay by configurable normalized coordinates
-- optionally flip the overlay horizontally
-
-### Text rendering
-
-- draw a **coin number** inside the bottom-left coin
-- draw a **top activation number** in the header
-- draw a **top title**
-- draw **bottom multiline rules text**
-- use separate font files for all 4 text elements
-
-### Title icon support
-
-- optionally place an icon before the title
-- center the **icon + title** as one glued horizontal group
-- configure icon scale, gap, and fine offsets
-
----
-
-## Basic usage
-
-```bash
-python composite_machi_koro_card.py \
-  --template /path/to/template.png \
-  --overlay /path/to/building.png \
-  --output /path/to/result.png
+```text
+Use $generate-card to create a new card.
 ```
 
----
+You can include whatever is already decided—for example the title, card color, activation number, cost, effect text, and central subject. The skill asks one concise question for anything important that is still missing, then handles the rest:
 
-## Example matching the current PANELKA card
+1. fills a central-illustration prompt and, when needed, a round category-icon prompt;
+2. generates and validates transparent source artwork;
+3. creates `card-commands/<card-name>.sh` using the packaged compositor;
+4. renders `cards/<card-name>.png` and checks layout, text overflow, transparency, orientation, and forbidden artwork text;
+5. presents the card and asks what should be tweaked, rerendering until it is accepted.
+
+Buildings and storefronts are generated already facing slightly right. New commands do not mirror them by default. Central artwork also follows a strict no-text rule: no signs, menus, logos, labels, numbers, pseudo-writing, or other text-like marks.
+
+The full workflow and validation rules live in [`skills/generate-card/SKILL.md`](skills/generate-card/SKILL.md). The reusable JSON files under `prompts/` remain the source templates, while the filled prompt, generated source assets, and card command make each card reproducible.
+
+To regenerate an existing card without creating new artwork, run its command from the repository root:
 
 ```bash
-python composite_machi_koro_card.py \
+bash card-commands/panelka.sh
+bash card-commands/shwarma.sh
+```
+
+Generated final cards are written under `cards/` and ignored by Git. Commit the filled prompts, generated source artwork, and `card-commands/<card-name>.sh`.
+
+## What the compositor can do
+
+- place, trim, scale, position, and horizontally flip a transparent central illustration
+- optionally add a dark half-transparent shadow behind it, shifted equally down and right
+- draw the coin number, activation number, title, and multiline rules text
+- place an optional icon before the title and center both as one group
+- use independent fonts and sizes for each text role
+
+## Direct usage
+
+The skill and per-card shell scripts are the preferred interfaces. For quick experiments, call the packaged compositor directly:
+
+```bash
+python skills/generate-card/scripts/card_compositor.py \
   --template backgrounds/blue.png \
   --overlay buildings/panelka.png \
-  --output cards/panelka.png \
-  --x-frac 0.49 \
-  --y-frac 0.555 \
-  --scale 0.65 \
-  --flip-horizontal \
-  --coin-number 1 \
-  --activation-number 1 \
-  --title 'Панелька' \
-  --title-color '#123E70' \
-  --bottom-text $'Возьмите 1 монету за ЖКХ.\nВ ход любого игрока' \
-  --bottom-text-y-frac 0.905 \
-  --bottom-text-font-size-frac 0.028 \
-  --bottom-text-spacing-px 6
+  --title-icon icons/house.png \
+  --shadow \
+  --output cards/panelka.png
 ```
-
----
 
 ## CLI arguments
 
-## Required arguments
+### Required arguments
 
 - `--template` — path to the card template PNG
 - `--overlay` — path to the floating illustration PNG
@@ -125,17 +105,18 @@ python composite_machi_koro_card.py \
 
 ---
 
-## Artwork placement
+### Artwork placement
 
 - `--x-frac` — overlay center X as a fraction of card width
 - `--y-frac` — overlay center Y as a fraction of card height
 - `--scale` — overlay width as a fraction of card width
 - `--flip-horizontal` — flip the overlay left-to-right before compositing
 - `--no-crop-overlay` — do not trim transparent margins from the overlay before placement
+- `--shadow` — add a dark, half-transparent gray shadow slightly down and right of the central illustration
 
 ---
 
-## Coin number
+### Coin number
 
 - `--coin-number` — single digit `0..9` drawn inside the coin
 - `--coin-x-frac` — coin number center X
@@ -145,7 +126,7 @@ python composite_machi_koro_card.py \
 
 ---
 
-## Top activation number
+### Top activation number
 
 - `--activation-number` — text/number drawn in the top bar
 - `--activation-x-frac` — center X of the activation number
@@ -155,7 +136,7 @@ python composite_machi_koro_card.py \
 
 ---
 
-## Top title
+### Top title
 
 - `--title` — title text
 - `--title-x-frac` — center X of the combined title group
@@ -167,7 +148,7 @@ python composite_machi_koro_card.py \
 
 ---
 
-## Title icon
+### Title icon
 
 - `--title-icon` — optional square icon PNG placed before the title
 - `--title-icon-scale` — icon size as a multiple of the title text height
@@ -176,7 +157,7 @@ python composite_machi_koro_card.py \
 - `--title-group-offset-x-px` — extra horizontal offset for the combined icon+title group
 - `--title-group-offset-y-px` — extra vertical offset for the combined icon+title group
 
-### How the title icon works
+#### How the title icon works
 
 If `--title-icon` is provided:
 
@@ -191,7 +172,7 @@ This is designed to match the Machi Koro layout where the category badge is visu
 
 ---
 
-## Bottom rules text
+### Bottom rules text
 
 - `--bottom-text` — centered multiline bottom text
 - `--bottom-text-x-frac` — center X of bottom text
@@ -201,7 +182,7 @@ This is designed to match the Machi Koro layout where the category badge is visu
 - `--bottom-text-color` — bottom text color in `#RGB` or `#RRGGBB`
 - `--bottom-text-spacing-px` — line spacing in pixels for multiline text
 
-### Multiline text support
+#### Multiline text support
 
 The script accepts:
 
@@ -300,7 +281,6 @@ Potential next steps:
 - subtitle support under the title
 - automatic text fitting/shrinking to width
 - configurable text bounding boxes
-- automatic shadow under the floating illustration
 - optional outline/stroke for title and bottom text
 - support for multi-digit coin numbers
 - preset layout profiles for different card families

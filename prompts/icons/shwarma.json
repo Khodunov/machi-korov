@@ -19,12 +19,12 @@
   "parameters": {
     "icon_color": {
       "type": "hex color string",
-      "default": "#0D3F78",
-      "description": "Fill color of the circular badge. For the current blue card family, use the same dark blue as the footer."
+      "default": "#58100E",
+      "description": "Fill color of the circular badge, sampled from the unobstructed footer interior of backgrounds/red.png."
     },
     "subject": {
       "type": "string",
-      "default": "{{ICON_SUBJECT}}",
+      "default": "simplified shawarma wrap",
       "description": "The white pictogram drawn inside the colored circle."
     }
   },
@@ -36,8 +36,8 @@
   },
   "pictogram": {
     "color": "#FFFFFF",
-    "subject": "{{ICON_SUBJECT}}",
-    "description": "{{ICON_DESCRIPTION}}",
+    "subject": "simplified shawarma wrap",
+    "description": "A bold white pictogram of a handheld shawarma: a slightly tapered rolled flatbread or paper sleeve, open at the top, with only two or three broad filling shapes. It must remain clearly recognizable and must not resemble a drink or ice-cream cone.",
     "size": "approximately 50-58% of the circle diameter",
     "position": "precisely centered inside the circle",
     "shape_language": "very simple, chunky, geometric, slightly rounded, icon-like",
@@ -65,9 +65,9 @@
     "do not make the symbol too detailed or thin"
   ],
   "current_icon": {
-    "icon_color": "#0D3F78",
-    "subject": "{{ICON_SUBJECT}}",
-    "expected_result": "{{EXPECTED_RESULT}}"
+    "icon_color": "#58100E",
+    "subject": "simplified shawarma wrap",
+    "expected_result": "A dark-red solid circle with a simple bold white shawarma-wrap pictogram centered inside it, on a transparent square canvas."
   },
-  "final_prompt_summary": "Generate only a small Machi Koro-style category badge on a transparent square canvas. Create one perfect solid circle in the supplied hex color, filling roughly 85% of the canvas. Inside it, center a very simple bold white pictogram of the subject defined in the parameters and pictogram sections. The result must be flat two-color vector-style artwork: colored circle plus white symbol, no border, no text, no shading, no gradient, no texture, no 3D effects, and no background."
+  "final_prompt_summary": "Generate only a small Machi Koro-style category badge on a transparent square canvas. Create one perfect solid circle in #58100E, filling roughly 85% of the canvas. Inside it, center a very simple bold white pictogram of a handheld shawarma wrap: a slightly tapered rolled flatbread or paper sleeve, open at the top, with only two or three broad filling shapes. The result must be flat two-color vector-style artwork: dark-red circle plus white symbol, no border, no text, no shading, no gradient, no texture, no 3D effects, and no background. The symbol must remain recognizable at very small size and must not resemble a drink or ice-cream cone."
 }

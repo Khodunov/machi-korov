@@ -220,3 +220,8 @@ __marimo__/
 
 # Generated cards
 cards/
+
+# Agents
+.agents
+.claude
+.codex

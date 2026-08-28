@@ -1,9 +1,10 @@
-python card_compositor.py \
+python skills/generate-card/scripts/card_compositor.py \
   --template backgrounds/blue.png \
   --overlay buildings/panelka.png \
   --title-icon icons/house.png \
+  --shadow \
   --output cards/panelka.png \
-  --x-frac 0.51 \
+  --x-frac 0.53 \
   --y-frac 0.51 \
   --scale 0.68 \
   --flip-horizontal \
@@ -16,7 +17,7 @@ python card_compositor.py \
   --bottom-text-spacing-px 6 \
   --title-font fonts/Boingster-Regular.ttf \
   --title-font-size-frac 0.065 \
-  --bottom-text-font fonts/Boingster-Regular.ttf \
+  --bottom-text-font fonts/CCUltimatum-Bold.ttf \
   --bottom-text-font-size-frac 0.045 \
   --activation-font fonts/Boingster-Regular.ttf \
   --activation-font-size-frac 0.1 \
