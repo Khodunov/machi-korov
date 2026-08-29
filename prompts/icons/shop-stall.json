@@ -1,0 +1,65 @@
+{
+  "spec_version": "1.1",
+  "title": "Machi Koro-style round category icon spec",
+  "purpose": "Small circular shop-category badge placed immediately before a Machi Koro-style card title.",
+  "integration_context": {
+    "target_use": "Generate only the icon asset for card compositing.",
+    "canvas": "square",
+    "background": "genuinely transparent",
+    "output_preference": "PNG with alpha transparency",
+    "composition": "one centered circular badge filling most of the square canvas"
+  },
+  "parameters": {
+    "icon_color": {
+      "type": "hex color string",
+      "default": "#1E4321",
+      "description": "Dark green sampled from the unobstructed footer of backgrounds/green.png."
+    },
+    "subject": {
+      "type": "string",
+      "default": "small shop stall seen directly from the front",
+      "description": "A white silhouette resembling the classic Machi Koro shop category symbol."
+    }
+  },
+  "badge_geometry": {
+    "circle": "perfect centered circle",
+    "circle_diameter": "approximately 82-88% of canvas width",
+    "outer_margin": "transparent margin around the circle",
+    "border": "none"
+  },
+  "pictogram": {
+    "color": "#FFFFFF",
+    "subject": "small shop stall seen directly from the front",
+    "description": "A bold white silhouette of a tiny storefront or market stall: shallow peaked or flat roof cap, striped awning expressed only through chunky cut-in separations, two simple vertical supports, and a broad counter opening. Direct frontal view, symmetric, iconic, and readable at tiny size.",
+    "size": "approximately 50-58% of the circle diameter",
+    "position": "precisely centered inside the circle",
+    "shape_language": "very simple, chunky, geometric, slightly rounded",
+    "detail_level": "very low",
+    "line_rule": "Solid white silhouette with only a few broad negative-space separations; no thin line art."
+  },
+  "visual_style": {
+    "core": "Flat two-color Machi Koro category badge.",
+    "colors": "#1E4321 circle plus pure white pictogram",
+    "shading": "none",
+    "gradient": "none",
+    "texture": "none",
+    "shadow": "none",
+    "rendering": "clean vector-style UI icon",
+    "small_size_priority": "instantly recognizable beside a card title"
+  },
+  "anti_patterns": [
+    "do not omit the dark-green round badge",
+    "do not add an outer ring",
+    "do not use realistic rendering",
+    "do not use gradients, highlights, bevels, texture, or shadows",
+    "do not add letters, numbers, logos, or any text",
+    "do not add card furniture or scenery",
+    "do not use thin or intricate strokes"
+  ],
+  "current_icon": {
+    "icon_color": "#1E4321",
+    "subject": "front-facing small shop stall silhouette",
+    "expected_result": "A dark-green solid circle with a simple bold white front-facing shop-stall pictogram on transparent canvas."
+  },
+  "final_prompt_summary": "Generate only a small Machi Koro-style category badge on a genuinely transparent square canvas. Make one perfect solid circle in #1E4321 filling about 85% of the canvas. Center a bold pure-white silhouette of a small shop stall viewed directly from the front: a shallow roof cap, a chunky striped awning represented by a few broad separations, two simple supports, and one broad counter opening. The stall pictogram should fill about 54% of the circle and resemble the classic shop-category silhouette without copying any branding. Flat two-color vector-style artwork only: no border, text, letters, numbers, logo, shading, gradient, texture, shadow, 3D effect, or background."
+}

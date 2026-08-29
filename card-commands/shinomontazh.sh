@@ -1,0 +1,26 @@
+python skills/generate-card/scripts/card_compositor.py \
+  --template backgrounds/green.png \
+  --overlay buildings/shinomontazh.png \
+  --title-icon icons/shop-stall.png \
+  --shadow \
+  --output cards/shinomontazh.png \
+  --x-frac 0.50 \
+  --y-frac 0.51 \
+  --flip-horizontal \
+  --scale 0.72 \
+  --coin-number 1 \
+  --activation-number '2-3' \
+  --title 'Шиномонтаж' \
+  --title-color '#17361A' \
+  --bottom-text $'Получите 2 монеты из банка.\nВ свой ход.' \
+  --bottom-text-y-frac 0.82 \
+  --bottom-text-spacing-px 6 \
+  --title-font fonts/Boingster-Regular.ttf \
+  --title-font-size-frac 0.065 \
+  --title-icon-scale 1.8 \
+  --title-icon-y-offset-px -8 \
+  --bottom-text-font fonts/CCUltimatum-Bold.ttf \
+  --bottom-text-font-size-frac 0.045 \
+  --activation-font fonts/Boingster-Regular.ttf \
+  --activation-font-size-frac 0.1 \
+  --coin-font fonts/Boingster-Regular.ttf

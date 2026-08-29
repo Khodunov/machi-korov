@@ -1,0 +1,121 @@
+{
+  "spec_version": "1.0",
+  "title": "Floating Machi Koro-style provincial strip club illustration spec",
+  "purpose": "Central illustration for a red Machi Koro-style establishment card.",
+  "integration_context": {
+    "target_use": "Generate only the central content illustration to be composited onto an existing blank card template.",
+    "background_requirement": "Genuinely transparent background. No sky, header, footer, card furniture, text, coin, icon, frame, or backdrop.",
+    "text_policy": "Absolute no-text rule: no letters, numbers, words, prices, labels, written signs, logos, graffiti, license-plate characters, or pseudo-writing on any surface. The two requested neon signs must be pictorial silhouettes only, with no lettering.",
+    "card_relationship": "A floating miniature object or sticker inside the card's open middle region, with generous transparent space around it.",
+    "central_positioning": "Centered, compact, self-contained, fully visible, with ample margin on every side."
+  },
+  "style_goal": {
+    "primary_rule": "Match the cute simplified establishment-art language of the original Machi Koro tabletop game without copying a specific illustration.",
+    "secondary_rule": "Depict a recognizable provincial post-Soviet nightlife venue through the gray building, pictorial neon, queue, and doorman.",
+    "core_formula": "Cute simplified board-game miniature plus a deadpan provincial strip club."
+  },
+  "what_machi_koro_art_looks_like": {
+    "miniature_scene_feel": "A small isolated toy-like scene, like a board-game token or floating diorama, not a full landscape.",
+    "shape_language": "Large clean shapes, simple geometry, compact clustered forms, and a crisp readable silhouette.",
+    "perspective": "Loose playful three-quarter view facing slightly right, showing the front and right side of the building.",
+    "linework": "Clear outlines or sharp form separation with sparse interior detail.",
+    "shading": "Simple graphic shading with one or two darker tones, never realistic lighting.",
+    "materials": "Concrete, glass, cloth, and neon communicated by color and silhouette rather than texture.",
+    "detail_density": "Low to moderate and readable at small card size.",
+    "silhouette_priority": "The compact four-story block, two pictorial neon signs, entrance queue, and broad doorman must read instantly.",
+    "scene_boundary": "The building and people rest on one compact stylized pavement slab and do not blend into a background."
+  },
+  "visual_composition": {
+    "occupancy": "Compact horizontal subject intended to occupy about 30-45% of card height after compositing.",
+    "shape": "One squat four-story gray building with its entrance and queue clearly visible, plus two large pictorial neon silhouettes mounted on different facade planes.",
+    "floating_behavior": "The entire scene floats in transparent space and never connects to the card skyline.",
+    "base": "A small rounded patch of worn pavement and curb belonging entirely to the miniature.",
+    "background": "None; transparent pixels outside the miniature."
+  },
+  "russian_grimness_rules": {
+    "principle": "Provincial post-Soviet bleakness comes from the utilitarian building and restrained wear, not realism.",
+    "use": [
+      "cold gray four-story concrete facade",
+      "boxy provincial architecture",
+      "a few mismatched window treatments",
+      "isolated warm windows",
+      "bright red, pink, and cyan pictorial neon accents",
+      "a deadpan queue of overdressed patrons"
+    ],
+    "do_not_use": [
+      "photorealism",
+      "architectural visualization detail",
+      "gritty textures",
+      "cinematic lighting",
+      "dense grime",
+      "written signage or branding"
+    ],
+    "guardrail": "Preserve the cute board-game miniature rendering and express locality through object choice and palette."
+  },
+  "palette": {
+    "base": ["cold concrete gray", "slate blue-gray", "charcoal", "dirty beige"],
+    "secondary": ["desaturated navy suits", "muted burgundy", "dark pavement"],
+    "warm_accents": ["small amber windows", "bright pink-red and cyan neon silhouettes"],
+    "saturation": "low to moderate, with pictorial neon as the clearest accent",
+    "overall_brightness": "clean and readable, slightly subdued, harmonious with a red card template"
+  },
+  "subject_construction_rules": {
+    "general": [
+      "Reduce the whole scene to a compact iconic miniature.",
+      "Use only the few features needed for immediate recognition.",
+      "Keep all forms chunky and readable.",
+      "Show the building facing slightly right, with front and right side visible."
+    ],
+    "building_specific": [
+      "Use a squat utilitarian four-story gray concrete building with a flat roof and simple rows of dark rectangular windows.",
+      "Place a recessed entrance with a small plain geometric canopy on the front facade.",
+      "Mount a glowing martini glass outline with one olive on one facade plane and a tasteful simplified female pole-dancer silhouette in bikini on the other facade plane.",
+      "The pole-dancer sign must remain a non-explicit pictogram: fully covered bikini areas, no anatomical detail, no nudity, and no sexual act.",
+      "Do not include fascia panels, written signboards, menus, posters, logos, or any surfaces that invite generated writing.",
+      "Keep the walls, roof, windows, and entrance divided into only a few large geometric masses."
+    ],
+    "environment_specific": [
+      "Show a short orderly queue of four or five solid middle-aged men in dark business suits leading to the entrance.",
+      "At the door, show one broad muscular bouncer wearing a tight plain short-sleeved T-shirt and dark trousers, arms folded.",
+      "Keep every person fully clothed, toy-like, simplified, and non-identifiable.",
+      "Use a tiny self-contained pavement-and-curb base and no surrounding street.",
+      "Avoid cars and license plates so there is no surface likely to acquire text-like marks."
+    ]
+  },
+  "content": {
+    "subject": "A provincial four-story gray strip club with pictorial neon signs, a queue of suited men, and a muscular bouncer.",
+    "description": "A squat gray concrete nightlife building in a right-facing three-quarter view. One side carries a glowing martini glass silhouette with a single olive; the other carries a tasteful simplified bikini-clad pole-dancer silhouette. Four or five well-dressed men queue toward the recessed entrance, where a broad bouncer in a tight plain T-shirt stands guard.",
+    "desired_read": "An unmistakable but non-explicit provincial strip club rendered as a cute floating Machi Koro-style miniature.",
+    "recognition_details": [
+      "four-story utilitarian gray building with a recessed entrance",
+      "large pictorial neon martini glass outline with one olive and absolutely no letters",
+      "large tasteful bikini pole-dancer neon silhouette on a different facade plane and absolutely no letters",
+      "short queue of solid middle-aged men in dark suits",
+      "broad muscular doorman in a tight plain T-shirt at the entrance"
+    ],
+    "miniature_base": "A compact rounded patch of worn dark pavement with a short concrete curb, fully isolated on transparency.",
+    "simplify": [
+      "architecture, people, and neon into chunky toy-like masses",
+      "facade detail into a few readable windows and flat color areas",
+      "wear into one or two restrained color patches"
+    ],
+    "omit": [
+      "all words, letters, numbers, prices, labels, written signs, logos, posters, graffiti, license-plate characters, and pseudo-writing",
+      "blank signboards or fascia panels that invite generated text",
+      "nudity, explicit anatomy, sexual acts, or provocative close-up posing",
+      "cars, streets, neighboring buildings, trees, and full scenery",
+      "realistic textures, dramatic lighting, and full-card composition"
+    ],
+    "target_impression": "The same whimsical illustrator who drew classic Machi Koro establishments has drawn a mildly seedy provincial nightlife venue, with the pictorial neon, solemn queue, and oversized bouncer providing the visual joke."
+  },
+  "anti_patterns": [
+    "Do not generate a full card.",
+    "Do not generate any background, sky, clouds, header, footer, frame, coin, or category icon.",
+    "Do not create a realistic architectural rendering or a full streetscape.",
+    "Do not generate any text or text-like marks anywhere, including on clothing and neon signs.",
+    "Do not turn either neon pictogram into letters or a written venue sign.",
+    "Do not depict nudity, explicit anatomy, sexual acts, or realistic erotic detail.",
+    "Do not clip the building, roof, neon silhouettes, people, pavement slab, or their shadows."
+  ],
+  "final_prompt_summary": "Use case: stylized-concept. Asset type: transparent central illustration for a Machi Koro-style establishment card. Generate only a compact floating miniature scene: a squat provincial four-story gray concrete strip club in a loose three-quarter view facing slightly right, showing front and right side. One facade plane has a large glowing outline pictogram of a martini glass with one olive; the other has a tasteful simplified neon pictogram of an adult woman in a bikini posed beside a pole. Keep the pictogram non-explicit, with covered bikini areas, no anatomy, no nudity, and no sexual act. A short orderly queue of four or five solid middle-aged men in dark business suits leads to the recessed entrance. A broad muscular bouncer in a tight plain short-sleeved T-shirt and dark trousers stands at the door with folded arms. Put everything on one small rounded pavement-and-curb slab. Cute simplified board-game illustration, chunky toy-like shapes, clean outlines, sparse detail, flat graphic shading, cold gray palette with bright pink-red and cyan neon accents. Genuinely transparent background with ample margin around the complete silhouette. Absolute no-text rule: no letters, numbers, words, prices, menus, labels, written signs, logos, graffiti, license-plate characters, pseudo-glyphs, or blank signboards anywhere. No sky, scenery, neighboring buildings, cars, card frame, coin, category icon, photorealism, cinematic lighting, heavy texture, explicit content, or clipped content."
+}

@@ -1,0 +1,110 @@
+{
+  "spec_version": "1.0",
+  "title": "Floating Machi Koro-style central illustration spec",
+  "purpose": "Reusable specification for the central subject illustration that will be composited onto a blank Machi Koro-style card furniture template. The generated art should reproduce the iconic floating miniature look while adapting the subject to recognizable contemporary Moscow.",
+  "integration_context": {
+    "target_use": "Generate only the central content illustration to be pasted onto an existing blank purple card template.",
+    "background_requirement": "Use a genuinely transparent background. Include no sky, header, footer, card furniture, text, coin, icon, frame, or backdrop.",
+    "text_policy": "The illustration must contain no text whatsoever: no letters, numbers, names, prices, labels, signs, logos, graffiti, license-plate characters, or pseudo-writing on any surface.",
+    "card_relationship": "The art should sit like a floating miniature object or sticker inside the middle of the card, leaving generous empty space around it.",
+    "central_positioning": "The subject should be centered and self-contained with wide transparent margins and no clipping."
+  },
+  "style_goal": {
+    "primary_rule": "Match the cute, simplified tabletop-game illustration language of the original Machi Koro establishment art without copying a complete existing illustration.",
+    "secondary_rule": "Make the architecture unmistakably reminiscent of the Moscow-City business district while keeping it compact and toy-like.",
+    "core_formula": "Cute simplified floating board-game miniature plus a recognizable cluster of Moscow-City-inspired glass towers."
+  },
+  "what_machi_koro_art_looks_like": {
+    "miniature_scene_feel": "A small isolated toy-like scene, almost like a board-game token, sticker, or floating diorama rather than a full landscape.",
+    "shape_language": "Large clean shapes, simple geometry, compact clustered forms, and slightly exaggerated silhouettes.",
+    "perspective": "Loose playful three-quarter perspective. The buildings face slightly right, clearly showing their front and right sides.",
+    "linework": "Clear outlines or sharp separations between forms, with sparse interior detail lines.",
+    "shading": "Simple graphic shading using one or two darker tones; no realistic lighting model.",
+    "materials": "Communicate glass and metal through color blocks, highlights, and silhouette rather than texture or architectural visualization.",
+    "detail_density": "Low to moderate so every tower remains readable at small card size.",
+    "silhouette_priority": "The clustered skyline silhouette must read instantly and feel iconic.",
+    "scene_boundary": "The towers stand on one small self-contained plaza slab and do not blend into any background."
+  },
+  "visual_composition": {
+    "occupancy": "The content illustration should occupy a compact central area with wide transparent air around it.",
+    "shape": "A compact cluster of three to five towers, with one tall twisting glass tower and a few shorter distinctive neighbors.",
+    "floating_behavior": "The scene visually floats in open space and does not connect to the card's lower skyline strip.",
+    "base": "A small stylized oval or angular business-plaza slab belonging entirely to the miniature.",
+    "background": "Fully transparent; no skyline, sky, clouds, horizon, streetscape, or distant scenery."
+  },
+  "palette": {
+    "base": [
+      "cool blue-gray glass",
+      "smoky lavender glass",
+      "deep desaturated violet",
+      "cold concrete gray"
+    ],
+    "secondary": [
+      "muted teal reflections",
+      "charcoal metal",
+      "soft silver",
+      "dusty mauve"
+    ],
+    "warm_accents": [
+      "a few amber-yellow lit windows",
+      "tiny warm plaza lights only where helpful"
+    ],
+    "saturation": "low to moderate",
+    "overall_brightness": "clean and readable, with restrained violet accents that harmonize with the purple card without washing the whole scene purple"
+  },
+  "subject_construction_rules": {
+    "general": [
+      "Reduce the subject to a compact iconic miniature.",
+      "Choose only the few details needed for recognition.",
+      "Exaggerate and simplify proportions slightly.",
+      "Keep all forms chunky and readable.",
+      "Keep generous transparent margin around the full silhouette."
+    ],
+    "building_specific": [
+      "Use a cluster resembling Moscow-City: one tall twisting or faceted glass tower, one curved sail-like tower, and two shorter stepped glass towers.",
+      "Buildings must face slightly right, showing front and right sides in a readable three-quarter view.",
+      "Windows are simplified color grids and broad reflective panels, never tiny realistic window detail.",
+      "Rooflines and crowns are few, distinct, and unclipped.",
+      "All facades and plaza surfaces are completely free of writing, branding, emblems, and text-like marks."
+    ],
+    "environment_specific": [
+      "Use only a small clean plaza base with a few geometric planters or tiny trees.",
+      "Do not include cars, people, billboards, street signs, or a surrounding city."
+    ]
+  },
+  "content": {
+    "subject": "A stylized miniature cluster of Moscow-City-inspired business towers representing an IT company.",
+    "description": "A compact group of sleek modern glass skyscrapers with recognizable Moscow-City visual cues: a tall twisting faceted tower, a curved sail-like tower, and several stepped blue-violet glass towers arranged on one small plaza slab.",
+    "desired_read": "A successful modern Russian IT company headquartered in Moscow-City, immediately readable as a premium purple major establishment.",
+    "recognition_details": [
+      "one dominant twisting or faceted glass tower with a tapering crown",
+      "one curved sail-like glass tower beside it",
+      "two or three shorter stepped towers with broad blue and violet reflective panels",
+      "compact shared podium or plaza base",
+      "a few simplified amber-lit windows for warmth"
+    ],
+    "miniature_base": "A small angular gray plaza podium with two or three tiny geometric planters, fully contained inside the floating illustration.",
+    "simplify": [
+      "glass facades into broad alternating blue-gray, lavender, and teal panels",
+      "tower shapes into bold readable silhouettes with sparse window grids",
+      "the district into one compact cluster rather than a full skyline"
+    ],
+    "omit": [
+      "all text and text-like content, including letters, numbers, company names, signs, logos, labels, graffiti, license plates, and pseudo-glyphs",
+      "full-card composition, skyline background, sky, clouds, city streets, people, cars, billboards, and branded architecture",
+      "photorealism, architectural-visualization detail, cinematic lighting, gradients that look glossy or corporate, and dense facade texture"
+    ],
+    "target_impression": "The original Machi Koro illustrator's playful miniature language applied to a recognizable Moscow-City cluster: ambitious, tech-oriented, expensive, slightly imposing, and harmonious with a purple card."
+  },
+  "anti_patterns": [
+    "Do not generate a full card.",
+    "Do not generate sky, clouds, footer, or any fixed card furniture.",
+    "Do not create a realistic architectural rendering.",
+    "Do not create a full cityscape background.",
+    "Do not make the scene connect visually to the bottom of the card.",
+    "Do not generate any letters, numbers, words, labels, logos, signage, graffiti, license-plate characters, or pseudo-text.",
+    "Do not clip the tower crowns, plaza base, or shadows.",
+    "Do not show the buildings straight-on or facing left."
+  ],
+  "final_prompt_summary": "Generate only a small floating miniature cluster of Moscow-City-inspired business towers for the central illustration of a purple Machi Koro-style establishment card called IT company. Use a genuinely transparent background with wide empty margins. Arrange three to five sleek towers on one compact angular plaza podium: one dominant twisting or faceted glass tower with a tapering crown, one curved sail-like glass tower, and two or three shorter stepped glass towers. Make the cluster unmistakably reminiscent of Moscow-City while remaining an original simplified composition. Face the buildings slightly to the right so the front and right sides are visible in a playful three-quarter perspective. Use chunky toy-like geometry, clean outlines, sparse facade detail, broad blue-gray, smoky lavender, muted teal, silver, and deep violet glass panels, simple graphic shading, and only a few amber-lit windows. The result must be an isolated board-game miniature, not a skyline or full card. Include no text or text-like marks anywhere: no letters, numbers, names, prices, signs, labels, logos, branding, graffiti, license plates, or pseudo-writing. Include no people, cars, billboards, streets, sky, clouds, footer, frame, coin, icon, or background scene. Keep every tower crown and the entire plaza base fully visible and unclipped."
+}

@@ -1,0 +1,26 @@
+python skills/generate-card/scripts/card_compositor.py \
+  --template backgrounds/purple.png \
+  --overlay buildings/sizo.png \
+  --title-icon icons/purple-tower.png \
+  --shadow \
+  --output cards/sizo.png \
+  --x-frac 0.50 \
+  --y-frac 0.51 \
+  --scale 0.60 \
+  --flip-horizontal \
+  --coin-number 8 \
+  --activation-number 6 \
+  --title 'СИЗО' \
+  --title-color '#3E1F59' \
+  --bottom-text $'Заберите любой бизнес у игрока\n на свой выбор.\nВ свой ход.' \
+  --bottom-text-y-frac 0.83 \
+  --bottom-text-spacing-px 5 \
+  --title-font fonts/Boingster-Regular.ttf \
+  --title-font-size-frac 0.065 \
+  --title-icon-scale 1.8 \
+  --title-icon-y-offset-px -8 \
+  --bottom-text-font fonts/CCUltimatum-Bold.ttf \
+  --bottom-text-font-size-frac 0.040 \
+  --activation-font fonts/Boingster-Regular.ttf \
+  --activation-font-size-frac 0.1 \
+  --coin-font fonts/Boingster-Regular.ttf

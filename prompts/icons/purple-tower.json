@@ -1,0 +1,66 @@
+{
+  "spec_version": "1.1",
+  "title": "Machi Koro-style round tower category icon spec",
+  "purpose": "Small circular major-establishment badge placed immediately before the IT company card title.",
+  "integration_context": {
+    "target_use": "Generate only the icon asset for card compositing.",
+    "canvas": "square",
+    "background": "genuinely transparent",
+    "output_preference": "PNG with alpha transparency",
+    "composition": "one centered circular badge filling most of the square canvas"
+  },
+  "parameters": {
+    "icon_color": {
+      "type": "hex color string",
+      "default": "#3E1F59",
+      "description": "Dark purple sampled from the unobstructed footer of backgrounds/purple.png."
+    },
+    "subject": {
+      "type": "string",
+      "default": "profile silhouette of a slender observation tower topped by a sphere",
+      "description": "A white pictogram matching the recognizable tower-with-sphere visual language of the original Machi Koro major-establishment symbol."
+    }
+  },
+  "badge_geometry": {
+    "circle": "perfect centered circle",
+    "circle_diameter": "approximately 82-88% of canvas width",
+    "outer_margin": "transparent margin around the circle",
+    "border": "none"
+  },
+  "pictogram": {
+    "color": "#FFFFFF",
+    "subject": "slender tower in side profile with one large sphere near the top",
+    "description": "A bold white silhouette of a narrow modern observation or broadcast tower. Use a tapering vertical shaft, a single prominent round sphere near the upper portion, and a short pointed or antenna-like cap above it. The silhouette should evoke a Shanghai-style tower profile and the original Machi Koro purple category icon while staying extremely simple.",
+    "size": "approximately 50-58% of the circle diameter",
+    "position": "precisely centered inside the circle",
+    "shape_language": "very simple, chunky, geometric, slightly rounded",
+    "detail_level": "very low",
+    "line_rule": "Use a solid white silhouette with no thin strokes and no internal decoration."
+  },
+  "visual_style": {
+    "core": "Flat two-color Machi Koro category badge.",
+    "colors": "#3E1F59 circle plus pure white pictogram",
+    "shading": "none",
+    "gradient": "none",
+    "texture": "none",
+    "shadow": "none",
+    "rendering": "clean vector-style UI icon",
+    "small_size_priority": "instantly recognizable beside a card title"
+  },
+  "anti_patterns": [
+    "do not omit the dark-purple round badge",
+    "do not add an outer ring",
+    "do not draw a cluster of towers or a skyline",
+    "do not use realistic rendering, gradients, highlights, bevels, texture, or shadows",
+    "do not add letters, numbers, logos, or any text",
+    "do not add card furniture or scenery",
+    "do not use thin or intricate strokes",
+    "do not leave transparency holes inside the purple circle"
+  ],
+  "current_icon": {
+    "icon_color": "#3E1F59",
+    "subject": "white tower profile with sphere",
+    "expected_result": "A dark-purple solid circle with a simple bold white profile of a slender tower topped by a sphere, on a genuinely transparent canvas."
+  },
+  "final_prompt_summary": "Generate only a small Machi Koro-style category badge on a genuinely transparent square canvas. Make one perfect solid circle in #3E1F59 filling about 85% of the canvas, with no outer ring. Center a bold pure-white silhouette of a slender tower in side profile: a tapering vertical shaft, one prominent round sphere near the upper portion, and a short pointed antenna-like cap above it. The pictogram should evoke the recognizable Shanghai-style tower-with-sphere symbol used for purple major establishments in the original Machi Koro visual language, while remaining extremely simple, chunky, and legible. The white tower should fill about 54% of the circle. Flat two-color vector-style artwork only: no text, letters, numbers, logo lettering, border, shading, gradient, texture, shadow, 3D effect, scenery, or background. Preserve genuine transparency outside the circle and solid opacity inside it."
+}

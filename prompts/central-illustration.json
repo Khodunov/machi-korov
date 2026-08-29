@@ -5,7 +5,7 @@
   "integration_context": {
     "target_use": "Generate only the central content illustration to be pasted onto an existing blank card template.",
     "background_requirement": "Prefer transparent background if possible. If transparency is not used, the background should remain fully absent or easy to mask: no sky, no header, no footer, no card furniture, no text, no coin, no icon, no frame.",
-    "text_policy": "The illustration itself must contain no text whatsoever. Do not draw letters, numbers, words, prices, menus, labels, logos, brand marks, signage, graffiti, license-plate characters, or text-like pseudo-glyphs on any building, prop, vehicle, or surface. Use plain color blocks and purely geometric decoration instead.",
+    "text_policy": "The illustration must contain no incidental text. Do not draw unrequested letters, numbers, words, prices, menus, labels, signage, graffiti, license-plate characters, or text-like pseudo-glyphs on any building, prop, vehicle, or surface. An explicitly requested brand logo is allowed, including the lettering contained within that logo; render only that requested logo and no additional text.",
     "card_relationship": "The art should sit like a floating miniature object or sticker inside the middle of the card, leaving generous empty sky around it.",
     "central_positioning": "The subject should be centered and self-contained, with enough margin around it so it can be placed in the open central sky region of the card."
   },
@@ -103,7 +103,7 @@
       "Balconies should be simplified into blocky protrusions or colored panels.",
       "Roof details should be few and clear.",
       "Panel seams or other repetitive structure should be present only in a small number of major lines.",
-      "All signs, fascia panels, menu boards, plaques, posters, and storefront surfaces must be blank or purely geometric, with no writing or text-like marks."
+      "All signs, fascia panels, menu boards, plaques, posters, and storefront surfaces must be blank or purely geometric unless the content section explicitly requests a brand logo. A requested logo may include its authentic embedded lettering, but no other writing or text-like marks are allowed."
     ],
     "environment_specific": [
       "Trees should be graphic silhouettes or simplified masses.",
@@ -137,9 +137,9 @@
     "Do not create a realistic painting of a building.",
     "Do not create a full cityscape background.",
     "Do not make the scene connect visually to the bottom of the card.",
-    "Do not generate any letters, numbers, words, menus, prices, logos, labels, graffiti, license-plate characters, or pseudo-text anywhere in the illustration.",
+    "Do not generate incidental letters, numbers, words, menus, prices, labels, graffiti, license-plate characters, or pseudo-text anywhere in the illustration. An explicitly requested brand logo, including its embedded lettering, is the only exception.",
     "Do not turn the subject into generic clip-art with no Russian specificity.",
     "Do not use heavy textures or gritty realism."
   ],
-  "final_prompt_summary": "Generate only the central subject illustration defined in the content section for a Machi Koro-style establishment card. The result should be a small floating miniature scene with no card furniture. The illustration must contain absolutely no text or text-like marks: no letters, numbers, words, prices, menus, labels, logos, signage, graffiti, license-plate characters, or pseudo-glyphs on any surface. Replace signage with blank color panels or simple geometric decoration. Match the original Machi Koro illustration language: compact self-contained composition, loose playful perspective, chunky simplified shapes, low detail density, clean outlines, and simple graphic shading. Render the supplied Russian/post-Soviet everyday subject in a colder, grimmer palette without increasing realism. Preserve the cute board-game miniature style while letting the chosen object and its recognition details carry the post-Soviet bleakness."
+  "final_prompt_summary": "Generate only the central subject illustration defined in the content section for a Machi Koro-style establishment card. The result should be a small floating miniature scene with no card furniture. Do not include incidental text or text-like marks: no unrequested letters, numbers, words, prices, menus, labels, signage, graffiti, license-plate characters, or pseudo-glyphs on any surface. If the content section explicitly requests a brand logo, render that logo—including its authentic embedded lettering—and no other text. Replace all other signage with blank color panels or simple geometric decoration. Match the original Machi Koro illustration language: compact self-contained composition, loose playful perspective, chunky simplified shapes, low detail density, clean outlines, and simple graphic shading. Render the supplied Russian/post-Soviet everyday subject in a colder, grimmer palette without increasing realism. Preserve the cute board-game miniature style while letting the chosen object and its recognition details carry the post-Soviet bleakness."
 }

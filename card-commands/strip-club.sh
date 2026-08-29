@@ -1,0 +1,26 @@
+.venv/bin/python skills/generate-card/scripts/card_compositor.py \
+  --template backgrounds/red.png \
+  --overlay buildings/strip-club.png \
+  --title-icon icons/shwarma.png \
+  --shadow \
+  --output cards/strip-club.png \
+  --x-frac 0.50 \
+  --y-frac 0.54 \
+  --scale 0.53 \
+  --flip-horizontal \
+  --coin-number 2 \
+  --activation-number '9-10' \
+  --title 'Стриптиз клуб' \
+  --title-color '#58100E' \
+  --bottom-text $'Возьмите 3 монеты у игрока,\nбросившего кубики.' \
+  --bottom-text-y-frac 0.82 \
+  --bottom-text-spacing-px 6 \
+  --title-font fonts/Boingster-Regular.ttf \
+  --title-font-size-frac 0.058 \
+  --title-icon-scale 1.5 \
+  --title-icon-y-offset-px -10 \
+  --bottom-text-font fonts/CCUltimatum-Bold.ttf \
+  --bottom-text-font-size-frac 0.043 \
+  --activation-font fonts/CCUltimatum-Bold.ttf \
+  --activation-font-size-frac 0.1 \
+  --coin-font fonts/Boingster-Regular.ttf

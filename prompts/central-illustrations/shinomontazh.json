@@ -1,0 +1,123 @@
+{
+  "spec_version": "1.0",
+  "title": "Floating Machi Koro-style tire service illustration spec",
+  "purpose": "Central illustration for a green Machi Koro-style establishment card.",
+  "integration_context": {
+    "target_use": "Generate only the central content illustration to be composited onto an existing blank card template.",
+    "background_requirement": "Native RGBA transparency is mandatory: every pixel outside the physical miniature must have alpha=0. Do not render, draw, or bake a checkerboard, black field, white field, gradient, glow, halo, vignette, or any other backdrop into the RGB channels. No sky, header, footer, card furniture, text, coin, icon, frame, or backdrop.",
+    "text_policy": "Absolute no-text rule: no letters, numbers, words, prices, labels, signs, logos, graffiti, license-plate characters, or pseudo-writing on any surface.",
+    "card_relationship": "A floating miniature object or sticker inside the card's open middle region, with generous transparent space around it.",
+    "central_positioning": "Centered, compact, self-contained, fully visible, with ample margin on every side."
+  },
+  "style_goal": {
+    "primary_rule": "Match the cute simplified establishment-art language of the original Machi Koro tabletop game without copying a specific illustration.",
+    "secondary_rule": "Depict a recognizable post-Soviet roadside tire service through the building, vehicles, open garage bays, tires, and inflatable tube figure.",
+    "core_formula": "Cute simplified board-game miniature plus a familiar utilitarian tire-service garage."
+  },
+  "what_machi_koro_art_looks_like": {
+    "miniature_scene_feel": "A small isolated toy-like scene, like a board-game token or floating diorama, not a full landscape.",
+    "shape_language": "Large clean shapes, simple geometry, compact clustered forms, and a crisp readable silhouette.",
+    "perspective": "Loose playful three-quarter view facing slightly right, showing the front and right side of the garage.",
+    "linework": "Clear outlines or sharp form separation with sparse interior detail.",
+    "shading": "Simple graphic shading with one or two darker tones, never realistic lighting.",
+    "materials": "Painted corrugated metal, concrete, rubber, glass, and asphalt communicated by color and silhouette rather than texture.",
+    "detail_density": "Low to moderate and readable at small card size.",
+    "silhouette_priority": "The broad garage and tall waving inflatable tube figure must read instantly.",
+    "scene_boundary": "The garage, cars, tube figure, and tire props rest on one compact stylized asphalt slab and do not blend into a background."
+  },
+  "visual_composition": {
+    "occupancy": "Compact horizontal subject intended to occupy about 30-45% of card height after compositing.",
+    "shape": "One large low garage with two wide open service bays, cars both in front and partly inside, plus one tall but compact inflatable tube figure near the front.",
+    "floating_behavior": "The entire scene floats in transparent space and never connects to the card skyline.",
+    "base": "A small rounded cracked-asphalt and curb slab belonging entirely to the miniature.",
+    "background": "None. The output must be an actual RGBA PNG cutout with alpha=0 outside the miniature, not an image depicting a checkerboard or dark background."
+  },
+  "russian_grimness_rules": {
+    "principle": "Everyday Russianness comes from the utilitarian roadside garage and restrained wear, not realism.",
+    "use": [
+      "large practical corrugated-metal garage",
+      "cold gray concrete and asphalt",
+      "muted dark-green wall panels that harmonize with a green card",
+      "mismatched but simplified repairs",
+      "a few stacked black tires",
+      "plain compact cars typical of an everyday neighborhood service shop"
+    ],
+    "do_not_use": [
+      "photorealism",
+      "architectural visualization detail",
+      "gritty textures",
+      "cinematic lighting",
+      "dense grime",
+      "signage or branding"
+    ],
+    "guardrail": "Preserve the cute board-game miniature rendering and express locality through object choice and palette."
+  },
+  "palette": {
+    "base": ["muted dark green", "cold concrete gray", "blue-gray painted metal", "charcoal rubber"],
+    "secondary": ["dirty beige", "desaturated navy", "faded rust-brown", "dark asphalt"],
+    "warm_accents": ["a restrained bright yellow-green inflatable tube figure", "subtle amber workshop light inside the bays"],
+    "saturation": "low to moderate, with the inflatable figure as the clearest accent",
+    "overall_brightness": "clean and readable, slightly subdued, harmonious with a green card template"
+  },
+  "subject_construction_rules": {
+    "general": [
+      "Reduce the whole scene to a compact iconic miniature.",
+      "Use only the few features needed for immediate recognition.",
+      "Keep all forms chunky and readable.",
+      "Show the building facing slightly right, with front and right side visible."
+    ],
+    "building_specific": [
+      "Use a broad low corrugated-metal garage with two oversized open rectangular service bays.",
+      "Show one car partly inside a bay and one or two cars parked directly in front, without visible license-plate characters.",
+      "Reveal only simplified workshop silhouettes inside: a lift shape, tire shapes, and warm shadowed interior masses.",
+      "Do not include fascia panels, signboards, menus, posters, logos, or any surfaces that invite generated writing.",
+      "Keep the walls and roof divided into only a few large geometric masses."
+    ],
+    "environment_specific": [
+      "Place a classic inflatable air dancer in front of the garage, with a simple rounded head, exactly two long flailing arms, and exactly two separate flexible tubular legs attached to two small blower bases.",
+      "Both arms and both legs must be simultaneously visible and clearly separated: four limbs total, with no extra arms or legs and no single merged trunk-body replacing the legs.",
+      "Pose the air dancer asymmetrically in active wind-driven motion: its torso bends into a strong flowing S-curve, the head and shoulders lean sideways, the two arms wave at different angles, and the two legs bend in different directions as if the figure is dancing and being tossed by air.",
+      "Avoid a rigid upright symmetrical star pose; the silhouette must feel loose, curved, off-balance, and caught mid-wave.",
+      "Make the inflatable figure clearly non-human and toy-like, with no letters, logos, or printed face details beyond two simple dot eyes if needed.",
+      "Use a tiny self-contained asphalt-and-curb base.",
+      "Limit extra props to two small stacks of chunky tires and one plain compressor shape."
+    ]
+  },
+  "content": {
+    "subject": "A large neighborhood tire-service garage with cars and a waving inflatable air dancer.",
+    "description": "A broad two-bay corrugated-metal garage in a right-facing three-quarter view. Cars wait on the asphalt in front and one car is partly inside an open bay. A flexible inflatable tube figure dances in front with exactly two waving arms and two separate legs, its entire body bent into an asymmetric wind-driven S-curve. A few stacks of tires make the service type instantly recognizable.",
+    "desired_read": "A busy but compact Russian tire-service garage rendered as a cute floating Machi Koro-style miniature.",
+    "recognition_details": [
+      "two wide open garage bays with a car visibly being serviced inside",
+      "one or two plain cars waiting directly in front, all plates blank and character-free",
+      "a bright inflatable tube figure in an asymmetric curved mid-wave pose, with exactly two arms and exactly two distinct legs, all four limbs clearly visible",
+      "two restrained stacks of black tires",
+      "large utilitarian corrugated-metal garage on a compact asphalt slab"
+    ],
+    "miniature_base": "A compact rounded patch of worn asphalt with a short concrete curb, fully isolated on transparency.",
+    "simplify": [
+      "garage, vehicles, and equipment into chunky toy-like masses",
+      "interior workshop detail into a few readable silhouettes and flat color areas",
+      "wear into one or two restrained color patches"
+    ],
+    "omit": [
+      "all words, letters, numbers, prices, labels, signs, logos, posters, graffiti, license-plate characters, and pseudo-writing",
+      "blank signboards or fascia panels that invite generated text",
+      "people, streets, neighboring buildings, trees, and full scenery",
+      "realistic textures, dramatic lighting, and full-card composition"
+    ],
+    "target_impression": "The same whimsical illustrator who drew classic Machi Koro establishments has drawn a deadpan but lively roadside tire service, with the waving inflatable figure providing the visual joke."
+  },
+  "anti_patterns": [
+    "Do not generate a full card.",
+    "Do not generate any background, sky, clouds, header, footer, frame, coin, or category icon.",
+    "Do not create a realistic architectural rendering or a full streetscape.",
+    "Do not generate any text or text-like marks anywhere, including on vehicles and clothing-like surfaces of the inflatable figure.",
+    "Do not make the inflatable air dancer look like a real person.",
+    "Do not give the inflatable figure one merged trunk-leg, more than two arms, or more than two legs.",
+    "Do not pose the inflatable figure rigidly upright, straight, or symmetrically.",
+    "Do not output an opaque background or a visualized checkerboard; native RGBA alpha transparency is required.",
+    "Do not clip the garage, vehicles, raised arms, separate legs, blower bases, or miniature base."
+  ],
+  "final_prompt_summary": "Edit the existing central illustration only by changing the bright yellow-green inflatable air dancer in front of the garage. Give it exactly two long flailing arms and exactly two separate flexible tubular legs attached to two small blower bases; all four limbs must be simultaneously visible and clearly separated. Pose it in lively wind-driven motion: bend the torso into a strong asymmetric flowing S-curve, lean the head and shoulders sideways, wave the two arms at different angles, and bend the two legs in different directions as if it is dancing and being tossed by air. Avoid a rigid upright symmetrical star pose. Do not use one merged trunk-body in place of the legs, and do not add extra limbs. Preserve the garage, vehicles, open bays, tires, asphalt slab, right-facing three-quarter view, composition, palette, scale, clean outlines, sparse detail, and flat graphic shading. OUTPUT REQUIREMENT: native RGBA PNG transparency is mandatory; every pixel outside the physical miniature must have alpha=0. Do not draw or bake a checkerboard, black or white field, gradient, glow, halo, vignette, or any backdrop into RGB. Leave generous transparent margin around the complete silhouette. Absolute no-text rule: no letters, numbers, words, signs, logos, labels, graffiti, license-plate characters, or pseudo-writing. No signboards, people, neighboring scenery, sky, card frame, coin, footer, photorealism, texture-heavy rendering, or clipped content."
+}

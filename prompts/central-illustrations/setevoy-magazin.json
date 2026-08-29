@@ -1,0 +1,117 @@
+{
+  "spec_version": "1.0",
+  "title": "Floating Machi Koro-style central illustration spec",
+  "purpose": "Reusable specification for a central subject illustration composited onto a blank Machi Koro-style card template.",
+  "integration_context": {
+    "target_use": "Generate only the central content illustration to be pasted onto an existing blank card template.",
+    "background_requirement": "Genuinely transparent background. No sky, header, footer, card furniture, text, coin, icon, frame, or backdrop.",
+    "text_policy": "No text or text-like content: no letters, numbers, words, prices, labels, signs, graffiti, license plates, or pseudo-glyphs. The explicitly requested wordless four-petal Перекрёсток brand symbol is allowed; it must not include a wordmark or any lettering.",
+    "card_relationship": "A floating miniature object or sticker inside the card's open middle region, with generous transparent space around it.",
+    "central_positioning": "Centered, compact, self-contained, and fully visible with ample margin on every side."
+  },
+  "style_goal": {
+    "primary_rule": "Match the cute simplified establishment-art language of the original Machi Koro tabletop game without copying a specific illustration.",
+    "secondary_rule": "Depict a recognizable Russian Перекрёсток neighborhood supermarket through architecture, green-and-white color blocking, and its requested brand logo.",
+    "core_formula": "Cute simplified board-game miniature plus a familiar utilitarian Russian supermarket."
+  },
+  "what_machi_koro_art_looks_like": {
+    "miniature_scene_feel": "A small isolated toy-like scene, like a board-game token or floating diorama, not a full landscape.",
+    "shape_language": "Large clean shapes, simple geometry, compact clustered forms, and a crisp readable silhouette.",
+    "perspective": "Loose playful three-quarter view facing slightly right, showing the front and right side.",
+    "linework": "Clear outlines or sharp form separation with sparse interior detail.",
+    "shading": "Simple graphic shading with one or two darker tones, never realistic lighting.",
+    "materials": "Glass, painted metal, concrete, and pavement communicated by color and silhouette rather than texture.",
+    "detail_density": "Low to moderate and readable at small card size.",
+    "silhouette_priority": "The low rectangular supermarket and entrance must read instantly.",
+    "scene_boundary": "The building rests on a small stylized pavement slab and does not blend into a background."
+  },
+  "visual_composition": {
+    "occupancy": "Compact horizontal subject intended to occupy about 30-45% of card height after compositing.",
+    "shape": "One low rectangular storefront with a slightly projecting entrance canopy.",
+    "floating_behavior": "The scene floats in transparent space and never connects to the card skyline.",
+    "base": "A small rounded cracked-asphalt and curb slab belonging entirely to the miniature.",
+    "background": "None; transparent pixels outside the miniature."
+  },
+  "russian_grimness_rules": {
+    "principle": "Everyday Russianness comes from the utilitarian building and restrained wear, not realism.",
+    "use": [
+      "modest low neighborhood supermarket proportions",
+      "cold gray concrete and asphalt",
+      "dark forest-green fascia and awning",
+      "clean white roof-fascia accent panel",
+      "simple glass automatic entrance doors",
+      "a few practical bollards"
+    ],
+    "do_not_use": [
+      "photorealism",
+      "architectural visualization detail",
+      "gritty textures",
+      "cinematic lighting",
+      "dense grime",
+      "unrequested brand marks or advertising"
+    ],
+    "guardrail": "Preserve the cute board-game miniature rendering and express locality through object choice and palette."
+  },
+  "palette": {
+    "base": ["dark forest green", "muted leaf green", "cold concrete gray", "dirty beige"],
+    "secondary": ["clean white fascia accent", "blue-gray glass", "charcoal asphalt"],
+    "warm_accents": ["subtle amber light behind the entrance glass"],
+    "saturation": "low to moderate, with green as the dominant family",
+    "overall_brightness": "clean and readable, slightly subdued, harmonious with a green card template"
+  },
+  "subject_construction_rules": {
+    "general": [
+      "Reduce the store to a compact iconic miniature.",
+      "Use only the few features needed for recognition.",
+      "Keep all forms chunky and readable.",
+      "Show the building facing slightly right, with front and right side visible."
+    ],
+    "building_specific": [
+      "Use a low boxy neighborhood supermarket with a broad dark-green fascia and a clean white geometric roof-fascia accent panel; remove every orange or red-orange accent.",
+      "Include broad front windows and centered automatic glass doors as simplified rectangles.",
+      "Place only the recognizable official-style wordless Перекрёсток logo prominently on the front fascia: the green four-petal crossroads/clover symbol with no wordmark.",
+      "Keep every fascia, window, door, poster area, and panel free of lettering and text-like marks; the requested wordless Перекрёсток symbol is the only brand element.",
+      "Use only a few large divisions in the glazing and walls."
+    ],
+    "environment_specific": [
+      "Use a tiny self-contained asphalt-and-curb base.",
+      "Limit props to two or three chunky bollards and one small plain bin.",
+      "Do not include people, vehicles, trees, streets, or surrounding buildings."
+    ]
+  },
+  "content": {
+    "subject": "A small iconic Russian Перекрёсток neighborhood supermarket.",
+    "description": "A low rectangular shop with dark forest-green fascia, a clean white roof-fascia accent panel replacing the former orange panel, simplified front glazing, automatic entrance doors, a slightly projecting canopy, and the recognizable wordless four-petal Перекрёсток symbol on the front fascia.",
+    "desired_read": "A familiar Перекрёсток grocery store rendered as a cute floating Machi Koro-style miniature.",
+    "recognition_details": [
+      "dominant dark-green fascia with a clean white geometric accent panel and no orange",
+      "recognizable green four-petal Перекрёсток emblem with no wordmark or lettering",
+      "wide simplified shop windows and automatic glass entrance doors",
+      "low utilitarian rectangular building with a shallow entrance canopy",
+      "small asphalt-and-curb slab with two or three bollards"
+    ],
+    "miniature_base": "A compact rounded patch of worn asphalt with a short concrete curb, fully isolated on transparency.",
+    "simplify": [
+      "facade into a few chunky green, gray, and glass-blue masses",
+      "glazing into only a handful of broad rectangles",
+      "wear into one or two restrained color patches"
+    ],
+    "omit": [
+      "all words, letters, numbers, prices, labels, signs, posters, graffiti, license plates, and pseudo-writing; the requested wordless Перекрёсток symbol is the only brand exception",
+      "blank signboards or menu boards that invite generated text",
+      "people, cars, shopping carts, product packaging, advertisements, and neighboring scenery",
+      "realistic textures, dramatic lighting, and full-card composition"
+    ],
+    "target_impression": "The same whimsical illustrator who drew classic Machi Koro establishments has drawn a deadpan but recognizable Перекрёсток supermarket with its logo simplified to match the miniature style."
+  },
+  "anti_patterns": [
+    "Do not generate a full card.",
+    "Do not generate any background, sky, clouds, header, footer, frame, coin, or category icon.",
+    "Do not create a realistic architectural rendering.",
+    "Do not make a full streetscape.",
+    "Do not generate letters, numbers, words, prices, labels, signage, posters, graffiti, license-plate characters, or pseudo-text. The requested wordless four-petal Перекрёсток symbol is the only brand exception.",
+    "Do not show any Пятёрочка branding or any orange or red-orange facade accent.",
+    "Do not clip any part of the building or miniature base."
+  ],
+  "final_prompt_summary": "Edit the existing central illustration into a recognizable Перекрёсток neighborhood supermarket while preserving the exact building geometry, right-facing three-quarter view, miniature base, windows, doors, bollards, composition, shadows, and transparent background. Replace the orange diagonal roof-fascia accent with clean white, removing all orange and red-orange facade accents. Add only the recognizable wordless Перекрёсток logo prominently on the front dark-green fascia: its green four-petal crossroads/clover symbol, simplified to match the Machi Koro miniature style, with no wordmark or lettering. Prohibit all text and text-like marks, including letters, numbers, words, prices, labels, signs, posters, graffiti, license plates, and pseudo-glyphs. Keep the cute floating tabletop-game illustration style, clean outlines, chunky simple shapes, sparse details, flat graphic shading, and genuine alpha transparency. No people, cars, carts, product packages, scenery, card furniture, photorealism, texture-heavy rendering, or clipped content."
+}

@@ -1,0 +1,26 @@
+python skills/generate-card/scripts/card_compositor.py \
+  --template backgrounds/green.png \
+  --overlay buildings/setevoy-magazin.png \
+  --title-icon icons/shop-stall.png \
+  --shadow \
+  --output cards/setevoy-magazin.png \
+  --x-frac 0.50 \
+  --y-frac 0.51 \
+  --scale 0.73 \
+  --flip-horizontal \
+  --coin-number 2 \
+  --activation-number 4 \
+  --title 'Сетевой магазин' \
+  --title-color '#17361A' \
+  --bottom-text $'Получите 3 монеты из банка.\nВ свой ход.' \
+  --bottom-text-y-frac 0.82 \
+  --bottom-text-spacing-px 6 \
+  --title-font fonts/Boingster-Regular.ttf \
+  --title-font-size-frac 0.055 \
+  --title-icon-scale 1.8 \
+  --title-icon-y-offset-px -8 \
+  --bottom-text-font fonts/CCUltimatum-Bold.ttf \
+  --bottom-text-font-size-frac 0.045 \
+  --activation-font fonts/Boingster-Regular.ttf \
+  --activation-font-size-frac 0.1 \
+  --coin-font fonts/Boingster-Regular.ttf

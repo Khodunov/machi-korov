@@ -1,0 +1,129 @@
+{
+  "spec_version": "1.0",
+  "title": "Floating Machi Koro-style central illustration spec",
+  "purpose": "Reusable specification for the central subject illustration that will be composited onto a blank Machi Koro-style card furniture template. The generated art should reproduce the iconic floating miniature look while adapting the subject to a recognizable post-Soviet detention facility.",
+  "integration_context": {
+    "target_use": "Generate only the central content illustration to be pasted onto an existing blank purple card template.",
+    "background_requirement": "Use a genuinely transparent background. Include no sky, header, footer, card furniture, text, coin, icon, frame, or backdrop.",
+    "text_policy": "The illustration must contain no text whatsoever: no letters, numbers, names, labels, signs, plaques, logos, graffiti, license-plate characters, or pseudo-writing on any surface.",
+    "card_relationship": "The art should sit like a floating miniature object or sticker inside the middle of the card, leaving generous empty space around it.",
+    "central_positioning": "The subject should be centered and self-contained with wide transparent margins and no clipping."
+  },
+  "style_goal": {
+    "primary_rule": "Match the cute, simplified tabletop-game illustration language of the original Machi Koro establishment art without copying a complete existing illustration.",
+    "secondary_rule": "Depict a severe gray post-Soviet pre-trial detention facility while keeping the rendering compact, readable, and toy-like.",
+    "core_formula": "Cute simplified floating board-game miniature plus a bleak concrete detention building behind a secure metal perimeter."
+  },
+  "what_machi_koro_art_looks_like": {
+    "miniature_scene_feel": "A small isolated toy-like scene, almost like a board-game token, sticker, or floating diorama rather than a full landscape.",
+    "shape_language": "Large clean shapes, simple geometry, compact clustered forms, and slightly exaggerated silhouettes.",
+    "perspective": "Loose playful three-quarter perspective. The building faces slightly right, clearly showing its front and right side.",
+    "linework": "Clear outlines or sharp separations between forms, with sparse interior detail lines.",
+    "shading": "Simple graphic shading using one or two darker tones; no realistic lighting model.",
+    "materials": "Communicate concrete, barred windows, dull metal fencing, and razor wire through color blocks and silhouette rather than gritty texture.",
+    "detail_density": "Low to moderate so the building and secure perimeter remain readable at small card size.",
+    "silhouette_priority": "The squat concrete block and looped wire silhouette must read instantly and feel iconic.",
+    "scene_boundary": "The facility stands on one small self-contained ground slab and does not blend into any background."
+  },
+  "visual_composition": {
+    "occupancy": "The content illustration should occupy a compact central area with wide transparent air around it.",
+    "shape": "A squat rectangular concrete building behind a low metal security fence, composed as one compact miniature.",
+    "floating_behavior": "The scene visually floats in open space and does not connect to the card's lower skyline strip.",
+    "base": "A small irregular cold-gray courtyard slab belonging entirely to the miniature.",
+    "background": "Fully transparent; no skyline, sky, clouds, horizon, streetscape, or distant scenery."
+  },
+  "russian_grimness_rules": {
+    "principle": "Bleakness comes from the subject, utilitarian forms, and cold palette, not from realistic grime or cinematic rendering.",
+    "use": [
+      "cold concrete-gray and blue-gray palette",
+      "utilitarian post-Soviet block architecture",
+      "barred windows and a severe metal perimeter",
+      "small faded rust-brown accents",
+      "deadpan institutional bleakness"
+    ],
+    "do_not_use": [
+      "photorealism",
+      "architectural-visualization detail",
+      "gritty material texture",
+      "cinematic lighting",
+      "dense grime or realistic dirt",
+      "atmospheric realism"
+    ],
+    "guardrail": "Preserve the cute board-game miniature style and express severity through the depicted objects, simplified shapes, and palette."
+  },
+  "palette": {
+    "base": [
+      "cold concrete gray",
+      "muted blue-gray",
+      "charcoal metal",
+      "desaturated slate"
+    ],
+    "secondary": [
+      "dirty beige concrete",
+      "faded rust-brown",
+      "dull steel blue",
+      "deep muted violet accents"
+    ],
+    "warm_accents": [
+      "at most one or two dim amber window glows"
+    ],
+    "saturation": "low",
+    "overall_brightness": "somewhat dark and dull, but clean and readable against a purple card"
+  },
+  "subject_construction_rules": {
+    "general": [
+      "Reduce the subject to a compact iconic miniature.",
+      "Choose only the few details needed for recognition.",
+      "Exaggerate and simplify proportions slightly.",
+      "Keep all forms chunky and readable.",
+      "Keep generous transparent margin around the full silhouette."
+    ],
+    "building_specific": [
+      "Use one squat gray concrete box with a flat roof and a few small deeply recessed barred windows.",
+      "Face the building slightly right, showing its front and right side in a readable three-quarter view.",
+      "Represent window bars as a few thick dark strokes rather than intricate grids.",
+      "Keep roof details minimal and unclipped.",
+      "All walls, gates, doors, and surfaces are completely free of writing, plaques, emblems, and text-like marks."
+    ],
+    "environment_specific": [
+      "Wrap the front and visible side with a simplified dark metal fence topped by a few large readable loops of barbed or razor wire.",
+      "Include one plain closed metal gate with no sign or number.",
+      "Do not include guards, prisoners, vehicles, guard dogs, weapons, flags, watchtowers, signs, or surrounding city scenery."
+    ]
+  },
+  "content": {
+    "subject": "A stylized miniature post-Soviet pre-trial detention facility (SIZO).",
+    "description": "A squat severe gray concrete box with a flat roof, a few small barred windows, and a plain closed metal entrance, standing behind a dark metal perimeter fence topped with large simplified loops of barbed wire.",
+    "desired_read": "An unmistakable secure detention facility: institutional, forbidding, gray, and deadpan, yet rendered as a cute readable Machi Koro-style miniature.",
+    "recognition_details": [
+      "squat window-sparse gray concrete block",
+      "small deeply recessed windows with thick dark bars",
+      "dark metal perimeter fence with a closed gate",
+      "large simplified loops of barbed or razor wire along the fence top"
+    ],
+    "miniature_base": "A compact angular patch of cracked-looking but graphically simplified cold-gray courtyard, fully contained inside the floating illustration.",
+    "simplify": [
+      "concrete walls into broad gray planes with only a few seams and patches",
+      "security fencing into bold vertical bars and a small number of large wire loops",
+      "the facility into one iconic building and one compact perimeter rather than a complex prison campus"
+    ],
+    "omit": [
+      "all text and text-like content, including letters, numbers, facility names, warning signs, plaques, labels, logos, graffiti, license plates, and pseudo-glyphs",
+      "people, vehicles, flags, weapons, guard towers, searchlights, dogs, surrounding streets, city buildings, sky, clouds, or background scenery",
+      "photorealism, gritty texture, cinematic lighting, dense grime, and architectural-detail overload"
+    ],
+    "target_impression": "A bleak post-Soviet SIZO distilled into a compact board-game token: an imposing gray concrete box, barred windows, and a barbed-wire metal fence, readable instantly and harmonious with a purple major-establishment card."
+  },
+  "anti_patterns": [
+    "Do not generate a full card.",
+    "Do not generate sky, clouds, footer, or any fixed card furniture.",
+    "Do not create a realistic architectural rendering.",
+    "Do not create a full prison complex or cityscape background.",
+    "Do not make the scene connect visually to the bottom of the card.",
+    "Do not generate any letters, numbers, words, labels, logos, signage, plaques, graffiti, license-plate characters, or pseudo-text.",
+    "Do not clip the building, fence, gate, wire loops, base, or shadow.",
+    "Do not show the building straight-on or facing left.",
+    "Do not include people, vehicles, weapons, guards, prisoners, dogs, flags, or watchtowers."
+  ],
+  "final_prompt_summary": "Generate only a small floating miniature post-Soviet pre-trial detention facility for the central illustration of a purple Machi Koro-style establishment card. Use a genuinely transparent background with wide empty margins. Depict one squat severe gray concrete box with a flat roof, a few small deeply recessed barred windows, and a plain closed metal entrance, standing behind a dark metal perimeter fence topped by a few large simplified loops of barbed or razor wire. Put the whole facility on one compact cold-gray courtyard slab. Face the building slightly to the right so the front and right side are visible in a playful three-quarter perspective. Use chunky toy-like geometry, clean outlines, sparse details, cold concrete gray, muted blue-gray, charcoal metal, desaturated slate, tiny faded-rust accents, and simple graphic shading. The result must be an isolated cute board-game miniature, not a full prison complex, cityscape, or full card. Include no text or text-like marks anywhere: no letters, numbers, names, facility labels, signs, plaques, logos, branding, graffiti, license plates, or pseudo-writing. Include no people, guards, prisoners, vehicles, weapons, dogs, flags, watchtowers, searchlights, streets, sky, clouds, footer, frame, coin, icon, or background scene. Keep the complete building, fence, gate, wire loops, base, and shadow fully visible and unclipped."
+}
