@@ -1,0 +1,26 @@
+.venv/bin/python skills/generate-card/scripts/card_compositor.py \
+  --template backgrounds/green.png \
+  --overlay buildings/pivnoy-laryok.png \
+  --title-icon icons/shop-stall.png \
+  --shadow \
+  --output cards/pivnoy-laryok.png \
+  --x-frac 0.50 \
+  --y-frac 0.52 \
+  --scale 0.62 \
+  --flip-horizontal \
+  --coin-number 1 \
+  --activation-number 6 \
+  --title 'Пивной ларёк' \
+  --title-color '#17361A' \
+  --bottom-text $'Возьмите по 1 монете за каждый свой\nпивзавод' \
+  --bottom-text-y-frac 0.82 \
+  --bottom-text-spacing-px 6 \
+  --title-font fonts/Boingster-Regular.ttf \
+  --title-font-size-frac 0.062 \
+  --title-icon-scale 1.8 \
+  --title-icon-y-offset-px -8 \
+  --bottom-text-font fonts/CCUltimatum-Bold.ttf \
+  --bottom-text-font-size-frac 0.043 \
+  --activation-font fonts/Boingster-Regular.ttf \
+  --activation-font-size-frac 0.1 \
+  --coin-font fonts/Boingster-Regular.ttf

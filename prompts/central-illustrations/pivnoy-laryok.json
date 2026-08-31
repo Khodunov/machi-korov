@@ -1,0 +1,118 @@
+{
+  "spec_version": "1.0",
+  "title": "Floating Machi Koro-style central illustration spec",
+  "purpose": "Reusable specification for the central subject illustration that will be composited onto a blank Machi Koro-style card furniture template.",
+  "integration_context": {
+    "target_use": "Generate only the central content illustration to be pasted onto an existing blank card template.",
+    "background_requirement": "Genuinely transparent background. No sky, header, footer, card furniture, text, coin, icon, frame, or backdrop.",
+    "text_policy": "The illustration must contain absolutely no letters, numbers, words, prices, menus, labels, signs, logos, graffiti, license-plate characters, or text-like pseudo-glyphs on any surface.",
+    "card_relationship": "The art should sit like a floating miniature object or sticker inside the middle of the card, leaving generous transparent space around it.",
+    "central_positioning": "The subject should be centered, self-contained, fully visible, and surrounded by ample transparent margin."
+  },
+  "style_goal": {
+    "primary_rule": "Match the cute simplified establishment-art language of the original Machi Koro tabletop game without copying a specific illustration.",
+    "secondary_rule": "Depict a culturally recognizable 1990s beer kiosk from central Russia without making the rendering realistic.",
+    "core_formula": "Cute simplified board-game miniature plus a bleak, familiar post-Soviet roadside beer kiosk."
+  },
+  "what_machi_koro_art_looks_like": {
+    "miniature_scene_feel": "A small isolated toy-like scene, like a board-game token or floating diorama, not a full landscape.",
+    "shape_language": "Large clean shapes, simple geometry, compact clustered forms, and a crisp readable silhouette.",
+    "perspective": "Loose playful three-quarter perspective, facing slightly right and showing the front and right side.",
+    "linework": "Clear outlines or sharp separations between forms, with sparse interior detail.",
+    "shading": "Simple graphic shading using one or two darker tones, never realistic lighting.",
+    "materials": "Painted sheet metal, glass, concrete, and asphalt communicated mostly by color and silhouette, not texture.",
+    "detail_density": "Low to moderate and readable at small card size.",
+    "silhouette_priority": "The narrow old kiosk, faceted corners, glass display bays, low service hatch, and bowed sheet-metal awning must read instantly.",
+    "scene_boundary": "The kiosk rests on a small stylized pavement slab and does not blend into any background."
+  },
+  "visual_composition": {
+    "occupancy": "Compact horizontal subject intended to occupy about 30-45% of card height after compositing.",
+    "shape": "One narrow, slightly tall kiosk with clipped corners, a raised boxy roof crown, glass display bays, and a broad bowed two-panel metal awning.",
+    "floating_behavior": "The miniature floats in transparent space and never connects to the card skyline.",
+    "base": "A small irregular cracked-asphalt and concrete slab belonging entirely to the miniature.",
+    "background": "None; transparent pixels outside the miniature."
+  },
+  "russian_grimness_rules": {
+    "principle": "Russian grimness comes from the utilitarian kiosk and restrained wear, not realistic rendering.",
+    "use": [
+      "old monochrome gray painted sheet metal",
+      "chipped paint, dull oxidized panels, and restrained reddish-brown rust seams",
+      "raised boxy roof crown and low service hatch",
+      "broad bowed two-panel sheet-metal awning on thin supports",
+      "misted display glass with rows of plain amber beer bottles",
+      "deadpan everyday provincial atmosphere"
+    ],
+    "do_not_use": [
+      "photorealism",
+      "architectural-visualization detail",
+      "gritty material texture",
+      "cinematic lighting",
+      "dense grime or realistic dirt",
+      "atmospheric background scenery"
+    ],
+    "guardrail": "Preserve the cute board-game miniature rendering and express 1990s central-Russian specificity through object choice, palette, and a few iconic details."
+  },
+  "palette": {
+    "base": ["weathered medium gray", "cold blue-gray", "dirty light gray", "dull galvanized metal"],
+    "secondary": ["charcoal seams", "mossy gray-green stains", "faded rust-brown"],
+    "warm_accents": ["rows of amber beer bottles behind glass", "a dim amber glow inside the serving hatch"],
+    "saturation": "low and nearly monochrome except for the amber beer",
+    "overall_brightness": "old, subdued, and shabby but still cute and readable"
+  },
+  "subject_construction_rules": {
+    "general": [
+      "Reduce the kiosk to a compact iconic miniature.",
+      "Choose only the few details needed for recognition.",
+      "Keep objects chunky and readable.",
+      "Show the kiosk facing slightly right, with its front and right side visible."
+    ],
+    "building_specific": [
+      "Use the supplied photo as the architectural and weathering reference: a narrow old gray prefab kiosk with clipped corners, framed display windows, and a raised boxy roof crown.",
+      "Place a small low serving hatch beneath a broad bowed two-panel sheet-metal awning supported by thin diagonal rods.",
+      "Fill the front and right-side display bays with simplified rows of identical plain amber and brown beer bottles and a few aluminum beer cans, all completely unlabeled.",
+      "Show age through broad chipped-paint patches, oxidized edges, dull gray streaks, mossy lower stains, and a few restrained rust seams rather than realistic texture noise.",
+      "Keep every fascia, wall panel, shutter, window, hatch, bottle, crate, and surface completely free of lettering, numbers, logos, labels, and pseudo-writing.",
+      "Avoid blank signboards, menu boards, price boards, posters, banners, and product displays."
+    ],
+    "environment_specific": [
+      "Use a tiny self-contained cracked-asphalt and concrete base.",
+      "Keep the beer inside the glass display bays; optionally place one small plain metal keg beside the kiosk, with no loose crate or bin.",
+      "Do not include people, vehicles, streets, trees, apartment blocks, or surrounding buildings."
+    ]
+  },
+  "content": {
+    "subject": "A classic 1990s beer kiosk from a small town in central Russia.",
+    "description": "A narrow, slightly tall gray prefab kiosk matching the supplied photo: clipped corners, framed display windows, a raised boxy roof crown, a broad bowed two-panel metal awning, a small low serving hatch, heavily weathered dull gray sheet metal, restrained rust seams, mossy lower stains, and rows of plain unlabeled amber beer bottles behind the glass.",
+    "desired_read": "An instantly recognizable provincial Russian beer stall from the 1990s, rendered as a cute floating Machi Koro-style miniature.",
+    "recognition_details": [
+      "narrow faceted kiosk silhouette with a raised boxy roof crown",
+      "small low serving hatch beneath a broad bowed two-panel sheet-metal awning",
+      "framed glass display bays wrapping the front and right side",
+      "old dull-gray cladding with chipped paint, oxidized edges, mossy stains, and restrained rust seams",
+      "rows of plain unlabeled amber beer bottles visible behind the glass"
+    ],
+    "miniature_base": "A compact irregular patch of cracked charcoal asphalt and chipped concrete with one sparse grass tuft, fully isolated on transparency.",
+    "simplify": [
+      "the kiosk into a few chunky gray metal-frame and glass masses",
+      "wear, oxidation, moss, and rust into a handful of flat graphic patches rather than realistic texture",
+      "the beer display into orderly rows of simple repeated amber bottle silhouettes"
+    ],
+    "omit": [
+      "all letters, numbers, words, prices, menus, labels, signage, logos, graffiti, bottle labels, posters, and pseudo-writing",
+      "all signboards and menu boards, including blank ones",
+      "people, cars, streets, trees, surrounding buildings, fruit and vegetable displays, product advertising, and branded packaging",
+      "realistic textures, dramatic lighting, full scenery, and full-card composition"
+    ],
+    "target_impression": "The same whimsical illustrator who drew classic Machi Koro establishments has turned the supplied shabby gray park kiosk into a deadpan 1990s Russian beer stall."
+  },
+  "anti_patterns": [
+    "Do not generate a full card.",
+    "Do not generate any background, sky, clouds, header, footer, frame, coin, or category icon.",
+    "Do not create a realistic painting or architectural rendering.",
+    "Do not create a full streetscape or connect the scene to the bottom of the card.",
+    "Do not generate any letters, numbers, words, prices, menus, labels, signage, logos, graffiti, bottle labels, license-plate characters, or pseudo-text anywhere.",
+    "Do not include even a blank signboard or menu board.",
+    "Do not clip any part of the kiosk, awning, props, or miniature base."
+  ],
+  "final_prompt_summary": "Edit the existing card illustration using the supplied kiosk photo as the reference for architecture, age, and weathering. Preserve the cute flat Machi Koro-style miniature language, compact right-facing three-quarter composition, clean outlines, simple graphic shading, isolated pavement base, full visibility, and transparent background. Transform the building into a narrow, slightly tall, old gray prefab kiosk with clipped corners, framed glass display bays wrapping the front and right side, a raised boxy roof crown, a broad bowed two-panel sheet-metal awning on thin supports, and a small low serving hatch. Make it noticeably shabby, old, gray, and rusty: dull weathered gray metal, broad chipped-paint patches, oxidized edges, mossy lower stains, and restrained reddish-brown rust seams, all stylized rather than photorealistic. Replace the former crate/bin emphasis with rows of simple identical plain amber and brown beer bottles and a few aluminum beer cans behind the glass, plus at most one small plain metal keg. Absolutely no letters, numbers, words, prices, menus, labels, signs, logos, graffiti, bottle labels, pseudo-glyphs, posters, banners, or signboards. Do not copy any text or produce from the reference photo. No people, vehicles, streets, trees, surrounding buildings, opaque backdrop, realistic texture noise, dramatic lighting, or clipped content."
+}
