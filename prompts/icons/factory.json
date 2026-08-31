@@ -1,0 +1,49 @@
+{
+  "spec_version": "1.1",
+  "title": "Machi Koro-style round factory category icon spec",
+  "purpose": "A new blue factory-category badge placed immediately before the Pivzavod card title.",
+  "integration_context": {
+    "target_use": "Generate only the icon asset for card compositing.",
+    "canvas": "square",
+    "background": "genuinely transparent",
+    "output_preference": "PNG with alpha transparency",
+    "composition": "one centered circular badge filling most of the square canvas"
+  },
+  "parameters": {
+    "icon_color": {"type": "hex color string", "default": "#0D3F78", "description": "Dark blue matching the blue card footer."},
+    "subject": {"type": "string", "default": "factory silhouette with three smokestacks and smoke", "description": "A bold white industrial factory pictogram."}
+  },
+  "badge_geometry": {
+    "circle": "perfect centered circle",
+    "circle_diameter": "approximately 82-88% of canvas width",
+    "outer_margin": "genuinely transparent margin around the circle",
+    "border": "none"
+  },
+  "pictogram": {
+    "color": "#FFFFFF",
+    "subject": "factory silhouette with exactly three smokestacks and three simple smoke puffs",
+    "description": "A centered solid white silhouette: low blocky factory roofline, exactly three vertical smokestacks of slightly varied height, and one chunky rounded smoke puff above each stack. Front-facing and instantly readable.",
+    "size": "approximately 50-58% of the circle diameter",
+    "position": "precisely centered inside the circle",
+    "shape_language": "very simple, chunky, geometric, slightly rounded",
+    "detail_level": "very low",
+    "line_rule": "Solid white silhouette or a few thick connected white shapes; no thin line art."
+  },
+  "visual_style": {
+    "core": "Flat two-color Machi Koro category badge.",
+    "colors": "#0D3F78 circle plus pure white pictogram",
+    "shading": "none",
+    "gradient": "none",
+    "texture": "none",
+    "shadow": "none",
+    "rendering": "clean vector-style UI icon",
+    "small_size_priority": "instantly recognizable beside a card title"
+  },
+  "anti_patterns": ["do not omit the dark-blue circle", "do not add an outer ring", "do not use realistic rendering", "do not use gradients or shadows", "do not add text, letters, numbers, logos, or scenery", "do not use thin strokes", "do not use more or fewer than three smokestacks"],
+  "current_icon": {
+    "icon_color": "#0D3F78",
+    "subject": "front-facing factory silhouette with exactly three smoking smokestacks",
+    "expected_result": "A dark-blue solid circle with a bold white three-stack factory pictogram on a genuinely transparent canvas."
+  },
+  "final_prompt_summary": "Generate only a small Machi Koro-style category badge on a genuinely transparent square canvas. Make one perfect solid circle in #0D3F78 filling about 85% of the canvas. Center a bold pure-white silhouette of a low factory with exactly three vertical smokestacks and one simple rounded smoke puff above each stack. The pictogram fills about 54% of the circle. Flat two-color vector-style artwork only: no border, text, letters, numbers, logo, shading, gradient, texture, shadow, 3D effect, scenery, or background."
+}

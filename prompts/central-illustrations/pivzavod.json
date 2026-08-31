@@ -1,0 +1,76 @@
+{
+  "spec_version": "1.0",
+  "title": "Floating Machi Koro-style central illustration spec — Pivzavod",
+  "purpose": "Generate only a compact central factory illustration for compositing onto the blank blue card template.",
+  "integration_context": {
+    "target_use": "Central content illustration for a blue Machi Koro-style establishment card.",
+    "background_requirement": "Genuinely transparent background. No sky, header, footer, card furniture, text, coin, icon, frame, scenery, or backdrop.",
+    "text_policy": "Absolute no-text rule: no letters, numbers, names, labels, signs, graffiti, pseudo-writing, or brand marks. The bottle may carry only the explicitly requested original emblem of three plain horizontal waves, with no lettering.",
+    "card_relationship": "A floating miniature object or sticker in the middle of the card, with generous transparent space around it.",
+    "central_positioning": "Centered, fully self-contained, unclipped, and suitable for placement in the open central sky region."
+  },
+  "style_goal": {
+    "primary_rule": "Match the illustration language of original Machi Koro establishment art.",
+    "secondary_rule": "Depict a recognizable post-Soviet industrial brewery without increasing realism.",
+    "core_formula": "Cute simplified tabletop-game miniature plus a bleak utilitarian multi-story brewery."
+  },
+  "what_machi_koro_art_looks_like": {
+    "miniature_scene_feel": "A small isolated toy-like board-game token or floating diorama, never a full landscape.",
+    "shape_language": "Large clean shapes, compact clustered forms, and slightly exaggerated proportions.",
+    "perspective": "Loose playful three-quarter view facing slightly right, showing the front and right side.",
+    "linework": "Clear outlines or sharp separations with sparse interior lines.",
+    "shading": "Simple graphic shading with one or two darker tones; no realistic lighting model.",
+    "materials": "Communicate concrete, painted metal, glass, and stainless steel through color and silhouette rather than texture.",
+    "detail_density": "Low to moderate, readable at card size.",
+    "silhouette_priority": "The factory, three smokestacks, tanks, and rooftop bottle must read instantly.",
+    "scene_boundary": "Self-contained on a small stylized industrial ground slab."
+  },
+  "visual_composition": {
+    "occupancy": "Compact subject with wide transparent margins; designed to occupy about 30–45% of card height after compositing.",
+    "shape": "Broad multi-story factory mass with a vertical rooftop bottle accent; keep the whole cluster compact.",
+    "floating_behavior": "Float in open space and do not connect to the card footer.",
+    "base": "A small irregular concrete platform integral to the miniature.",
+    "background": "None; only transparent pixels outside the miniature."
+  },
+  "russian_grimness_rules": {
+    "principle": "Post-Soviet character comes from utilitarian forms and muted colors, not realism or grime.",
+    "use": ["cold blue-gray concrete", "desaturated navy metalwork", "dull teal panels", "faded rust accents", "a few warm amber windows"],
+    "do_not_use": ["photorealism", "architectural visualization", "gritty texture", "cinematic lighting", "dense grime", "atmospheric background"]
+  },
+  "palette": {
+    "base": ["muted blue-gray", "cold concrete gray", "desaturated navy", "powder blue", "slate blue"],
+    "secondary": ["dull teal", "faded rust-brown", "dirty beige", "silvery stainless steel"],
+    "warm_accents": ["a few amber-yellow windows", "golden-brown beer inside the giant bottle"],
+    "saturation": "low to moderate",
+    "overall_brightness": "clean and readable against the blue card, somewhat duller than standard Machi Koro art"
+  },
+  "subject_construction_rules": {
+    "general": ["Reduce the subject to a compact iconic miniature.", "Choose only recognition-critical details.", "Keep all forms chunky and readable."],
+    "building_specific": ["Use a broad three-to-four-story utilitarian factory block.", "Simplify windows into rectangles and wall divisions into a few major lines.", "Group the tanks and pipes into clean readable masses.", "Make all facade surfaces blank and geometric."],
+    "environment_specific": ["Use only a tiny concrete base.", "No people, vehicles, trees, surrounding city, or distant structures."]
+  },
+  "content": {
+    "subject": "A multi-story post-Soviet brewery factory.",
+    "description": "A broad three-to-four-story factory in front-right three-quarter view, with large gleaming cylindrical stainless-steel liquid tanks beside and partly in front of it, three chunky rooftop smokestacks emitting three small soft puffs of smoke, and an oversized upright amber beer bottle mounted on the roof as a humorous symbol.",
+    "desired_read": "An instantly recognizable toy-like industrial brewery miniature.",
+    "recognition_details": [
+      "exactly three smokestacks with simple smoke puffs",
+      "several oversized shiny cylindrical liquid tanks with domed tops",
+      "one huge upright amber beer bottle on the roof bearing only an original emblem of three thick parallel horizontal waves"
+    ],
+    "miniature_base": "A compact irregular concrete industrial slab with only a few simplified connecting pipes.",
+    "simplify": ["pipes as a few thick curves", "tank highlights as broad clean shapes", "windows as repeated simple rectangles", "smoke as three soft graphic puffs"],
+    "omit": ["letters or labels on the bottle", "brand names", "signboards", "thin pipe networks", "people", "vehicles", "full industrial landscape", "heavy pollution"],
+    "target_impression": "The original Machi Koro illustrator humorously drawing a gloomy Russian brewery while preserving cute miniature proportions and clean graphic rendering."
+  },
+  "anti_patterns": [
+    "Do not generate a full card or any card furniture.",
+    "Do not generate a sky, horizon, floor, or opaque background.",
+    "Do not create a realistic painting or full cityscape.",
+    "Do not clip the factory, bottle, smokestacks, smoke, tanks, or base.",
+    "Do not include any text-like marks; the only bottle decoration is three plain horizontal waves without letters.",
+    "Do not imitate or reproduce an existing commercial brand logo.",
+    "Do not use heavy textures, gritty realism, or dense mechanical detail."
+  ],
+  "final_prompt_summary": "Generate only a transparent-background central illustration for a Machi Koro-style blue establishment card: a compact floating miniature of a broad multi-story post-Soviet brewery, facing slightly right in front-right three-quarter view. Include several big gleaming cylindrical stainless-steel liquid tanks, exactly three chunky smokestacks with small graphic smoke puffs, and one huge upright amber beer bottle mounted on the roof. The bottle carries only an original geometric emblem made from three thick parallel horizontal waves, with absolutely no lettering or pseudo-text. Use chunky simplified shapes, clean outlines, sparse detail, simple graphic shading, and a cold muted blue-gray industrial palette with restrained warm accents. Place the whole factory on a tiny concrete slab. Keep all edges fully visible with generous transparent margin. No card frame, sky, scenery, people, vehicles, signs, labels, words, numbers, brand names, watermark, or opaque background."
+}
