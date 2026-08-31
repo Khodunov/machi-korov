@@ -10,7 +10,7 @@
   --flip-horizontal \
   --coin-number 2 \
   --activation-number '9-10' \
-  --title 'Стриптиз клуб' \
+  --title 'Стриптиз-клуб' \
   --title-color '#58100E' \
   --bottom-text $'Возьмите 3 монеты у игрока,\nбросившего кубики.' \
   --bottom-text-y-frac 0.82 \
