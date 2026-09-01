@@ -7,8 +7,8 @@ python skills/generate-card/scripts/card_compositor.py \
   --x-frac 0.47 \
   --y-frac 0.51 \
   --scale 0.68 \
-  --coin-number 1 \
-  --activation-number 7 \
+  --coin-number 2 \
+  --activation-number 3 \
   --title 'Шавуха' \
   --title-color '#58100E' \
   --bottom-text $'Возьмите 1 монету у голодного игрока,\nбросившего кубики\nВ ход другого игрока.' \

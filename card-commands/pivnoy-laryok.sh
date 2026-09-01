@@ -9,10 +9,10 @@
   --scale 0.62 \
   --flip-horizontal \
   --coin-number 1 \
-  --activation-number 6 \
+  --activation-number '2-3' \
   --title 'Пивной ларёк' \
   --title-color '#17361A' \
-  --bottom-text $'Возьмите по 1 монете за каждый свой\nпивзавод' \
+  --bottom-text $'Возьмите 1 монету из банка.\nВ свой ход.' \
   --bottom-text-y-frac 0.82 \
   --bottom-text-spacing-px 6 \
   --title-font fonts/Boingster-Regular.ttf \

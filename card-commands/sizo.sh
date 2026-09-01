@@ -8,11 +8,11 @@ python skills/generate-card/scripts/card_compositor.py \
   --y-frac 0.51 \
   --scale 0.60 \
   --flip-horizontal \
-  --coin-number 8 \
+  --coin-number 7 \
   --activation-number 6 \
   --title 'СИЗО' \
   --title-color '#3E1F59' \
-  --bottom-text $'Заберите любой бизнес у игрока\n на свой выбор.\nВ свой ход.' \
+  --bottom-text $'Возьмите 5 монет у игрока\n на свой выбор.\nВ свой ход.' \
   --bottom-text-y-frac 0.83 \
   --bottom-text-spacing-px 5 \
   --title-font fonts/Boingster-Regular.ttf \
