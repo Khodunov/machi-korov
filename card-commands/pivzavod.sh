@@ -11,7 +11,7 @@
   --activation-number 4 \
   --title 'Пивзавод' \
   --title-color '#123E70' \
-  --bottom-text $'Возьмите 1 монету из банка.\nВ свой ход.' \
+  --bottom-text $'Возьмите 1 монету из банка.\nВ ход любого игрока' \
   --bottom-text-y-frac 0.82 \
   --bottom-text-spacing-px 6 \
   --title-font fonts/Boingster-Regular.ttf \
