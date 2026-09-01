@@ -1,0 +1,146 @@
+{
+  "spec_version": "1.0",
+  "title": "Floating Machi Koro-style central illustration spec",
+  "purpose": "Reusable specification for the central subject illustration that will be composited onto a blank Machi Koro-style card furniture template. The generated art should reproduce the iconic 'floating miniature scene' look of Machi Koro while adapting the depicted subject matter to grim, recognizable Russian/post-Soviet everyday reality.",
+  "integration_context": {
+    "target_use": "Generate only the central content illustration to be pasted onto an existing blank card template.",
+    "background_requirement": "Generate an isolated cutout asset with native alpha transparency. Outside the requested subject and its integral miniature base, every pixel must have zero alpha. Output an RGBA PNG with clean antialiased alpha edges and preserve soft translucent alpha for smoke or similar effects. Do not depict any environment, scenery, surface, backdrop, sky, header, footer, card furniture, text, coin, icon, or frame.",
+    "text_policy": "The illustration must contain no incidental text. Do not draw unrequested letters, numbers, words, prices, menus, labels, signage, graffiti, license-plate characters, or text-like pseudo-glyphs on any building, prop, vehicle, or surface. An explicitly requested brand logo is allowed, including the lettering contained within that logo; render only that requested logo and no additional text.",
+    "card_relationship": "The art should sit like a floating miniature object or sticker inside the middle of the card, leaving generous empty sky around it.",
+    "central_positioning": "The subject should be centered and self-contained, with enough margin around it so it can be placed in the open central sky region of the card."
+  },
+  "style_goal": {
+    "primary_rule": "Match the illustration language of the original Machi Koro establishment art.",
+    "secondary_rule": "Depict Russian/post-Soviet subjects and atmosphere without making the rendering more realistic.",
+    "core_formula": "Cute, simplified tabletop-game miniature scene + bleak, recognizable Russian everyday subject matter."
+  },
+  "what_machi_koro_art_looks_like": {
+    "miniature_scene_feel": "The subject is not a full landscape or realistic environment. It is a small isolated toy-like scene, almost like a board-game token, sticker, or floating diorama.",
+    "shape_language": "Large clean shapes, simple geometry, and compact clustered forms. Each object is simplified into a few readable masses.",
+    "perspective": "Loose playful three-quarter perspective. Enough depth to feel dimensional, but not strict architectural or camera-accurate perspective.",
+    "linework": "Clear outlines or sharp separations between forms. Interior detail lines should be sparse.",
+    "shading": "Simple graphic shading using one or two darker tones. No realistic lighting model.",
+    "materials": "Concrete, wood, leaves, roofs, metal, dirt, and glass should be communicated mostly by color and silhouette, not by texture or realistic rendering.",
+    "detail_density": "Low to moderate. Every important feature should remain readable at small card size.",
+    "silhouette_priority": "The outer silhouette of the subject must read instantly and be visually iconic.",
+    "scene_boundary": "The subject should feel self-contained, often resting on a small stylized ground base or compact support shape rather than blending into a large background."
+  },
+  "visual_composition": {
+    "occupancy": "The content illustration should usually occupy roughly the middle 30-45% of the card height when composited, with wide air around it.",
+    "shape": "Prefer compact clustered compositions rather than tall full-frame scenes.",
+    "floating_behavior": "The scene should visually float in open space, not connect to the bottom skyline strip of the card.",
+    "base": "When appropriate, place the subject on a small stylized ground slab, courtyard patch, platform, or tiny environmental base that belongs to the object itself.",
+    "background": "No background representation. All pixels outside the self-contained miniature and its integral elements must be transparent."
+  },
+  "russian_grimness_rules": {
+    "principle": "Russian grimness must come from the things being depicted, not from realistic rendering technique.",
+    "use": [
+      "cold blue-gray and concrete-gray palette",
+      "utilitarian post-Soviet forms",
+      "worn but simplified everyday structures",
+      "mismatched repairs or colors",
+      "bare trees or sparse vegetation when relevant",
+      "isolated warm-lit windows when appropriate",
+      "deadpan humor and familiar urban bleakness"
+    ],
+    "do_not_use": [
+      "photorealism",
+      "architectural-visualization detail",
+      "gritty material texture",
+      "cinematic lighting",
+      "dense grime or realistic dirt",
+      "atmospheric realism"
+    ],
+    "guardrail": "If there is a choice between making the subject more Russian or more Machi Koro-like, preserve Machi Koro rendering first and express Russianness through object choice, colors, and a few culturally diagnostic details."
+  },
+  "palette": {
+    "base": [
+      "muted blue-gray",
+      "cold concrete gray",
+      "desaturated navy",
+      "powder blue",
+      "slate blue"
+    ],
+    "secondary": [
+      "muted olive",
+      "dull teal",
+      "faded rust-brown",
+      "dirty beige"
+    ],
+    "warm_accents": [
+      "a few amber-yellow lit windows",
+      "small warm details only where helpful"
+    ],
+    "saturation": "low to moderate",
+    "overall_brightness": "somewhat darker and duller than standard Machi Koro art, but still clean and readable"
+  },
+  "allowed_subject_types": {
+    "examples": [
+      "panel apartment blocks",
+      "kiosks",
+      "garages",
+      "playgrounds",
+      "tram stops",
+      "bus shelters",
+      "corner shops",
+      "courtyard utilities",
+      "small Soviet-era service buildings",
+      "other Russian/post-Soviet everyday urban or peri-urban archetypes"
+    ],
+    "selection_rule": "Choose subjects that are instantly recognizable and culturally specific, but still simple enough to become iconic miniatures."
+  },
+  "subject_construction_rules": {
+    "general": [
+      "Reduce the subject to a compact iconic miniature.",
+      "Choose only the few details needed for recognition.",
+      "Exaggerate or simplify proportions slightly when useful.",
+      "Keep objects chunky and readable.",
+      "Use a compact number of forms."
+    ],
+    "building_specific": [
+      "A building should read as a toy-like block, not as a carefully rendered facade.",
+      "Windows should be simplified rectangles, not detailed constructions.",
+      "Balconies should be simplified into blocky protrusions or colored panels.",
+      "Roof details should be few and clear.",
+      "Panel seams or other repetitive structure should be present only in a small number of major lines.",
+      "All signs, fascia panels, menu boards, plaques, posters, and storefront surfaces must be blank or purely geometric unless the content section explicitly requests a brand logo. A requested logo may include its authentic embedded lettering, but no other writing or text-like marks are allowed."
+    ],
+    "environment_specific": [
+      "Trees should be graphic silhouettes or simplified masses.",
+      "Ground should be a small stylized patch rather than a full realistic courtyard.",
+      "Props should be few and iconic."
+    ]
+  },
+  "content": {
+    "subject": "A small iconic Russian Пятёрочка neighborhood supermarket.",
+    "description": "A low boxy neighborhood grocery with dark-green and white facade panels, restrained red trim, broad simplified blue-gray windows, centered automatic glass entrance doors, a shallow canopy, two or three chunky bollards, one plain bin, and a single official-style wordless Пятёрочка brand symbol on the front fascia: a clean red numeral 5 with its small green leaf/clover accent, without a wordmark. The storefront faces slightly right: show the front and the building's left side, with depth receding toward the left.",
+    "desired_read": "A familiar Пятёрочка grocery store rendered as a cute floating Machi Koro-style miniature, oriented like the original Сетевой магазин card.",
+    "recognition_details": [
+      "dark-green and white storefront with restrained red trim",
+      "one red 5 symbol with a small green leaf/clover accent and no wordmark or other writing",
+      "front and building's left side visible, with depth receding left so the storefront faces slightly right",
+      "wide simplified windows, automatic glass entrance doors, and a shallow canopy"
+    ],
+    "miniature_base": "A compact rounded patch of worn asphalt with a short concrete curb, fully isolated on transparency.",
+    "simplify": [
+      "facade into a few chunky green, white, gray, controlled-red, and glass-blue masses",
+      "glazing into only a handful of broad rectangles and wear into one or two restrained color patches"
+    ],
+    "omit": [
+      "all words, letters, numbers, prices, labels, signs, posters, graffiti, license plates, and pseudo-writing except the requested single wordless red 5 brand symbol",
+      "people, cars, shopping carts, product packaging, advertisements, surrounding scenery, Перекрёсток branding, and Магнит branding"
+    ],
+    "target_impression": "The same whimsical illustrator who drew classic Machi Koro establishments has drawn a deadpan but recognizable Пятёрочка supermarket facing slightly right."
+  },
+  "anti_patterns": [
+    "Do not generate a full card.",
+    "Do not generate sky, clouds, footer, or any fixed furniture.",
+    "Do not create a realistic painting of a building.",
+    "Do not create a full cityscape background.",
+    "Do not make the scene connect visually to the bottom of the card.",
+    "Do not generate incidental letters, numbers, words, menus, prices, labels, graffiti, license-plate characters, or pseudo-text anywhere in the illustration. An explicitly requested brand logo, including its embedded lettering, is the only exception.",
+    "Do not turn the subject into generic clip-art with no Russian specificity.",
+    "Do not use heavy textures or gritty realism."
+  ],
+  "final_prompt_summary": "Generate only the central subject illustration defined in the content section for a Machi Koro-style establishment card. The result should be a small floating miniature scene with no card furniture. Create an isolated cutout with native alpha transparency: outside the subject and its integral miniature base, every pixel has zero alpha. Output an RGBA PNG with clean antialiased alpha edges and soft translucent alpha for smoke or similar effects. Do not depict any environment, scenery, surface, backdrop, or background representation. Do not include incidental text or text-like marks: no unrequested letters, numbers, words, prices, menus, labels, signage, graffiti, license-plate characters, or pseudo-glyphs on any surface. If the content section explicitly requests a brand logo, render that logo—including its authentic embedded lettering—and no other text. Replace all other signage with blank color panels or simple geometric decoration. Match the original Machi Koro illustration language: compact self-contained composition, loose playful perspective, chunky simplified shapes, low detail density, clean outlines, and simple graphic shading. Render the supplied Russian/post-Soviet everyday subject in a colder, grimmer palette without increasing realism. Preserve the cute board-game miniature style while letting the chosen object and its recognition details carry the post-Soviet bleakness."
+}
