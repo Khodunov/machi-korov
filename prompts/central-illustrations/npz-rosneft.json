@@ -1,0 +1,75 @@
+{
+  "spec_version": "1.0",
+  "title": "Floating Machi Koro-style central illustration spec — NPZ Rosneft variant",
+  "purpose": "Generate a separate Rosneft-branded oil-refinery illustration for the blue NPZ card variant.",
+  "integration_context": {
+    "target_use": "Central content illustration for a separate blue Machi Koro-style NPZ establishment card variant.",
+    "background_requirement": "Generate an isolated cutout with native alpha transparency. Outside the refinery, base, smoke, flag, and pole, every pixel must have zero alpha. Output an RGBA PNG with clean antialiased alpha edges and soft translucent smoke.",
+    "text_policy": "No incidental text anywhere. The only permitted brand element is the explicitly requested Rosneft-style geometric oil-derrick symbol on one flag; it contains no wordmark or letters. No letters, numbers, labels, signs, graffiti, pseudo-writing, hazard placards, or other brand marks.",
+    "card_relationship": "A floating miniature object or sticker in the middle of the card, with generous transparent space around it.",
+    "central_positioning": "Centered, fully self-contained, unclipped, and suitable for placement in the open central sky region."
+  },
+  "style_goal": {
+    "primary_rule": "Match the illustration language of original Machi Koro establishment art.",
+    "secondary_rule": "Depict a recognizable large classic post-Soviet oil refinery without increasing realism.",
+    "core_formula": "Cute simplified tabletop-game miniature plus a massive utilitarian refinery dense with readable pipes."
+  },
+  "what_machi_koro_art_looks_like": {
+    "miniature_scene_feel": "A small isolated toy-like board-game token or floating diorama, never a full landscape.",
+    "shape_language": "Large clean shapes, compact clustered forms, and slightly exaggerated proportions.",
+    "perspective": "Loose playful front-right three-quarter view, facing slightly right and showing the front and right side.",
+    "linework": "Clear dark outlines or sharp separations with sparse interior lines.",
+    "shading": "Simple graphic shading with one or two darker tones; no realistic lighting model.",
+    "materials": "Communicate steel, concrete, painted pipes, and storage tanks through color and silhouette rather than texture.",
+    "detail_density": "Moderate: many pipes are visible but organized into a few bold readable bundles at card size.",
+    "silhouette_priority": "Tall distillation columns, pipe racks, storage tanks, smokestacks, and the branded flag must read instantly.",
+    "scene_boundary": "Self-contained on a small stylized industrial ground slab."
+  },
+  "visual_composition": {
+    "occupancy": "Compact broad subject with generous transparent margins, designed for the middle of the card.",
+    "shape": "A broad refinery anchored by several tall processing towers, surrounded by lower tanks and thick pipe bundles.",
+    "floating_behavior": "Float in open space and do not connect to the card footer.",
+    "base": "A small irregular concrete industrial platform integral to the miniature.",
+    "background": "No background representation; native transparency outside the miniature."
+  },
+  "palette": {
+    "base": ["muted blue-gray", "cold concrete gray", "desaturated navy", "powder blue", "slate blue"],
+    "secondary": ["dull teal", "faded rust-orange", "dirty beige", "silvery steel"],
+    "brand_accents": ["saturated corporate yellow-gold", "near-black"],
+    "saturation": "low to moderate except the crisp brand colors",
+    "overall_brightness": "clean and readable against the blue card"
+  },
+  "content": {
+    "subject": "A classic large post-Soviet oil refinery complex with a Rosneft-branded flag.",
+    "description": "A broad imposing oil refinery in front-right three-quarter view, with tall distillation columns, processing buildings, round storage tanks, two smokestacks, elevated pipe racks, and many thick looping pipes. A large pale flag flies from a short pole above a medium-height slim tower immediately to the right of the tallest central column, remaining clearly below the tallest tower.",
+    "desired_read": "An instantly recognizable large oil refinery and a clearly readable Rosneft-style black-and-gold derrick symbol.",
+    "recognition_details": [
+      "several tall cylindrical distillation and fractionation towers with sparse simplified platforms",
+      "many prominent thick pipes grouped into clean readable bundles, bends, arches, and elevated racks",
+      "large round storage tanks and low rectangular processing units",
+      "one large pale warm-gray flag carrying only a centered Rosneft-style geometric oil-derrick symbol: exactly seven separate near-black vertical upper segments of varied heights, centered over exactly three stacked golden-yellow lower segments; the black segments rise from the gold base to form a disciplined upward-pointing tower or torch silhouette"
+    ],
+    "miniature_base": "A compact irregular concrete industrial slab supporting the whole refinery cluster.",
+    "simplify": ["pipe networks into bold clean curves", "platforms and ladders into sparse geometric accents", "logo into ten crisp countable segments", "smoke into two small soft graphic puffs"],
+    "omit": ["the word Rosneft or any wordmark", "all letters and numbers", "extra logo pieces", "other signs", "thin chaotic pipe filigree", "people", "vehicles", "full landscape", "fire", "heavy pollution"],
+    "target_impression": "The original Machi Koro illustrator humorously drawing a huge Russian oil refinery while preserving cute miniature proportions and a crisp authentic black-and-gold brand emblem."
+  },
+  "logo_construction": {
+    "placement": "Centered on a large pale warm-gray flag mounted above the medium-height tower immediately right of center; the complete flag remains lower than the tallest tower.",
+    "upper": "Exactly seven separate near-black vertical segments, arranged symmetrically in varied heights to suggest the narrowing upper structure of an oil derrick or flame.",
+    "lower": "Exactly three stacked golden-yellow horizontal base segments beneath and visually feeding into the seven black upper segments.",
+    "relationship": "The ten pieces form one compact upright geometric mark. The three gold lower tiers transition upward into the seven black vertical bars.",
+    "wordmark": "None. Do not add РОСНЕФТЬ, ROSNEFT, initials, or any other letters.",
+    "readability": "The symbol fills most of the flag and remains countable and recognizable after card-size reduction."
+  },
+  "anti_patterns": [
+    "Do not generate a full card or card furniture.",
+    "Do not depict any environment, scenery, surface, backdrop, or background representation.",
+    "Do not clip the flag, pole, towers, smoke, tanks, pipes, or base.",
+    "Do not place the flag on the tallest tower.",
+    "Do not turn the logo into random stripes, text, a generic crown, or a generic barcode.",
+    "Do not include any writing or additional logos.",
+    "Do not use photorealism, gritty textures, or illegible mechanical clutter."
+  ],
+  "final_prompt_summary": "Generate only an isolated central illustration for a separate Machi Koro-style blue NPZ card variant: a compact floating miniature of a large classic post-Soviet oil refinery in front-right three-quarter view. Include several tall cylindrical distillation columns, two smokestacks with small graphic smoke puffs, big round storage tanks, low processing units, elevated pipe racks, and many thick readable interconnecting pipes. Add one large pale warm-gray industrial flag on a short pole above the medium-height slim tower immediately to the right of the tallest central tower; the entire flag must remain visibly lower than the tallest tower. Center on the flag only a crisp Rosneft-style geometric oil-derrick symbol with exactly seven separate near-black vertical upper segments of varied heights and exactly three stacked golden-yellow lower base segments. The three gold tiers transition upward into the seven black bars, forming one compact upright tower or torch silhouette. No wordmark or letters. Make the symbol fill most of the flag and remain readable at card size. Use chunky toy-like shapes, clean dark outlines, simple graphic shading, and a cold muted industrial palette. Keep every edge fully visible with generous empty margin. Isolated cutout asset with native alpha transparency; outside the refinery, base, smoke, pole, and flag, every pixel has zero alpha. Output RGBA with soft smoke alpha and clean antialiased edges. No environment, scenery, surface, backdrop, background representation, people, vehicles, fire, other text, numbers, labels, logos, graffiti, watermark, or pseudo-writing."
+}
