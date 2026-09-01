@@ -1,0 +1,64 @@
+{
+  "spec_version": "1.0",
+  "title": "Floating Machi Koro-style central illustration spec — Novostroyka",
+  "purpose": "Central cutout artwork for a blue Machi Koro-style card, depicting a culturally recognizable Saint Petersburg mass-housing new build.",
+  "integration_context": {
+    "target_use": "Generate only the central illustration to composite onto the existing blank blue card template.",
+    "background_requirement": "A perfectly flat solid #00ff00 chroma-key background for later removal. The background must be one uniform color with no shadows, gradients, texture, reflections, floor plane, or lighting variation. Do not use #00ff00 in the subject.",
+    "card_relationship": "A compact floating miniature with generous padding, no card furniture, coin, icon, frame, header, footer, or skyline.",
+    "text_policy": "Absolute no-text rule: no letters, numbers, names, logos, signs, plaques, graffiti, license plates, labels, or pseudo-writing anywhere."
+  },
+  "style_goal": {
+    "primary_rule": "Match original Machi Koro establishment art: cute tabletop-game miniature, chunky simplified geometry, clean outlines, sparse details, and one or two flat shading tones.",
+    "secondary_rule": "Express Russian urban bleakness through the architecture and palette, never through photorealism or gritty texture.",
+    "core_formula": "Cute floating board-game miniature plus the instantly recognizable new residential high-rises of Saint Petersburg's Parnas district."
+  },
+  "visual_composition": {
+    "perspective": "Building faces slightly to the right in a readable three-quarter view, showing its front and right side.",
+    "shape": "One compact tall residential slab, slightly shortened and widened for a readable card silhouette.",
+    "occupancy": "Subject centered with generous empty chroma-key margin on every side; nothing clipped.",
+    "base": "A tiny integral paved courtyard slab with only two or three simplified shrubs and one small modern playground shape.",
+    "floating_behavior": "No surrounding cityscape or environment; the miniature and base are fully self-contained."
+  },
+  "palette": {
+    "base": ["cold light gray concrete", "off-white facade panels", "muted steel blue", "desaturated navy"],
+    "secondary": ["dusty beige", "dull teal", "muted olive"],
+    "warm_accents": ["a few amber-lit windows", "small restrained orange facade panels"],
+    "saturation": "low to moderate, harmonious with a blue card"
+  },
+  "content": {
+    "subject": "A classic 2010s mass-market Saint Petersburg novostroyka apartment tower inspired by the dense high-rise housing of Parnas.",
+    "description": "A toy-like 18-to-25-story precast residential slab with repetitive window grids, enclosed balcony stacks, alternating pale facade panels, a flat roof, and a dark ground-floor entrance.",
+    "desired_read": "Immediately recognizable as a generic newly built residential tower from a huge Saint Petersburg sleeping district, not a Soviet five-story panelka and not a luxury skyscraper.",
+    "recognition_details": [
+      "dense repetitive grid of small simplified windows across a tall broad facade",
+      "vertical stacks of glazed enclosed balconies shown as dark blue-gray blocks",
+      "patches of off-white, gray, dusty beige, and restrained orange facade panels",
+      "flat utilitarian roof with two or three simple rooftop utility boxes",
+      "tiny paved courtyard base emphasizing the immense building scale"
+    ],
+    "simplify": [
+      "suggest many floors with rhythmic window rows rather than drawing every window",
+      "render balconies as a few strong vertical bands",
+      "use only major panel divisions and large clean color fields"
+    ],
+    "omit": [
+      "all signage, developer branding, addresses, shopfront lettering, plaques, advertisements, cars, license plates, and human figures",
+      "photorealistic facade texture, fine balcony railings, air-conditioner clutter, cranes, construction site equipment, surrounding towers, sky, clouds, cast shadow, and reflections"
+    ],
+    "target_impression": "The same cheerful board-game illustrator was asked to portray the intimidating scale and monotonous comfort of Parnas without changing the cute miniature technique."
+  },
+  "quality_rules": {
+    "silhouette": "Readable at small card size, with the tower clearly distinct from the tiny base.",
+    "linework": "Clean outlines and sharp form separation; sparse interior lines.",
+    "shading": "Simple graphic shading only, no cinematic light or architectural visualization.",
+    "background_removal": "Crisp subject edges, no cast/contact shadow, no green spill, and no detached green-colored elements inside the silhouette."
+  },
+  "anti_patterns": [
+    "Do not generate a full card or a full city scene.",
+    "Do not make a short Soviet panelka, historic Petersburg building, luxury glass tower, or construction site.",
+    "Do not include any text-like marks on any surface.",
+    "Do not use photorealism, heavy texture, complex landscaping, weather, or atmospheric background."
+  ],
+  "final_prompt_summary": "Create a single isolated Machi Koro-style floating miniature of a classic 2010s Saint Petersburg Parnas novostroyka: a broad 18-to-25-story mass-market precast apartment slab, facing slightly right in three-quarter view, with rhythmic small window rows, vertical enclosed-balcony bands, pale gray/off-white panels, restrained beige and orange accents, flat roof utility boxes, and a tiny integral paved courtyard base. Keep it cute, chunky, low-detail, cleanly outlined, and graphically shaded—not realistic. Put it on a perfectly uniform solid #00ff00 chroma-key background with generous padding and no shadows, gradients, scenery, or clipping. Do not use green in the subject. Absolute no-text rule: no letters, numbers, signs, logos, addresses, plaques, graffiti, license plates, labels, or pseudo-writing. Generate the building cutout source only, never the card."
+}
