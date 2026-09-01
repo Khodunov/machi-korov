@@ -132,6 +132,63 @@ def draw_centered_text(
     )
 
 
+def draw_centered_text_with_inline_icon(
+    canvas: Image.Image,
+    text: str,
+    *,
+    x_frac: float,
+    y_frac: float,
+    font_size_frac: float,
+    font_path: Path,
+    fill: Color,
+    spacing_px: int,
+    icon_path: Path,
+    icon_token: str,
+    icon_scale: float,
+    icon_y_offset_px: int,
+) -> None:
+    """Draw centered multiline text with a square image replacing a token."""
+    text = normalize_multiline_text(text) or ""
+    if not icon_path.exists():
+        raise FileNotFoundError(f"Bottom inline icon not found: {icon_path}")
+    if not icon_token:
+        raise ValueError("--bottom-inline-icon-token must not be empty.")
+
+    draw = ImageDraw.Draw(canvas)
+    font_size = int(round(canvas.width * font_size_frac))
+    font = load_font(font_path, font_size, "bottom-text")
+    font_bbox = font.getbbox("Аг")
+    text_height = font_bbox[3] - font_bbox[1]
+
+    icon = trim_transparent(Image.open(icon_path).convert("RGBA"))
+    icon_size = max(1, int(round(font_size * icon_scale)))
+    icon = icon.resize((icon_size, icon_size), Image.Resampling.LANCZOS)
+
+    lines = text.split("\n")
+    line_height = max(text_height, icon_size)
+    total_height = len(lines) * line_height + max(0, len(lines) - 1) * spacing_px
+    line_top = canvas.height * y_frac - total_height / 2
+
+    for line in lines:
+        fragments = line.split(icon_token)
+        icon_count = len(fragments) - 1
+        line_width = sum(draw.textlength(fragment, font=font) for fragment in fragments)
+        line_width += icon_count * icon_size
+        cursor_x = canvas.width * x_frac - line_width / 2
+        text_y = line_top + (line_height - text_height) / 2 - font_bbox[1]
+
+        for index, fragment in enumerate(fragments):
+            if fragment:
+                draw.text((cursor_x, text_y), fragment, font=font, fill=fill)
+                cursor_x += draw.textlength(fragment, font=font)
+            if index < icon_count:
+                icon_y = int(round(line_top + (line_height - icon_size) / 2 + icon_y_offset_px))
+                canvas.alpha_composite(icon, (int(round(cursor_x)), icon_y))
+                cursor_x += icon_size
+
+        line_top += line_height + spacing_px
+
+
 def draw_coin_number(
     canvas: Image.Image,
     digit: str,
@@ -280,17 +337,33 @@ def composite(args: argparse.Namespace) -> None:
         )
 
     if args.bottom_text is not None:
-        draw_centered_text(
-            canvas,
-            args.bottom_text,
-            x_frac=args.bottom_text_x_frac,
-            y_frac=args.bottom_text_y_frac,
-            font_size_frac=args.bottom_text_font_size_frac,
-            font_path=args.bottom_text_font,
-            font_label="bottom-text",
-            fill=parse_hex_color(args.bottom_text_color),
-            spacing_px=args.bottom_text_spacing_px,
-        )
+        if args.bottom_inline_icon is not None and args.bottom_inline_icon_token in args.bottom_text:
+            draw_centered_text_with_inline_icon(
+                canvas,
+                args.bottom_text,
+                x_frac=args.bottom_text_x_frac,
+                y_frac=args.bottom_text_y_frac,
+                font_size_frac=args.bottom_text_font_size_frac,
+                font_path=args.bottom_text_font,
+                fill=parse_hex_color(args.bottom_text_color),
+                spacing_px=args.bottom_text_spacing_px,
+                icon_path=args.bottom_inline_icon,
+                icon_token=args.bottom_inline_icon_token,
+                icon_scale=args.bottom_inline_icon_scale,
+                icon_y_offset_px=args.bottom_inline_icon_y_offset_px,
+            )
+        else:
+            draw_centered_text(
+                canvas,
+                args.bottom_text,
+                x_frac=args.bottom_text_x_frac,
+                y_frac=args.bottom_text_y_frac,
+                font_size_frac=args.bottom_text_font_size_frac,
+                font_path=args.bottom_text_font,
+                font_label="bottom-text",
+                fill=parse_hex_color(args.bottom_text_color),
+                spacing_px=args.bottom_text_spacing_px,
+            )
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     canvas.save(args.output)
@@ -351,6 +424,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--bottom-text-font", type=Path, default=DEFAULT_UI_FONT, help="Font file for bottom rules text.")
     parser.add_argument("--bottom-text-color", type=str, default="#FFFFFF")
     parser.add_argument("--bottom-text-spacing-px", type=int, default=4)
+    parser.add_argument("--bottom-inline-icon", type=Path, default=None, help="Square image that replaces a token in bottom rules text.")
+    parser.add_argument("--bottom-inline-icon-token", type=str, default="{icon}")
+    parser.add_argument("--bottom-inline-icon-scale", type=float, default=1.15, help="Inline icon side / bottom-text font size.")
+    parser.add_argument("--bottom-inline-icon-y-offset-px", type=int, default=0)
 
     return parser.parse_args()
 

@@ -1,0 +1,28 @@
+python3 skills/generate-card/scripts/card_compositor.py \
+  --template backgrounds/purple.png \
+  --overlay buildings/otdel-fsb.png \
+  --title-icon icons/purple-tower.png \
+  --shadow \
+  --output cards/otdel-fsb.png \
+  --x-frac 0.50 \
+  --y-frac 0.50 \
+  --scale 0.78 \
+  --flip-horizontal \
+  --coin-number 8 \
+  --activation-number 6 \
+  --title 'Отдел ФСБ' \
+  --title-color '#3E1F59' \
+  --bottom-text $'Можете обменяться одной картой\nпредприятия с другим игроком.\nНельзя меняться картами с символом {icon}\nВ свой ход.' \
+  --bottom-inline-icon icons/purple-tower.png \
+  --bottom-inline-icon-scale 1.16 \
+  --bottom-text-y-frac 0.83 \
+  --bottom-text-spacing-px 5 \
+  --title-font fonts/Boingster-Regular.ttf \
+  --title-font-size-frac 0.062 \
+  --title-icon-scale 1.7 \
+  --title-icon-y-offset-px -8 \
+  --bottom-text-font fonts/CCUltimatum-Bold.ttf \
+  --bottom-text-font-size-frac 0.034 \
+  --activation-font fonts/Boingster-Regular.ttf \
+  --activation-font-size-frac 0.1 \
+  --coin-font fonts/Boingster-Regular.ttf

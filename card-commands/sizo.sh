@@ -6,8 +6,7 @@ python skills/generate-card/scripts/card_compositor.py \
   --output cards/sizo.png \
   --x-frac 0.50 \
   --y-frac 0.51 \
-  --scale 0.60 \
-  --flip-horizontal \
+  --scale 0.66 \
   --coin-number 7 \
   --activation-number 6 \
   --title 'СИЗО' \

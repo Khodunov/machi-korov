@@ -12,8 +12,8 @@
   "parameters": {
     "icon_color": {
       "type": "hex color string",
-      "default": "#3E1F59",
-      "description": "Dark purple sampled from the unobstructed footer of backgrounds/purple.png."
+      "default": "#2D103F",
+      "description": "Extra-dark purple derived from the purple card footer and intentionally darkened for stronger symbol contrast."
     },
     "subject": {
       "type": "string",
@@ -39,7 +39,7 @@
   },
   "visual_style": {
     "core": "Flat two-color Machi Koro category badge.",
-    "colors": "#3E1F59 circle plus pure white pictogram",
+    "colors": "#2D103F circle plus pure white pictogram",
     "shading": "none",
     "gradient": "none",
     "texture": "none",
@@ -58,9 +58,9 @@
     "do not leave transparency holes inside the purple circle"
   ],
   "current_icon": {
-    "icon_color": "#3E1F59",
+    "icon_color": "#2D103F",
     "subject": "white tower profile with sphere",
     "expected_result": "A dark-purple solid circle with a simple bold white profile of a slender tower topped by a sphere, on a genuinely transparent canvas."
   },
-  "final_prompt_summary": "Generate only a small Machi Koro-style category badge on a genuinely transparent square canvas. Make one perfect solid circle in #3E1F59 filling about 85% of the canvas, with no outer ring. Center a bold pure-white silhouette of a slender tower in side profile: a tapering vertical shaft, one prominent round sphere near the upper portion, and a short pointed antenna-like cap above it. The pictogram should evoke the recognizable Shanghai-style tower-with-sphere symbol used for purple major establishments in the original Machi Koro visual language, while remaining extremely simple, chunky, and legible. The white tower should fill about 54% of the circle. Flat two-color vector-style artwork only: no text, letters, numbers, logo lettering, border, shading, gradient, texture, shadow, 3D effect, scenery, or background. Preserve genuine transparency outside the circle and solid opacity inside it."
+  "final_prompt_summary": "Generate only a small Machi Koro-style category badge on a genuinely transparent square canvas. Make one perfect solid extra-dark-purple circle in #2D103F filling about 85% of the canvas, with no outer ring. Center a bold pure-white silhouette of a slender tower in side profile: a tapering vertical shaft, one prominent round sphere near the upper portion, and a short pointed antenna-like cap above it. The pictogram should evoke the recognizable Shanghai-style tower-with-sphere symbol used for purple major establishments in the original Machi Koro visual language, while remaining extremely simple, chunky, and legible. The white tower should fill about 54% of the circle. Flat two-color vector-style artwork only: no text, letters, numbers, logo lettering, border, shading, gradient, texture, shadow, 3D effect, scenery, or background. Preserve genuine transparency outside the circle and solid opacity inside it."
 }

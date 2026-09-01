@@ -1,0 +1,120 @@
+{
+  "spec_version": "1.0",
+  "title": "Machi Koro-style Отдел ФСБ central illustration spec",
+  "purpose": "Use the supplied photograph of the Lubyanka building as the architectural reference for a compact, clearly hand-drawn board-game miniature on a purple establishment card.",
+  "integration_context": {
+    "target_use": "Generate only the central illustration for compositing onto backgrounds/purple.png.",
+    "background_requirement": "The final project asset must be an isolated RGBA cutout with transparent pixels outside the miniature. For built-in generation, use a perfectly flat #00ff00 chroma-key background that will be removed locally.",
+    "text_policy": "No text whatsoever: no letters, numbers, agency names, plaques, signs, flags, logos, graffiti, license plates, or pseudo-writing.",
+    "card_relationship": "A floating miniature or sticker with generous empty margin, not a full card or scene.",
+    "central_positioning": "Centered, self-contained, fully visible, and unclipped."
+  },
+  "style_goal": {
+    "primary_rule": "Use a visibly hand-drawn, cute Machi Koro-style illustration language rather than a polished 3D render.",
+    "secondary_rule": "Preserve the Lubyanka building's long ochre facade, dark stone base, red-brown trim, central clock bay, and symmetrical wings while simplifying it into playful readable forms.",
+    "core_formula": "Drawn tabletop-game miniature plus the monumental Lubyanka facade."
+  },
+  "what_machi_koro_art_looks_like": {
+    "miniature_scene_feel": "A small isolated toy-like building token or floating diorama.",
+    "shape_language": "Chunky, slightly wonky geometry, simplified masses, and gently exaggerated proportions.",
+    "perspective": "Loose playful three-quarter view; the front and right side are visible and the building faces slightly right.",
+    "linework": "Confident dark hand-drawn outlines with subtle natural variation, not precise architectural edges.",
+    "shading": "Flat color fills with one or two simple painted shadow tones.",
+    "materials": "Stone, plaster, glass, metal, and paving communicated with color blocks and sparse brush-like accents.",
+    "detail_density": "Low to moderate and readable at card size.",
+    "silhouette_priority": "The very long symmetrical ochre facade, taller corner pavilions, and raised central clock bay must read immediately.",
+    "scene_boundary": "Everything sits on one small self-contained paved base."
+  },
+  "visual_composition": {
+    "occupancy": "Compact central object with generous removable green margin on every side.",
+    "shape": "A compressed miniature interpretation of the long monumental Lubyanka block, with a dark rusticated base, repeated window rhythm, slightly taller end pavilions, and raised central clock bay.",
+    "floating_behavior": "The miniature floats independently and does not connect to a skyline or card footer.",
+    "base": "One small irregular blue-gray paved slab with two short dark bollards.",
+    "background": "Perfectly flat solid #00ff00 chroma key only; no shadow, gradient, texture, floor plane, sky, scenery, or lighting variation."
+  },
+  "russian_grimness_rules": {
+    "principle": "Convey institutional severity through recognizable utilitarian architecture and restrained color, not realism or grime.",
+    "use": [
+      "muted ochre-beige plaster and cold gray stone",
+      "warm ochre facade with deep red-brown cornices and trim",
+      "dark gray rusticated ground-floor base",
+      "repeated rows of narrow windows simplified into a readable rhythm",
+      "raised central bay with a plain circular clock face without numerals or tick marks"
+    ],
+    "do_not_use": [
+      "photorealism or 3D rendering",
+      "cinematic lighting",
+      "dense surface texture or grime",
+      "military spectacle, weapons, or people",
+      "written signs, crests, or flags"
+    ],
+    "guardrail": "Keep it cute, graphic, and visibly illustrated even though the institution feels severe."
+  },
+  "palette": {
+    "base": [
+      "muted ochre beige",
+      "cold concrete gray",
+      "desaturated blue-gray",
+      "charcoal"
+    ],
+    "secondary": [
+      "deep muted brown",
+      "dull slate blue",
+      "subtle dark violet"
+    ],
+    "warm_accents": [
+      "two or three dim amber window panes at most"
+    ],
+    "saturation": "low to moderate",
+    "overall_brightness": "mid-tone and readable against a purple card"
+  },
+  "subject_construction_rules": {
+    "general": [
+      "Reduce the office to a compact iconic miniature.",
+      "Use visibly drawn outlines and slightly irregular shapes.",
+      "Keep every feature chunky and legible.",
+      "Leave generous chroma-key margin around the complete silhouette."
+    ],
+    "building_specific": [
+      "Use the supplied Lubyanka photograph as the architectural reference, preserving its very long symmetrical ochre facade, red-brown trim, dark stone base, taller end pavilions, and raised central clock bay.",
+      "Face it slightly right, showing the front and right side.",
+      "Compress the facade width and reduce the many windows into a smaller rhythmic set so it reads at card size.",
+      "The central clock is a plain pale circle with two simple hands only; it has no digits, tick marks, lettering, crest, or surrounding emblem.",
+      "All walls and doors are blank: no agency name, plaque, shield, crest, lettering, numbers, flags, or pseudo-text."
+    ],
+    "environment_specific": [
+      "Use only one integral dark-gray paved base beneath the facade.",
+      "Do not reproduce the photograph's street, snow, cars, people, lamps, decorations, neighboring buildings, flags, weapons, trees, or skyline."
+    ]
+  },
+  "content": {
+    "subject": "A stylized miniature of the Lubyanka building based on the supplied photograph.",
+    "description": "A stern but toy-like compressed version of the monumental ochre Lubyanka facade, with a dark rusticated base, deep red-brown horizontal trim, rhythmic narrow windows, taller end pavilions, and a raised central bay with a blank simplified clock.",
+    "desired_read": "Immediately recognizable as the Lubyanka building from the reference photograph, but drawn as a charming compact board-game establishment rather than rendered realistically.",
+    "recognition_details": [
+      "very long symmetrical ochre facade with red-brown cornices",
+      "dark gray rusticated base and repeated narrow windows",
+      "taller corner pavilions and raised central clock bay with a blank clock face"
+    ],
+    "miniature_base": "A compact dark blue-gray paved slab belonging only to the miniature.",
+    "simplify": [
+      "the extremely long reference facade into a compact wide block while preserving its proportions and symmetry",
+      "many windows and ornaments into a few bold repeated shapes and broad painted planes"
+    ],
+    "omit": [
+      "all text, symbols, logos, shields, flags, plaques, labels, numbers, and pseudo-writing",
+      "the reference photograph's people, vehicles, street, snow, lamps, decorations, neighboring buildings, scenery, sky, and realistic texture"
+    ],
+    "target_impression": "The Lubyanka building distilled from the reference photo into a compact, hand-drawn, slightly whimsical Machi Koro miniature."
+  },
+  "anti_patterns": [
+    "Do not generate a full card, frame, header, footer, coin, title icon, or rules text.",
+    "Do not generate a cityscape, sky, floor plane, or environmental background.",
+    "Do not create photorealism, an architectural visualization, or glossy 3D game art.",
+    "Do not add any letters, numbers, labels, signs, plaques, flags, logos, crests, graffiti, license plates, or pseudo-text.",
+    "Do not show the building straight-on or facing left.",
+    "Do not clip the roof, antenna, walls, doorway, base, or bollards.",
+    "Do not use #00ff00 anywhere in the subject."
+  ],
+  "final_prompt_summary": "Use case: stylized-concept. Asset type: central cutout illustration for a purple Machi Koro-style card. Input image: use the supplied photograph only as the architectural reference for the Lubyanka building. Generate only a compact floating miniature that preserves the reference's most diagnostic features: the very long symmetrical warm-ochre facade, deep red-brown cornices and horizontal trim, dark gray rusticated ground-floor base, repeated narrow window rhythm, slightly taller end pavilions, and raised central clock bay. Compress the building's extreme width into a compact wide board-game token and simplify the many windows and ornaments without losing the recognizable silhouette. The central clock must be a plain pale circle with two simple hands only—no numerals, tick marks, lettering, crest, or emblem. Put the building on one small self-contained dark blue-gray paved slab. Show the front and right side in loose playful three-quarter perspective, facing slightly right. Make it visibly hand-drawn and illustrative: confident slightly irregular dark outlines, chunky simplified forms, flat painted color fills, sparse brush-like details, and one or two simple shadow tones. It must look like a charming Machi Koro miniature, not photorealism, architectural visualization, or glossy 3D art. Do not reproduce the photo's sky, road, snow, cars, people, street lamps, decorations, trees, or neighboring buildings. Create the miniature on a perfectly flat solid #00ff00 chroma-key background for background removal. The background must have no shadows, gradients, texture, reflections, floor plane, scenery, or lighting variation. Keep the complete subject separated from the green with crisp edges and generous padding; do not use #00ff00 in the subject. No cast shadow, contact shadow, reflection, watermark, card furniture, or extra scenery. Absolutely no text or text-like marks: no letters, numbers, agency names, labels, signs, plaques, flags, logos, crests, graffiti, license plates, or pseudo-writing. Keep the entire roofline, end pavilions, clock bay, facade, and base visible and unclipped."
+}

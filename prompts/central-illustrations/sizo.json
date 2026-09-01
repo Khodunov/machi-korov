@@ -1,18 +1,18 @@
 {
   "spec_version": "1.0",
   "title": "Floating Machi Koro-style central illustration spec",
-  "purpose": "Reusable specification for the central subject illustration that will be composited onto a blank Machi Koro-style card furniture template. The generated art should reproduce the iconic floating miniature look while adapting the subject to a recognizable post-Soviet detention facility.",
+  "purpose": "Specification for a large multi-cell post-Soviet detention complex with a separate checkpoint, distilled into a compact Machi Koro-style floating miniature.",
   "integration_context": {
     "target_use": "Generate only the central content illustration to be pasted onto an existing blank purple card template.",
-    "background_requirement": "Use a genuinely transparent background. Include no sky, header, footer, card furniture, text, coin, icon, frame, or backdrop.",
+    "background_requirement": "The final project asset must use genuine alpha transparency. In the built-in generation workflow, place the complete miniature on one perfectly flat solid #00ff00 chroma-key background for local removal, with no gradients, shadows, texture, floor plane, or scenery in the background.",
     "text_policy": "The illustration must contain no text whatsoever: no letters, numbers, names, labels, signs, plaques, logos, graffiti, license-plate characters, or pseudo-writing on any surface.",
     "card_relationship": "The art should sit like a floating miniature object or sticker inside the middle of the card, leaving generous empty space around it.",
     "central_positioning": "The subject should be centered and self-contained with wide transparent margins and no clipping."
   },
   "style_goal": {
     "primary_rule": "Match the cute, simplified tabletop-game illustration language of the original Machi Koro establishment art without copying a complete existing illustration.",
-    "secondary_rule": "Depict a severe gray post-Soviet pre-trial detention facility while keeping the rendering compact, readable, and toy-like.",
-    "core_formula": "Cute simplified floating board-game miniature plus a bleak concrete detention building behind a secure metal perimeter."
+    "secondary_rule": "Depict a visibly large post-Soviet pre-trial detention complex with many cell windows, a high secure perimeter, and a separate checkpoint while keeping the rendering compact, readable, and toy-like.",
+    "core_formula": "Cute simplified floating board-game miniature plus a large bleak multi-cell detention complex, high perimeter wall with an integrated checkpoint gate, exactly two cartoon riot-armored officers, and one rear concrete watchtower with one armed sentry."
   },
   "what_machi_koro_art_looks_like": {
     "miniature_scene_feel": "A small isolated toy-like scene, almost like a board-game token, sticker, or floating diorama rather than a full landscape.",
@@ -22,12 +22,12 @@
     "shading": "Simple graphic shading using one or two darker tones; no realistic lighting model.",
     "materials": "Communicate concrete, barred windows, dull metal fencing, and razor wire through color blocks and silhouette rather than gritty texture.",
     "detail_density": "Low to moderate so the building and secure perimeter remain readable at small card size.",
-    "silhouette_priority": "The squat concrete block and looped wire silhouette must read instantly and feel iconic.",
+    "silhouette_priority": "The long multi-storey cell block, repeated barred windows, high wall, and projecting checkpoint must read instantly and feel iconic.",
     "scene_boundary": "The facility stands on one small self-contained ground slab and does not blend into any background."
   },
   "visual_composition": {
     "occupancy": "The content illustration should occupy a compact central area with wide transparent air around it.",
-    "shape": "A squat rectangular concrete building behind a low metal security fence, composed as one compact miniature.",
+    "shape": "A large long three-to-four-storey detention block with a shorter side wing, enclosed by a high wall, with a separate checkpoint projecting at the front and exactly two small armored guards flanking its entrance.",
     "floating_behavior": "The scene visually floats in open space and does not connect to the card's lower skyline strip.",
     "base": "A small irregular cold-gray courtyard slab belonging entirely to the miniature.",
     "background": "Fully transparent; no skyline, sky, clouds, horizon, streetscape, or distant scenery."
@@ -36,8 +36,11 @@
     "principle": "Bleakness comes from the subject, utilitarian forms, and cold palette, not from realistic grime or cinematic rendering.",
     "use": [
       "cold concrete-gray and blue-gray palette",
-      "utilitarian post-Soviet block architecture",
-      "barred windows and a severe metal perimeter",
+      "utilitarian post-Soviet institutional architecture",
+      "many small repeated barred cell windows",
+      "a high masonry perimeter topped with razor wire",
+      "a compact checkpoint with its vehicle gate physically embedded in the continuous perimeter wall",
+      "one concrete watchtower at the far rear corner with one small armed sentry",
       "small faded rust-brown accents",
       "deadpan institutional bleakness"
     ],
@@ -79,51 +82,66 @@
       "Keep generous transparent margin around the full silhouette."
     ],
     "building_specific": [
-      "Use one squat gray concrete box with a flat roof and a few small deeply recessed barred windows.",
-      "Face the building slightly right, showing its front and right side in a readable three-quarter view.",
-      "Represent window bars as a few thick dark strokes rather than intricate grids.",
-      "Keep roof details minimal and unclipped.",
+      "Use one long three-to-four-storey main detention block and one shorter receding side wing so the facility reads as substantially larger than the previous compact building.",
+      "Face the complex slightly right, showing the front and right side in a readable three-quarter view.",
+      "Cover the visible cell-block walls with several orderly rows of many small, closely spaced, deeply recessed barred windows; the repetition must clearly suggest many individual cells.",
+      "Represent each barred window with only two or three thick dark strokes so the pattern remains readable at card size.",
+      "Mix worn whitewashed brick, dull red brick, and cold gray concrete planes based on the supplied architectural references, without photorealistic texture.",
+      "Keep roof vents, chimneys, and antennas few, simplified, and unclipped.",
       "All walls, gates, doors, and surfaces are completely free of writing, plaques, emblems, and text-like marks."
     ],
     "environment_specific": [
-      "Wrap the front and visible side with a simplified dark metal fence topped by a few large readable loops of barbed or razor wire.",
-      "Include one plain closed metal gate with no sign or number.",
-      "Do not include guards, prisoners, vehicles, guard dogs, weapons, flags, watchtowers, signs, or surrounding city scenery."
+      "Wrap the front and visible side with a high thick masonry security wall topped by a few large readable loops of razor wire; use only short metal-fence sections where the checkpoint needs visibility.",
+      "Make the entire front perimeter one continuous straight high masonry wall running visibly across both the left and right sides of the entrance in exactly the same depth plane and with one continuous top line.",
+      "Cut one rectangular vehicle opening directly through that continuous front wall and fit the wide closed steel double doors inside the opening. The doors must be surrounded by masonry on the left, right, and above, like a doorway cut into the wall—not a freestanding gate assembly.",
+      "Continue substantial full-height wall segments directly from both sides of the gate opening with no depth offset, gap, freestanding posts, separate forecourt, or projecting block interrupting the wall line.",
+      "Integrate the compact checkpoint into the thickness of the wall immediately beside the gate or place it just behind the wall on the secure interior side. Its dark observation window may be visible in the wall, but the checkpoint must not project outward in front of the wall or separate the gate from the left wall segment.",
+      "Place exactly two compact cartoon guards on the front paving, one on each side of the checkpoint entrance, without covering the guardhouse, pedestrian door, or vehicle gate.",
+      "Give both guards black helmets with visors, black body armor, blue-gray urban camouflage trousers, black boots, and one lowered black baton each.",
+      "Add exactly one compact concrete watchtower at the far rear-right corner of the perimeter. Give it a thick square shaft, a small covered observation platform above the wall, and one clearly visible cartoon sentry.",
+      "The single watchtower sentry wears a dark helmet and uniform and holds one simplified black automatic rifle across the chest or pointed downward in a calm watch posture; the weapon is never aimed or fired.",
+      "Do not include prisoners, additional ground guards, additional sentries, vehicles, guard dogs, extra firearms, shields, flags, additional watchtowers, signs, or surrounding city scenery."
     ]
   },
   "content": {
-    "subject": "A stylized miniature post-Soviet pre-trial detention facility (SIZO).",
-    "description": "A squat severe gray concrete box with a flat roof, a few small barred windows, and a plain closed metal entrance, standing behind a dark metal perimeter fence topped with large simplified loops of barbed wire.",
-    "desired_read": "An unmistakable secure detention facility: institutional, forbidding, gray, and deadpan, yet rendered as a cute readable Machi Koro-style miniature.",
+    "subject": "A stylized miniature of a large post-Soviet pre-trial detention complex (SIZO) with many cells and a separate checkpoint.",
+    "description": "A long three-to-four-storey whitewashed-brick and dull-red-brick cell block with a receding side wing and many rows of small barred windows, enclosed by a high masonry wall topped with razor wire. A compact checkpoint guardhouse attaches to the front wall beside a closed vehicle gate embedded directly in that wall. Exactly two cartoon riot-armored guards flank the entrance, while one concrete watchtower with one armed sentry rises from the far rear-right corner.",
+    "desired_read": "An unmistakably large detention complex containing many individual cells: institutional, forbidding, layered, and secure, but rendered as a cute readable Machi Koro-style miniature.",
     "recognition_details": [
-      "squat window-sparse gray concrete block",
-      "small deeply recessed windows with thick dark bars",
-      "dark metal perimeter fence with a closed gate",
-      "large simplified loops of barbed or razor wire along the fence top"
+      "long multi-storey main cell block plus a shorter side wing",
+      "many repeated small deeply recessed cell windows with thick dark bars",
+      "high masonry perimeter wall with large simplified razor-wire loops",
+      "checkpoint guardhouse with pedestrian door beside a closed vehicle gate set flush into the continuous perimeter wall",
+      "exactly two small armored guards with blue-gray camouflage and lowered black batons",
+      "one far concrete watchtower with one calm helmeted sentry holding a simplified automatic rifle"
     ],
     "miniature_base": "A compact angular patch of cracked-looking but graphically simplified cold-gray courtyard, fully contained inside the floating illustration.",
     "simplify": [
-      "concrete walls into broad gray planes with only a few seams and patches",
-      "security fencing into bold vertical bars and a small number of large wire loops",
-      "the facility into one iconic building and one compact perimeter rather than a complex prison campus"
+      "large brick and concrete walls into broad white, dull red, and cold gray planes with only a few seams and patches",
+      "many individual cells into rhythmic rows of small barred window symbols",
+      "the campus into one long main block, one side wing, one high perimeter, and one clearly separate checkpoint"
     ],
     "omit": [
       "all text and text-like content, including letters, numbers, facility names, warning signs, plaques, labels, logos, graffiti, license plates, and pseudo-glyphs",
-      "people, vehicles, flags, weapons, guard towers, searchlights, dogs, surrounding streets, city buildings, sky, clouds, or background scenery",
+      "prisoners, extra ground guards beyond the requested two, extra sentries beyond the requested one, vehicles, flags, extra firearms beyond the sentry's one rifle, shields, additional guard towers, searchlights, dogs, surrounding streets, city buildings, sky, clouds, or background scenery",
       "photorealism, gritty texture, cinematic lighting, dense grime, and architectural-detail overload"
     ],
-    "target_impression": "A bleak post-Soviet SIZO distilled into a compact board-game token: an imposing gray concrete box, barred windows, and a barbed-wire metal fence, readable instantly and harmonious with a purple major-establishment card."
+    "target_impression": "A large bleak post-Soviet SIZO distilled into a compact board-game token: long cell blocks full of barred windows, a continuous high razor-wire perimeter with its gate built into the wall, a readable checkpoint, two ground guards, and one rear concrete watchtower with an armed sentry."
   },
   "anti_patterns": [
     "Do not generate a full card.",
     "Do not generate sky, clouds, footer, or any fixed card furniture.",
     "Do not create a realistic architectural rendering.",
-    "Do not create a full prison complex or cityscape background.",
+    "Do not create a sprawling realistic campus or cityscape background; keep the requested large complex compact and self-contained.",
     "Do not make the scene connect visually to the bottom of the card.",
     "Do not generate any letters, numbers, words, labels, logos, signage, plaques, graffiti, license-plate characters, or pseudo-text.",
     "Do not clip the building, fence, gate, wire loops, base, or shadow.",
     "Do not show the building straight-on or facing left.",
-    "Do not include people, vehicles, weapons, guards, prisoners, dogs, flags, or watchtowers."
+    "Do not include prisoners, more than two ground guards, more than one tower sentry, vehicles, extra firearms, shields, dogs, flags, or more than one watchtower.",
+    "Do not omit the checkpoint, pedestrian door, closed vehicle gate embedded in the wall, or rear watchtower.",
+    "Do not place the vehicle gate in front of, beside, outside, at the end of, or detached from the perimeter wall. Do not let a projecting checkpoint separate the gate from either wall segment.",
+    "Do not aim or fire the sentry's weapon and do not depict combat or violence.",
+    "Do not make the guards photorealistic, aggressive, oversized, or visually separate from the miniature's illustration style."
   ],
-  "final_prompt_summary": "Generate only a small floating miniature post-Soviet pre-trial detention facility for the central illustration of a purple Machi Koro-style establishment card. Use a genuinely transparent background with wide empty margins. Depict one squat severe gray concrete box with a flat roof, a few small deeply recessed barred windows, and a plain closed metal entrance, standing behind a dark metal perimeter fence topped by a few large simplified loops of barbed or razor wire. Put the whole facility on one compact cold-gray courtyard slab. Face the building slightly to the right so the front and right side are visible in a playful three-quarter perspective. Use chunky toy-like geometry, clean outlines, sparse details, cold concrete gray, muted blue-gray, charcoal metal, desaturated slate, tiny faded-rust accents, and simple graphic shading. The result must be an isolated cute board-game miniature, not a full prison complex, cityscape, or full card. Include no text or text-like marks anywhere: no letters, numbers, names, facility labels, signs, plaques, logos, branding, graffiti, license plates, or pseudo-writing. Include no people, guards, prisoners, vehicles, weapons, dogs, flags, watchtowers, searchlights, streets, sky, clouds, footer, frame, coin, icon, or background scene. Keep the complete building, fence, gate, wire loops, base, and shadow fully visible and unclipped."
+  "final_prompt_summary": "Use case: precise-object-edit. Asset type: central cutout illustration for a purple Machi Koro-style establishment card. Image 1 is the edit target. Preserve its large multi-storey SIZO cell blocks, many barred windows, whitewashed and red brick materials, high masonry perimeter, razor wire, exactly two ground guards with lowered batons, far rear-right concrete watchtower, its single armed sentry, three-quarter camera angle, proportions, cold palette, clean dark outlines, miniature rendering, and every other detail as closely as possible. Make only one geometric correction to the front entrance. Rebuild the entire visible front perimeter as one continuous straight high masonry wall running through the entrance from the far left wall segment to the far right wall segment in exactly the same depth plane, with one continuous wall alignment. Cut one rectangular vehicle opening directly through this continuous wall and install the wide closed steel double doors inside that opening. The doors must be visibly recessed within the wall thickness and surrounded by masonry on the left, right, and above, like a large doorway cut into a solid wall. Continue substantial full-height masonry wall segments directly from both sides of the gate opening with no gap, no depth offset, no freestanding gateposts, no separate gate block, and no outer forecourt between gate and wall. Integrate the checkpoint into the thickness of the wall immediately beside the opening, or place its small guard room just behind the wall on the secure interior side. A dark observation window and blank pedestrian door may appear in the wall, but no checkpoint structure may project outward in front of the wall or separate the gate from either wall segment. The vehicle gate must not appear in front of, beside, outside, at the end of, or detached from the wall. Preserve the existing far watchtower and all three figures unchanged. Put the complete edited miniature on a perfectly flat solid #00ff00 chroma-key background for removal. The background must be uniform with no gradient, texture, shadow, reflection, scenery, floor plane, or lighting variation; do not use #00ff00 inside the subject. Include absolutely no text or text-like marks and add no people, weapons, objects, or architecture. Keep the complete roofs, cell blocks, continuous high walls, recessed gate opening, checkpoint, rear watchtower, all three figures, razor wire, and integral base fully visible and unclipped."
 }
