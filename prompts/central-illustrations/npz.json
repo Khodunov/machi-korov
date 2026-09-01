@@ -1,0 +1,76 @@
+{
+  "spec_version": "1.0",
+  "title": "Floating Machi Koro-style central illustration spec — NPZ",
+  "purpose": "Generate only a compact central oil-refinery illustration for compositing onto the blank blue card template.",
+  "integration_context": {
+    "target_use": "Central content illustration for a blue Machi Koro-style establishment card.",
+    "background_requirement": "Genuinely transparent background. No sky, header, footer, card furniture, text, coin, icon, frame, scenery, or backdrop.",
+    "text_policy": "No incidental text anywhere. The only permitted lettering is one explicitly requested fictional LUK logo on a large red flag mounted above a medium-height slim processing tower immediately to the right of the tallest central tower: three bold white capital letters LUK, with a stylized K that has no vertical stem and whose lower diagonal joins the lower horizontal stroke of the L. No other letters, numbers, labels, signs, graffiti, pseudo-writing, hazard placards, or brand marks.",
+    "card_relationship": "A floating miniature object or sticker in the middle of the card, with generous transparent space around it.",
+    "central_positioning": "Centered, fully self-contained, unclipped, and suitable for placement in the open central sky region."
+  },
+  "style_goal": {
+    "primary_rule": "Match the illustration language of original Machi Koro establishment art.",
+    "secondary_rule": "Depict a recognizable large classic post-Soviet oil refinery without increasing realism.",
+    "core_formula": "Cute simplified tabletop-game miniature plus a massive utilitarian oil refinery dense with readable pipes."
+  },
+  "what_machi_koro_art_looks_like": {
+    "miniature_scene_feel": "A small isolated toy-like board-game token or floating diorama, never a full landscape.",
+    "shape_language": "Large clean shapes, compact clustered forms, and slightly exaggerated proportions.",
+    "perspective": "Loose playful front-right three-quarter view, facing slightly right and showing the front and right side.",
+    "linework": "Clear dark outlines or sharp separations with sparse interior lines.",
+    "shading": "Simple graphic shading with one or two darker tones; no realistic lighting model.",
+    "materials": "Communicate steel, concrete, painted pipes, and storage tanks through color and silhouette rather than texture.",
+    "detail_density": "Moderate: many pipes are visible but organized into a few bold readable bundles at card size.",
+    "silhouette_priority": "Tall distillation columns, pipe racks, storage tanks, and smokestacks must read instantly.",
+    "scene_boundary": "Self-contained on a small stylized industrial ground slab."
+  },
+  "visual_composition": {
+    "occupancy": "Compact broad subject with wide transparent margins; designed to occupy about 30–45% of card height after compositing.",
+    "shape": "A broad refinery complex anchored by several tall vertical processing towers, surrounded by lower tanks and thick pipe bundles.",
+    "floating_behavior": "Float in open space and do not connect to the card footer.",
+    "base": "A small irregular concrete industrial platform integral to the miniature.",
+    "background": "None; only transparent pixels outside the miniature."
+  },
+  "russian_grimness_rules": {
+    "principle": "Post-Soviet character comes from utilitarian forms and muted colors, not realism or grime.",
+    "use": ["cold blue-gray steel", "weathered concrete-gray structures", "desaturated navy pipe racks", "dull teal machinery", "faded rust-orange pipe accents"],
+    "do_not_use": ["photorealism", "architectural visualization", "gritty texture", "cinematic lighting", "dense grime", "atmospheric background"]
+  },
+  "palette": {
+    "base": ["muted blue-gray", "cold concrete gray", "desaturated navy", "powder blue", "slate blue"],
+    "secondary": ["dull teal", "faded rust-orange", "dirty beige", "silvery steel"],
+    "warm_accents": ["small amber lights", "restrained rust-orange pipe segments"],
+    "saturation": "low to moderate",
+    "overall_brightness": "clean and readable against the blue card, somewhat duller than standard Machi Koro art"
+  },
+  "subject_construction_rules": {
+    "general": ["Reduce the refinery to a compact iconic miniature.", "Choose only recognition-critical structures.", "Keep all forms chunky and readable."],
+    "building_specific": ["Use several tall cylindrical distillation columns with simple platforms.", "Organize the many pipes into bold curved bundles and horizontal pipe racks.", "Add a few round storage tanks, blocky processing units, and two restrained smokestacks.", "Keep every surface blank and geometric."],
+    "environment_specific": ["Use only a tiny concrete base.", "No people, vehicles, trees, surrounding city, flames, or distant structures."]
+  },
+  "content": {
+    "subject": "A classic large post-Soviet oil refinery complex.",
+    "description": "A broad, imposing oil refinery in front-right three-quarter view, built from several tall distillation columns, blocky processing buildings, large cylindrical storage tanks, two smokestacks, elevated pipe racks, and many thick interconnecting pipes that loop visibly between the units. A large red industrial flag with a bold white logo flies from a short pole above a medium-height slim processing tower immediately to the right of the tallest central column; the entire flag remains clearly below the top of the tallest tower.",
+    "desired_read": "An instantly recognizable big classic oil refinery, compressed into a charming toy-like industrial miniature.",
+    "recognition_details": [
+      "a cluster of several tall cylindrical distillation and fractionation towers with sparse platforms and ladders simplified into bold shapes",
+      "many prominent thick pipes grouped into clean readable bundles, bends, arches, and elevated horizontal racks",
+      "large round storage tanks and low rectangular processing units arranged around the towers",
+      "one large red flag above the medium-height slim tower immediately right of center, clearly lower than the tallest central tower, with the exact bold white text LUK occupying most of the fabric; the K has no vertical stem, and its lower diagonal connects directly to the lower horizontal stroke of the L"
+    ],
+    "miniature_base": "A compact irregular concrete industrial slab supporting the whole refinery cluster.",
+    "simplify": ["pipe networks into a limited number of thick clean curves", "platforms and ladders into sparse geometric accents", "tank highlights into broad clean shapes", "smoke into two small soft graphic puffs"],
+    "omit": ["all letters, numbers, signage, logos, and pseudo-writing except the single requested LUK panel", "warning symbols", "thin chaotic pipe filigree", "people", "vehicles", "full industrial landscape", "fire", "heavy pollution"],
+    "target_impression": "The original Machi Koro illustrator humorously drawing a huge gloomy Russian oil refinery while preserving cute miniature proportions and clean graphic rendering."
+  },
+  "anti_patterns": [
+    "Do not generate a full card or any card furniture.",
+    "Do not generate a sky, horizon, floor, or opaque background.",
+    "Do not create a realistic painting or full cityscape.",
+    "Do not clip the flag, pole, tower, smokestack, smoke puff, tank, pipe, or base.",
+    "Do not include letters, numbers, labels, signs, logos, graffiti, watermark, pseudo-text, or text-like marks anywhere except the single requested red LUK flag.",
+    "Do not use heavy textures, gritty realism, or illegible mechanical clutter."
+  ],
+  "final_prompt_summary": "Generate only an isolated central illustration for a Machi Koro-style blue establishment card: a compact floating miniature of a large classic post-Soviet oil refinery, facing slightly right in front-right three-quarter view. Make it broad and imposing, with several tall cylindrical distillation columns, two restrained smokestacks with tiny graphic smoke puffs, big round storage tanks, low processing units, elevated pipe racks, and many prominent thick interconnecting pipes. Add a large red industrial flag on a short sturdy pole above the medium-height slim processing tower immediately to the right of the tallest central tower. The complete flag must remain visibly lower than the top of the tallest central tower, avoid covering important silhouettes, and be large enough for its logo to read after card-size reduction. Put exactly three bold white capital letters LUK across most of the flag. The K has no vertical stem of its own, and its lower diagonal connects seamlessly to the lower horizontal stroke of the L. Use chunky simplified toy-like shapes, clean dark outlines, moderate detail, simple graphic shading, and a cold muted blue-gray palette with dull teal and rust-orange accents. Place the complex on a tiny irregular concrete slab and keep every edge fully visible with generous empty margin. Isolated cutout asset with native alpha transparency. Outside the refinery, base, smoke, pole, and flag, every pixel has zero alpha. Output an RGBA PNG, preserving soft translucent alpha around smoke and clean antialiased alpha edges. No environment, scenery, surface, backdrop, or background representation. No other text, letters, numbers, labels, signs, logos, graffiti, watermark, or pseudo-writing."
+}

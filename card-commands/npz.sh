@@ -1,0 +1,25 @@
+.venv/bin/python skills/generate-card/scripts/card_compositor.py \
+  --template backgrounds/blue.png \
+  --overlay buildings/npz.png \
+  --title-icon icons/factory.png \
+  --shadow \
+  --output cards/npz.png \
+  --x-frac 0.5 \
+  --y-frac 0.54 \
+  --scale 0.73 \
+  --coin-number 6 \
+  --activation-number 9 \
+  --title 'НПЗ' \
+  --title-color '#123E70' \
+  --bottom-text $'Возьмите 5 монет из банка.\nВ свой ход' \
+  --bottom-text-y-frac 0.82 \
+  --bottom-text-spacing-px 6 \
+  --title-font fonts/Boingster-Regular.ttf \
+  --title-font-size-frac 0.065 \
+  --title-icon-scale 1.8 \
+  --title-icon-y-offset-px -8 \
+  --bottom-text-font fonts/CCUltimatum-Bold.ttf \
+  --bottom-text-font-size-frac 0.045 \
+  --activation-font fonts/Boingster-Regular.ttf \
+  --activation-font-size-frac 0.1 \
+  --coin-font fonts/Boingster-Regular.ttf
