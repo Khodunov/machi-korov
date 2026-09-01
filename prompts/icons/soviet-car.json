@@ -1,0 +1,35 @@
+{
+  "spec_version": "1.1",
+  "title": "Machi Koro-style round category icon: Soviet car",
+  "purpose": "Generate the small circular category badge placed immediately before the card title.",
+  "integration_context": {
+    "target_use": "Icon asset composited before the title on a blue card.",
+    "canvas": "square",
+    "background": "genuinely transparent outside the badge",
+    "output_preference": "RGBA PNG with clean antialiased alpha"
+  },
+  "parameters": {
+    "icon_color": "#0D3F78",
+    "subject": "side-profile silhouette of a classic boxy Soviet passenger automobile"
+  },
+  "badge_geometry": {
+    "circle": "one perfect centered solid circle",
+    "circle_diameter": "85% of canvas width",
+    "outer_margin": "fully transparent",
+    "border": "none"
+  },
+  "pictogram": {
+    "color": "#FFFFFF",
+    "description": "A very simple bold white side-profile silhouette of a recognizable boxy 1970s-1980s Soviet sedan: horizontal hood, squared cabin, short trunk, and two simple circular wheel cutouts. Generic and unbranded.",
+    "size": "54% of circle diameter",
+    "position": "precisely centered",
+    "shape_language": "chunky geometric slightly rounded solid silhouette",
+    "detail_level": "very low; no thin lines"
+  },
+  "constraints": [
+    "flat two-color vector-style artwork only",
+    "no text, letters, numbers, logos, emblems, license plate, border, shading, gradient, texture, highlights, shadow, 3D effects, scenery, or card furniture",
+    "no transparency holes inside the blue circle except intentionally simple internal negative spaces needed for the car silhouette; outside the circle must be transparent"
+  ],
+  "expected_result": "A dark-blue solid circle covering about 85% of a transparent square canvas, with one bold centered white Soviet sedan side-profile pictogram occupying about 54% of the circle."
+}

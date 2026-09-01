@@ -1,0 +1,47 @@
+{
+  "spec_version": "1.0",
+  "title": "Floating Machi Koro-style central illustration spec: Garazhnyy kooperativ",
+  "purpose": "Generate only a transparent central illustration for compositing onto the blank blue card template.",
+  "integration_context": {
+    "target_use": "An isolated floating miniature scene for the middle of a Machi Koro-style establishment card.",
+    "background_requirement": "Native RGBA transparency. Every pixel outside the miniature base, subjects, props, and soft barbecue smoke must have zero alpha. No environment, sky, card frame, header, footer, coin, icon, or text.",
+    "central_positioning": "Centered, self-contained, landscape-oriented cluster with generous transparent margins. Nothing clipped."
+  },
+  "style_goal": {
+    "core_formula": "Cute simplified tabletop-game miniature scene plus cozy recognizable post-Soviet garage-cooperative life.",
+    "rendering": "Original Machi Koro illustration language: chunky clean shapes, loose playful three-quarter perspective, sparse outlines, low-to-moderate detail, one or two-tone graphic shading, never photorealistic.",
+    "orientation": "The row of garages faces slightly to the right, showing fronts and right sides in readable three-quarter view. Generate this orientation directly."
+  },
+  "visual_composition": {
+    "shape": "A compact horizontal floating diorama on one small irregular paved-and-grassy courtyard base.",
+    "main_subject": "A row of four modest Soviet metal garage boxes with mismatched muted doors. One garage is open and a classic boxy Soviet sedan is parked in front with its hood raised.",
+    "people_and_props": "Three adult men stand casually together holding plain unlabeled beer bottles or mugs near a tiny charcoal brazier with skewers and a delicate curl of smoke.",
+    "lighting": "Warm friendly sunshine from a small stylized sun glow implied only by highlights; do not draw sky or a detached sun disk. Cozy weekend mood.",
+    "scale_priority": "Garages and open-hood car must read first; men and brazier remain simple but clearly recognizable at card size."
+  },
+  "recognition_details": [
+    "utilitarian concrete and corrugated-metal Soviet garage row with patched muted blue-gray, olive, beige, and rust-red doors",
+    "one classic boxy Soviet passenger car in three-quarter side profile, hood visibly propped open, blank featureless license-plate area with absolutely no characters",
+    "three simplified men socializing with beer beside a small mangal, warm sunlight and a modest patch of grass creating a cozy lived-in atmosphere"
+  ],
+  "miniature_base": "A small self-contained cracked-paving slab with two restrained tufts of grass; no surrounding landscape.",
+  "palette": {
+    "base": ["muted blue-gray", "cold concrete gray", "desaturated navy", "dirty beige"],
+    "secondary": ["muted olive", "faded rust-brown", "dull teal"],
+    "warm_accents": ["soft amber sunlight", "small warm orange brazier coals"],
+    "saturation": "low to moderate, clean and readable"
+  },
+  "simplify": [
+    "garage doors as broad geometric panels with only a few seams and hinges",
+    "car as a chunky iconic boxy silhouette with minimal trim",
+    "people as friendly toy-like figures with simple poses and no facial detail",
+    "mangal as one small dark rectangular brazier with a few bold skewers"
+  ],
+  "omit": [
+    "all letters, numbers, logos, signs, plaques, graffiti, labels, license-plate characters, bottle labels, pseudo-writing, and text-like marks",
+    "blank signboards, menu boards, posters, banners, and surfaces that invite generated writing",
+    "photorealism, cinematic effects, gritty texture, dense grime, complex tools, clutter, weapons, intoxication caricature, full landscape, and full-card composition"
+  ],
+  "target_impression": "A warm, humorous, instantly recognizable Russian garage cooperative rendered as a charming Machi Koro board-game miniature.",
+  "final_prompt_summary": "Generate only this compact floating garage-cooperative miniature on a genuinely transparent background. Show the garages in front-and-right three-quarter view, the boxy Soviet car with its hood open, three men holding beer, and a tiny mangal. Preserve the cozy sunlit mood through warm highlights without depicting sky or a separate background sun. Output a clean RGBA PNG with generous transparent margins and no clipping. Absolutely no text or text-like marks anywhere, including signs, garage doors, bottles, clothing, and license plates. No card furniture and no full scene background."
+}

@@ -1,0 +1,25 @@
+.venv/bin/python skills/generate-card/scripts/card_compositor.py \
+  --template backgrounds/blue.png \
+  --overlay buildings/garazhnyy-kooperativ.png \
+  --title-icon icons/soviet-car.png \
+  --shadow \
+  --output cards/garazhnyy-kooperativ.png \
+  --x-frac 0.48 \
+  --y-frac 0.52 \
+  --scale 0.68 \
+  --coin-number 1 \
+  --activation-number 2 \
+  --title 'Гаражный кооператив' \
+  --title-color '#123E70' \
+  --bottom-text $'Возьмите 1 монету из банка\nВ ход любого игрока' \
+  --bottom-text-y-frac 0.82 \
+  --bottom-text-spacing-px 6 \
+  --title-font fonts/Boingster-Regular.ttf \
+  --title-font-size-frac 0.052 \
+  --title-icon-scale 1.5 \
+  --title-icon-y-offset-px -6 \
+  --bottom-text-font fonts/CCUltimatum-Bold.ttf \
+  --bottom-text-font-size-frac 0.045 \
+  --activation-font fonts/Boingster-Regular.ttf \
+  --activation-font-size-frac 0.1 \
+  --coin-font fonts/Boingster-Regular.ttf
