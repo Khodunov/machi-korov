@@ -72,6 +72,14 @@ bash card-commands/panelka.sh
 bash card-commands/shwarma.sh
 ```
 
+To regenerate every card, run the batch script from any directory:
+
+```bash
+./generate-all-cards.sh
+```
+
+It runs every `card-commands/*.sh` file in filename order, uses the project virtual environment when available, and reports any failed commands after attempting the full set.
+
 Generated final cards are written under `cards/` and ignored by Git. Commit the filled prompts, generated source artwork, and `card-commands/<card-name>.sh`.
 
 ## What the compositor can do
