@@ -3,17 +3,18 @@ python skills/generate-card/scripts/card_compositor.py \
   --overlay buildings/shinomontazh.png \
   --title-icon icons/shop-stall.png \
   --shadow \
-  --output cards/shinomontazh.png \
+  --output cards/autoservice.png \
   --x-frac 0.50 \
   --y-frac 0.51 \
   --flip-horizontal \
   --scale 0.72 \
-  --coin-number 1 \
-  --activation-number '2-3' \
-  --title 'Шиномонтаж' \
+  --coin-number 5 \
+  --activation-number '7' \
+  --title 'Автосервис' \
   --title-color '#17361A' \
-  --bottom-text $'Получите 2 монеты из банка.\nВ свой ход.' \
-  --bottom-text-y-frac 0.82 \
+  --bottom-text $'Получите по 3 монеты из банка\nза каждое ваше предприятие\nс символом {icon}.\nВ свой ход.' \
+  --bottom-inline-icon icons/soviet-car.png \
+  --bottom-text-y-frac 0.84 \
   --bottom-text-spacing-px 6 \
   --title-font fonts/Boingster-Regular.ttf \
   --title-font-size-frac 0.065 \
