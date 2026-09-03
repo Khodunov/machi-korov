@@ -1,0 +1,25 @@
+.venv/bin/python skills/generate-card/scripts/card_compositor.py \
+  --template backgrounds/purple.png \
+  --overlay buildings/hram.png \
+  --title-icon icons/purple-tower.png \
+  --shadow \
+  --output cards/hram.png \
+  --x-frac 0.48 \
+  --y-frac 0.53 \
+  --scale 0.6 \
+  --coin-number 6 \
+  --activation-number 6 \
+  --title 'Храм' \
+  --title-color '#3E1F59' \
+  --bottom-text $'Возьмите по 2 монеты у каждого игрока\nВ свой ход.' \
+  --bottom-text-y-frac 0.82 \
+  --bottom-text-spacing-px 6 \
+  --title-font fonts/Boingster-Regular.ttf \
+  --title-font-size-frac 0.065 \
+  --title-icon-scale 1.8 \
+  --title-icon-y-offset-px -8 \
+  --bottom-text-font fonts/CCUltimatum-Bold.ttf \
+  --bottom-text-font-size-frac 0.043 \
+  --activation-font fonts/Boingster-Regular.ttf \
+  --activation-font-size-frac 0.1 \
+  --coin-font fonts/Boingster-Regular.ttf

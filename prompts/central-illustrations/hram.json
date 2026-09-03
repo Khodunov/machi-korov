@@ -1,0 +1,131 @@
+{
+  "spec_version": "1.0",
+  "title": "Floating Machi Koro-style central illustration spec",
+  "purpose": "Specification for a compact Russian Orthodox church rendered as a floating Machi Koro-style miniature for the purple Hram card.",
+  "integration_context": {
+    "target_use": "Generate only the central content illustration to be pasted onto an existing blank purple card template.",
+    "background_requirement": "Generate an isolated cutout asset with native alpha transparency. Outside the church and its integral miniature base, every pixel must have zero alpha. Output an RGBA PNG with clean antialiased alpha edges. Do not depict any environment, scenery, surface, backdrop, sky, header, footer, card furniture, text, coin, icon, or frame.",
+    "text_policy": "The illustration must contain no text whatsoever: no letters, numbers, names, labels, signs, plaques, icons with lettering, graffiti, license-plate characters, or pseudo-writing on any surface.",
+    "card_relationship": "The art should sit like a floating miniature object or sticker inside the middle of the card, leaving generous empty space around it.",
+    "central_positioning": "The subject should be centered and self-contained with wide transparent margins and no clipping."
+  },
+  "style_goal": {
+    "primary_rule": "Match the cute, simplified tabletop-game illustration language of the original Machi Koro establishment art without copying a complete existing illustration.",
+    "secondary_rule": "Depict a recognizable modest Russian Orthodox church in a post-Soviet provincial setting while keeping the rendering compact, clean, and toy-like.",
+    "core_formula": "Cute simplified floating board-game miniature plus a modest Russian Orthodox church with onion domes, an attached bell tower, and a small fenced churchyard."
+  },
+  "what_machi_koro_art_looks_like": {
+    "miniature_scene_feel": "A small isolated toy-like scene, almost like a board-game token, sticker, or floating diorama rather than a full landscape.",
+    "shape_language": "Large clean shapes, simple geometry, compact clustered forms, and slightly exaggerated silhouettes.",
+    "perspective": "Loose playful three-quarter perspective. The church faces slightly right, clearly showing its front and right side.",
+    "linework": "Clear dark outlines or sharp separations between forms, with sparse interior detail lines.",
+    "shading": "Simple graphic shading using one or two darker tones; no realistic lighting model.",
+    "materials": "Communicate stucco, painted metal roofing, stone, and sparse vegetation through color blocks and silhouette rather than gritty texture.",
+    "detail_density": "Low to moderate so the church remains readable at small card size.",
+    "silhouette_priority": "The onion domes, crosses, pitched roofs, and attached bell tower must read instantly and feel iconic.",
+    "scene_boundary": "The church stands on one small self-contained ground patch and does not blend into any background."
+  },
+  "visual_composition": {
+    "occupancy": "The content illustration should occupy a compact central area with wide transparent air around it.",
+    "shape": "A compact one-storey church nave with a taller entrance bell tower and four onion domes arranged into one readable clustered silhouette.",
+    "floating_behavior": "The scene visually floats in open space and does not connect to the card's lower skyline strip.",
+    "base": "A small irregular cold-gray and muted-olive churchyard patch belonging entirely to the miniature.",
+    "background": "Fully transparent; no skyline, sky, clouds, horizon, streetscape, or distant scenery."
+  },
+  "russian_grimness_rules": {
+    "principle": "Post-Soviet character comes from modest provincial architecture, restrained colors, and sparse grounds, not from realistic grime or cinematic rendering.",
+    "use": [
+      "slightly worn pale stucco walls",
+      "muted blue-gray painted metal roofs",
+      "small gold onion domes with simple Orthodox crosses",
+      "a low utilitarian metal fence with no signboard",
+      "one bare birch and two small dark evergreen shrubs",
+      "deadpan provincial restraint"
+    ],
+    "do_not_use": [
+      "photorealism",
+      "architectural-visualization detail",
+      "gritty material texture",
+      "cinematic lighting",
+      "dense grime or realistic dirt",
+      "atmospheric realism"
+    ],
+    "guardrail": "Preserve the cute board-game miniature style and express cultural specificity through the architecture, simplified shapes, and palette."
+  },
+  "palette": {
+    "base": [
+      "worn warm-white stucco",
+      "muted blue-gray roofing",
+      "cold concrete gray",
+      "desaturated slate"
+    ],
+    "secondary": [
+      "dull olive ground",
+      "dark evergreen",
+      "faded brown wood",
+      "deep muted violet shadows"
+    ],
+    "warm_accents": [
+      "restrained matte gold on exactly four onion domes and crosses"
+    ],
+    "saturation": "low to moderate",
+    "overall_brightness": "clean and readable against a purple card without looking glossy or ornate"
+  },
+  "subject_construction_rules": {
+    "general": [
+      "Reduce the subject to a compact iconic miniature.",
+      "Choose only the few details needed for recognition.",
+      "Exaggerate and simplify proportions slightly.",
+      "Keep all forms chunky and readable.",
+      "Keep generous transparent margin around the full silhouette."
+    ],
+    "building_specific": [
+      "Face the church slightly right, showing the front and right side in a readable three-quarter view.",
+      "Use a short rectangular nave with one small apse and an attached square entrance bell tower.",
+      "Place exactly four gold onion domes of varied height over the nave and side sections; each has one simple Orthodox cross. Keep the entrance bell tower capped by a simple muted blue-gray pyramidal roof.",
+      "Use a few tall narrow arched windows with blank dark blue glass and no decorative writing.",
+      "Keep roof seams, wall trim, and cornices broad and simple.",
+      "All walls, doors, fences, and surfaces are completely free of writing, plaques, emblems, and text-like marks."
+    ],
+    "environment_specific": [
+      "Place the church on a small irregular churchyard slab with a short path to the entrance.",
+      "Include only one bare birch, two compact evergreen shrubs, and a short low metal fence segment as restrained supporting details.",
+      "Keep every supporting element attached to the same miniature base and fully visible."
+    ]
+  },
+  "content": {
+    "subject": "A stylized miniature of a modest Russian Orthodox church.",
+    "description": "A compact worn warm-white stucco church with muted blue-gray pitched roofs, an attached square entrance bell tower, exactly four matte-gold onion domes with simple Orthodox crosses, a few tall arched windows, and a sparse fenced churchyard.",
+    "desired_read": "An unmistakable Russian Orthodox church: modest, provincial, slightly bleak, peaceful, and immediately readable as a cute board-game miniature.",
+    "recognition_details": [
+      "attached square bell tower rising above the front entrance",
+      "exactly four gold onion domes of varied height, each topped by a simple Orthodox cross",
+      "pale stucco walls, muted blue-gray pitched metal roofs, and a few narrow arched windows",
+      "small churchyard patch with a short path, one bare birch, two evergreen shrubs, and a low fence segment"
+    ],
+    "miniature_base": "A compact irregular patch of cold-gray paving and dull olive grass, fully contained inside the floating illustration.",
+    "simplify": [
+      "ornamental Orthodox architecture into broad stucco masses, four clear onion-dome silhouettes, and a few chunky trim bands",
+      "the churchyard into one path, one bare birch, two shrubs, and one short fence segment"
+    ],
+    "omit": [
+      "all text and text-like content, including letters, numbers, church names, plaques, notices, labels, logos, graffiti, and pseudo-glyphs",
+      "people, vehicles, candles, icons, religious paintings, banners, flags, signboards, surrounding streets, neighboring buildings, cemetery, sky, clouds, or background scenery",
+      "photorealism, excessive ornament, gritty texture, cinematic lighting, dense grime, and architectural-detail overload"
+    ],
+    "target_impression": "A modest post-Soviet Russian Orthodox church distilled into a charming but restrained floating board-game token, with four readable onion domes and a compact provincial churchyard."
+  },
+  "anti_patterns": [
+    "Do not generate a full card.",
+    "Do not generate sky, clouds, footer, or any fixed card furniture.",
+    "Do not create a realistic architectural rendering or a grand cathedral.",
+    "Do not create a cityscape, landscape background, cemetery, or sprawling church grounds.",
+    "Do not make the scene connect visually to the bottom of the card.",
+    "Do not generate any letters, numbers, words, labels, logos, signage, plaques, graffiti, or pseudo-text.",
+    "Do not clip the crosses, domes, roofs, tree, fence, base, or shadow.",
+    "Do not show the church straight-on or facing left.",
+    "Do not include people, vehicles, icons, painted saints, banners, flags, signboards, or extra domes.",
+    "Do not use heavy textures, glossy 3D rendering, or gritty realism."
+  ],
+  "final_prompt_summary": "Use case: stylized-concept. Asset type: transparent central game-card illustration. Generate only a compact floating miniature of a modest Russian Orthodox church for a purple Machi Koro-style establishment card. Show it in loose playful three-quarter perspective facing slightly right, with the front and right side visible. Use worn warm-white stucco walls, muted blue-gray pitched roofs, an attached square entrance bell tower capped by a simple pyramidal roof, exactly four matte-gold onion domes of varied height with simple Orthodox crosses, and a few tall narrow arched windows with blank dark blue glass. Put it on one small self-contained patch of cold-gray paving and dull olive grass with a short entrance path, exactly one bare birch, exactly two compact evergreen shrubs, and one short low metal fence segment. Match a cute simplified tabletop-game miniature: chunky clean shapes, clear dark outlines, low detail density, broad color blocks, simple graphic shading, and a slightly bleak provincial post-Soviet palette. The complete subject must be centered, fully visible, unclipped, and surrounded by generous native alpha transparency. Outside the miniature, every pixel must have zero alpha; output RGBA PNG and preserve clean antialiased edges. Generate no card frame, sky, floor plane, backdrop, landscape, city, people, vehicles, cemetery, neighboring buildings, icons, paintings, flags, banners, signs, logos, watermark, letters, numbers, words, labels, plaques, graffiti, pseudo-writing, or any text-like marks. Do not generate a grand cathedral, extra domes, photorealism, excessive ornament, glossy 3D rendering, gritty texture, or cinematic lighting."
+}
