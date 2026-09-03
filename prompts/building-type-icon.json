@@ -1,5 +1,5 @@
 {
-  "spec_version": "1.1",
+  "spec_version": "1.2",
   "title": "Machi Koro-style round category icon spec",
   "purpose": "Reusable specification for the small circular category badge placed immediately before a Machi Koro-style card title.",
   "reference_observation": {
@@ -12,8 +12,8 @@
   "integration_context": {
     "target_use": "Generate only the icon asset; it will be composited before the title by the card-rendering script.",
     "canvas": "square",
-    "background": "transparent",
-    "output_preference": "PNG with alpha transparency",
+    "background": "Native RGBA transparency is mandatory outside the circular badge. Do not draw or bake a checkerboard, transparency-preview grid, black or white field, solid backdrop, gradient, glow, halo, vignette, shadow, or any other background representation into RGB.",
+    "output_preference": "RGBA PNG with alpha=0 outside the circular badge and clean antialiased alpha edges",
     "composition": "one centered circular badge filling most of the square canvas"
   },
   "parameters": {
@@ -62,6 +62,8 @@
     "do not use gradients, highlights, bevels, texture, or shadows",
     "do not add text",
     "do not add card furniture or background scenery",
+    "do not output an opaque background or draw a checkerboard or transparency-preview grid; native RGBA alpha transparency is required",
+    "do not add a black or white field, solid backdrop, gradient, glow, halo, vignette, or shadow outside the badge",
     "do not make the symbol too detailed or thin"
   ],
   "current_icon": {
@@ -69,5 +71,5 @@
     "subject": "{{ICON_SUBJECT}}",
     "expected_result": "{{EXPECTED_RESULT}}"
   },
-  "final_prompt_summary": "Generate only a small Machi Koro-style category badge on a transparent square canvas. Create one perfect solid circle in the supplied hex color, filling roughly 85% of the canvas. Inside it, center a very simple bold white pictogram of the subject defined in the parameters and pictogram sections. The result must be flat two-color vector-style artwork: colored circle plus white symbol, no border, no text, no shading, no gradient, no texture, no 3D effects, and no background."
+  "final_prompt_summary": "Generate only a small Machi Koro-style category badge on a square canvas. Create one perfect solid circle in the supplied hex color, filling roughly 85% of the canvas. Inside it, center a very simple bold white pictogram of the subject defined in the parameters and pictogram sections. OUTPUT REQUIREMENT: native RGBA transparency is mandatory; every pixel outside the circular badge must have alpha=0. Do not render, draw, or bake a checkerboard, transparency-preview grid, black or white field, solid backdrop, gradient, glow, halo, vignette, shadow, or any other background representation into RGB. The result must be flat two-color vector-style artwork: colored circle plus white symbol, no border, no text, no shading, no gradient, no texture, no 3D effects, and no background."
 }

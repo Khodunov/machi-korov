@@ -1,7 +1,7 @@
 .venv/bin/python skills/generate-card/scripts/card_compositor.py \
   --template backgrounds/blue.png \
   --overlay buildings/npz-rosneft.png \
-  --title-icon icons/factory.png \
+  --title-icon icons/resources.png \
   --shadow \
   --output cards/npz-rosneft.png \
   --x-frac 0.5 \

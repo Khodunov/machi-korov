@@ -1,17 +1,17 @@
 .venv/bin/python skills/generate-card/scripts/card_compositor.py \
   --template backgrounds/blue.png \
-  --overlay buildings/npz.png \
+  --overlay buildings/lesopoval.png \
   --title-icon icons/resources.png \
   --shadow \
-  --output cards/npz.png \
-  --x-frac 0.5 \
-  --y-frac 0.54 \
-  --scale 0.73 \
-  --coin-number 6 \
-  --activation-number 9 \
-  --title 'НПЗ' \
+  --output cards/lesopoval.png \
+  --x-frac 0.49 \
+  --y-frac 0.535 \
+  --scale 0.72 \
+  --coin-number 3 \
+  --activation-number 5 \
+  --title 'Лесоповал' \
   --title-color '#123E70' \
-  --bottom-text $'Возьмите 5 монет из банка.\nВ свой ход' \
+  --bottom-text $'Возьмите 1 монету из банка.\n В ход любого игрока' \
   --bottom-text-y-frac 0.82 \
   --bottom-text-spacing-px 6 \
   --title-font fonts/Boingster-Regular.ttf \

@@ -1,0 +1,104 @@
+{
+  "spec_version": "1.0",
+  "title": "Floating Machi Koro-style central illustration spec — Лесоповал",
+  "purpose": "Generate the isolated central illustration for the Лесоповал card: a compact Russian logging scene in the established Machi Koro miniature style.",
+  "integration_context": {
+    "target_use": "Generate only the central content illustration to be pasted onto an existing blank Machi Koro-style card furniture template.",
+    "background_requirement": "Generate an isolated cutout asset with native alpha transparency. Outside the requested subject and its integral miniature base, every pixel must have zero alpha. Output an RGBA PNG with clean antialiased alpha edges. Do not depict any environment, backdrop, sky, header, footer, card furniture, text, coin, icon, or frame.",
+    "text_policy": "The illustration must contain absolutely no letters, numbers, words, labels, signs, logos, graffiti, markings, or text-like pseudo-glyphs on clothing, tools, wood, or any other surface.",
+    "card_relationship": "The art should sit like a floating miniature object or sticker inside the middle of the card, leaving generous empty sky around it.",
+    "central_positioning": "The subject should be centered and self-contained, with enough transparent margin around it for placement in the card's open central region."
+  },
+  "style_goal": {
+    "primary_rule": "Match the illustration language of the original Machi Koro establishment art.",
+    "secondary_rule": "Depict a grim, recognizably Russian logging scene without making the rendering realistic.",
+    "core_formula": "Cute simplified tabletop-game miniature scene plus bleak Russian forest-industry subject matter."
+  },
+  "what_machi_koro_art_looks_like": {
+    "miniature_scene_feel": "A small isolated toy-like scene, almost like a board-game token, sticker, or floating diorama; never a full landscape.",
+    "shape_language": "Large clean shapes, simple geometry, compact clustered forms, and slightly exaggerated readable proportions.",
+    "perspective": "Loose playful three-quarter perspective, dimensional but not camera-accurate.",
+    "linework": "Clear outlines or sharp separations between forms; sparse interior detail lines.",
+    "shading": "Simple graphic shading using one or two darker tones, with no realistic lighting model.",
+    "materials": "Wood, bark, cloth, metal, dirt, and foliage communicated mainly by color and silhouette rather than texture.",
+    "detail_density": "Low to moderate; every important feature remains readable at small card size.",
+    "silhouette_priority": "The giant carried log, the two lumberjacks, stumps, and fallen trunks must read instantly.",
+    "scene_boundary": "The entire scene rests on one small irregular stylized forest-floor base surrounded by transparency."
+  },
+  "visual_composition": {
+    "occupancy": "Compact horizontal composition suitable for occupying roughly the middle 30-45% of the finished card height.",
+    "shape": "A broad clustered miniature: two full-body lumberjacks carrying one enormous horizontal log at shoulder height in the center, framed by felled trunks, stumps, and a few sparse standing conifers.",
+    "floating_behavior": "The scene visually floats in open space and does not connect to the bottom skyline strip of the card.",
+    "base": "A small irregular patch of dull soil, needles, and cut wood chips integral to the miniature.",
+    "background": "No background representation; every pixel outside the self-contained miniature is transparent."
+  },
+  "russian_grimness_rules": {
+    "principle": "Russian grimness comes from the things depicted, not from realistic rendering.",
+    "use": [
+      "cold blue-gray and muted pine-green palette",
+      "worn practical work clothes with Russian rural character",
+      "many cut stumps and chaotically fallen trunks",
+      "sparse surviving conifers",
+      "deadpan heroic labor posture"
+    ],
+    "do_not_use": [
+      "photorealism",
+      "cinematic realism",
+      "detailed gore or injury",
+      "dense gritty material texture",
+      "fantasy or military styling"
+    ],
+    "guardrail": "Preserve the cute board-game rendering first; communicate Russianness through clothing, palette, faces, and the bleak clear-cut forest."
+  },
+  "palette": {
+    "base": [
+      "muted pine green",
+      "cold blue-gray",
+      "weathered bark brown",
+      "dull soil brown",
+      "desaturated navy"
+    ],
+    "secondary": [
+      "dirty beige",
+      "faded rust-red",
+      "muted olive",
+      "steel gray"
+    ],
+    "warm_accents": [
+      "small warm brown and ochre accents in freshly cut wood"
+    ],
+    "saturation": "low to moderate",
+    "overall_brightness": "slightly dark and bleak but clean, colorful enough, and readable on the blue card"
+  },
+  "content": {
+    "subject": "A Russian clear-cut logging site with two rugged male lumberjacks carrying an enormous felled log on their shoulders.",
+    "description": "At the center, two broad-shouldered, mustached lumberjacks walk together under one huge horizontal log resting across their shoulders, their hands naturally gripping it. Their axes are visible and unmistakable: one axe is held low in a free hand and another is tucked or strapped safely at the side. They wear stylized Russian rural work clothing: worn quilted jackets or heavy kosovorotka-inspired work shirts, canvas trousers tucked into tall boots, wool caps, broad belts, and no modern branding. Around them is a compact bleak forest clearing with numerous cut stumps, several large felled trunks, scattered branches and wood chips, and only a few sparse dark conifers still standing.",
+    "desired_read": "Immediately recognizable at thumbnail size as heroic Russian lumberjacks carrying a massive log through a heavily logged forest.",
+    "recognition_details": [
+      "Two stocky full-body masculine lumberjacks, visibly straining yet stoic, carry one oversized horizontal log together at shoulder height.",
+      "Distinct axes with simple steel heads and wooden handles, plus worn rural Russian clothing with caps, boots, belts, and mustaches.",
+      "A clear-cut forest miniature with many fresh stumps and fallen tree trunks, backed only by a few sparse surviving conifers."
+    ],
+    "miniature_base": "One compact irregular forest-floor island of muted earth, pine needles, small branches, and wood chips; no rectangular platform and no surrounding landscape.",
+    "simplify": [
+      "Keep the lumberjacks' faces and clothing graphic, chunky, expressive, and readable rather than anatomically or historically intricate.",
+      "Reduce trees, bark, branches, and stumps to bold toy-like silhouettes with sparse marks."
+    ],
+    "omit": [
+      "No machinery, trucks, buildings, signs, weapons, flags, logos, text, or background scenery.",
+      "No full-card composition, sky, clouds, horizon, border, title, number, coin, or footer."
+    ],
+    "target_impression": "Bleak, stoic, faintly absurd Russian industrial labor rendered as a charming and iconic Machi Koro miniature."
+  },
+  "anti_patterns": [
+    "Do not generate a full card.",
+    "Do not generate sky, clouds, footer, fixed furniture, or a rectangular image background.",
+    "Do not make a full landscape or forest panorama.",
+    "Do not crop the log, axes, people, stumps, base, or surviving trees.",
+    "Do not generate incidental letters, numbers, words, labels, signage, graffiti, logos, or pseudo-text anywhere.",
+    "Do not use photorealism, painterly realism, heavy texture, or dramatic cinematic lighting.",
+    "Do not turn the workers into fantasy warriors, soldiers, caricature peasants, or contemporary branded professionals.",
+    "Do not show unsafe or anatomically impossible grips; the log must convincingly rest across both men's shoulders."
+  ],
+  "final_prompt_summary": "Generate only an isolated central illustration for a Machi Koro-style card: a compact floating miniature of a bleak Russian clear-cut forest. In the center, two broad-shouldered, mustached male lumberjacks in worn Russian rural work clothes—quilted jackets or kosovorotka-inspired heavy shirts, canvas trousers tucked into tall boots, wool caps, broad belts—carry one enormous horizontal log together across their shoulders, gripping it naturally. Make axes clearly visible, with one held low and one secured safely at a worker's side. Surround them on one small irregular forest-floor base with many fresh stumps, several felled trunks, branches, wood chips, and only a few sparse surviving conifers. Use loose playful three-quarter perspective, chunky simplified toy-like shapes, clear outlines, low-to-moderate detail, simple graphic shading, and a cold muted blue-gray, pine-green, bark-brown palette. The complete scene must be fully contained with generous transparent margins and a strong readable silhouette. Generate a native RGBA PNG: every pixel outside the scene and its integral ground base has zero alpha. No environment or backdrop, no sky, no horizon, no card furniture, no frame, and absolutely no letters, numbers, signs, labels, logos, markings, or pseudo-writing anywhere."
+}

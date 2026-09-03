@@ -1,0 +1,72 @@
+{
+  "spec_version": "1.1",
+  "title": "Machi Koro-style round category icon spec — resources",
+  "purpose": "Generate a resource-category badge for a blue Machi Koro-style card.",
+  "reference_observation": {
+    "badge": "A solid colored circular badge.",
+    "symbol": "Inside the circle is a simple white pictogram.",
+    "contrast": "The icon is strictly two-color: dark blue circle plus white symbol.",
+    "style": "Flat, compact, highly legible, with no realistic rendering, texture, or 3D effects.",
+    "placement_context": "The badge will be placed immediately before the card title and centered with it as one horizontal group."
+  },
+  "integration_context": {
+    "target_use": "Generate only the icon asset; it will be composited before the title by the card-rendering script.",
+    "canvas": "square",
+    "background": "native alpha transparency outside the badge",
+    "output_preference": "RGBA PNG with clean antialiased edges",
+    "composition": "one centered circular badge filling most of the square canvas"
+  },
+  "parameters": {
+    "icon_color": {
+      "type": "hex color string",
+      "default": "#062964",
+      "description": "Exact dominant dark blue sampled from the unobstructed lower footer of backgrounds/blue.png."
+    },
+    "subject": {
+      "type": "string",
+      "default": "combined raw-resources symbol: a cut log and an oil droplet",
+      "description": "A single compact white pictogram combining a short horizontal log with a round cut end and one bold oil droplet rising just above and slightly overlapping it."
+    }
+  },
+  "badge_geometry": {
+    "circle": "perfect centered circle",
+    "circle_diameter": "approximately 85% of canvas width",
+    "outer_margin": "fully transparent margin around the circle",
+    "border": "none; visually it is one flat solid dark blue circle"
+  },
+  "pictogram": {
+    "color": "#FFFFFF",
+    "subject": "a short cut log plus one oil droplet, unified as a resource symbol",
+    "description": "Draw the log as a chunky white horizontal cylinder with one bold circular cut end and one or two very simple growth-ring arcs. Place one large unmistakable white oil-drop silhouette above and slightly overlapping the log. Keep both elements balanced as one centered emblem, with no outlines thinner than the existing badge icons.",
+    "size": "the combined pictogram occupies approximately 54% of the circle diameter",
+    "position": "precisely centered inside the circle",
+    "shape_language": "very simple, chunky, geometric, slightly rounded, icon-like",
+    "detail_level": "very low",
+    "line_rule": "Use bold solid white shapes and only a couple of thick dark-blue negative-space cuts; avoid thin line art."
+  },
+  "visual_style": {
+    "core": "Flat two-color Machi Koro category badge.",
+    "colors": "exactly #062964 and pure white, plus transparency outside the circle",
+    "shading": "none",
+    "gradient": "none",
+    "texture": "none",
+    "shadow": "none",
+    "rendering": "clean vector-style UI icon",
+    "small_size_priority": "the oil droplet and cut log must both remain instantly recognizable beside the card title"
+  },
+  "anti_patterns": [
+    "do not generate only a pictogram without the dark blue round badge",
+    "do not add a white outer ring around the badge",
+    "do not use any colors other than #062964 and #FFFFFF inside the circle",
+    "do not add gradients, highlights, bevels, texture, shadows, or 3D effects",
+    "do not add text, letters, numbers, logos, card furniture, or background scenery",
+    "do not make the symbol too detailed, thin, off-center, or too small",
+    "do not create transparency holes inside the solid circular badge"
+  ],
+  "current_icon": {
+    "icon_color": "#062964",
+    "subject": "combined cut-log and oil-droplet resources pictogram",
+    "expected_result": "A perfect dark blue circle filling about 85% of a transparent square, containing a centered bold white icon that clearly reads as both timber and oil."
+  },
+  "final_prompt_summary": "Generate only a small Machi Koro-style category badge on a genuinely transparent square canvas. Create one perfect solid circle in exact color #062964, filling roughly 85% of the canvas with an even transparent margin. Center a very simple bold white combined resources pictogram inside: a chunky short horizontal cut log with a visible round end and at most two thick growth-ring arcs, plus one large unmistakable oil droplet rising just above and slightly overlapping the log. The combined symbol should fill about 54% of the circle and read clearly at tiny size. Flat two-color vector-style artwork only: dark blue and pure white, no border, no outer ring, no text, no shading, no gradient, no texture, no shadow, no 3D, no background scene. Preserve full alpha transparency outside the circle and keep the entire circle opaque with no transparency holes."
+}
