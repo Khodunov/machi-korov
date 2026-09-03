@@ -1,0 +1,27 @@
+.venv/bin/python skills/generate-card/scripts/card_compositor.py \
+  --template backgrounds/green.png \
+  --overlay buildings/eksport-v-kitay.png \
+  --title-icon icons/truck.png \
+  --shadow \
+  --output cards/eksport-v-kitay.png \
+  --x-frac 0.50 \
+  --y-frac 0.515 \
+  --scale 0.80 \
+  --coin-number 3 \
+  --activation-number 8 \
+  --title 'Экспорт в Китай' \
+  --title-color '#17361A' \
+  --bottom-text $'Возьмите по 3 монеты за каждое\nваше здание с символом {icon}.\nВ свой ход' \
+  --bottom-inline-icon icons/resources.png \
+  --bottom-inline-icon-scale 1.15 \
+  --bottom-text-y-frac 0.84 \
+  --bottom-text-spacing-px 6 \
+  --title-font fonts/Boingster-Regular.ttf \
+  --title-font-size-frac 0.058 \
+  --title-icon-scale 1.55 \
+  --title-icon-y-offset-px -7 \
+  --bottom-text-font fonts/CCUltimatum-Bold.ttf \
+  --bottom-text-font-size-frac 0.045 \
+  --activation-font fonts/Boingster-Regular.ttf \
+  --activation-font-size-frac 0.1 \
+  --coin-font fonts/Boingster-Regular.ttf

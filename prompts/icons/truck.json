@@ -1,0 +1,73 @@
+{
+  "spec_version": "1.1",
+  "title": "Machi Koro-style round category icon spec — truck",
+  "purpose": "Generate a freight-transport category badge for a green Machi Koro-style card.",
+  "reference_observation": {
+    "badge": "A solid colored circular badge.",
+    "symbol": "Inside the circle is a simple white pictogram.",
+    "contrast": "The icon is strictly two-color: dark green circle plus white symbol.",
+    "style": "Flat, compact, highly legible, with no realistic rendering, texture, or 3D effects.",
+    "placement_context": "The badge will be placed immediately before the card title and centered with it as one horizontal group."
+  },
+  "integration_context": {
+    "target_use": "Generate only the icon asset; it will be composited before the title by the card-rendering script.",
+    "canvas": "square",
+    "background": "native alpha transparency outside the badge",
+    "output_preference": "RGBA PNG with clean antialiased edges",
+    "composition": "one centered circular badge filling most of the square canvas"
+  },
+  "parameters": {
+    "icon_color": {
+      "type": "hex color string",
+      "default": "#1E4321",
+      "description": "Exact dark green sampled from the unobstructed lower footer of backgrounds/green.png."
+    },
+    "subject": {
+      "type": "string",
+      "default": "compact rigid cargo truck, not a semi-trailer",
+      "description": "A minimal side-view white pictogram of a small-to-medium rigid box truck: short cab integrated closely with one compact rectangular cargo body and two bold wheels."
+    }
+  },
+  "badge_geometry": {
+    "circle": "perfect centered circle",
+    "circle_diameter": "approximately 85% of canvas width",
+    "outer_margin": "fully transparent margin around the circle",
+    "border": "none; visually it is one flat solid dark green circle"
+  },
+  "pictogram": {
+    "color": "#FFFFFF",
+    "subject": "a compact rigid cargo truck, explicitly not a tractor-trailer or articulated semi",
+    "description": "Draw one chunky white side-view silhouette with a short blunt cab, a small simple windshield cut, one compact rectangular cargo box directly behind the cab, and two large round wheels. The vehicle must read as a modest local delivery or cargo truck, not a long-haul semi, lorry with trailer, van, pickup, or dump truck.",
+    "size": "the truck occupies approximately 56% of the circle diameter",
+    "position": "precisely centered inside the circle",
+    "shape_language": "very simple, chunky, geometric, slightly rounded, icon-like",
+    "detail_level": "very low",
+    "line_rule": "Use one bold solid white silhouette with only a few thick dark-green negative-space cuts; avoid thin line art."
+  },
+  "visual_style": {
+    "core": "Flat two-color Machi Koro category badge.",
+    "colors": "exactly #1E4321 and pure white, plus transparency outside the circle",
+    "shading": "none",
+    "gradient": "none",
+    "texture": "none",
+    "shadow": "none",
+    "rendering": "clean vector-style UI icon",
+    "small_size_priority": "the compact rigid cargo truck must remain instantly recognizable beside the card title"
+  },
+  "anti_patterns": [
+    "do not generate only a pictogram without the dark green round badge",
+    "do not add a white outer ring around the badge",
+    "do not use any colors other than #1E4321 and #FFFFFF inside the circle",
+    "do not draw a semi-truck, tractor unit, separate trailer, long articulated lorry, pickup, van, or dump bed",
+    "do not add gradients, highlights, bevels, texture, shadows, or 3D effects",
+    "do not add text, letters, numbers, logos, card furniture, or background scenery",
+    "do not make the symbol too detailed, thin, off-center, or too small",
+    "do not create transparency holes inside the solid circular badge"
+  ],
+  "current_icon": {
+    "icon_color": "#1E4321",
+    "subject": "compact rigid cargo truck pictogram",
+    "expected_result": "A perfect dark green circle filling about 85% of a transparent square, containing a centered bold white compact cargo truck with two wheels and no trailer."
+  },
+  "final_prompt_summary": "Generate only a small Machi Koro-style category badge on a genuinely transparent square canvas. Create one perfect solid circle in exact color #1E4321, filling roughly 85% of the canvas with an even transparent margin. Center a very simple bold white side-view pictogram of a compact rigid cargo truck: short blunt cab, tiny simple windshield cut, one modest rectangular cargo box directly attached behind the cab, and exactly two large readable wheels. It must be a small-to-medium single-body cargo truck, emphatically not a semi-truck, tractor-trailer, articulated lorry, van, pickup, or dump truck. The pictogram should fill about 56% of the circle and read clearly at tiny size. Flat two-color vector-style artwork only: dark green and pure white, no border, no outer ring, no text, no shading, no gradient, no texture, no shadow, no 3D, no background scene. Preserve full alpha transparency outside the circle and keep the entire circle opaque with no transparency holes."
+}

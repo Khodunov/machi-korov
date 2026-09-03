@@ -1,0 +1,103 @@
+{
+  "spec_version": "1.0",
+  "title": "Floating Machi Koro-style central illustration spec — Экспорт в Китай",
+  "purpose": "Generate the isolated central illustration for the Экспорт в Китай card: a large multi-track freight railway terminal loading Russian raw materials for export to China.",
+  "integration_context": {
+    "target_use": "Generate only the central content illustration to be pasted onto an existing blank Machi Koro-style card furniture template.",
+    "background_requirement": "Generate an isolated cutout asset with native alpha transparency. Outside the requested subject and its integral miniature base, every pixel must have zero alpha. Output an RGBA PNG with clean antialiased alpha edges. Do not depict any environment, backdrop, sky, header, footer, card furniture, text, coin, icon, or frame.",
+    "text_policy": "The illustration must contain absolutely no letters, numbers, words, labels, signs, logos, graffiti, license-plate characters, or text-like pseudo-glyphs. The explicitly requested Chinese flags are permitted only as small graphic red flags with yellow star motifs and must contain no writing.",
+    "card_relationship": "The art should sit like a floating miniature object or sticker inside the middle of the card, leaving generous empty sky around it.",
+    "central_positioning": "The subject should be centered and self-contained, with enough transparent margin around it for placement in the card's open central region."
+  },
+  "style_goal": {
+    "primary_rule": "Match the illustration language of the original Machi Koro establishment art.",
+    "secondary_rule": "Depict a recognizably Russian/post-Soviet export rail terminal without making the rendering realistic.",
+    "core_formula": "Cute simplified tabletop-game industrial miniature plus immense, slightly bleak raw-material export infrastructure."
+  },
+  "what_machi_koro_art_looks_like": {
+    "miniature_scene_feel": "A small isolated toy-like scene, almost like a board-game token, sticker, or floating diorama; never a full landscape.",
+    "shape_language": "Large clean shapes, simple geometry, compact clustered forms, and slightly exaggerated readable proportions.",
+    "perspective": "Loose playful three-quarter perspective looking slightly down, showing the near ends and right sides of trains and loading structures.",
+    "linework": "Clear outlines or sharp separations between forms; sparse interior detail lines.",
+    "shading": "Simple graphic shading using one or two darker tones, with no realistic lighting model.",
+    "materials": "Rail steel, timber, ore, tanks, and concrete communicated mainly by color and silhouette rather than texture.",
+    "detail_density": "Moderate but carefully simplified; the three different cargo streams remain readable at small card size.",
+    "silhouette_priority": "Several parallel freight trains, gantry loaders, log stacks, tank wagons, and ore wagons must read instantly.",
+    "scene_boundary": "The entire terminal rests on one compact irregular rail-yard base surrounded by transparency."
+  },
+  "visual_composition": {
+    "occupancy": "Compact wide composition suitable for occupying roughly the middle 35-45% of the finished card height.",
+    "shape": "A large but self-contained three-quarter-view freight terminal with three short parallel trains arranged in a shallow fan: timber wagons, cylindrical tank wagons, and open ore hoppers, all actively being loaded by simplified cranes and pipes.",
+    "floating_behavior": "The scene visually floats in open space and does not connect to the bottom skyline strip of the card.",
+    "base": "One compact irregular slab of muted ballast and concrete containing the parallel rails and loading equipment; no rectangular platform and no surrounding landscape.",
+    "background": "No background representation; every pixel outside the self-contained miniature is transparent."
+  },
+  "russian_grimness_rules": {
+    "principle": "Russian industrial character comes from utilitarian objects and palette, not realistic rendering.",
+    "use": [
+      "cold blue-gray freight cars and concrete",
+      "weathered dark-green locomotives without markings",
+      "heavy utilitarian gantry cranes and loading pipes",
+      "raw log stacks, black oil tanks, and rusty red-brown ore",
+      "small red Chinese flags as vivid destination accents"
+    ],
+    "do_not_use": [
+      "photorealism",
+      "cinematic realism",
+      "dense gritty material texture",
+      "a modern glossy container port",
+      "passenger trains or city scenery"
+    ],
+    "guardrail": "Preserve the cute board-game rendering first; communicate industrial scale through the clustered trains, cargo types, and loading machinery."
+  },
+  "palette": {
+    "base": [
+      "cold steel blue-gray",
+      "muted freight green",
+      "weathered timber brown",
+      "concrete gray",
+      "dark charcoal"
+    ],
+    "secondary": [
+      "rusty ore red-brown",
+      "oil black",
+      "dull ochre",
+      "muted olive"
+    ],
+    "warm_accents": [
+      "small vivid red Chinese flags with simple yellow star motifs"
+    ],
+    "saturation": "low to moderate except for the small flags",
+    "overall_brightness": "slightly dark and industrial but clean, colorful enough, and readable on the green card"
+  },
+  "content": {
+    "subject": "A large Russian freight railway export terminal loading logs, petroleum, and ore into several trains bound for China.",
+    "description": "Show three short parallel freight trains within one compact terminal miniature. One train has open stake wagons receiving large bundled logs from a chunky gantry crane. A second has cylindrical tank wagons connected to a simple overhead loading pipe for petroleum or gasoline. A third has open hopper wagons receiving a heap of reddish-brown ore from a conveyor chute. Include two or three small Chinese national flags mounted flat on the sides of selected wagons: red rectangles with recognizable yellow star motifs, no lettering. Keep locomotives and rail equipment generic and unbranded.",
+    "desired_read": "Immediately recognizable at thumbnail size as a major rail cargo terminal exporting several kinds of raw resources to China.",
+    "recognition_details": [
+      "Several parallel freight trains, each with a clearly distinct wagon silhouette: timber stakes, cylindrical oil tanks, and open ore hoppers.",
+      "Active loading equipment: one gantry crane holding logs, one thick fuel-loading pipe, and one conveyor or chute pouring ore.",
+      "Small clean Chinese flags on the sides of a few wagons, rendered only as red-and-yellow graphic flag motifs without writing."
+    ],
+    "miniature_base": "One compact irregular rail-yard island of gray ballast and concrete with three short parallel tracks, buffers, and a few sparse utility details; no surrounding landscape.",
+    "simplify": [
+      "Keep each train short and toy-like, with only enough wagons to establish multiple simultaneous loading operations.",
+      "Reduce rails, wheels, cranes, pipes, logs, and mineral piles to chunky iconic shapes with sparse detail."
+    ],
+    "omit": [
+      "No shipping containers, ships, road trucks, people, station buildings, signs, company logos, Cyrillic, Chinese characters, numbers, or pseudo-writing.",
+      "No full-card composition, sky, clouds, horizon, border, title, activation number, coin, footer, or rectangular background."
+    ],
+    "target_impression": "Huge raw-resource export logistics compressed into a charming, busy, slightly bleak Machi Koro railway miniature."
+  },
+  "anti_patterns": [
+    "Do not generate a full card or a full landscape.",
+    "Do not generate sky, clouds, footer, fixed furniture, or a rectangular image background.",
+    "Do not crop trains, cranes, cargo, flags, rails, or the miniature base.",
+    "Do not generate letters, numbers, names, destination boards, labels, logos, graffiti, license plates, or pseudo-writing anywhere.",
+    "Do not replace Chinese flags with text, Chinese characters, logos, or generic red banners.",
+    "Do not use photorealism, painterly realism, heavy texture, dramatic lighting, or strict technical detail.",
+    "Do not depict a modern container terminal, passenger station, road freight depot, or a single isolated train."
+  ],
+  "final_prompt_summary": "Generate only an isolated central illustration for a Machi Koro-style card: a compact floating miniature of a large Russian freight railway export terminal viewed in playful three-quarter perspective from slightly above. Place three short parallel freight trains on one irregular ballast-and-concrete rail-yard base. Show three distinct active loading operations: a chunky gantry crane lowering bundled logs into open stake wagons; a thick overhead pipe loading petroleum into cylindrical tank wagons; and a conveyor chute pouring reddish-brown ore into open hopper wagons. Add two or three small Chinese national flags flat on the sides of selected wagons, rendered only as clean red rectangles with recognizable yellow star motifs and absolutely no writing. Use generic unbranded dark-green locomotives, cold steel blue-gray cars, timber brown, oil black, ore rust, clean outlines, chunky simplified toy-like shapes, moderate readable detail, and simple graphic shading. The complete scene must be fully contained with generous transparent margins and a strong wide silhouette. Generate a native RGBA PNG: every pixel outside the scene and its integral base has zero alpha. No environment, scenery, backdrop, sky, horizon, card furniture, frame, shipping containers, people, road trucks, letters, numbers, words, Chinese characters, labels, logos, signage, graffiti, license plates, markings, or pseudo-writing anywhere."
+}
