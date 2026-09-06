@@ -1,0 +1,128 @@
+{
+  "spec_version": "1.1",
+  "title": "Floating Machi Koro-style provincial karaoke club illustration spec",
+  "purpose": "Central illustration for a red Machi Koro-style establishment card.",
+  "integration_context": {
+    "target_use": "Generate only the central content illustration to be composited onto an existing blank card template.",
+    "background_requirement": "Native RGBA transparency is mandatory. Outside the building, people visible through its windows, disco ball, and integral miniature pavement base, every pixel must have alpha=0. No sky, scenery, card furniture, text, coin, icon, frame, glow, halo, or backdrop.",
+    "text_policy": "Absolute no-text rule: no letters, numbers, words, prices, menus, labels, written signs, logos, graffiti, license-plate characters, or pseudo-writing on any surface. The karaoke identity must be communicated by the microphone pictogram, disco ball, stage lighting, and singing patrons, not by lettering.",
+    "card_relationship": "A floating miniature object or sticker inside the card's open middle region, with generous transparent space around it.",
+    "central_positioning": "Centered, compact, self-contained, fully visible, with ample margin on every side."
+  },
+  "style_goal": {
+    "primary_rule": "Match the cute simplified establishment-art language of the original Machi Koro tabletop game without copying a specific illustration: clearly cartoonish building and people, chunky rounded geometry, crisp outlines, flat colors, and simple cel shading.",
+    "secondary_rule": "Depict a recognizable provincial post-Soviet karaoke club as a substantial believable two-story entertainment venue with several halls, many ordinary windows, cheap interior glimpses, singing patrons, and a disco ball.",
+    "core_formula": "Cute simplified board-game miniature plus an affectionate deadpan provincial karaoke scene."
+  },
+  "what_machi_koro_art_looks_like": {
+    "miniature_scene_feel": "A small isolated toy-like scene, like a board-game token or floating diorama, not a full landscape.",
+    "shape_language": "Large clean shapes, simple geometry, compact clustered forms, and a crisp readable silhouette.",
+    "perspective": "Loose playful three-quarter perspective: front facade faces slightly right, the building's left side is visible, and depth recedes toward image left.",
+    "linework": "Clear outlines or sharp form separation with sparse interior detail.",
+    "shading": "Simple graphic shading with one or two darker tones, never realistic lighting.",
+    "materials": "Metal cladding, glass, plastic chairs, and disco lighting communicated by color and silhouette rather than texture.",
+    "detail_density": "Low to moderate and readable at small card size.",
+    "silhouette_priority": "The broad two-story club, rows of small glowing windows, entrance canopy, microphone pictogram, and large upper-window disco ball must read instantly.",
+    "scene_boundary": "The building rests on one compact stylized pavement slab and does not blend into a background."
+  },
+  "visual_composition": {
+    "occupancy": "Substantial but self-contained horizontal subject intended to dominate the illustration area while retaining transparent margin.",
+    "shape": "One broad two-story red-clad entertainment building with 10-12 ordinary small-to-medium windows separated by substantial walls; several karaoke rooms are only partly visible through the glazing.",
+    "orientation": "Front facade faces slightly right, the building's left side is visible, and depth recedes toward image left; do not show the building's right side.",
+    "floating_behavior": "The entire scene floats in transparent space and never connects to the card skyline.",
+    "base": "A small rounded patch of cracked provincial pavement and curb belonging entirely to the miniature.",
+    "background": "None; transparent pixels outside the miniature."
+  },
+  "russian_grimness_rules": {
+    "principle": "Provincial post-Soviet bleakness comes from the utilitarian building and cheap furnishings, not realism.",
+    "use": [
+      "faded burgundy and dusty red metal cladding",
+      "black utilitarian door under a curved red polycarbonate canopy",
+      "mismatched white plastic chairs and cheap tables",
+      "purple, cyan, and warm amber karaoke lighting",
+      "one clean microphone pictogram above the entrance with no lettering",
+      "a disco ball visible in the club"
+    ],
+    "do_not_use": [
+      "photorealism",
+      "architectural visualization detail",
+      "gritty textures",
+      "cinematic lighting",
+      "dense grime",
+      "written signage or branding"
+    ],
+    "guardrail": "Preserve the cute board-game miniature rendering and express locality through object choice and palette."
+  },
+  "palette": {
+    "base": ["faded burgundy", "dusty red", "charcoal", "cold gray glass"],
+    "secondary": ["dirty beige", "off-white plastic", "desaturated navy"],
+    "warm_accents": ["amber window light", "purple and cyan stage lighting", "small disco-ball sparkles"],
+    "saturation": "low to moderate outside, bright but controlled nightclub colors inside",
+    "overall_brightness": "clean and readable, harmonious with a red card template"
+  },
+  "subject_construction_rules": {
+    "general": [
+      "Reduce the whole scene to a compact iconic miniature.",
+      "Use only the few features needed for immediate recognition.",
+      "Keep all forms chunky and readable.",
+      "Show the front facade facing slightly right with the building's left side visible and depth receding toward image left."
+    ],
+    "building_specific": [
+      "Use a broad two-story provincial entertainment venue with a more complex public-building footprint, clad in faded red metal panels with gray stucco pilasters and a concrete foundation.",
+      "Place a recessed dark entrance vestibule beneath a broad curved red translucent canopy, with steps and short stair railings; do not add a ramp.",
+      "Use 10-12 ordinary small-to-medium rectangular windows across both floors with believable sill height, dark frames, reflections, occasional curtain edges, and wide solid wall sections between them; never use storefront picture windows or cutaway walls.",
+      "Add believable public-building details: lintels, sills, facade lights, drainpipes, utility boxes, rooftop ventilation and exhausts, and a side service door.",
+      "Above the door place one simple illuminated microphone pictogram only, with no words or letters.",
+      "Through the left-side windows show only partial glimpses of five stocky pale Slavic middle-aged factory workers: receding hairlines, stubble, tired broad faces, thick necks, checked shirts, dark polos, sweaters, and plain work jackets. They sing together with grave heartfelt intensity; one leads with a microphone to his chest, one raises a fist, and one embraces a mate by the shoulder.",
+      "A small monitor behind the men may show only a generic birch grove and open Russian field to evoke a Lyube-style patriotic folk-rock karaoke number; no text, lyrics, logos, band members, or recognizable portraits.",
+      "Through the right-side windows show only partial glimpses of adult provincial Russian women with heavy bright makeup, visibly smudged mascara, disheveled hair, and flashy but non-explicit party clothes. They belt an emotional love-song chorus into microphones; one stands safely on a sturdy table and another throws an arm upward. Depict exuberant messy comedy without humiliation, injury, or sexualization.",
+      "Show cheap white plastic chairs and plain tables in both rooms.",
+      "Hang one prominent faceted disco ball inside near the center, visible through the glazing.",
+      "Do not include fascia panels, written signboards, menus, posters, logos, screens with text, or any surfaces that invite generated writing."
+    ],
+    "environment_specific": [
+      "Use a tiny self-contained pavement-and-curb base and no surrounding street.",
+      "Keep people fully clothed, toy-like, simplified, non-identifiable, and readable as groups rather than portraits.",
+      "Avoid cars and license plates so there is no surface likely to acquire text-like marks."
+    ]
+  },
+  "content": {
+    "subject": "A substantial believable two-story provincial karaoke-club building with many ordinary windows, several halls, partial glimpses of singing patrons, and a disco ball.",
+    "description": "A broad worn red-clad two-story entertainment venue in front-plus-left-side three-quarter view, rendered as a polished cartoon board-game miniature. A recessed dark entrance sits under a broad curved canopy with steps, short railings, and a clean microphone pictogram above it; there is no ramp. Rows of ordinary windows reveal only fragments of several karaoke rooms: chunky expressive caricatures of stocky middle-aged Russian factory workers singing heartfelt patriotic folk-rock, heavily made-up adult women screaming an emotional love-song chorus, and a few secondary groups. Microphones, cheap furnishings, colorful stage lights, and a prominent disco ball visible in the upper central hall make the venue unmistakable.",
+    "desired_read": "An unmistakable provincial karaoke club rendered as a cute floating Machi Koro-style miniature.",
+    "recognition_details": [
+      "broad two-story red-and-gray public venue with a recessed entrance, canopy, entrance steps, and rooftop ventilation",
+      "10-12 ordinary windows with broad solid wall sections between them",
+      "partial glimpses of five stocky middle-aged Russian factory workers singing together",
+      "partial glimpses of heavily made-up women singing chaotically, one standing on a table",
+      "cheap white plastic chairs, microphones, and one prominent disco ball"
+    ],
+    "miniature_base": "A compact rounded patch of cracked gray pavement with a short curb, fully isolated on transparency.",
+    "simplify": [
+      "architecture, patrons, furniture, and lighting into chunky toy-like masses",
+      "interior details into a few readable microphones, chairs, tables, colored light beams, and disco-ball facets"
+    ],
+    "omit": [
+      "all words, letters, numbers, prices, labels, written signs, logos, posters, graffiti, license-plate characters, and pseudo-writing",
+      "specific musicians, bands, celebrities, recognizable people, song titles, and copyrighted lyrics",
+      "photorealism, full scenery, neighboring buildings, cars, alcohol labels, and clipped content"
+    ],
+    "target_impression": "The same whimsical illustrator who drew classic Machi Koro establishments has drawn a wonderfully shabby provincial karaoke club, with sincere over-the-top singing and plastic-chair charm."
+  },
+  "reference_images": {
+    "image_1": "Reference for a modest karaoke room with projected video and disco-light dots; use only for venue cues, not composition or text.",
+    "image_2": "Reference for provincial red-clad exterior, black door, curved canopy, and karaoke-club identity; omit every visible word and number.",
+    "image_3": "Reference for dramatic blue karaoke lighting, screen/stage focus, seating, and disco ball; simplify heavily.",
+    "image_4": "Reference for purple-cyan karaoke interior, upholstered seating, plastic-chair-level kitsch, and stage layout; simplify heavily."
+  },
+  "anti_patterns": [
+    "Do not generate a full card.",
+    "Do not generate any background, sky, clouds, header, footer, frame, coin, or category icon.",
+    "Do not create a realistic architectural rendering or a full streetscape.",
+    "Do not generate any text or text-like marks anywhere, including on signs, screens, clothing, microphones, or bottles.",
+    "Do not depict identifiable singers or quote, display, or imply any lyrics.",
+    "Do not depict dangerous intoxication, injury, nudity, sexualization, or explicit content.",
+    "Do not clip the roof, canopy, windows, patrons, disco ball, pavement slab, or their edges."
+  ],
+  "final_prompt_summary": "Use case: stylized-concept. Asset type: transparent central illustration for a Machi Koro-style establishment card. Using the four supplied images only as visual references, generate an isolated illustration of a substantial believable two-story provincial Russian karaoke club with several halls, roughly twice as wide as a small roadside shop. Render the entire scene—including every person—as a cute polished tabletop-game miniature: chunky simplified toy-like geometry, slightly exaggerated friendly adult proportions, rounded expressive caricature faces, crisp dark outlines or strong form separation, clean flat color blocks, sparse surface detail, and simple two-tone cel shading. Avoid photorealistic faces, glass, materials, grime, micro-detail, and cinematic lighting. The front facade faces slightly right, the building's left side is visible, and depth recedes toward image left. Use burgundy-red metal cladding, gray pilasters, a concrete foundation, a recessed dark entrance beneath a broad curved red canopy, steps with short stair railings, facade lights, drainpipes, utility boxes, rooftop ventilation, and a side service door. Do not add a ramp. Place one simple illuminated white microphone pictogram above the entrance with no lettering. Use 10-12 ordinary small-to-medium windows across both floors with dark frames and broad solid wall sections between them—no picture windows and no cutaway facade. Through left ground-floor windows show partial glimpses of five cartoonishly stocky pale Slavic middle-aged factory-worker 'skuf' men with receding hairlines, stubble, broad tired faces, checked shirts, dark polos, sweaters, and work jackets singing with grave heartfelt intensity in the spirit of a Lyube-style patriotic folk-rock song; one leads with a microphone to his chest, one raises a fist, one embraces a mate. A small monitor may show only birches and an open Russian field, never text, lyrics, band members, or portraits. Through right ground-floor windows show fragments of cartoonish heavily made-up adult provincial Russian women with visibly smudged mascara, disheveled hair, and flashy non-explicit party clothes screaming an emotional love-song chorus into microphones; one stands safely on a sturdy table and another throws an arm upward. Upper-floor windows show a few less-prominent generic adult karaoke patrons in secondary rooms, without repeated faces. Include cheap plastic chairs, laminate tables, unlabelled glasses, purple-cyan-amber lights, a small stage silhouette, multiple readable microphones, and one mandatory large mirrored disco ball prominently visible through the upper central hall, casting simplified colored dots. The substantial architecture remains dominant and recognizable, but every element must share the same charming cartoon language and remain readable at small card size. OUTPUT REQUIREMENT: native RGBA transparency with alpha=0 outside the building and compact paved forecourt. No checkerboard, backdrop, sky, scenery, neighboring buildings, cars, card furniture, photorealistic photography, clipped content, identifiable people, Latin American or mariachi cues, humiliation, injury, or sexualization. Absolute no-text rule: no letters, numbers, words, signs, logos, labels, lyrics, pseudo-writing, or watermarks anywhere."
+}

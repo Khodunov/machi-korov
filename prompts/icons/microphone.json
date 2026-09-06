@@ -1,0 +1,64 @@
+{
+  "spec_version": "1.2",
+  "title": "Machi Koro-style microphone category icon spec",
+  "purpose": "Small circular category badge placed immediately before the Karaoke Club card title.",
+  "integration_context": {
+    "target_use": "Generate only the icon asset; it will be composited before the title by the card-rendering script.",
+    "canvas": "square",
+    "background": "Native RGBA transparency is mandatory outside the circular badge. Do not draw or bake any backdrop into RGB.",
+    "output_preference": "RGBA PNG with alpha=0 outside the circular badge and clean antialiased alpha edges",
+    "composition": "one centered circular badge filling most of the square canvas"
+  },
+  "parameters": {
+    "icon_color": {
+      "type": "hex color string",
+      "default": "#58100E",
+      "description": "Fill color of the circular badge, matching the dark red card footer."
+    },
+    "subject": {
+      "type": "string",
+      "default": "handheld karaoke microphone",
+      "description": "A simple white microphone silhouette tilted slightly upward."
+    }
+  },
+  "badge_geometry": {
+    "circle": "perfect centered circle",
+    "circle_diameter": "approximately 85% of canvas width",
+    "outer_margin": "transparent margin around the circle",
+    "border": "no outline"
+  },
+  "pictogram": {
+    "color": "#FFFFFF",
+    "subject": "handheld karaoke microphone",
+    "description": "One chunky white microphone silhouette with a rounded grille and short handle, tilted gently upward from lower left to upper right; no cable, notes, stars, letters, or extra objects.",
+    "size": "approximately 54% of the circle diameter",
+    "position": "precisely centered inside the circle",
+    "shape_language": "very simple, chunky, geometric, slightly rounded, icon-like",
+    "detail_level": "very low",
+    "line_rule": "Solid white silhouette with two or three thick negative-space grille slots at most; avoid thin line art."
+  },
+  "visual_style": {
+    "core": "Flat two-color Machi Koro category badge.",
+    "colors": "dark red #58100E circle plus pure white pictogram",
+    "shading": "none",
+    "gradient": "none",
+    "texture": "none",
+    "shadow": "none",
+    "rendering": "clean vector-style UI icon",
+    "small_size_priority": "must remain instantly recognizable beside a card title"
+  },
+  "anti_patterns": [
+    "do not omit the round badge",
+    "do not add a white outer ring",
+    "do not use gradients, highlights, bevels, texture, or shadows",
+    "do not add text, musical notes, stars, a cable, a hand, card furniture, or scenery",
+    "do not output an opaque background or a checkerboard",
+    "do not make the symbol detailed or thin"
+  ],
+  "current_icon": {
+    "icon_color": "#58100E",
+    "subject": "handheld karaoke microphone",
+    "expected_result": "A dark-red circular badge with a centered bold white microphone silhouette and transparent pixels outside the circle."
+  },
+  "final_prompt_summary": "Use case: logo-brand. Asset type: tiny title-row category icon for a Machi Koro-style card. Generate one perfect solid dark-red circle in exact color #58100E, centered and filling about 85% of a square canvas. Inside it, precisely center a bold simple white handheld karaoke microphone silhouette, tilted slightly upward from lower left to upper right, filling about 54% of the circle. Use a rounded grille and short chunky handle; at most two or three thick negative-space grille slots. Native RGBA transparency is mandatory outside the circle, with clean antialiased edges. Flat two-color vector-style artwork only. No border, text, letters, musical notes, cable, hand, stars, shading, gradient, texture, 3D effect, shadow, glow, backdrop, checkerboard, or card furniture."
+}
