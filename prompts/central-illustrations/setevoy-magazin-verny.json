@@ -1,0 +1,25 @@
+{
+  "spec_version": "1.1",
+  "title": "Floating Machi Koro-style central illustration spec",
+  "purpose": "Central illustration for a green Machi Koro establishment card.",
+  "integration_context": {
+    "target_use": "Generate only a central content illustration to composite onto a blank card template.",
+    "background_requirement": "Native RGBA transparency is mandatory. Outside the requested miniature and its integral base every pixel must have alpha=0. Do not render a checkerboard, field, gradient, glow, halo, vignette, shadow, scenery, sky, card furniture, text, coin, icon, or frame.",
+    "text_policy": "No text or text-like content: no letters, numbers, words, prices, labels, signs, graffiti, license plates, or pseudo-glyphs. The requested wordless brand mark is the only exception."
+  },
+  "style_goal": {
+    "primary_rule": "Match the cute simplified establishment-art language of the original Machi Koro tabletop game without copying a specific illustration.",
+    "core_formula": "Cute simplified board-game miniature plus a familiar utilitarian Russian supermarket."
+  },
+  "content": {
+    "subject": "A small iconic Russian Верный neighbourhood supermarket.",
+    "description": "A low boxy Russian shop with a bright red canopy and fascia, white wall panels, broad blue-gray glass windows, centered automatic doors, two chunky bollards, and an understated wordless green checkmark/leaf brand symbol on the red fascia. The front faces slightly right, the building's left side is visible, and depth recedes toward image left.",
+    "desired_read": "A recognisable Верный grocery rendered as a compact floating Machi Koro-style miniature.",
+    "recognition_details": ["dominant red-and-white frontage", "one small wordless green checkmark/leaf symbol and no lettering", "broad simple glazing, a shallow canopy, and automatic doors"],
+    "miniature_base": "A compact rounded patch of worn asphalt with a short concrete curb, fully isolated on transparency.",
+    "simplify": ["facade into chunky red, white, gray, and glass-blue masses", "glazing, grass tufts, and gentle wear into a few graphic shapes"],
+    "omit": ["all words, letters, numbers, signage, posters, labels, pseudo-writing, people, cars, shopping carts, product packaging, and advertising", "all surrounding scenery, realistic textures, dramatic lighting, and full-card composition"],
+    "target_impression": "The same whimsical illustrator who drew classic Machi Koro establishments has drawn a deadpan, recognisable Верный grocery."
+  },
+  "final_prompt_summary": "Generate only the described compact floating miniature: a low red-and-white Верный neighbourhood supermarket on a small asphalt-and-curb slab. Its front facade faces slightly right, its left side is visible, and depth recedes toward image left; do not show its right side or depth receding right. Use clean outlines, chunky simple shapes, sparse detail, and flat graphic shading in a cute Machi Koro board-game style; no photorealism. Native RGBA transparency is mandatory, with alpha=0 outside the miniature. Include exactly one small wordless green checkmark/leaf brand symbol and no other brand text. Do not create a card, background, sky, cast shadow, scenery, people, vehicles, product packages, letters, numbers, words, signs, labels, graffiti, or pseudo-text."
+}
