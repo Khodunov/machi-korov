@@ -1,0 +1,57 @@
+{
+  "tool": "image_gen",
+  "output_prefix": "shwarma-five-variants-v5",
+  "references": [
+    "prompts/references/shwarma-garage-style.jpg"
+  ],
+  "style": "Every image generated with the same garage reference attached. Match cartoon faces, contours, shadows, moderate everyday wear. Exactly one basement scene and four standalone ground-level kiosks.",
+  "variants": [
+    {
+      "slug": "shwarma-01-tsokol-v5",
+      "label": "Цоколь",
+      "prompt": "В точном рисованном стиле референса: шаверма в цоколе небольшого двухэтажного дома, серая штукатурка, маленькое окно с вертелом, красный козырёк, лестница ВНИЗ от тротуара. Двое небольших взрослых прохожих с мультяшными лицами, женщина с маленькой шаурмой в одной руке. Лёгкий износ, без разрухи и нарядной отделки. Вся миниатюра с крышей целиком на белом фоне. Без надписей.",
+      "source": "buildings/shwarma-01-tsokol-v5-source.png",
+      "cutout": "buildings/shwarma-01-tsokol-v5.png",
+      "card": "cards/shwarma-01-tsokol-v5.png",
+      "generated_source": "/Users/egor/.codex/generated_images/01a09570-4430-7c62-8471-fbc8bdb43434/exec-58f1c28e-821c-46a2-94a4-7e3e637a3116.png"
+    },
+    {
+      "slug": "shwarma-02-marshrutka-v5",
+      "label": "Водитель на перерыве",
+      "prompt": "В точном рисованном стиле референса: отдельный коричневый киоск шаурмы, красный короб, маленькая жёлтая перевёрнутая М. Рядом жёлтая маршрутка, водитель стоит снаружи у окна с продавцом. Небольшие мультяшные люди с лицами. Лёгкая потёртость, без разрухи. Миниатюра целиком на белом фоне, без надписей.",
+      "source": "buildings/shwarma-02-marshrutka-v5-source.png",
+      "cutout": "buildings/shwarma-02-marshrutka-v5.png",
+      "card": "cards/shwarma-02-marshrutka-v5.png",
+      "generated_source": "/Users/egor/.codex/generated_images/01a09570-4430-7c62-8471-fbc8bdb43434/exec-4188e5f6-949b-45d4-b41a-9cc4a00063ec.png",
+      "edit_prompt": "Переверни жёлтую М вверх ногами, чтобы получилась W. Больше ничего не меняй."
+    },
+    {
+      "slug": "shwarma-03-zima-v5",
+      "label": "Зимний вечер",
+      "prompt": "В точном рисованном стиле референса: отдельный бордовый киоск шаурмы на уровне земли зимой вечером, простой козырёк, тусклый плоский светильник на столбе, снег, тёплое окно с вертелом. Замёрзший взрослый в пуховике берёт маленькую шаурму одной рукой у продавца. Небольшие мультяшные люди с лицами, лёгкий износ без разрухи. Целиком на белом фоне, без надписей и животных.",
+      "source": "buildings/shwarma-03-zima-v5-source.png",
+      "cutout": "buildings/shwarma-03-zima-v5.png",
+      "card": "cards/shwarma-03-zima-v5.png",
+      "generated_source": "/Users/egor/.codex/generated_images/01a09570-4430-7c62-8471-fbc8bdb43434/exec-17623f7c-485d-44f7-953e-b22890e713e2.png"
+    },
+    {
+      "slug": "shwarma-04-shkolniki-v5",
+      "label": "После уроков",
+      "prompt": "В точном рисованном стиле референса: отдельный серо-коричневый киоск шаурмы на уровне земли, красный козырёк, вертел в окне. Трое небольших школьников-подростков с рюкзаками: один платит продавцу, двое разговаривают вполоборота. Живые мультяшные лица, обычные куртки. Лёгкая потёртость, без разрухи и нарядного декора. Миниатюра целиком на белом фоне, без надписей.",
+      "source": "buildings/shwarma-04-shkolniki-v5-source.png",
+      "cutout": "buildings/shwarma-04-shkolniki-v5.png",
+      "card": "cards/shwarma-04-shkolniki-v5.png",
+      "generated_source": "/Users/egor/.codex/generated_images/01a09570-4430-7c62-8471-fbc8bdb43434/exec-7b489fcd-20d6-4614-a856-42a875105f07.png"
+    },
+    {
+      "slug": "shwarma-05-stolik-v5",
+      "label": "За пластиковым столиком",
+      "prompt": "В точном рисованном стиле референса: отдельный серый киоск шаурмы на уровне земли, бордовый козырёк, вертел в окне. Перед ним белый пластиковый стол и два пластиковых стула. Небольшой взрослый мужчина в шортах и шлёпанцах сидит и ест маленькую шаурму одной рукой, лицо живое мультяшное; на столе стакан и салфетка. Лёгкий износ, без разрухи, колонн и золота. Миниатюра целиком на белом фоне, без надписей.",
+      "source": "buildings/shwarma-05-stolik-v5-source.png",
+      "cutout": "buildings/shwarma-05-stolik-v5.png",
+      "card": "cards/shwarma-05-stolik-v5.png",
+      "generated_source": "/Users/egor/.codex/generated_images/01a09570-4430-7c62-8471-fbc8bdb43434/exec-4ed79788-b989-43b8-9ab1-2ee54fca5888.png",
+      "edit_prompt": "Уменьши всю сцену на 10%, чтобы над крышей появилось белое поле и крыша была целиком видна. Остальное сохрани точно."
+    }
+  ]
+}

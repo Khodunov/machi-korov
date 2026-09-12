@@ -1,0 +1,25 @@
+python skills/generate-card/scripts/card_compositor.py \
+  --template backgrounds/red.png \
+  --overlay buildings/shwarma-02-marshrutka-v5.png \
+  --title-icon icons/shwarma.png \
+  --shadow \
+  --output cards/shwarma-02-marshrutka-v5.png \
+  --x-frac 0.50 \
+  --y-frac 0.52 \
+  --scale 0.64 \
+  --coin-number 2 \
+  --activation-number 3 \
+  --title 'Шавуха' \
+  --title-color '#58100E' \
+  --bottom-text $'Возьмите 1 монету у голодного игрока,\nбросившего кубики\nВ ход другого игрока.' \
+  --bottom-text-y-frac 0.81 \
+  --bottom-text-spacing-px 6 \
+  --title-font fonts/Boingster-Regular.ttf \
+  --title-font-size-frac 0.07 \
+  --title-icon-scale 1.5 \
+  --title-icon-y-offset-px -10 \
+  --bottom-text-font fonts/CCUltimatum-Bold.ttf \
+  --bottom-text-font-size-frac 0.035 \
+  --activation-font fonts/CCUltimatum-Bold.ttf \
+  --activation-font-size-frac 0.1 \
+  --coin-font fonts/Boingster-Regular.ttf
