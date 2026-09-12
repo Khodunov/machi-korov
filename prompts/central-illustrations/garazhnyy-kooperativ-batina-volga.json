@@ -1,0 +1,9 @@
+{
+  "tool": "built-in image_gen",
+  "prompt": "Замени машину на серую Волгу ГАЗ-24. Остальное без изменений. Белый фон.",
+  "reference": "buildings/garazhnyy-kooperativ-batina-gostinaya-v2-source.png",
+  "source": "buildings/garazhnyy-kooperativ-batina-volga-source.png",
+  "output": "buildings/garazhnyy-kooperativ-batina-volga.png",
+  "postprocessing": "Local removal of two incidental white lettering marks on front fender using surrounding gray paint color fit; local edge-connected white background removal.",
+  "card": "cards/garazhnyy-kooperativ-batina-volga.png"
+}

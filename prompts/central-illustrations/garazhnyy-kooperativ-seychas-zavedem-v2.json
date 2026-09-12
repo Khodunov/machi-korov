@@ -1,0 +1,9 @@
+{
+  "title": "garazhnyy-kooperativ-seychas-zavedem-v2",
+  "tool": "built-in image_gen",
+  "style_reference": "buildings/garazhnyy-kooperativ.png",
+  "final_prompt_summary": "В точной графике референса: два гаража, Жигули с открытым капотом, пожилой механик на корточках у колеса лицом к нам. Рядом пузатый усатый мужчина в снятом автокресле жарит шашлык. Правдоподобный длинный стальной мангал на четырёх ножках: отверстия снизу, угли внутри, шесть параллельных плоских шампуров с мясом лежат на краях; мужчина поворачивает один. У обоих читаемые глаза, нос, рот и естественные взрослые пропорции. Гладкая светотень, чёткие контуры, компактная диорама, белый фон с полями. Без текста.",
+  "postprocessing": "Local edge-connected near-white background removal",
+  "source": "buildings/garazhnyy-kooperativ-seychas-zavedem-v2-source.png",
+  "output": "buildings/garazhnyy-kooperativ-seychas-zavedem-v2.png"
+}

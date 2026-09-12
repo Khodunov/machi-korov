@@ -1,0 +1,9 @@
+{
+  "title": "garazhnyy-kooperativ-rybalka-v2",
+  "tool": "built-in image_gen",
+  "style_reference": "buildings/garazhnyy-kooperativ.png",
+  "final_prompt_summary": "Новая сцена в точности в рисованной графике референса, с той же палитрой, чёткими контурами и гладкой светотенью. Два металлических гаража со скатными крышами; перед открытым старый мотоцикл Урал с коляской. Двое мужчин 55–65 лет собираются на рыбалку: пузатый усатый хозяин в жилете укладывает удочки, седой сосед сидит в коляске, уже заваленной вёдрами и сачком, и невозмутимо пьёт чай. Обоих видно лицом в три четверти: глаза, носы, рты, естественные взрослые пропорции. Компактная диорама на основании, белый фон с широкими полями. Без текста, животных и мангала.",
+  "postprocessing": "Local edge-connected near-white background removal",
+  "source": "buildings/garazhnyy-kooperativ-rybalka-v2-source.png",
+  "output": "buildings/garazhnyy-kooperativ-rybalka-v2.png"
+}
