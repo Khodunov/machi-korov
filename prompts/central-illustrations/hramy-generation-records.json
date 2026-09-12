@@ -1,0 +1,49 @@
+{
+  "mode": "built-in image_gen",
+  "scenes": [
+    {
+      "slug": "hram-01-maybach",
+      "title": "Батюшка прибыл",
+      "status": "complete",
+      "prompt": "prompts/central-illustrations/hram-01-maybach.json",
+      "command": "card-commands/hram-01-maybach.sh",
+      "asset": "buildings/hram-01-maybach.png",
+      "card": "cards/hram-01-maybach.png",
+      "generated_source": "/Users/egor/.codex/generated_images/01a09599-5f67-7563-8b11-bfc400819f7b/exec-13f91a31-e68e-42cf-9509-d12ee789de78.png",
+      "source": "buildings/hram-01-maybach-source.png"
+    },
+    {
+      "slug": "hram-02-vsem-mirom",
+      "title": "Соберём всем миром",
+      "status": "complete",
+      "prompt": "prompts/central-illustrations/hram-02-vsem-mirom.json",
+      "command": "card-commands/hram-02-vsem-mirom.sh",
+      "source": "buildings/hram-02-vsem-mirom-source.png",
+      "asset": "buildings/hram-02-vsem-mirom.png",
+      "card": "cards/hram-02-vsem-mirom.png",
+      "prompt_text": "Старый деревенский храм, золотой купол, баннер «Соберём всем миром!». Бабушка кладёт монету в ящик пожертвований. За забором дорогой седан. Рисованная миниатюра Machi Koro, белый фон, вид в три четверти."
+    },
+    {
+      "slug": "hram-03-svechi-kartoy",
+      "title": "Свечи принимаем картой",
+      "status": "complete",
+      "prompt": "prompts/central-illustrations/hram-03-svechi-kartoy.json",
+      "command": "card-commands/hram-03-svechi-kartoy.sh",
+      "source": "buildings/hram-03-svechi-kartoy-source.png",
+      "asset": "buildings/hram-03-svechi-kartoy.png",
+      "card": "cards/hram-03-svechi-kartoy.png",
+      "prompt_text": "Рисованная миниатюра Machi Koro на белом фоне. Маленький городской храм с открытой свечной лавкой: бабушка подаёт терминал, мужчина с обычной тонкой свечой платит телефоном. Табличка «Пожертвования по QR-коду». Компактная композиция в три четверти, правдоподобная бытовая сцена, без животных."
+    },
+    {
+      "slug": "hram-04-blagodetel",
+      "title": "Место для благодетеля",
+      "status": "complete",
+      "prompt": "prompts/central-illustrations/hram-04-blagodetel.json",
+      "command": "card-commands/hram-04-blagodetel.sh",
+      "source": "buildings/hram-04-blagodetel-source.png",
+      "asset": "buildings/hram-04-blagodetel.png",
+      "card": "cards/hram-04-blagodetel.png",
+      "prompt_text": "Кирпичный храм, дорогой внедорожник у крыльца, прихожане обходят его. Священник приветствует мужчину в костюме. Знак «Стоянка запрещена», под ним «Кроме благодетелей». Рисованная миниатюра Machi Koro, белый фон, вид в три четверти."
+    }
+  ]
+}

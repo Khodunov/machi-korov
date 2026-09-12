@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "hram-01-maybach-v2",
+    "tool": "built-in image_gen",
+    "style_reference": "buildings/garazhnyy-kooperativ-batina-gostinaya-v2-source.png",
+    "prompt": "В стиле гаражей на референсе: те же тёмные контуры, приглушённая палитра, гладкая светотень и рисованные лица с глазами, носами, ртами. Деревенский деревянный храм, у калитки чёрный майбах с открытой задней дверью, из него выходит священник в обычной чёрной рясе. Две бабушки на лавке смотрят на машину; рядом старая Нива и велосипед. Компактная широкая диорама в три четверти на неровном островке земли. Белый фон с полями, без животных и надписей.",
+    "source": "buildings/hram-01-maybach-v2-source.png",
+    "cutout": "buildings/hram-01-maybach-v2.png",
+    "card": "cards/hram-01-maybach-v2.png",
+    "postprocessing": "Plain white source; local background removal; scripts/render_hramy_v2.py"
+  },
+  {
+    "slug": "hram-02-vsem-mirom-v2",
+    "tool": "built-in image_gen",
+    "style_reference": "buildings/garazhnyy-kooperativ-batina-gostinaya-v2-source.png",
+    "prompt": "В стиле гаражей на референсе: старый храм с золотым куполом, бабушка жертвует монету, дорогой седан за забором, баннер «Соберём всем миром!». Те же контуры, цвета, рисованные лица и светотень. Компактная диорама в три четверти, белый фон с полями. Без животных.",
+    "source": "buildings/hram-02-vsem-mirom-v2-source.png",
+    "cutout": "buildings/hram-02-vsem-mirom-v2.png",
+    "card": "cards/hram-02-vsem-mirom-v2.png",
+    "postprocessing": "Plain white source; local background removal; scripts/render_hramy_v2.py"
+  },
+  {
+    "slug": "hram-03-svechi-kartoy-v2",
+    "tool": "built-in image_gen",
+    "style_reference": "buildings/garazhnyy-kooperativ-batina-gostinaya-v2-source.png",
+    "prompt": "В стиле гаражей на референсе: небольшой храм со свечной лавкой. Бабушка подаёт терминал, мужчина с тонкой свечой платит телефоном. Табличка «Пожертвования по QR-коду». Те же контуры, цвета, светотень и рисованные лица. Вся диорама целиком, белый фон с полями.",
+    "source": "buildings/hram-03-svechi-kartoy-v2-source.png",
+    "cutout": "buildings/hram-03-svechi-kartoy-v2.png",
+    "card": "cards/hram-03-svechi-kartoy-v2.png",
+    "postprocessing": "Plain white source; local background removal; scripts/render_hramy_v2.py"
+  },
+  {
+    "slug": "hram-04-blagodetel-v2",
+    "tool": "built-in image_gen",
+    "style_reference": "buildings/garazhnyy-kooperativ-batina-gostinaya-v2-source.png",
+    "prompt": "В стиле референса: невысокий кирпичный храм с одним куполом, чёрный Гелендваген у крыльца. Священник жмёт руку мужчине в костюме, две бабушки обходят машину. Знак «Кроме благодетелей». Весь храм с крестом и вся диорама целиком, широкие белые поля. Те же рисованные лица, контуры, цвета.",
+    "source": "buildings/hram-04-blagodetel-v2-source.png",
+    "cutout": "buildings/hram-04-blagodetel-v2.png",
+    "card": "cards/hram-04-blagodetel-v2.png",
+    "postprocessing": "Plain white source; local background removal; scripts/render_hramy_v2.py"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "slug": "hram-01-maybach-v2",
+  "tool": "built-in image_gen",
+  "style_reference": "buildings/garazhnyy-kooperativ-batina-gostinaya-v2-source.png",
+  "prompt": "В стиле гаражей на референсе: те же тёмные контуры, приглушённая палитра, гладкая светотень и рисованные лица с глазами, носами, ртами. Деревенский деревянный храм, у калитки чёрный майбах с открытой задней дверью, из него выходит священник в обычной чёрной рясе. Две бабушки на лавке смотрят на машину; рядом старая Нива и велосипед. Компактная широкая диорама в три четверти на неровном островке земли. Белый фон с полями, без животных и надписей.",
+  "source": "buildings/hram-01-maybach-v2-source.png",
+  "cutout": "buildings/hram-01-maybach-v2.png",
+  "card": "cards/hram-01-maybach-v2.png",
+  "postprocessing": "Plain white source; local background removal; scripts/render_hramy_v2.py"
+}

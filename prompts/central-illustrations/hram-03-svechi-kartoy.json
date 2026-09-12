@@ -1,0 +1,8 @@
+{
+  "prompt": "Рисованная миниатюра Machi Koro на белом фоне. Маленький городской храм с открытой свечной лавкой: бабушка подаёт терминал, мужчина с обычной тонкой свечой платит телефоном. Табличка «Пожертвования по QR-коду». Компактная композиция в три четверти, правдоподобная бытовая сцена, без животных.",
+  "tool": "built-in image_gen",
+  "source": "buildings/hram-03-svechi-kartoy-source.png",
+  "cutout": "buildings/hram-03-svechi-kartoy.png",
+  "card": "cards/hram-03-svechi-kartoy.png",
+  "background": "White source, locally removed with scripts/render_hramy.py"
+}

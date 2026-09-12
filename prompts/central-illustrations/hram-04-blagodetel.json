@@ -1,0 +1,8 @@
+{
+  "prompt": "Кирпичный храм, дорогой внедорожник у крыльца, прихожане обходят его. Священник приветствует мужчину в костюме. Знак «Стоянка запрещена», под ним «Кроме благодетелей». Рисованная миниатюра Machi Koro, белый фон, вид в три четверти.",
+  "tool": "built-in image_gen",
+  "source": "buildings/hram-04-blagodetel-source.png",
+  "cutout": "buildings/hram-04-blagodetel.png",
+  "card": "cards/hram-04-blagodetel.png",
+  "background": "White source, locally removed with scripts/render_hramy.py"
+}

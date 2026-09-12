@@ -1,0 +1,8 @@
+{
+  "prompt": "Старый деревенский храм, золотой купол, баннер «Соберём всем миром!». Бабушка кладёт монету в ящик пожертвований. За забором дорогой седан. Рисованная миниатюра Machi Koro, белый фон, вид в три четверти.",
+  "tool": "built-in image_gen",
+  "source": "buildings/hram-02-vsem-mirom-source.png",
+  "cutout": "buildings/hram-02-vsem-mirom.png",
+  "card": "cards/hram-02-vsem-mirom.png",
+  "background": "White source, locally removed with scripts/render_hramy.py"
+}
