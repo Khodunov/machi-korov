@@ -1,0 +1,17 @@
+# Пять новых «Новостроек»
+
+Готовы все пять вариантов. Встроенный image_gen, отдельные короткие запросы, белый фон. Фон удалён локально; исходники сохранены отдельно. Все карты проверены после сборки.
+
+Сохранены параметры исходной карты: синий фон, активация 10, цена 3; «Возьмите 3 монеты за ЖКХ / В ход любого игрока.»
+
+Архитектура — собирательные образы российских ЖК с намеренно преувеличенной этажностью и плотностью, по мотивам указанных референсов.
+
+| Вариант | Карта | Иллюстрации | Промпт | Сборка | Референс |
+|---|---|---|---|---|---|
+| Мурино — бесконечная стена | [Карта](/Users/egor/code/machi-korov/cards/novostroyka-01-murino-stena.png) | [Исходник](/Users/egor/code/machi-korov/buildings/novostroyka-01-murino-stena-source.png) · [PNG](/Users/egor/code/machi-korov/buildings/novostroyka-01-murino-stena.png) | [Промпт](/Users/egor/code/machi-korov/prompts/central-illustrations/novostroyka-01-murino-stena.json) | [Команда](/Users/egor/code/machi-korov/card-commands/novostroyka-01-murino-stena.sh) | [Референс](https://spbguru.ru/novostroyki/288-novaja-ohta) |
+| Девяткино — двор-колодец | [Карта](/Users/egor/code/machi-korov/cards/novostroyka-02-devyatkino-kolodets.png) | [Исходник](/Users/egor/code/machi-korov/buildings/novostroyka-02-devyatkino-kolodets-source.png) · [PNG](/Users/egor/code/machi-korov/buildings/novostroyka-02-devyatkino-kolodets.png) | [Промпт](/Users/egor/code/machi-korov/prompts/central-illustrations/novostroyka-02-devyatkino-kolodets.json) | [Команда](/Users/egor/code/machi-korov/card-commands/novostroyka-02-devyatkino-kolodets.sh) | [Референс](https://murino47.ru/novostrojki-zm/) |
+| ПИК — цветные башни | [Карта](/Users/egor/code/machi-korov/cards/novostroyka-03-pik-bashni.png) | [Исходник](/Users/egor/code/machi-korov/buildings/novostroyka-03-pik-bashni-source.png) · [PNG](/Users/egor/code/machi-korov/buildings/novostroyka-03-pik-bashni.png) | [Промпт](/Users/egor/code/machi-korov/prompts/central-illustrations/novostroyka-03-pik-bashni.json) | [Команда](/Users/egor/code/machi-korov/card-commands/novostroyka-03-pik-bashni.sh) | [Референс](https://converter.urbanawards.ru/nominants/zhk-salarevo-park) |
+| Самолёт — гребёнка корпусов | [Карта](/Users/egor/code/machi-korov/cards/novostroyka-04-samolet-grebenka.png) | [Исходник](/Users/egor/code/machi-korov/buildings/novostroyka-04-samolet-grebenka-source.png) · [PNG](/Users/egor/code/machi-korov/buildings/novostroyka-04-samolet-grebenka.png) | [Промпт](/Users/egor/code/machi-korov/prompts/central-illustrations/novostroyka-04-samolet-grebenka.json) | [Команда](/Users/egor/code/machi-korov/card-commands/novostroyka-04-samolet-grebenka.sh) | [Референс](https://realty.yandex.ru/journal/post/obzor-zhilogo-kompleksa-prigorod-lesnoe-so-vsemi-plyusami-i-minusami/) |
+| Мегадом — ступени до неба | [Карта](/Users/egor/code/machi-korov/cards/novostroyka-05-megadom-stupeni.png) | [Исходник](/Users/egor/code/machi-korov/buildings/novostroyka-05-megadom-stupeni-source.png) · [PNG](/Users/egor/code/machi-korov/buildings/novostroyka-05-megadom-stupeni.png) | [Промпт](/Users/egor/code/machi-korov/prompts/central-illustrations/novostroyka-05-megadom-stupeni.json) | [Команда](/Users/egor/code/machi-korov/card-commands/novostroyka-05-megadom-stupeni.sh) | [Референс](https://murino47.ru/novostrojki-zm/) |
+
+Удаление фона: `scripts/remove_lesopoval_background.py` (от исходника к отдельному PNG). Пересборка карт — соответствующая команда из корня проекта с `.venv/bin` в PATH.
