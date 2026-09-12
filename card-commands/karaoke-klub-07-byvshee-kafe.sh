@@ -1,0 +1,25 @@
+.venv/bin/python skills/generate-card/scripts/card_compositor.py \
+  --template backgrounds/red.png \
+  --overlay buildings/karaoke-klub-07-byvshee-kafe.png \
+  --title-icon icons/microphone.png \
+  --shadow \
+  --output cards/karaoke-klub-07-byvshee-kafe.png \
+  --x-frac 0.50 \
+  --y-frac 0.49 \
+  --scale 0.69 \
+  --coin-number 3 \
+  --activation-number '9–10' \
+  --title 'Караоке клуб' \
+  --title-color '#58100E' \
+  --bottom-text $'Если другой игрок выбросил 9–10,\nполучи от него 2 монеты' \
+  --bottom-text-y-frac 0.84 \
+  --bottom-text-spacing-px 6 \
+  --title-font fonts/Boingster-Regular.ttf \
+  --title-font-size-frac 0.058 \
+  --title-icon-scale 1.5 \
+  --title-icon-y-offset-px -10 \
+  --bottom-text-font fonts/CCUltimatum-Bold.ttf \
+  --bottom-text-font-size-frac 0.033 \
+  --activation-font fonts/CCUltimatum-Bold.ttf \
+  --activation-font-size-frac 0.1 \
+  --coin-font fonts/Boingster-Regular.ttf
