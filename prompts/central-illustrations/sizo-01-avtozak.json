@@ -1,0 +1,7 @@
+{
+  "spec_version": "1.0",
+  "style_reference": "buildings/sizo.png",
+  "source_output": "buildings/sizo-01-avtozak-source.png",
+  "transparent_output": "buildings/sizo-01-avtozak.png",
+  "final_prompt_summary": "Edit Image 1 only. Replace its gray van with a current Russian FSIN prisoner transport truck based on GAZon NEXT: separate white cab with a short hood and black grille, tall rectangular white secure box body, green horizontal side stripe, several small barred ventilation windows, side equipment details, and two blue roof beacons. The truck is halfway through the wall gate. Keep Image 1 building, guards, composition, cute toy-like board-game style, clean dark outlines, simple shading, cold muted palette, and plain white background unchanged. No text, logos, markings, or license-plate characters."
+}

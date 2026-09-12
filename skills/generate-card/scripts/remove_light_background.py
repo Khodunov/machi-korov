@@ -51,6 +51,9 @@ def remove_background(source: Path, output: Path, seeds: list[tuple[int, int]], 
     safe_alpha = np.maximum(alpha[..., None], 1 / 255)
     unmatted = np.clip((rgb - 255 * (1 - safe_alpha)) / safe_alpha, 0, 255)
     rgba = np.dstack((unmatted.astype(np.uint8), (alpha * 255).astype(np.uint8)))
+    # Canonicalize invisible pixels so previews that inspect hidden RGB data do
+    # not show the generated paper texture as colored speckles.
+    rgba[rgba[..., 3] == 0, :3] = 0
     result = Image.fromarray(rgba)
     bbox = result.getchannel("A").getbbox()
     if bbox is None:
