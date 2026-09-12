@@ -1,0 +1,22 @@
+{
+  "use_case": "style-transfer",
+  "prompt": "Сохрани сюжет и композицию второй картинки. Перерисуй её в точности в рисованном стиле первой: такие же контуры, мазки, цвета, лица и материалы. Белый фон, без текста.",
+  "style_reference": "references/lesopoval-style/lesopoval.png",
+  "scene_reference": "buildings/originals/lesopoval-05-uzkokoleyka.png",
+  "background": "white; local removal after generation",
+  "tool": "built-in image_gen",
+  "background_seeds": [
+    [
+      630,
+      300
+    ],
+    [
+      420,
+      370
+    ],
+    [
+      1120,
+      530
+    ]
+  ]
+}

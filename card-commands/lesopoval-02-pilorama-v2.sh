@@ -1,0 +1,25 @@
+.venv/bin/python skills/generate-card/scripts/card_compositor.py \
+  --template backgrounds/blue.png \
+  --overlay buildings/lesopoval-02-pilorama-v2.png \
+  --title-icon icons/resources.png \
+  --shadow \
+  --output cards/lesopoval-02-pilorama-v2.png \
+  --x-frac 0.49 \
+  --y-frac 0.535 \
+  --scale 0.72 \
+  --coin-number 3 \
+  --activation-number 5 \
+  --title 'Лесоповал' \
+  --title-color '#123E70' \
+  --bottom-text $'Возьмите 1 монету из банка.\n В ход любого игрока' \
+  --bottom-text-y-frac 0.82 \
+  --bottom-text-spacing-px 6 \
+  --title-font fonts/Boingster-Regular.ttf \
+  --title-font-size-frac 0.065 \
+  --title-icon-scale 1.8 \
+  --title-icon-y-offset-px -8 \
+  --bottom-text-font fonts/CCUltimatum-Bold.ttf \
+  --bottom-text-font-size-frac 0.045 \
+  --activation-font fonts/Boingster-Regular.ttf \
+  --activation-font-size-frac 0.1 \
+  --coin-font fonts/Boingster-Regular.ttf

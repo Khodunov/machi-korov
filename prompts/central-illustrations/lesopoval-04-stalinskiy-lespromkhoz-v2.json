@@ -1,0 +1,26 @@
+{
+  "use_case": "style-transfer",
+  "prompt": "Вторую картинку нарисуй в стиле первой. Сюжет и композицию сохрани. Белый фон.",
+  "style_reference": "references/lesopoval-style/lesopoval.png",
+  "scene_reference": "references/lesopoval-style/lesopoval-04-stalinskiy-lespromkhoz.png",
+  "background": "white; local removal after generation",
+  "tool": "built-in image_gen",
+  "background_seeds": [
+    [
+      160,
+      410
+    ],
+    [
+      210,
+      410
+    ],
+    [
+      220,
+      370
+    ],
+    [
+      250,
+      360
+    ]
+  ]
+}

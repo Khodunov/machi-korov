@@ -1,0 +1,34 @@
+{
+  "use_case": "style-transfer",
+  "prompt": "Сохрани сюжет и композицию второй картинки. Перерисуй её в точности в рисованном стиле первой: такие же контуры, мазки, цвета, лица и материалы. Белый фон, без текста.",
+  "style_reference": "references/lesopoval-style/lesopoval.png",
+  "scene_reference": "references/lesopoval-style/lesopoval-02-pilorama.png",
+  "background": "white; local removal after generation",
+  "tool": "built-in image_gen",
+  "background_seeds": [
+    [
+      550,
+      320
+    ],
+    [
+      700,
+      340
+    ],
+    [
+      810,
+      370
+    ],
+    [
+      1240,
+      350
+    ],
+    [
+      1120,
+      415
+    ],
+    [
+      400,
+      275
+    ]
+  ]
+}

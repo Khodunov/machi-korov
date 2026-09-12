@@ -1,0 +1,6 @@
+{
+  "slug": "lesopoval-05-uzkokoleyka",
+  "prompt": "Козловой кран грузит брёвна на лесную вагонетку. Рабочий в ватнике, ель, снег. Компактная диорама Machi Koro, три четверти, белый фон, без текста.",
+  "tool": "built-in image_gen",
+  "background_removal": "local; preserve original"
+}

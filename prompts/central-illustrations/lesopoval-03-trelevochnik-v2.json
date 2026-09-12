@@ -1,0 +1,9 @@
+{
+  "use_case": "style-transfer",
+  "prompt": "Перерисуй второе изображение точно в художественном стиле первого: рисованная 2D-иллюстрация, тёмные контуры, живописные мазки, суровые живые лица и пропорции людей как в первом. Сохрани сюжет, предметы, их расположение и ракурс второго. Единая палитра и проработка материалов как в первом. Обычный белый фон, вся сцена в кадре, без текста.",
+  "style_reference": "references/lesopoval-style/lesopoval.png",
+  "scene_reference": "buildings/originals/lesopoval-03-trelevochnik.png",
+  "background": "white; local removal after generation",
+  "tool": "built-in image_gen",
+  "background_seeds": []
+}
