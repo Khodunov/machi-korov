@@ -1,0 +1,12 @@
+{
+  "slug": "eksport-v-kitay-01-pogruzchik-v2",
+  "prompt": "Перерисуй первую сцену в стиле второго и третьего образцов: тёмные рисованные контуры, потёртый металл, фактура дерева, глубокие тени. Сохрани сюжет и композицию первой сцены. Обычный белый фон. Без надписей.",
+  "referenced_image_paths": [
+    "/Users/egor/code/machi-korov/buildings/eksport-v-kitay-01-pogruzchik-source.png",
+    "/Users/egor/code/machi-korov/buildings/garazhnyy-kooperativ.png",
+    "/Users/egor/code/machi-korov/buildings/eksport-v-kitay.png"
+  ],
+  "status": "generated",
+  "source": "/Users/egor/.codex/generated_images/01a0961e-c122-7641-9cb1-b59f2004753c/exec-91c087c6-f97f-4767-9b1d-ed6ba0b1ce00.png",
+  "followup_prompt": "Китайский флаг на стенке контейнера. Всё остальное без изменений."
+}

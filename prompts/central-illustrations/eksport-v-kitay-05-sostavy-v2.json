@@ -1,0 +1,10 @@
+{
+  "slug": "eksport-v-kitay-05-sostavy-v2",
+  "prompt": "Сцену 1 нарисуй в стиле сцены 2. Сюжет сохрани. Белый фон.",
+  "referenced_image_paths": [
+    "/Users/egor/code/machi-korov/buildings/eksport-v-kitay-05-sostavy-source.png",
+    "/Users/egor/code/machi-korov/buildings/garazhnyy-kooperativ.png"
+  ],
+  "status": "generated",
+  "source": "/Users/egor/.codex/generated_images/01a0961e-c122-7641-9cb1-b59f2004753c/exec-233419b0-9a82-4a4e-9c8f-b8248f70e679.png"
+}

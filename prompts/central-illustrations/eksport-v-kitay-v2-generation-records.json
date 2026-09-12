@@ -1,0 +1,133 @@
+[
+  {
+    "slug": "eksport-v-kitay-01-pogruzchik-v2",
+    "prompt": "Перерисуй первую сцену в стиле второго и третьего образцов: тёмные рисованные контуры, потёртый металл, фактура дерева, глубокие тени. Сохрани сюжет и композицию первой сцены. Обычный белый фон. Без надписей.",
+    "referenced_image_paths": [
+      "/Users/egor/code/machi-korov/buildings/eksport-v-kitay-01-pogruzchik-source.png",
+      "/Users/egor/code/machi-korov/buildings/garazhnyy-kooperativ.png",
+      "/Users/egor/code/machi-korov/buildings/eksport-v-kitay.png"
+    ],
+    "status": "rendered_and_checked",
+    "source": "/Users/egor/.codex/generated_images/01a0961e-c122-7641-9cb1-b59f2004753c/exec-91c087c6-f97f-4767-9b1d-ed6ba0b1ce00.png",
+    "followup_prompt": "Китайский флаг на стенке контейнера. Всё остальное без изменений.",
+    "background_regions": []
+  },
+  {
+    "slug": "eksport-v-kitay-02-konteynerovoz-v2",
+    "prompt": "Первую сцену перерисуй в стиле второго образца. Тёмный контур, потёртости, фактурная живопись. Сохрани корабль, лес, кота и китайский флаг. Белый фон.",
+    "referenced_image_paths": [
+      "/Users/egor/code/machi-korov/buildings/eksport-v-kitay-02-konteynerovoz-source.png",
+      "/Users/egor/code/machi-korov/buildings/garazhnyy-kooperativ.png"
+    ],
+    "status": "rendered_and_checked",
+    "source": "/Users/egor/.codex/generated_images/01a0961e-c122-7641-9cb1-b59f2004753c/exec-aa03a846-928f-4299-b3fa-1515c5ef9d43.png",
+    "background_regions": [
+      [
+        0.51,
+        0.015,
+        0.74,
+        0.24,
+        0.69,
+        0.32,
+        0.51,
+        0.31
+      ]
+    ]
+  },
+  {
+    "slug": "eksport-v-kitay-03-tanker-v2",
+    "prompt": "Сцену 1 нарисуй в стиле сцены 2. Сюжет сохрани. Белый фон.",
+    "referenced_image_paths": [
+      "/Users/egor/code/machi-korov/buildings/eksport-v-kitay-03-tanker-source.png",
+      "/Users/egor/code/machi-korov/buildings/garazhnyy-kooperativ.png"
+    ],
+    "status": "rendered_and_checked",
+    "source": "/Users/egor/.codex/generated_images/01a0961e-c122-7641-9cb1-b59f2004753c/exec-bbe778df-1a7c-4043-9c6f-75262fc77ab4.png",
+    "background_regions": [
+      [
+        0.53,
+        0.05,
+        0.72,
+        0.055,
+        0.71,
+        0.1,
+        0.53,
+        0.1
+      ],
+      [
+        0.71,
+        0.14,
+        0.82,
+        0.14,
+        0.83,
+        0.18,
+        0.71,
+        0.18
+      ]
+    ]
+  },
+  {
+    "slug": "eksport-v-kitay-04-gruzoviki-v2",
+    "prompt": "Первую сцену перерисуй в стиле второго образца. Тёмный контур, потёртости, фактурная живопись. Сохрани оба грузовика, лес, топливо, рабочего с канистрой и китайские флаги. Белый фон.",
+    "referenced_image_paths": [
+      "/Users/egor/code/machi-korov/buildings/eksport-v-kitay-04-gruzoviki-source.png",
+      "/Users/egor/code/machi-korov/buildings/garazhnyy-kooperativ.png"
+    ],
+    "status": "rendered_and_checked",
+    "source": "/Users/egor/.codex/generated_images/01a0961e-c122-7641-9cb1-b59f2004753c/exec-35173c34-d472-42f0-80ac-63c3016da690.png",
+    "background_regions": [
+      [
+        0.8,
+        0.23,
+        0.92,
+        0.26,
+        0.9,
+        0.4,
+        0.86,
+        0.39
+      ]
+    ]
+  },
+  {
+    "slug": "eksport-v-kitay-05-sostavy-v2",
+    "prompt": "Сцену 1 нарисуй в стиле сцены 2. Сюжет сохрани. Белый фон.",
+    "referenced_image_paths": [
+      "/Users/egor/code/machi-korov/buildings/eksport-v-kitay-05-sostavy-source.png",
+      "/Users/egor/code/machi-korov/buildings/garazhnyy-kooperativ.png"
+    ],
+    "status": "rendered_and_checked",
+    "source": "/Users/egor/.codex/generated_images/01a0961e-c122-7641-9cb1-b59f2004753c/exec-233419b0-9a82-4a4e-9c8f-b8248f70e679.png",
+    "background_regions": [
+      [
+        0.225,
+        0.065,
+        0.53,
+        0.12,
+        0.53,
+        0.265,
+        0.235,
+        0.29
+      ],
+      [
+        0.75,
+        0.095,
+        0.85,
+        0.1,
+        0.85,
+        0.135,
+        0.75,
+        0.135
+      ],
+      [
+        0.84,
+        0.165,
+        0.95,
+        0.165,
+        0.95,
+        0.2,
+        0.84,
+        0.2
+      ]
+    ]
+  }
+]

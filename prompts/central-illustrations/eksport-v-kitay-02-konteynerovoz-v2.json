@@ -1,0 +1,10 @@
+{
+  "slug": "eksport-v-kitay-02-konteynerovoz-v2",
+  "prompt": "Первую сцену перерисуй в стиле второго образца. Тёмный контур, потёртости, фактурная живопись. Сохрани корабль, лес, кота и китайский флаг. Белый фон.",
+  "referenced_image_paths": [
+    "/Users/egor/code/machi-korov/buildings/eksport-v-kitay-02-konteynerovoz-source.png",
+    "/Users/egor/code/machi-korov/buildings/garazhnyy-kooperativ.png"
+  ],
+  "status": "generated",
+  "source": "/Users/egor/.codex/generated_images/01a0961e-c122-7641-9cb1-b59f2004753c/exec-aa03a846-928f-4299-b3fa-1515c5ef9d43.png"
+}

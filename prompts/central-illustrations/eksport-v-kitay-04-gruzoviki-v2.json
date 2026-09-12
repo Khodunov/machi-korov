@@ -1,0 +1,10 @@
+{
+  "slug": "eksport-v-kitay-04-gruzoviki-v2",
+  "prompt": "Первую сцену перерисуй в стиле второго образца. Тёмный контур, потёртости, фактурная живопись. Сохрани оба грузовика, лес, топливо, рабочего с канистрой и китайские флаги. Белый фон.",
+  "referenced_image_paths": [
+    "/Users/egor/code/machi-korov/buildings/eksport-v-kitay-04-gruzoviki-source.png",
+    "/Users/egor/code/machi-korov/buildings/garazhnyy-kooperativ.png"
+  ],
+  "status": "generated",
+  "source": "/Users/egor/.codex/generated_images/01a0961e-c122-7641-9cb1-b59f2004753c/exec-35173c34-d472-42f0-80ac-63c3016da690.png"
+}
