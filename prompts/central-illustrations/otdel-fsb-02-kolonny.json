@@ -1,0 +1,153 @@
+{
+  "spec_version": "1.1",
+  "title": "Floating Machi Koro-style central illustration spec",
+  "purpose": "Reusable specification for the central subject illustration that will be composited onto a blank Machi Koro-style card furniture template. The generated art should reproduce the iconic 'floating miniature scene' look of Machi Koro while adapting the depicted subject matter to grim, recognizable Russian/post-Soviet everyday reality.",
+  "integration_context": {
+    "target_use": "Generate only the central content illustration to be pasted onto an existing blank card template.",
+    "background_requirement": "Generate on a plain white background; remove locally and preserve source separately.",
+    "text_policy": "The illustration must contain no incidental text. Do not draw unrequested letters, numbers, words, prices, menus, labels, signage, graffiti, license-plate characters, or text-like pseudo-glyphs on any building, prop, vehicle, or surface. An explicitly requested brand logo is allowed, including the lettering contained within that logo; render only that requested logo and no additional text.",
+    "card_relationship": "The art should sit like a floating miniature object or sticker inside the middle of the card, leaving generous empty sky around it.",
+    "central_positioning": "The subject should be centered and self-contained, with enough margin around it so it can be placed in the open central sky region of the card."
+  },
+  "style_goal": {
+    "primary_rule": "Match the illustration language of the original Machi Koro establishment art.",
+    "secondary_rule": "Depict Russian/post-Soviet subjects and atmosphere without making the rendering more realistic.",
+    "core_formula": "Cute, simplified tabletop-game miniature scene + bleak, recognizable Russian everyday subject matter."
+  },
+  "what_machi_koro_art_looks_like": {
+    "miniature_scene_feel": "The subject is not a full landscape or realistic environment. It is a small isolated toy-like scene, almost like a board-game token, sticker, or floating diorama.",
+    "shape_language": "Large clean shapes, simple geometry, and compact clustered forms. Each object is simplified into a few readable masses.",
+    "perspective": "Loose playful three-quarter perspective. Enough depth to feel dimensional, but not strict architectural or camera-accurate perspective.",
+    "linework": "Clear outlines or sharp separations between forms. Interior detail lines should be sparse.",
+    "shading": "Simple graphic shading using one or two darker tones. No realistic lighting model.",
+    "materials": "Concrete, wood, leaves, roofs, metal, dirt, and glass should be communicated mostly by color and silhouette, not by texture or realistic rendering.",
+    "detail_density": "Low to moderate. Every important feature should remain readable at small card size.",
+    "silhouette_priority": "The outer silhouette of the subject must read instantly and be visually iconic.",
+    "scene_boundary": "The subject should feel self-contained, often resting on a small stylized ground base or compact support shape rather than blending into a large background."
+  },
+  "visual_composition": {
+    "occupancy": "The content illustration should usually occupy roughly the middle 30-45% of the card height when composited, with wide air around it.",
+    "shape": "Prefer compact clustered compositions rather than tall full-frame scenes.",
+    "orientation": "Front and right side visible, matching the source illustration.",
+    "floating_behavior": "The scene should visually float in open space, not connect to the bottom skyline strip of the card.",
+    "base": "When appropriate, place the subject on a small stylized ground slab, courtyard patch, platform, or tiny environmental base that belongs to the object itself.",
+    "background": "Plain white background for local removal."
+  },
+  "russian_grimness_rules": {
+    "principle": "Russian grimness must come from the things being depicted, not from realistic rendering technique.",
+    "use": [
+      "cold blue-gray and concrete-gray palette",
+      "utilitarian post-Soviet forms",
+      "worn but simplified everyday structures",
+      "mismatched repairs or colors",
+      "bare trees or sparse vegetation when relevant",
+      "isolated warm-lit windows when appropriate",
+      "deadpan humor and familiar urban bleakness"
+    ],
+    "do_not_use": [
+      "photorealism",
+      "architectural-visualization detail",
+      "gritty material texture",
+      "cinematic lighting",
+      "dense grime or realistic dirt",
+      "atmospheric realism"
+    ],
+    "guardrail": "If there is a choice between making the subject more Russian or more Machi Koro-like, preserve Machi Koro rendering first and express Russianness through object choice, colors, and a few culturally diagnostic details."
+  },
+  "palette": {
+    "base": [
+      "muted blue-gray",
+      "cold concrete gray",
+      "desaturated navy",
+      "powder blue",
+      "slate blue"
+    ],
+    "secondary": [
+      "muted olive",
+      "dull teal",
+      "faded rust-brown",
+      "dirty beige"
+    ],
+    "warm_accents": [
+      "a few amber-yellow lit windows",
+      "small warm details only where helpful"
+    ],
+    "saturation": "low to moderate",
+    "overall_brightness": "somewhat darker and duller than standard Machi Koro art, but still clean and readable"
+  },
+  "allowed_subject_types": {
+    "examples": [
+      "panel apartment blocks",
+      "kiosks",
+      "garages",
+      "playgrounds",
+      "tram stops",
+      "bus shelters",
+      "corner shops",
+      "courtyard utilities",
+      "small Soviet-era service buildings",
+      "other Russian/post-Soviet everyday urban or peri-urban archetypes"
+    ],
+    "selection_rule": "Choose subjects that are instantly recognizable and culturally specific, but still simple enough to become iconic miniatures."
+  },
+  "subject_construction_rules": {
+    "general": [
+      "Reduce the subject to a compact iconic miniature.",
+      "Choose only the few details needed for recognition.",
+      "Exaggerate or simplify proportions slightly when useful.",
+      "Keep objects chunky and readable.",
+      "Use a compact number of forms.",
+      "Front and right side visible, matching the source illustration."
+    ],
+    "building_specific": [
+      "A building should read as a toy-like block, not as a carefully rendered facade.",
+      "Windows should be simplified rectangles, not detailed constructions.",
+      "Balconies should be simplified into blocky protrusions or colored panels.",
+      "Roof details should be few and clear.",
+      "Panel seams or other repetitive structure should be present only in a small number of major lines.",
+      "All signs, fascia panels, menu boards, plaques, posters, and storefront surfaces must be blank or purely geometric unless the content section explicitly requests a brand logo. A requested logo may include its authentic embedded lettering, but no other writing or text-like marks are allowed."
+    ],
+    "environment_specific": [
+      "Trees should be graphic silhouettes or simplified masses.",
+      "Ground should be a small stylized patch rather than a full realistic courtyard.",
+      "Props should be few and iconic."
+    ]
+  },
+  "content": {
+    "subject": "A broad four-storey sand-beige Stalinist regional FSB headquarters, central six-column portico and plain triangular pediment, symmetrical wings, dark stone base.",
+    "description": "A broad four-storey sand-beige Stalinist regional FSB headquarters, central six-column portico and plain triangular pediment, symmetrical wings, dark stone base.",
+    "desired_read": "Regional FSB office miniature",
+    "recognition_details": [
+      "A broad four-storey sand-beige Stalinist regional FSB headquarters",
+      "central six-column portico and plain triangular pediment",
+      "symmetrical wings",
+      "dark stone base."
+    ],
+    "miniature_base": "Small blue-gray paved slab",
+    "simplify": [
+      "Chunky architectural forms",
+      "Readable window rhythm"
+    ],
+    "omit": [
+      "Text and insignia",
+      "People and surrounding city"
+    ],
+    "target_impression": "Same hand-drawn rendering as the existing Lubyanka illustration"
+  },
+  "anti_patterns": [
+    "Do not generate a full card.",
+    "Do not generate sky, clouds, footer, or any fixed furniture.",
+    "Do not create a realistic painting of a building.",
+    "Do not create a full cityscape background.",
+    "Do not make the scene connect visually to the bottom of the card.",
+    "Do not generate incidental letters, numbers, words, menus, prices, labels, graffiti, license-plate characters, or pseudo-text anywhere in the illustration. An explicitly requested brand logo, including its embedded lettering, is the only exception.",
+    "Do not turn the subject into generic clip-art with no Russian specificity.",
+    "Do not use heavy textures or gritty realism."
+  ],
+  "final_prompt_summary": "Beige regional FSB office with six-column portico, plain triangular pediment and two four-storey wings. Exactly the same hand-drawn style as reference. Whole building, front and right side, small blue-gray paving slab. Plain white background. No text, symbols or people.",
+  "reference_images": [
+    "prompts/references/otdel-fsb-lubyanka-style.jpg"
+  ],
+  "initial_prompt": "A broad four-storey sand-beige Stalinist regional FSB headquarters, central six-column portico and plain triangular pediment, symmetrical wings, dark stone base. Match the reference illustration exactly: dark hand-drawn outlines, flat painted colors, simple warm shadows, miniature board-game architecture. Front and right side visible, centered whole building on a small blue-gray paved slab, wide composition with margins. Plain white background. No text, emblems, flags, people or card frame.",
+  "generation_note": "Initial request failed with network error; shortened retry succeeded."
+}
