@@ -1,0 +1,76 @@
+{
+  "use_case": "illustration-story",
+  "title": "Островок торговли",
+  "tool": "built-in image_gen",
+  "prompt": "Измени только стиль: мультяшная иллюстрация настольной игры, чёткий тёмный контур, крупные цветовые пятна, гладкая светотень, выразительные лица. Сохрани всех персонажей, детали, позы и композицию. Белый фон, без букв.",
+  "edit_prompt": null,
+  "source": "buildings/pivnoy-laryok-06-ostrovok-v3-source.png",
+  "cutout": "buildings/pivnoy-laryok-06-ostrovok-v3.png",
+  "card": "cards/pivnoy-laryok-06-ostrovok-v3.png",
+  "background": "Plain white generated source; local edge-connected background removal.",
+  "references": [
+    "tmp/imagegen/pivnye-larki-v3/06-ostrovok.png"
+  ],
+  "orientation": "Use generated orientation without mirroring.",
+  "visual_style_references": [
+    "buildings/garazhnyy-kooperativ-batina-gostinaya-v2.png"
+  ],
+  "local_processing": {
+    "background_regions": [
+      [
+        0.855,
+        0.2,
+        0.995,
+        0.2,
+        0.995,
+        0.425,
+        0.855,
+        0.425
+      ]
+    ],
+    "label_cleanup": [
+      {
+        "polygon": [
+          [
+            840,
+            490
+          ],
+          [
+            869,
+            498
+          ],
+          [
+            866,
+            510
+          ],
+          [
+            837,
+            502
+          ]
+        ],
+        "color": "#FFE3A6"
+      },
+      {
+        "polygon": [
+          [
+            884,
+            505
+          ],
+          [
+            911,
+            513
+          ],
+          [
+            908,
+            525
+          ],
+          [
+            879,
+            516
+          ]
+        ],
+        "color": "#E8A136"
+      }
+    ]
+  }
+}

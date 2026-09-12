@@ -1,0 +1,169 @@
+{
+  "use_case": "illustration-story",
+  "title": "Большой футбол",
+  "tool": "built-in image_gen",
+  "prompt": "Измени только стиль: мультяшная иллюстрация настольной игры, чёткий тёмный контур, крупные цветовые пятна, гладкая светотень, выразительные лица. Сохрани всех персонажей, детали, позы и композицию. Белый фон, без букв.",
+  "edit_prompt": null,
+  "source": "buildings/pivnoy-laryok-05-futbol-v3-source.png",
+  "cutout": "buildings/pivnoy-laryok-05-futbol-v3.png",
+  "card": "cards/pivnoy-laryok-05-futbol-v3.png",
+  "background": "Plain white generated source; local edge-connected background removal.",
+  "references": [
+    "tmp/imagegen/pivnye-larki-v3/05-futbol.png"
+  ],
+  "orientation": "Use generated orientation without mirroring.",
+  "visual_style_references": [
+    "buildings/garazhnyy-kooperativ-batina-gostinaya-v2.png"
+  ],
+  "local_processing": {
+    "label_cleanup": [
+      {
+        "polygon": [
+          [
+            881,
+            392
+          ],
+          [
+            904,
+            396
+          ],
+          [
+            901,
+            403
+          ],
+          [
+            878,
+            399
+          ]
+        ],
+        "color": "#239BA2"
+      },
+      {
+        "polygon": [
+          [
+            925,
+            397
+          ],
+          [
+            946,
+            401
+          ],
+          [
+            943,
+            408
+          ],
+          [
+            921,
+            404
+          ]
+        ],
+        "color": "#FFE0A6"
+      },
+      {
+        "polygon": [
+          [
+            967,
+            403
+          ],
+          [
+            991,
+            408
+          ],
+          [
+            988,
+            415
+          ],
+          [
+            964,
+            410
+          ]
+        ],
+        "color": "#EDA736"
+      },
+      {
+        "polygon": [
+          [
+            871,
+            460
+          ],
+          [
+            891,
+            462
+          ],
+          [
+            888,
+            469
+          ],
+          [
+            869,
+            466
+          ]
+        ],
+        "color": "#F5D452"
+      },
+      {
+        "polygon": [
+          [
+            900,
+            465
+          ],
+          [
+            922,
+            469
+          ],
+          [
+            919,
+            476
+          ],
+          [
+            899,
+            471
+          ]
+        ],
+        "color": "#EFBA43"
+      },
+      {
+        "polygon": [
+          [
+            927,
+            470
+          ],
+          [
+            952,
+            474
+          ],
+          [
+            949,
+            482
+          ],
+          [
+            925,
+            477
+          ]
+        ],
+        "color": "#F1B53B"
+      },
+      {
+        "polygon": [
+          [
+            965,
+            474
+          ],
+          [
+            991,
+            479
+          ],
+          [
+            988,
+            486
+          ],
+          [
+            962,
+            481
+          ]
+        ],
+        "color": "#258AA8"
+      }
+    ]
+  }
+}

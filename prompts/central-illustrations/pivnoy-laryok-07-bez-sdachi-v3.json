@@ -1,0 +1,32 @@
+{
+  "use_case": "illustration-story",
+  "title": "Без сдачи",
+  "tool": "built-in image_gen",
+  "prompt": "Сделай рисунок мультяшным: чёткий контур, гладкая светотень, выразительные лица. Сохрани всю сцену и предметы. Белый фон.",
+  "edit_prompt": null,
+  "source": "buildings/pivnoy-laryok-07-bez-sdachi-v3-source.png",
+  "cutout": "buildings/pivnoy-laryok-07-bez-sdachi-v3.png",
+  "card": "cards/pivnoy-laryok-07-bez-sdachi-v3.png",
+  "background": "Plain white generated source; local edge-connected background removal.",
+  "references": [
+    "tmp/imagegen/pivnye-larki-v3/07-bez-sdachi-retry.jpg"
+  ],
+  "orientation": "Use generated orientation without mirroring.",
+  "visual_style_references": [
+    "buildings/garazhnyy-kooperativ-batina-gostinaya-v2.png"
+  ],
+  "local_processing": {
+    "background_regions": [
+      [
+        0.815,
+        0,
+        0.995,
+        0,
+        0.995,
+        0.61,
+        0.815,
+        0.61
+      ]
+    ]
+  }
+}

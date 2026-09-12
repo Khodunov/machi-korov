@@ -1,0 +1,32 @@
+{
+  "use_case": "illustration-story",
+  "title": "А вот ту жвачку!",
+  "tool": "built-in image_gen",
+  "prompt": "Измени только стиль: мультяшная иллюстрация настольной игры, чёткий тёмный контур, крупные цветовые пятна, гладкая светотень, выразительные лица. Сохрани всех персонажей, детали, позы и композицию. Белый фон, без букв.",
+  "edit_prompt": null,
+  "source": "buildings/pivnoy-laryok-01-zhvachka-v3-source.png",
+  "cutout": "buildings/pivnoy-laryok-01-zhvachka-v3.png",
+  "card": "cards/pivnoy-laryok-01-zhvachka-v3.png",
+  "background": "Plain white generated source; local edge-connected background removal.",
+  "references": [
+    "tmp/imagegen/pivnye-larki-v3/01-zhvachka.png"
+  ],
+  "orientation": "Use generated orientation without mirroring.",
+  "visual_style_references": [
+    "buildings/garazhnyy-kooperativ-batina-gostinaya-v2.png"
+  ],
+  "local_processing": {
+    "background_regions": [
+      [
+        0.84,
+        0.135,
+        0.995,
+        0.135,
+        0.995,
+        0.65,
+        0.84,
+        0.65
+      ]
+    ]
+  }
+}

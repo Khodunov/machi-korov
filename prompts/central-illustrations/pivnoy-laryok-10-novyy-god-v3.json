@@ -1,0 +1,85 @@
+{
+  "use_case": "illustration-story",
+  "title": "Последний покупатель",
+  "tool": "built-in image_gen",
+  "prompt": "Измени только стиль: мультяшная иллюстрация настольной игры, чёткий тёмный контур, крупные цветовые пятна, гладкая светотень, выразительные лица. Сохрани всех персонажей, детали, позы и композицию. Белый фон, без букв.",
+  "edit_prompt": null,
+  "source": "buildings/pivnoy-laryok-10-novyy-god-v3-source.png",
+  "cutout": "buildings/pivnoy-laryok-10-novyy-god-v3.png",
+  "card": "cards/pivnoy-laryok-10-novyy-god-v3.png",
+  "background": "Plain white generated source; local edge-connected background removal.",
+  "references": [
+    "tmp/imagegen/pivnye-larki-v3/10-novyy-god.png"
+  ],
+  "orientation": "Use generated orientation without mirroring.",
+  "visual_style_references": [
+    "buildings/garazhnyy-kooperativ-batina-gostinaya-v2.png"
+  ],
+  "local_processing": {
+    "label_cleanup": [
+      {
+        "polygon": [
+          [
+            925,
+            554
+          ],
+          [
+            954,
+            562
+          ],
+          [
+            948,
+            572
+          ],
+          [
+            920,
+            564
+          ]
+        ],
+        "color": "#EFC24C"
+      },
+      {
+        "polygon": [
+          [
+            924,
+            573
+          ],
+          [
+            942,
+            578
+          ],
+          [
+            938,
+            585
+          ],
+          [
+            921,
+            580
+          ]
+        ],
+        "color": "#EFC24C"
+      },
+      {
+        "polygon": [
+          [
+            974,
+            562
+          ],
+          [
+            1000,
+            570
+          ],
+          [
+            996,
+            579
+          ],
+          [
+            970,
+            572
+          ]
+        ],
+        "color": "#DABB4B"
+      }
+    ]
+  }
+}

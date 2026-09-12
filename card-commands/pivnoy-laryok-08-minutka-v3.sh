@@ -1,0 +1,25 @@
+.venv/bin/python skills/generate-card/scripts/card_compositor.py \
+  --template backgrounds/green.png \
+  --overlay buildings/pivnoy-laryok-08-minutka-v3.png \
+  --title-icon icons/shop-stall.png \
+  --shadow \
+  --output cards/pivnoy-laryok-08-minutka-v3.png \
+  --x-frac 0.50 \
+  --y-frac 0.5277 \
+  --scale 0.7800 \
+  --coin-number 1 \
+  --activation-number '2-3' \
+  --title 'Пивной ларёк' \
+  --title-color '#17361A' \
+  --bottom-text $'Возьмите 1 монету из банка.\nВ свой ход.' \
+  --bottom-text-y-frac 0.82 \
+  --bottom-text-spacing-px 6 \
+  --title-font fonts/Boingster-Regular.ttf \
+  --title-font-size-frac 0.062 \
+  --title-icon-scale 1.8 \
+  --title-icon-y-offset-px -8 \
+  --bottom-text-font fonts/CCUltimatum-Bold.ttf \
+  --bottom-text-font-size-frac 0.043 \
+  --activation-font fonts/Boingster-Regular.ttf \
+  --activation-font-size-frac 0.1 \
+  --coin-font fonts/Boingster-Regular.ttf

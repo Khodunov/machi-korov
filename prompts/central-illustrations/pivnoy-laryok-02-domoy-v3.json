@@ -1,0 +1,20 @@
+{
+  "use_case": "illustration-story",
+  "title": "По одной — и домой",
+  "tool": "built-in image_gen",
+  "prompt": "Перерисуй ларёк первого изображения в мультяшном стиле гаражей второго: чёткие контуры, гладкая светотень, выразительные лица. Сохрани композицию, людей, все предметы и хтонь первого изображения. Вся диорама на белом фоне, без букв.",
+  "edit_prompt": null,
+  "source": "buildings/pivnoy-laryok-02-domoy-v3-source.png",
+  "cutout": "buildings/pivnoy-laryok-02-domoy-v3.png",
+  "card": "cards/pivnoy-laryok-02-domoy-v3.png",
+  "background": "Plain white generated source; local edge-connected background removal.",
+  "references": [
+    "tmp/imagegen/pivnye-larki-v3/02-domoy.png",
+    "tmp/imagegen/pivnye-larki-v3/garage-style.png"
+  ],
+  "orientation": "Use generated orientation without mirroring.",
+  "visual_style_references": [
+    "buildings/garazhnyy-kooperativ-batina-gostinaya-v2.png"
+  ],
+  "local_processing": {}
+}

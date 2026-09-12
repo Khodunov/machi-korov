@@ -1,0 +1,158 @@
+{
+  "use_case": "illustration-story",
+  "title": "Тропа народная",
+  "tool": "built-in image_gen",
+  "prompt": "Измени только стиль: мультяшная иллюстрация настольной игры, чёткий тёмный контур, крупные цветовые пятна, гладкая светотень, выразительные лица. Сохрани всех персонажей, детали, позы и композицию. Белый фон, без букв.",
+  "edit_prompt": null,
+  "source": "buildings/pivnoy-laryok-04-tropa-v3-source.png",
+  "cutout": "buildings/pivnoy-laryok-04-tropa-v3.png",
+  "card": "cards/pivnoy-laryok-04-tropa-v3.png",
+  "background": "Plain white generated source; local edge-connected background removal.",
+  "references": [
+    "tmp/imagegen/pivnye-larki-v3/04-tropa.png"
+  ],
+  "orientation": "Use generated orientation without mirroring.",
+  "visual_style_references": [
+    "buildings/garazhnyy-kooperativ-batina-gostinaya-v2.png"
+  ],
+  "local_processing": {
+    "background_seeds": [
+      [
+        1211,
+        282
+      ],
+      [
+        1151,
+        222
+      ],
+      [
+        1159,
+        270
+      ],
+      [
+        1227,
+        415
+      ],
+      [
+        1245,
+        506
+      ],
+      [
+        1194,
+        245
+      ],
+      [
+        1101,
+        238
+      ],
+      [
+        1184,
+        374
+      ],
+      [
+        1244,
+        321
+      ],
+      [
+        1117,
+        277
+      ],
+      [
+        1169,
+        416
+      ],
+      [
+        1244,
+        470
+      ],
+      [
+        1116,
+        226
+      ],
+      [
+        1257,
+        387
+      ],
+      [
+        1244,
+        366
+      ],
+      [
+        1097,
+        278
+      ],
+      [
+        1150,
+        389
+      ],
+      [
+        1097,
+        362
+      ],
+      [
+        1217,
+        319
+      ],
+      [
+        1107,
+        380
+      ],
+      [
+        1184,
+        468
+      ],
+      [
+        1123,
+        304
+      ],
+      [
+        1143,
+        432
+      ],
+      [
+        1106,
+        300
+      ],
+      [
+        1235,
+        379
+      ],
+      [
+        1209,
+        229
+      ],
+      [
+        1216,
+        450
+      ],
+      [
+        1236,
+        256
+      ],
+      [
+        1128,
+        242
+      ],
+      [
+        1261,
+        370
+      ],
+      [
+        1198,
+        483
+      ],
+      [
+        1202,
+        428
+      ],
+      [
+        1260,
+        310
+      ],
+      [
+        1168,
+        194
+      ]
+    ]
+  }
+}

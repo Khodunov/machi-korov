@@ -1,0 +1,38 @@
+{
+  "use_case": "illustration-story",
+  "title": "Рыбный инспектор",
+  "tool": "built-in image_gen",
+  "prompt": "Измени только стиль: мультяшная иллюстрация настольной игры, чёткий тёмный контур, крупные цветовые пятна, гладкая светотень, выразительные лица. Сохрани всех персонажей, детали, позы и композицию. Белый фон, без букв.",
+  "edit_prompt": null,
+  "source": "buildings/pivnoy-laryok-09-kot-v3-source.png",
+  "cutout": "buildings/pivnoy-laryok-09-kot-v3.png",
+  "card": "cards/pivnoy-laryok-09-kot-v3.png",
+  "background": "Plain white generated source; local edge-connected background removal.",
+  "references": [
+    "tmp/imagegen/pivnye-larki-v3/09-kot.png"
+  ],
+  "orientation": "Use generated orientation without mirroring.",
+  "visual_style_references": [
+    "buildings/garazhnyy-kooperativ-batina-gostinaya-v2.png"
+  ],
+  "local_processing": {
+    "background_regions": [
+      [
+        0.82,
+        0,
+        0.998,
+        0,
+        0.998,
+        0.665,
+        0.82,
+        0.665
+      ]
+    ],
+    "background_seeds": [
+      [
+        220,
+        340
+      ]
+    ]
+  }
+}
