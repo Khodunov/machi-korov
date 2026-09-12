@@ -1,0 +1,105 @@
+{
+  "generation_mode": "built-in image_gen",
+  "background_workflow": "User-authorized short opaque generation followed by local background removal. See task 01a094ce-ec87-7f62-86b7-88a0324ebd60.",
+  "variants": [
+    {
+      "slug": "panelka-01-kover",
+      "prompt": "Create a Machi Koro-style board-game illustration. Frosty winter daytime. A wide squat beige five-story Soviet prefab panel apartment block, small open balconies and visible panel seams. In its snowy front courtyard a grandmother in a headscarf raises a carpet beater to a large burgundy red carpet hanging over a metal inverted-U rail. Small puff of snow. Beside her a child with a toy shovel imitates her on a tiny rug on the snow. A sled and trodden path. Large simple geometric rug ornament. Main focus red carpet against white snow. Cute simplified miniature diorama on a small ground slab, chunky cartoon people, clean outlines, muted colors, soft simple painted shading. Three-quarter view from above showing front and right side. Entire scene visible, generous margin including above antennas. Plain white background. No external cast shadow, writing, logos or card frame. Outline pale objects clearly.",
+      "source": "buildings/panelka-01-kover-source.png",
+      "cutout": "buildings/panelka-01-kover.png",
+      "card": "cards/panelka-01-kover.png",
+      "generated_source": "/Users/egor/.codex/generated_images/01a09522-7217-7793-aec9-92fdabde1167/exec-69253aaf-72dd-4186-840a-14a653662554.png",
+      "status": "completed"
+    },
+    {
+      "slug": "panelka-02-lebedi",
+      "prompt": "Create a Machi Koro-style board-game illustration. May spring. Squat gray five-story prefab panel apartment block, faded green plinth and simple entrance canopy. A resident with a paintbrush repaints a white swan sculpted from an old tire; a second white tire swan rests in a blue tire pond. A real pigeon between them. Small paint bucket, first flowers and a short border of half-buried tires. Main focus two iconic white curved swan necks and bright blue tire pond. Cute simplified miniature diorama on a small ground slab, chunky cartoon people, clean outlines, muted colors, soft simple painted shading. Three-quarter view from above showing front and right side. Entire scene visible, generous margin including above antennas. Plain white background. No external cast shadow, writing, logos or card frame. Outline pale objects clearly.",
+      "source": "buildings/panelka-02-lebedi-source.png",
+      "cutout": "buildings/panelka-02-lebedi.png",
+      "card": "cards/panelka-02-lebedi.png",
+      "generated_source": "/Users/egor/.codex/generated_images/01a09522-7217-7793-aec9-92fdabde1167/exec-db52f7f0-a215-44df-a32d-65fec38cadc2.png",
+      "status": "completed"
+    },
+    {
+      "slug": "panelka-03-ogorod",
+      "prompt": "Create a Machi Koro-style board-game illustration. August late summer. Long low five-story prefab panel block with faded light green inserts and one brown wooden lower balcony. Immediately below windows two miniature vegetable beds, cucumber vines on supports, a small cold-frame greenhouse built from old window frames. A woman with a watering can tends the beds while a ginger cat sprawls in the sun on the best garden bed. Main focus lush cucumber greenery and glass greenhouse lid beside concrete facade. Cute simplified miniature diorama on a small ground slab, chunky cartoon people, clean outlines, muted colors, soft simple painted shading. Three-quarter view from above showing front and right side. Entire scene visible, generous margin including above antennas. Plain white background. No external cast shadow, writing, logos or card frame. Outline pale objects clearly.",
+      "source": "buildings/panelka-03-ogorod-source.png",
+      "cutout": "buildings/panelka-03-ogorod.png",
+      "card": "cards/panelka-03-ogorod.png",
+      "generated_source": "/Users/egor/.codex/generated_images/01a09522-7217-7793-aec9-92fdabde1167/exec-b8a9887d-0179-48fc-b603-97fbe9a12127.png",
+      "status": "completed"
+    },
+    {
+      "slug": "panelka-04-uteplenie",
+      "prompt": "Create a Machi Koro-style board-game illustration. October autumn. Compact nine-story prefab panel block with a patchwork facade of apartment-sized rectangular external insulation patches: peach, mint, cream, with exposed gray panel concrete between. Balconies glazed in mismatched ways. In the very simple courtyard a caretaker with a rake gathers golden leaves under one yellow birch; a cat sleeps in the neat leaf pile. Main focus the colorful patchwork insulation mosaic, only a few large clear facade patches. Cute simplified miniature diorama on a small ground slab, chunky cartoon people, clean outlines, muted colors, soft simple painted shading. Three-quarter view from above showing front and right side. Entire scene visible, generous margin including above antennas. Plain white background. No external cast shadow, writing, logos or card frame. Outline pale objects clearly.",
+      "source": "buildings/panelka-04-uteplenie-source.png",
+      "cutout": "buildings/panelka-04-uteplenie.png",
+      "card": "cards/panelka-04-uteplenie.png",
+      "generated_source": "/Users/egor/.codex/generated_images/01a09522-7217-7793-aec9-92fdabde1167/exec-c309f465-1a5d-48d1-9bcc-d34bba634db9.png",
+      "status": "completed"
+    },
+    {
+      "slug": "panelka-05-kosmodrom",
+      "prompt": "Create a Machi Koro-style board-game illustration. Early autumn. Ochre-gray nine-story prefab apartment block with deep vertical balcony stacks and a distinct stairwell strip. In front a recognizable old Soviet metal climbing rocket painted faded red and blue, some simple rusty areas, circular climbing rungs and pointed nose. A child in a bright jacket near the top. Beside it a chunky old metal playground toy car with a cat proudly sitting behind the wheel. Sparse autumn grass. Main focus the tall colorful playground rocket. Cute simplified miniature diorama on a small ground slab, chunky cartoon people, clean outlines, muted colors, soft simple painted shading. Three-quarter view from above showing front and right side. Entire scene visible, generous margin including above antennas. Plain white background. No external cast shadow, writing, logos or card frame. Outline pale objects clearly.",
+      "source": "buildings/panelka-05-kosmodrom-source.png",
+      "cutout": "buildings/panelka-05-kosmodrom.png",
+      "card": "cards/panelka-05-kosmodrom.png",
+      "generated_source": "/Users/egor/.codex/generated_images/01a09522-7217-7793-aec9-92fdabde1167/exec-9394914b-105f-4c7f-a809-e3fc4997f833.png",
+      "status": "completed"
+    },
+    {
+      "slug": "panelka-06-balkony",
+      "prompt": "A miniature Soviet apartment block with eclectic colorful balconies, flowers and satellite dishes, illustrated like a Machi Koro board game. A woman with a watering can. White background.",
+      "source": "buildings/panelka-06-balkony-source.png",
+      "cutout": "buildings/panelka-06-balkony.png",
+      "card": "cards/panelka-06-balkony.png",
+      "previous_prompt": "Create a Machi Koro-style board-game illustration. July summer. Narrow compact Soviet prefab panel apartment tower with one expressive vertical stack of mismatched balconies: wooden brown, blue corrugated metal, white fully glazed protruding enclosure. Two unbranded satellite dishes of different sizes; simple bicycle silhouette behind one window. A resident waters abundant balcony flowers; below another resident moves a small clothes drying rack away from falling drops. Main focus vertical stack of distinctly different balcony boxes and readable large flowers and watering can. Cute simplified miniature diorama on a small ground slab, chunky cartoon people, clean outlines, muted colors, soft simple painted shading. Three-quarter view from above showing front and right side. Entire scene visible, generous margin including above antennas. Plain white background. No external cast shadow, writing, logos or card frame. Outline pale objects clearly.",
+      "failed_prompts": [
+        "Machi Koro-style miniature of a Russian panel apartment tower in summer. Stacked mismatched balconies: brown wood, blue metal, protruding white glazing. Two small satellite dishes. Cartoon resident waters balcony flowers; below, a neighbor pulls a laundry drying rack away from dripping water. Small courtyard base. Cute chunky cartoon characters, clean outlines, muted colors, simple painted shading. Three-quarter view showing front and right wall. Entire scene visible with margin. Plain white background, no shadow, text or card frame.",
+        "Draw a cute Machi Koro board-game miniature: Soviet apartment tower with mismatched brown wooden, blue metal and white glazed balconies, satellite dishes. A cartoon woman waters balcony flowers; a neighbor below moves a laundry rack away from the drips. Small summer courtyard. Three-quarter view, entire building and base visible, simple painted shading, clear outlines. Plain white background. No text or frame.",
+        "A cute hand-painted Machi Koro miniature of a Russian panel apartment building with mismatched wooden brown, blue metal and white glass balconies, satellite dishes and a small summer courtyard. A woman waters balcony flowers; another person moves a laundry rack below. Cartoon people, three-quarter view, whole scene visible. Plain white background.",
+        "Use this image as a style reference. Draw a summer Russian apartment courtyard with a tall narrow panel building. Its balconies are all different: wooden brown, blue corrugated metal, and white glass boxes. Small satellite dishes, balcony flowers, a woman with a watering can and a neighbor beside a laundry rack. Same cute painted miniature style and plain white background. Whole scene visible. No lettering.",
+        "Cute Machi Koro illustration of a Russian panel apartment tower with mismatched wooden, blue metal and glazed balconies, satellite dishes and a summer courtyard. A cartoon woman waters balcony flowers. A neighbor tends laundry below. Plain white background."
+      ],
+      "status": "generation_failed"
+    },
+    {
+      "slug": "panelka-07-korabl",
+      "prompt": "Create a Machi Koro-style board-game illustration. Windy June. A compact shortened section of a white elongated Soviet 1LG-600 ship-style prefab apartment block with strong horizontal bands of small windows and a dark narrow end wall. Courtyard clotheslines on two T-shaped poles hold two large white sheets puffed by wind like sails and one colored pillowcase. A resident holds a flapping sheet corner; only the legs of a second helper show behind the other sheet. Green grass. Main focus sheets like sails echoing the horizontal ship-shaped building. Cute simplified miniature diorama on a small ground slab, chunky cartoon people, clean outlines, muted colors, soft simple painted shading. Three-quarter view from above showing front and right side. Entire scene visible, generous margin including above antennas. Plain white background. No external cast shadow, writing, logos or card frame. Outline pale objects clearly.",
+      "source": "buildings/panelka-07-korabl-source.png",
+      "cutout": "buildings/panelka-07-korabl.png",
+      "card": "cards/panelka-07-korabl.png",
+      "generated_source": "/Users/egor/.codex/generated_images/01a09522-7217-7793-aec9-92fdabde1167/exec-28f4949d-c7da-4be6-be11-4ca1eb0c19b3.png",
+      "status": "completed"
+    },
+    {
+      "slug": "panelka-08-sugrob",
+      "prompt": "Create a Machi Koro-style board-game illustration. January just after heavy snowfall. Compact tall blue-and-white P-44-inspired prefab apartment block with colored vertical balcony strips and flat roof, a few warm windows. In front an owner with a snow shovel has exposed just one door and one wheel of a car buried under a huge snow mound. Narrow dug trench leads to the entrance. Nearly buried bench. An adjacent snow mound has a plain bucket on top and resembles a snowman. Main focus the mostly buried car with one visible door and wheel. No license plates. Cute simplified miniature diorama on a small ground slab, chunky cartoon people, clean outlines, muted colors, soft simple painted shading. Three-quarter view from above showing front and right side. Entire scene visible, generous margin including above antennas. Plain white background. No external cast shadow, writing, logos or card frame. Outline pale objects clearly.",
+      "source": "buildings/panelka-08-sugrob-source.png",
+      "cutout": "buildings/panelka-08-sugrob.png",
+      "card": "cards/panelka-08-sugrob.png",
+      "generated_source": "/Users/egor/.codex/generated_images/01a09522-7217-7793-aec9-92fdabde1167/exec-9f94e249-9050-45cf-9d36-6df8aa3a6c54.png",
+      "status": "completed"
+    },
+    {
+      "slug": "panelka-09-mozaika",
+      "prompt": "Create a Machi Koro-style board-game illustration. September golden autumn. Five-story prefab apartment block with a clearly visible broad blank end wall decorated with an original large geometric mosaic of a stylized bird and sun circle in turquoise and ochre. Building front and end both visible. In the courtyard under one golden birch two elderly neighbors play dominoes at a small wooden table, a cat upright on a third stool seems to be the third player. Large simple domino blocks with dots only. Main focus the bold monumental bird mosaic above tiny everyday domino players. Cute simplified miniature diorama on a small ground slab, chunky cartoon people, clean outlines, muted colors, soft simple painted shading. Three-quarter view from above showing front and right side. Entire scene visible, generous margin including above antennas. Plain white background. No external cast shadow, writing, logos or card frame. Outline pale objects clearly.",
+      "source": "buildings/panelka-09-mozaika-source.png",
+      "cutout": "buildings/panelka-09-mozaika.png",
+      "card": "cards/panelka-09-mozaika.png",
+      "generated_source": "/Users/egor/.codex/generated_images/01a09522-7217-7793-aec9-92fdabde1167/exec-c27d00ee-7c3b-44ba-9312-b1029954ad84.png",
+      "status": "completed"
+    },
+    {
+      "slug": "panelka-10-tropinka",
+      "prompt": "Create a Machi Koro-style board-game illustration. April spring. A compact tall single section of a newer P-44T-inspired prefab panel apartment building: terracotta brick-pattern tile cladding, white projecting angular bay windows and balconies, tidy entrance. Courtyard has a neat curved paving path around a small lawn but a direct diagonal dirt desire path cuts across it to the door. A grandmother with a wheeled shopping bag confidently takes this shortcut. One small old white tire swan at the lawn edge, small remnants of snow in shade and new grass. Main focus modern terracotta-and-white bay-window facade and obvious diagonal shortcut. Cute simplified miniature diorama on a small ground slab, chunky cartoon people, clean outlines, muted colors, soft simple painted shading. Three-quarter view from above showing front and right side. Entire scene visible, generous margin including above antennas. Plain white background. No external cast shadow, writing, logos or card frame. Outline pale objects clearly.",
+      "source": "buildings/panelka-10-tropinka-source.png",
+      "cutout": "buildings/panelka-10-tropinka.png",
+      "card": "cards/panelka-10-tropinka.png",
+      "generated_source": "/Users/egor/.codex/generated_images/01a09522-7217-7793-aec9-92fdabde1167/exec-151300bf-684f-4f6d-a12a-6633008954cb.png",
+      "status": "completed"
+    }
+  ],
+  "status": "partial: 9 of 10 completed; panelka-06-balkony blocked by repeated generation network errors",
+  "completed_count": 9
+}

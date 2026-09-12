@@ -1,0 +1,244 @@
+{
+  "generation_mode": "built-in image_gen",
+  "background_workflow": "User-approved white opaque generation and local background removal",
+  "output_prefix": "panelki-v2",
+  "style_reference": "buildings/garazhnyy-kooperativ-seychas-zavedem-source.png",
+  "revision": "Consistent adult proportions, plausible prop scale, no cats, actual tire swans, modest soil beds and ordinary straight paths",
+  "variants": [
+    {
+      "slug": "panelka-01-kover-v2",
+      "prompt": "Hand-drawn board-game diorama. Beige five-story panel block in winter. A small elderly woman with natural adult proportions beats a normal burgundy carpet on a two-metre metal rail, a small child watches beside a sled. People shorter than the entrance door, bare tree, trodden snowy courtyard. Clean dark outlines, muted olive and concrete colors, simple painted shading, natural adult proportions and small heads. Compact three-quarter view, whole building and thin ground patch visible with margins. Plain white background. No cats, text or oversized props.",
+      "reference_images": [],
+      "source": "buildings/panelka-01-kover-v2-source.png",
+      "cutout": "buildings/panelka-01-kover-v2.png",
+      "card": "cards/panelka-01-kover-v2.png",
+      "status": "complete",
+      "previous_prompt": "Reference image is STYLE ONLY. Create a different Russian apartment courtyard in the same restrained hand-drawn board-game style, clear dark outlines and muted concrete/olive palette. Adult figures have natural slender 6-7-head proportions, small heads and understated faces, never chibi. Beige five-story panel apartment block in winter. A small elderly woman beats a burgundy carpet on an ordinary two-metre metal rail; a child watches beside a sled. People are shorter than the entrance door; the carpet is household-sized. Snowy courtyard and bare tree. Compact three-quarter diorama showing front and right wall, thin irregular ground patch, entire scene inside ample margins. Plain white background, no external shadow, text or cats.",
+      "generated_source": "/Users/egor/.codex/generated_images/01a09522-7217-7793-aec9-92fdabde1167/exec-3e9593bb-d8a5-4e8e-8432-bd5870088460.png",
+      "background_regions": [
+        [
+          0.0,
+          0.17781484570475395,
+          0.2075,
+          0.17781484570475395,
+          0.2125,
+          0.49241034195162636,
+          0.205,
+          0.6045704753961635,
+          0.0,
+          0.645604670558799
+        ]
+      ]
+    },
+    {
+      "slug": "panelka-02-lebedi-v2",
+      "prompt": "Hand-drawn board-game diorama. Gray five-story panel block with green plinth in spring. Two knee-high homemade swans cut from old white-painted car tires sit on dry soil beside a flowerbed: sliced rubber sidewalls curl outward as wings, thin bent rubber strips form the necks with small flat red tips. A small adult repaints one. No water or living birds. Clean dark outlines, muted olive and concrete colors, simple painted shading, natural adult proportions and small heads. Three-quarter view showing front facade and RIGHT end wall, whole building and thin ground patch visible with margins. Plain white background. No cats, text or oversized props.",
+      "reference_images": [],
+      "source": "buildings/panelka-02-lebedi-v2-source.png",
+      "cutout": "buildings/panelka-02-lebedi-v2.png",
+      "card": "cards/panelka-02-lebedi-v2.png",
+      "status": "complete",
+      "previous_prompt": "Reference image is STYLE ONLY. Create a different Russian apartment courtyard in the same restrained hand-drawn board-game style, clear dark outlines and muted concrete/olive palette. Adult figures have natural slender 6-7-head proportions, small heads and understated faces, never chibi. Gray five-story panel apartment block, green entrance canopy, spring. Beside a small flowerbed are two actual homemade swans cut from white-painted car tires: curled cut sidewalls form wings, a narrow rubber strip forms each bent neck, flat red-tipped beak. Each sculpture is knee-high, visibly a cut tire resting directly on dry soil. A small adult repaints one. No water, pools or living birds. Compact three-quarter diorama showing front and right wall, thin irregular ground patch, entire scene inside ample margins. Plain white background, no external shadow, text or cats.",
+      "generated_source": "/Users/egor/.codex/generated_images/01a09522-7217-7793-aec9-92fdabde1167/exec-0849b5e8-8c49-4b3f-8495-f071cca66ad2.png",
+      "background_regions": [
+        [
+          0.0,
+          0.3556296914095079,
+          0.12,
+          0.3556296914095079,
+          0.1225,
+          0.6045704753961635,
+          0.0,
+          0.6291909924937448
+        ]
+      ]
+    },
+    {
+      "slug": "panelka-03-ogorod-v2",
+      "prompt": "Hand-drawn board-game diorama of a gray Soviet five-story apartment block. A tiny elderly woman of normal adult proportions waters two narrow soil beds with sparse low cabbages and onions near the ground-floor windows. Worn path, patchy grass. Clean dark outlines, muted olive and concrete colors, simple painted shading. Whole scene on white background. No cats, greenhouse, giant plants or oversized heads.",
+      "reference_images": [],
+      "source": "buildings/panelka-03-ogorod-v2-source.png",
+      "cutout": "buildings/panelka-03-ogorod-v2.png",
+      "card": "cards/panelka-03-ogorod-v2.png",
+      "status": "complete",
+      "generated_source": "/Users/egor/.codex/generated_images/01a09522-7217-7793-aec9-92fdabde1167/exec-53b3adde-2260-4922-9788-5cb940304f58.png",
+      "background_regions": [
+        [
+          0.0,
+          0.0957464553794829,
+          0.17,
+          0.0957464553794829,
+          0.1825,
+          0.5553294412010008,
+          0.0,
+          0.593628023352794
+        ]
+      ]
+    },
+    {
+      "slug": "panelka-04-uteplenie-v2",
+      "prompt": "Hand-drawn board-game diorama. Nine-story gray panel block in autumn with irregular peach, pale mint and cream apartment-sized insulation patches and mismatched glazing. A small naturally proportioned adult caretaker rakes a modest heap of leaves beside a birch. Plain asphalt footpath and patchy grass. Clean dark outlines, muted olive and concrete colors, simple painted shading, natural adult proportions and small heads. Compact three-quarter view, whole building and thin ground patch visible with margins. Plain white background. No cats, text or oversized props.",
+      "reference_images": [],
+      "source": "buildings/panelka-04-uteplenie-v2-source.png",
+      "cutout": "buildings/panelka-04-uteplenie-v2.png",
+      "card": "cards/panelka-04-uteplenie-v2.png",
+      "status": "complete",
+      "previous_prompt": "Reference image is STYLE ONLY. Create a different Russian apartment courtyard in the same restrained hand-drawn board-game style, clear dark outlines and muted concrete/olive palette. Adult figures have natural slender 6-7-head proportions, small heads and understated faces, never chibi. Nine-story gray panel apartment block in autumn, irregular apartment-sized patches of peach, pale mint and cream external insulation. A small adult caretaker rakes a modest heap of fallen leaves beside a birch. Worn asphalt and ordinary grass. The house dominates; no oversized figures. Compact three-quarter diorama showing front and right wall, thin irregular ground patch, entire scene inside ample margins. Plain white background, no external shadow, text or cats.",
+      "generated_source": "/Users/egor/.codex/generated_images/01a09522-7217-7793-aec9-92fdabde1167/exec-5077b051-2693-45ca-9353-3e99ab38f4cd.png",
+      "background_regions": [
+        [
+          0.0,
+          0.2188490408673895,
+          0.265,
+          0.2188490408673895,
+          0.2725,
+          0.7605004170141785,
+          0.0,
+          0.7851209341117598
+        ]
+      ]
+    },
+    {
+      "slug": "panelka-05-kosmodrom-v2",
+      "prompt": "Board-game illustration of a gray nine-storey Soviet apartment block, front and right wall visible. In its courtyard a small rusty red metal climbing rocket, three metres tall, with one adult and child nearby. Natural human proportions. Muted concrete and olive colors, clean dark outlines and simple painted shading. Whole miniature scene on plain white background with margins. No text or animals.",
+      "reference_images": [],
+      "source": "buildings/panelka-05-kosmodrom-v2-source.png",
+      "cutout": "buildings/panelka-05-kosmodrom-v2.png",
+      "card": "cards/panelka-05-kosmodrom-v2.png",
+      "status": "complete",
+      "generated_source": "/Users/egor/.codex/generated_images/01a09522-7217-7793-aec9-92fdabde1167/exec-f36777a5-f837-4f8b-a018-2d86b31d9b77.png",
+      "background_regions": [
+        [
+          0.0,
+          0.275,
+          0.1925,
+          0.275,
+          0.205,
+          0.6375,
+          0.0,
+          0.7575
+        ]
+      ]
+    },
+    {
+      "slug": "panelka-06-balkony-v2",
+      "prompt": "Hand-drawn board-game diorama. Narrow gray prefab apartment block in summer, mismatched glazed balconies clad in brown wood, faded blue metal or white plastic, small satellite dishes and flower pots. At ground level a small naturally proportioned adult hangs laundry on a drying rack. Ordinary worn courtyard. Clean dark outlines, muted olive and concrete colors, simple painted shading, natural adult proportions and small heads. Compact three-quarter view, whole building and thin ground patch visible with margins. Plain white background. No cats, text or oversized props.",
+      "reference_images": [],
+      "source": "buildings/panelka-06-balkony-v2-source.png",
+      "cutout": "buildings/panelka-06-balkony-v2.png",
+      "card": "cards/panelka-06-balkony-v2.png",
+      "status": "complete",
+      "previous_prompt": "Reference image is STYLE ONLY. Create a different Russian apartment courtyard in the same restrained hand-drawn board-game style, clear dark outlines and muted concrete/olive palette. Adult figures have natural slender 6-7-head proportions, small heads and understated faces, never chibi. A narrow gray panel apartment building with mismatched brown wooden, faded blue metal and white glazed balconies. Small satellite dishes. A small adult woman waters flowers from a lower balcony; ordinary drying rack stands in the summer courtyard. Plausible residential proportions. Compact three-quarter diorama showing front and right wall, thin irregular ground patch, entire scene inside ample margins. Plain white background, no external shadow, text or cats.",
+      "generated_source": "/Users/egor/.codex/generated_images/01a09522-7217-7793-aec9-92fdabde1167/exec-cb1332ab-bb40-469a-9bfd-27201aa1ff00.png",
+      "background_regions": [
+        [
+          0.0,
+          0.3419516263552961,
+          0.21,
+          0.3419516263552961,
+          0.2175,
+          0.7304086738949124,
+          0.0,
+          0.7413511259382819
+        ]
+      ]
+    },
+    {
+      "slug": "panelka-07-korabl-v2",
+      "prompt": "Hand-drawn board-game diorama. Long white Soviet apartment block with horizontal window bands in summer. Two small naturally proportioned adults hang normal household sheets on metal T-post clotheslines approximately adult head height. Sheets billow slightly. Modest grass and worn paving, plausible architectural scale. Clean dark outlines, muted olive and concrete colors, simple painted shading, natural adult proportions and small heads. Three-quarter view showing front facade and RIGHT end wall, whole building and thin ground patch visible with margins. Plain white background. No cats, text or oversized props.",
+      "reference_images": [],
+      "source": "buildings/panelka-07-korabl-v2-source.png",
+      "cutout": "buildings/panelka-07-korabl-v2.png",
+      "card": "cards/panelka-07-korabl-v2.png",
+      "status": "complete",
+      "previous_prompt": "Reference image is STYLE ONLY. Create a different Russian apartment courtyard in the same restrained hand-drawn board-game style, clear dark outlines and muted concrete/olive palette. Adult figures have natural slender 6-7-head proportions, small heads and understated faces, never chibi. Elongated white Soviet ship-style panel apartment block, horizontal window bands, summer. Two normally proportioned small adults hang ordinary household sheets on waist-to-head-height courtyard clotheslines between metal T posts. Laundry billows slightly, modest grass and worn paving. Building dominates, sheets are not giant sails. Compact three-quarter diorama showing front and right wall, thin irregular ground patch, entire scene inside ample margins. Plain white background, no external shadow, text or cats.",
+      "generated_source": "/Users/egor/.codex/generated_images/01a09522-7217-7793-aec9-92fdabde1167/exec-7a511c66-e738-4775-8a05-7360eff65586.png",
+      "background_regions": [
+        [
+          0.0,
+          0.19874999999999998,
+          0.11,
+          0.19874999999999998,
+          0.1125,
+          0.4875,
+          0.0,
+          0.5175
+        ]
+      ]
+    },
+    {
+      "slug": "panelka-08-sugrob-v2",
+      "prompt": "Illustrated miniature Soviet panel apartment courtyard in winter. Adult clearing a snowy path, bench, car completely hidden beneath a snow mound. Natural proportions, muted blue-gray colors, clean dark outlines, painted shading. Building front and right side visible. White background and margins. No writing.",
+      "reference_images": [],
+      "source": "buildings/panelka-08-sugrob-v2-source.png",
+      "cutout": "buildings/panelka-08-sugrob-v2.png",
+      "card": "cards/panelka-08-sugrob-v2.png",
+      "status": "complete",
+      "previous_prompt": "Reference image is STYLE ONLY. Create a different Russian apartment courtyard in the same restrained hand-drawn board-game style, clear dark outlines and muted concrete/olive palette. Adult figures have natural slender 6-7-head proportions, small heads and understated faces, never chibi. Blue-gray panel apartment block in winter, warm windows. A small adult with a shovel uncovers the door and wheel of a normal-sized sedan under snow. Snow mound is approximately adult shoulder height. Narrow shoveled path, half-buried bench. All objects share realistic scale. Compact three-quarter diorama showing front and right wall, thin irregular ground patch, entire scene inside ample margins. Plain white background, no external shadow, text or cats.",
+      "generated_source": "/Users/egor/.codex/generated_images/01a09522-7217-7793-aec9-92fdabde1167/exec-9674af2f-ea74-418b-806e-bdfbbd02dd6f.png",
+      "background_regions": [
+        [
+          0.0,
+          0.22432026688907422,
+          0.1825,
+          0.22432026688907422,
+          0.1875,
+          0.5471226021684737,
+          0.175,
+          0.6100417014178482,
+          0.075,
+          0.6428690575479566,
+          0.0,
+          0.6428690575479566
+        ]
+      ]
+    },
+    {
+      "slug": "panelka-09-mozaika-v2",
+      "prompt": "Hand-drawn board-game diorama. Five-story panel apartment block with a turquoise and ochre geometric bird mosaic on its end wall, autumn birch, worn asphalt. Two small elderly men with natural adult proportions sit at an ordinary wooden table playing dominoes. Small heads, understated faces, normal hands. Clean dark outlines, muted olive and concrete colors, simple painted shading, natural adult proportions and small heads. Compact three-quarter view, whole building and thin ground patch visible with margins. Plain white background. No cats, text or oversized props.",
+      "reference_images": [],
+      "source": "buildings/panelka-09-mozaika-v2-source.png",
+      "cutout": "buildings/panelka-09-mozaika-v2.png",
+      "card": "cards/panelka-09-mozaika-v2.png",
+      "status": "complete",
+      "previous_prompt": "Reference image is STYLE ONLY. Create a different Russian apartment courtyard in the same restrained hand-drawn board-game style, clear dark outlines and muted concrete/olive palette. Adult figures have natural slender 6-7-head proportions, small heads and understated faces, never chibi. Five-story panel apartment block with a large turquoise-and-ochre geometric bird mosaic on its end wall. Autumn birch, worn asphalt courtyard. Two small elderly adults with natural proportions sit at an ordinary waist-high wooden table playing dominoes. Simple realistic posture, modest heads and hands. No animals. Compact three-quarter diorama showing front and right wall, thin irregular ground patch, entire scene inside ample margins. Plain white background, no external shadow, text or cats.",
+      "generated_source": "/Users/egor/.codex/generated_images/01a09522-7217-7793-aec9-92fdabde1167/exec-9a2544ee-63ea-4b23-8f1c-2b94a7db5847.png",
+      "background_regions": [
+        [
+          0.0,
+          0.10942452043369474,
+          0.215,
+          0.10942452043369474,
+          0.22,
+          0.6565471226021684,
+          0.0,
+          0.7085237698081734
+        ]
+      ]
+    },
+    {
+      "slug": "panelka-10-tropinka-v4",
+      "prompt": "Рисованная диорама самарской девятиэтажки 90К. Светло-серые панели, широкая вертикальная бетонная решётка лестницы по центру над бирюзовым входом. По обе стороны окна и вертикальные ряды лоджий: у КАЖДОЙ лоджии выступает узкий полукруглый балконный карман с белым изогнутым парапетом высотой до пояса, над ним открытый воздух или остекление. Получается ряд отдельных округлых белых поясов, НЕ сплошные колонны. Вид спереди и справа. Маленькая бабушка с тележкой на вытоптанной диагонали через газон, скамейка, дерево. Приглушённая рисованная графика с тёмным контуром, реалистичные пропорции. Белый фон, вся сцена с полями, без текста.",
+      "reference_images": [],
+      "source": "buildings/panelka-10-tropinka-v4-source.png",
+      "cutout": "buildings/panelka-10-tropinka-v4.png",
+      "card": "cards/panelka-10-tropinka-v4.png",
+      "status": "complete",
+      "previous_prompt": "Reference image is STYLE ONLY. Create a different Russian apartment courtyard in the same restrained hand-drawn board-game style, clear dark outlines and muted concrete/olive palette. Adult figures have natural slender 6-7-head proportions, small heads and understated faces, never chibi. Terracotta-and-white newer panel apartment block with projecting bay windows in spring. An elderly woman with a small wheeled shopping bag walks toward the entrance along a diagonal worn shortcut across a modest rectangular patch of grass. Ordinary straight sidewalk along the facade joins a straight access path at a right angle. Uneven lawn, low curb, bench. No circular paths, round plaza, pond or tire swans. Compact three-quarter diorama showing front and right wall, thin irregular ground patch, entire scene inside ample margins. Plain white background, no external shadow, text or cats.",
+      "generated_source": "/Users/egor/.codex/generated_images/01a09522-7217-7793-aec9-92fdabde1167/exec-970acf00-20b5-4f65-b5f3-6f3a029a3bf3.png",
+      "background_regions": [
+        [
+          0,
+          0.35,
+          0.13,
+          0.35,
+          0.131,
+          0.68,
+          0,
+          0.75
+        ]
+      ]
+    }
+  ],
+  "status": "complete"
+}
