@@ -1,0 +1,6 @@
+{
+  "purpose": "Diagnostic generation: short prompt, plain light background, no transparency requirement. Not yet a compositor-ready transparent asset.",
+  "generation_mode": "built-in image_gen",
+  "output": "buildings/upravlyayushchaya-kompaniya-v1-opaque-test.png",
+  "prompt": "Create a Machi Koro-style board-game illustration of a small shabby Russian housing-management office (ЖЭК). A squat two-story beige building with faded teal trim, a crooked entrance canopy, concrete steps and exposed heating pipes. A stern middle-aged woman with a bun and square glasses watches from a window beside a geranium pot. Cute simplified miniature, clean outlines, flat colors, simple shading, three-quarter view, entire building visible. Plain light background. No text or card frame."
+}

@@ -1,0 +1,36 @@
+{
+  "spec_version": "1.1",
+  "title": "Управляющая компания — суровая диспетчерша",
+  "purpose": "Transparent central illustration for a green Machi Koro-style card.",
+  "integration_context": {
+    "target_use": "Generate only the central building miniature, never a complete card.",
+    "background_requirement": "Native RGBA transparency is mandatory; alpha=0 outside the miniature and its compact base. No sky, scenery, card frame, glow, halo, checkerboard, or baked shadow.",
+    "text_policy": "Absolute no-text rule: no letters, numbers, words, signs, labels, graffiti, watermarks, or pseudo-writing anywhere.",
+    "card_relationship": "Compact floating sticker-like miniature with generous empty margin."
+  },
+  "style_goal": {
+    "core_formula": "Cute polished Machi Koro tabletop miniature plus deadpan Russian post-Soviet everyday bleakness.",
+    "rendering": "Chunky simplified geometry, crisp dark outlines, clean flat color blocks, sparse detail, simple two-tone cel shading, low-to-moderate saturation; never photorealistic or cinematic."
+  },
+  "visual_composition": {
+    "orientation": "Front facade faces slightly right, the building's left side is visible, and depth recedes toward image left.",
+    "shape": "A compact squat two-story building on a small cracked asphalt slab, fully visible and centered.",
+    "palette": "Dirty beige stucco, faded teal trim, cold gray concrete, dull brown, tiny amber window accents."
+  },
+  "content": {
+    "subject": "A shabby late-Soviet district housing-management office, instantly recognizable as a local ЖЭК without any written signage.",
+    "description": "Squat two-story beige service building with a dark metal entrance door, shallow concrete steps, crooked canopy, external drainpipe, utility boxes, barred side window, exposed heating pipe, and a tiny neglected flower bed.",
+    "recognition_details": [
+      "Mandatory comic focal point: through one ground-floor window, clearly show a stern middle-aged Russian female dispatcher with a severe bun, square glasses, folded arms, and a disapproving stare; she is a cute caricature, not photorealistic.",
+      "A lace half-curtain and one red geranium pot share her window.",
+      "A single battered bench and an enamel bucket sit by the entrance."
+    ],
+    "miniature_base": "Small irregular cracked asphalt-and-mud slab integral to the building.",
+    "target_impression": "Every pipe and tenant is under the watchful control of one formidable dispatcher."
+  },
+  "anti_patterns": [
+    "No full card, background, neighboring buildings, cars, crowds, realistic grime, dense texture, text, logos, or clipped content.",
+    "Do not show the building's right side; do not make depth recede right."
+  ],
+  "final_prompt_summary": "Use case: stylized-concept. Asset type: transparent central illustration for a Machi Koro-style establishment card. Generate only an isolated cute tabletop-game miniature of a shabby late-Soviet Russian housing-management office: a squat two-story dirty-beige building with faded teal trim, dark metal entrance, crooked canopy, concrete steps, drainpipe, utility boxes, one barred side window, exposed heating pipe, battered bench, enamel bucket, neglected flower bed, and a compact cracked-asphalt base. Through one prominent ground-floor window clearly show a stern middle-aged Russian female dispatcher with a severe bun, square glasses, folded arms, and a disapproving stare, beside a lace half-curtain and red geranium pot. Render her as the same charming chunky caricature language as the building, never photorealistic. Front facade faces slightly right, left side visible, depth recedes left. Cute polished Machi Koro miniature, crisp dark outlines, simplified geometry, flat clean colors, sparse details, simple two-tone cel shading, cold muted palette with tiny amber accents. Native RGBA transparency with alpha=0 outside the miniature; no backdrop, sky, scenery, card furniture, glow, halo, checkerboard, cast shadow, text, letters, numbers, signs, labels, logos, graffiti, pseudo-writing, watermark, clipped content, or photorealism."
+}

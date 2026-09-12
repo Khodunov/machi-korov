@@ -1,0 +1,8 @@
+{
+  "mode": "built-in image_gen edit; locally remove light background after generation",
+  "reference": "buildings/upravlyayushchaya-kompaniya-v1-revised-source.png",
+  "source": "buildings/upravlyayushchaya-kompaniya-v1-final-source.png",
+  "cutout": "buildings/upravlyayushchaya-kompaniya-v1-final.png",
+  "card": "cards/upravlyayushchaya-kompaniya-v1-final.png",
+  "prompt": "Make only the two people in the office window more cartoonish: cute board-game figures with round heads, dot eyes, expressive eyebrows, simple rounded hands and flat colors. Keep the clerk stamping papers and the visitor seated. Keep the building and everything else unchanged. Light background."
+}

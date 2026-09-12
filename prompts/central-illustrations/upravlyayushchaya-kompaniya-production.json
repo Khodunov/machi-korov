@@ -1,0 +1,48 @@
+{
+  "generation_mode": "built-in image_gen",
+  "background_workflow": "User-authorized opaque generation followed by local edge-connected background removal.",
+  "variants": [
+    {
+      "variant": 1,
+      "prompt": "Create a Machi Koro-style board-game illustration of a small shabby Russian housing-management office (ЖЭК). A squat two-story beige building with faded teal trim, a crooked entrance canopy, concrete steps and exposed heating pipes. A stern middle-aged woman with a bun and square glasses watches from a window beside a geranium pot. Cute simplified miniature, clean outlines, flat colors, simple shading, three-quarter view, entire building visible. Plain light background. No text or card frame.",
+      "source": "buildings/upravlyayushchaya-kompaniya-v1-source.png",
+      "cutout": "buildings/upravlyayushchaya-kompaniya-v1.png",
+      "card": "cards/upravlyayushchaya-kompaniya-v1.png"
+    },
+    {
+      "variant": 2,
+      "prompt": "Create a Machi Koro-style board-game illustration of a shabby Russian housing-management office (ЖЭК). A small squat pale-green concrete building with a flat awning, barred window, rusty pipes and broom. The broad entrance door is comically buried under MANY overlapping white notices. Large BOLD UPPERCASE Russian headlines on the notices: «НЕ СТУЧАТЬ», «ОБЕД», «ПРИЁМА НЕТ», «ОПЛАТИТЕ ДОЛГ», «ВОДЫ НЕ БУДЕТ». A locked complaint box next to the door. Cute simplified miniature, clean outlines, flat colors, simple shading, three-quarter view showing front and right wall, entire building visible on a tiny pavement base. Plain white background, generous margin, no cast shadow or card frame.",
+      "source": "buildings/upravlyayushchaya-kompaniya-v2-source.png",
+      "cutout": "buildings/upravlyayushchaya-kompaniya-v2.png",
+      "card": "cards/upravlyayushchaya-kompaniya-v2.png"
+    },
+    {
+      "variant": 3,
+      "prompt": "Create a Machi Koro-style board-game illustration of an old Russian housing-management office (ЖЭК). A tiny crooked one-story building with faded mint plaster, exposed brick patches and patched low roof. The oversized weathered WOODEN PLANK DOOR has mismatched hinges and THREE different locks. A bucket catches a drip beside a snow shovel. A sleepy ginger cat watches through a lace-curtained window. Cute simplified miniature, clean outlines, flat colors, simple shading, three-quarter view showing front and right wall, entire building visible on a tiny cobblestone base. Plain white background, generous margin, no cast shadow, writing or card frame.",
+      "source": "buildings/upravlyayushchaya-kompaniya-v3-source.png",
+      "cutout": "buildings/upravlyayushchaya-kompaniya-v3.png",
+      "card": "cards/upravlyayushchaya-kompaniya-v3.png"
+    },
+    {
+      "variant": 4,
+      "prompt": "Create a Machi Koro-style board-game illustration of a Russian housing-management office (ЖЭК) in the semi-basement of a Soviet panel apartment building. Show a compact two-story corner section, a sunken entrance with descending concrete steps, rusty railing, one balcony above and a ridiculous zigzag of thick heating pipes. Two cats warm themselves by a vent; one lost mitten hangs on the railing. Stacks of blank paper folders and a drooping ficus behind a basement window. Cute simplified miniature, clean outlines, flat colors, simple shading, three-quarter view showing front and right wall, entire building section visible on a tiny concrete base. Plain white background, generous margin, no cast shadow, writing or card frame.",
+      "source": "buildings/upravlyayushchaya-kompaniya-v4-source.png",
+      "cutout": "buildings/upravlyayushchaya-kompaniya-v4.png",
+      "card": "cards/upravlyayushchaya-kompaniya-v4.png"
+    },
+    {
+      "variant": 5,
+      "prompt": "Create a Machi Koro-style board-game illustration of a Russian housing-management office (ЖЭК) obsessed with surveillance. Small two-story building with cheap pale-yellow cladding, dark green metal door, bench and one round shrub. SEVEN oversized CCTV cameras point absurdly at the door, bench, shrub and at each other. A pigeon sits on one camera. A huge bunch of keys is visible behind a window. Cute simplified miniature, clean outlines, flat colors, simple shading, three-quarter view showing front and right wall, entire building visible on a tiny paving base. Plain white background, generous margin, no cast shadow, writing or card frame.",
+      "source": "buildings/upravlyayushchaya-kompaniya-v5-source.png",
+      "cutout": "buildings/upravlyayushchaya-kompaniya-v5.png",
+      "card": "cards/upravlyayushchaya-kompaniya-v5.png"
+    },
+    {
+      "variant": 6,
+      "prompt": "Create a Machi Koro-style board-game illustration of a Russian housing-management office (ЖЭК) in a former Soviet kindergarten. Compact faded-blue two-story building with rounded canopy, barred windows, patched red roof and short metal fence. A leftover tiny metal playground ROCKET is now a broom and snow-shovel holder. A janitor in a blue work coat waters one lonely marigold beside stacked radiator sections. Cute simplified miniature, clean outlines, flat colors, simple shading, three-quarter view showing front and right wall, entire building visible on a tiny cracked asphalt base. Plain white background, generous margin, no cast shadow, writing or card frame.",
+      "source": "buildings/upravlyayushchaya-kompaniya-v6-source.png",
+      "cutout": "buildings/upravlyayushchaya-kompaniya-v6.png",
+      "card": "cards/upravlyayushchaya-kompaniya-v6.png"
+    }
+  ]
+}

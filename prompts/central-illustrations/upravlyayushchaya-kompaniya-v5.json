@@ -1,0 +1,36 @@
+{
+  "spec_version": "1.1",
+  "title": "Управляющая компания — тотальный контроль",
+  "purpose": "Transparent central illustration for a green Machi Koro-style card.",
+  "integration_context": {
+    "target_use": "Generate only the central building miniature, never a complete card.",
+    "background_requirement": "Native RGBA transparency is mandatory; alpha=0 outside the miniature and its compact base. No sky, scenery, card frame, glow, halo, checkerboard, or baked shadow.",
+    "text_policy": "Absolute no-text rule: no letters, numbers, words, signs, labels, graffiti, watermarks, or pseudo-writing anywhere.",
+    "card_relationship": "Compact floating sticker-like miniature with generous empty margin."
+  },
+  "style_goal": {
+    "core_formula": "Cute polished Machi Koro tabletop miniature plus absurdly overmanaged Russian courtyard bureaucracy.",
+    "rendering": "Chunky simplified geometry, crisp dark outlines, flat color blocks, sparse detail, simple two-tone cel shading; no photorealism."
+  },
+  "visual_composition": {
+    "orientation": "Front facade faces slightly right, the building's left side is visible, and depth recedes toward image left.",
+    "shape": "Compact renovated ground-floor office attached to a panel building, on a small tidy-but-cracked paved base.",
+    "palette": "Institutional pale yellow, gray-blue, dark green metal, white camera housings, small red status lights."
+  },
+  "content": {
+    "subject": "A superficially renovated management-company office obsessed with surveillance and control.",
+    "description": "Plain ground-floor office with cheap yellow cladding, gray foundation, dark green entrance door, accessibility ramp that ends awkwardly at a curb, and one perfectly spherical clipped shrub.",
+    "recognition_details": [
+      "Seven oversized cartoon CCTV cameras point in mutually absurd directions: at the door, bench, drainpipe, trash bin, shrub, and at one another.",
+      "A huge key ring hangs behind the window beside a desk lamp and stacks of blank folders.",
+      "One tiny pigeon calmly sits on the only camera aimed at the sky."
+    ],
+    "miniature_base": "Small tidy rectangle of paving with one conspicuous crack and a single painted curb segment.",
+    "target_impression": "Every point is literally under control, except the pigeon."
+  },
+  "anti_patterns": [
+    "No sci-fi security center, weapons, text, full card, background, cars, crowds, dense realism, or clipped cameras.",
+    "Do not show the building's right side; do not make depth recede right."
+  ],
+  "final_prompt_summary": "Use case: stylized-concept. Asset type: transparent central illustration for a Machi Koro-style establishment card. Generate only an isolated cute tabletop-game miniature of a superficially renovated Russian management-company office attached to the ground floor of a panel building. Use cheap institutional pale-yellow cladding, gray foundation, dark green metal entrance, simple window, a battered bench, one perfectly spherical clipped shrub, and an accessibility ramp that ends awkwardly at a curb. Mandatory comic theme of total control: seven large clearly readable cartoon CCTV cameras are attached all over the facade and point in absurd mutually conflicting directions—toward the door, bench, drainpipe, bin, shrub, and even at one another. Behind the window show a huge key ring, desk lamp, and stacks of blank folders. Put one calm pigeon on the only camera aimed at the sky. Keep it mundane bureaucracy, not sci-fi. Front facade faces slightly right, left side visible, depth recedes left. Cute polished Machi Koro miniature, chunky simplified forms, crisp dark outlines, flat clean colors, sparse detail, simple two-tone cel shading. Native RGBA transparency with alpha=0 outside the compact paving base; no backdrop, sky, scenery, card furniture, glow, halo, checkerboard, cast shadow, text, letters, numbers, signs, labels, logos, graffiti, pseudo-writing, watermark, weapons, clipped content, or photorealism."
+}

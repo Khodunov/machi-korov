@@ -1,0 +1,36 @@
+{
+  "spec_version": "1.1",
+  "title": "Управляющая компания — дверь в объявлениях",
+  "purpose": "Transparent central illustration for a green Machi Koro-style card.",
+  "integration_context": {
+    "target_use": "Generate only the central building miniature, never a complete card.",
+    "background_requirement": "Native RGBA transparency is mandatory; alpha=0 outside the miniature and its compact base. No sky, scenery, card frame, glow, halo, checkerboard, or baked shadow.",
+    "text_policy": "User-requested exception: on the overlapping door notices, render actual bold uppercase Cyrillic warnings. Exact permitted phrases: \"ОПЛАТИТЕ ДОЛГ\", \"ПРИЁМА НЕТ\", \"НЕ СТУЧАТЬ\", \"ОБЕД\", \"ВОДЫ НЕ БУДЕТ\", \"СПРАВКИ ПО ВТОРНИКАМ\". Repeat these phrases across the many sheets. No other text, invented glyphs, logos or watermarks.",
+    "card_relationship": "Compact floating sticker-like miniature with generous empty margin."
+  },
+  "style_goal": {
+    "core_formula": "Cute polished Machi Koro tabletop miniature plus deadpan Russian housing bureaucracy.",
+    "rendering": "Chunky simplified geometry, crisp dark outlines, clean flat color blocks, sparse detail, simple two-tone cel shading; never photorealistic."
+  },
+  "visual_composition": {
+    "orientation": "Front facade faces slightly right, the building's left side is visible, and depth recedes toward image left.",
+    "shape": "Small one-story prefab concrete office with a very large visible entrance door, fully visible on a compact paved base.",
+    "palette": "Cold concrete gray, faded pale green panels, dark brown metal, white paper sheets, bold black and red accents."
+  },
+  "content": {
+    "subject": "A bleak one-story prefabricated neighborhood management office whose entrance is almost buried under bureaucratic notices.",
+    "description": "Simple concrete box with a tiny flat awning, one barred window, drainpipe, meter cabinet, crooked handrail, and broad brown metal door.",
+    "recognition_details": [
+      "Mandatory focal point: the door and surrounding wall are covered edge-to-edge by dozens of overlapping white notice sheets in several sizes.",
+      "Large actual readable bold uppercase Cyrillic warnings in black and occasional red ink cover the sheets: \"ОПЛАТИТЕ ДОЛГ\", \"ПРИЁМА НЕТ\", \"НЕ СТУЧАТЬ\", \"ОБЕД\", \"ВОДЫ НЕ БУДЕТ\", \"СПРАВКИ ПО ВТОРНИКАМ\". Repeat across overlapping sheets, comically obscuring the handle.",
+      "A tiny torn-off paper fringe, a wall-mounted call button, and a locked suggestion box reinforce the absurd bureaucracy."
+    ],
+    "miniature_base": "Small cracked paving slab with one crooked curb and a lonely broom.",
+    "target_impression": "The residents cannot find the door handle under the announcements."
+  },
+  "anti_patterns": [
+    "No invented pseudo-writing; no full card, background, neighbors, cars, crowds, realism, dense dirt, or clipped content.",
+    "Do not show the building's right side; do not make depth recede right."
+  ],
+  "final_prompt_summary": "Use case: stylized-concept. Asset type: transparent central illustration for a Machi Koro-style establishment card. Generate only an isolated cute tabletop-game miniature of a bleak one-story prefabricated Russian neighborhood housing-management office. It is a cold-gray concrete box with faded pale-green panels, flat awning, one barred window, drainpipe, meter cabinet, crooked handrail, broad brown metal entrance, locked suggestion box, call button, lonely broom, and a compact cracked-paving base. Mandatory focal point: the entrance door and surrounding wall are covered edge-to-edge by dozens of overlapping white bureaucratic notice sheets in different sizes, with torn corners. The user explicitly requests real aggressive bold ALL-CAPS Russian notices. On the white sheets render large clean heavy condensed uppercase Cyrillic typography, black ink and a few red headlines, using these exact phrases and repeating them across many overlapping sheets: \"ОПЛАТИТЕ ДОЛГ\", \"ПРИЁМА НЕТ\", \"НЕ СТУЧАТЬ\", \"ОБЕД\", \"ВОДЫ НЕ БУДЕТ\", \"СПРАВКИ ПО ВТОРНИКАМ\". Some sheets can be partly hidden by others. The central front-facing door is broad enough for clearly legible short notices. No other words or invented pseudo-glyphs. Make the paper-covered door instantly readable at small card size. Front facade faces slightly right, left side visible, depth recedes left. Cute polished Machi Koro miniature, chunky simplified forms, crisp dark outlines, flat clean colors, sparse detail, two-tone cel shading. Native RGBA transparency with alpha=0 outside the miniature; no backdrop, sky, scenery, card furniture, glow, halo, checkerboard, cast shadow, logos, watermark, clipped content, or photorealism."
+}

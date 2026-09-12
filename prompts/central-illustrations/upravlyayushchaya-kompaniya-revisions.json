@@ -1,0 +1,23 @@
+[
+  {
+    "variant": 1,
+    "prompt": "Create a Machi Koro-style board-game illustration of a small shabby Russian housing-management office. A squat two-story beige building with teal trim, entrance canopy, steps and heating pipes. Through a wide ground-floor window show a grumpy middle-aged female clerk SITTING AT A DESK, stamping papers while talking to a resident across her desk inside the office. Visible desktop, paper stacks, rubber stamp and folders. Ordinary empty upstairs windows. Cute simplified miniature, clean outlines, flat colors, three-quarter view, entire building visible. Plain light background. No text or card frame.",
+    "mode": "built-in image_gen generation from scratch after two failed edit requests; followed by user-authorized local background removal",
+    "source": "buildings/upravlyayushchaya-kompaniya-v1-revised-source.png",
+    "cutout": "buildings/upravlyayushchaya-kompaniya-v1-revised.png",
+    "card": "cards/upravlyayushchaya-kompaniya-v1-revised.png",
+    "failed_edit_prompts": [
+      "Edit this illustration. Keep the same beige and teal Russian housing-management building, miniature board-game style, perspective and light background. Replace the woman peering from the upstairs window with an ordinary office window. In a clearly visible ground-floor office window left of the entrance, show an irritated middle-aged female clerk seated behind a desk, forcefully stamping a stack of papers while speaking to a resident standing INSIDE the office across her desk. Visible desktop, stamp, folders and papers; she is working, not leaning on the windowsill. Make this small office interaction readable without turning the building into a cutaway. Preserve the architecture, pipes, entrance and compact base. Plain light background. No text or card frame.",
+      "Edit this building illustration. Move the woman from the upper window into a wider ground-floor office window. Show an annoyed middle-aged clerk seated at a desk, stamping papers and talking to a resident across the desk inside the room. Make the desk, paper stacks, raised rubber stamp and both people clearly visible. Upper windows are now empty. Preserve the beige-and-teal building, entrance, pipes, miniature cartoon style and light background. No text."
+    ]
+  },
+  {
+    "variant": 5,
+    "prompt": "Edit this illustration. Keep this yellow two-story Russian housing-management office, dark green roof and door, bench, shrub, perspective and board-game illustration style. Replace ALL giant cameras with four ordinary realistically proportioned small security cameras mounted discreetly under the eaves, at facade corners and over the entrance. Each camera is only about one tenth of a window width, with short practical brackets. Remove the giant rooftop camera structures; put the small pigeon directly on the roof edge. Make the house visually dominant, architecturally believable and clearly a municipal office. Keep the hanging keys behind the window. Plain white background, no text, no card frame.",
+    "mode": "built-in image_gen edit, followed by user-authorized local background removal",
+    "reference": "buildings/upravlyayushchaya-kompaniya-v5-source.png",
+    "source": "buildings/upravlyayushchaya-kompaniya-v5-revised-source.png",
+    "cutout": "buildings/upravlyayushchaya-kompaniya-v5-revised.png",
+    "card": "cards/upravlyayushchaya-kompaniya-v5-revised.png"
+  }
+]

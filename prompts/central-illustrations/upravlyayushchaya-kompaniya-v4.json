@@ -1,0 +1,36 @@
+{
+  "spec_version": "1.1",
+  "title": "Управляющая компания — офис в цоколе",
+  "purpose": "Transparent central illustration for a green Machi Koro-style card.",
+  "integration_context": {
+    "target_use": "Generate only the central building miniature, never a complete card.",
+    "background_requirement": "Native RGBA transparency is mandatory; alpha=0 outside the miniature and its compact base. No sky, scenery, card frame, glow, halo, checkerboard, or baked shadow.",
+    "text_policy": "Absolute no-text rule: no letters, numbers, words, signs, labels, graffiti, watermarks, or pseudo-writing anywhere.",
+    "card_relationship": "Compact floating sticker-like miniature with generous empty margin."
+  },
+  "style_goal": {
+    "core_formula": "Cute polished Machi Koro tabletop miniature plus an unmistakable Russian panel-block basement office.",
+    "rendering": "Chunky simplified geometry, crisp dark outlines, flat color blocks, sparse detail, simple two-tone cel shading; no photorealism."
+  },
+  "visual_composition": {
+    "orientation": "Front facade faces slightly right, the building's left side is visible, and depth recedes toward image left.",
+    "shape": "A compact cutout-like corner of a panel apartment block with a sunken basement entrance, fully visible on a small base.",
+    "palette": "Cold gray concrete, dull blue panels, faded yellow insulation patch, rusty metal, warm basement window."
+  },
+  "content": {
+    "subject": "A housing-management company squeezed into the semi-basement of a Soviet panel apartment block.",
+    "description": "Only a compact corner section of the panelka is shown: panel seams, one balcony above, giant facade pipes, a stairwell descending below grade, tiny canopy, metal handrails, and two low basement windows.",
+    "recognition_details": [
+      "A ridiculous zigzag of exposed heating pipes dominates the wall and dives into the basement office.",
+      "A resident's single lost mitten hangs neatly from the handrail, and two patient courtyard cats wait by the warm vent.",
+      "Inside one warm basement window are towers of colored paper folders and a drooping ficus, with no writing."
+    ],
+    "miniature_base": "Small panel-block foundation and sunken concrete stairwell on a worn courtyard slab.",
+    "target_impression": "The company controls the building from somewhere below the pavement."
+  },
+  "anti_patterns": [
+    "Do not depict a whole tall apartment tower; no text, full card, background, cityscape, realistic dirt, or clipped pipes.",
+    "Do not show the building's right side; do not make depth recede right."
+  ],
+  "final_prompt_summary": "Use case: stylized-concept. Asset type: transparent central illustration for a Machi Koro-style establishment card. Generate only an isolated cute tabletop-game miniature of a Russian housing-management office squeezed into the semi-basement of a Soviet panel apartment block. Show a compact corner slice of gray-blue panelka rather than a tall full building: clear panel seams, one simplified balcony above, foundation, a sunken stairway descending below grade, tiny canopy, rusty handrails, two low basement windows, and a ridiculous prominent zigzag of exposed heating pipes that dominates the wall and dives into the office. Add one lost mitten hanging neatly from the railing, two patient courtyard cats beside a warm vent, and—visible through one warm basement window—towers of colored paper folders plus a drooping ficus, with no writing. Front facade faces slightly right, left side visible, depth recedes left. Cute polished Machi Koro miniature, chunky simplified forms, crisp dark outlines, flat clean colors, sparse detail, simple two-tone cel shading. Native RGBA transparency with alpha=0 outside the compact courtyard slab; no backdrop, sky, cityscape, card furniture, glow, halo, checkerboard, cast shadow, text, letters, numbers, signs, labels, logos, graffiti, pseudo-writing, watermark, clipped content, or photorealism."
+}

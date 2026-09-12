@@ -202,14 +202,25 @@ So all of these are normalized correctly into multiline text.
 
 ---
 
+### Optional flavor caption
+
+- `--caption` — separate caption below the rules; omitted by default
+- `--caption-x-frac`, `--caption-y-frac` — caption center in card fractions
+- `--caption-font-size-frac` — caption font size relative to card width
+- `--caption-font` — caption font file
+- `--caption-color` — caption color in `#RGB` or `#RRGGBB`
+
+---
+
 ## Font configuration
 
-All 4 text elements support independent font files:
+All text elements support independent font files:
 
 - `--coin-font`
 - `--activation-font`
 - `--title-font`
 - `--bottom-text-font`
+- `--caption-font`
 
 Current defaults in the script:
 

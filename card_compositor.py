@@ -9,7 +9,8 @@ Supports:
 - centered title
 - optional icon glued before the title; icon + title are centered as one group
 - centered multiline bottom text
-- independent font-file paths for all four text elements
+- optional separate flavor caption
+- independent font-file paths for all text elements
 
 Example:
     python composite_machi_koro_card.py \
@@ -365,6 +366,18 @@ def composite(args: argparse.Namespace) -> None:
                 spacing_px=args.bottom_text_spacing_px,
             )
 
+    if args.caption is not None:
+        draw_centered_text(
+            canvas,
+            args.caption,
+            x_frac=args.caption_x_frac,
+            y_frac=args.caption_y_frac,
+            font_size_frac=args.caption_font_size_frac,
+            font_path=args.caption_font,
+            font_label="caption",
+            fill=parse_hex_color(args.caption_color),
+        )
+
     args.output.parent.mkdir(parents=True, exist_ok=True)
     canvas.save(args.output)
 
@@ -428,6 +441,14 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--bottom-inline-icon-token", type=str, default="{icon}")
     parser.add_argument("--bottom-inline-icon-scale", type=float, default=1.15, help="Inline icon side / bottom-text font size.")
     parser.add_argument("--bottom-inline-icon-y-offset-px", type=int, default=0)
+
+    # Optional flavor caption, placed independently from the rules.
+    parser.add_argument("--caption", type=str, default=None)
+    parser.add_argument("--caption-x-frac", type=float, default=0.57)
+    parser.add_argument("--caption-y-frac", type=float, default=0.91)
+    parser.add_argument("--caption-font-size-frac", type=float, default=0.026)
+    parser.add_argument("--caption-font", type=Path, default=DEFAULT_UI_FONT)
+    parser.add_argument("--caption-color", type=str, default="#FFFFFF")
 
     return parser.parse_args()
 

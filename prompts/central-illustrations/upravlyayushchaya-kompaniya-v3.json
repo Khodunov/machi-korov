@@ -1,0 +1,36 @@
+{
+  "spec_version": "1.1",
+  "title": "Управляющая компания — старая деревянная дверь",
+  "purpose": "Transparent central illustration for a green Machi Koro-style card.",
+  "integration_context": {
+    "target_use": "Generate only the central building miniature, never a complete card.",
+    "background_requirement": "Native RGBA transparency is mandatory; alpha=0 outside the miniature and its compact base. No sky, scenery, card frame, glow, halo, checkerboard, or baked shadow.",
+    "text_policy": "Absolute no-text rule: no letters, numbers, words, signs, labels, graffiti, watermarks, or pseudo-writing anywhere.",
+    "card_relationship": "Compact floating sticker-like miniature with generous empty margin."
+  },
+  "style_goal": {
+    "core_formula": "Cute polished Machi Koro tabletop miniature plus the melancholy of a very old Russian municipal office.",
+    "rendering": "Chunky simplified geometry, crisp dark outlines, flat color blocks, sparse detail, simple two-tone cel shading; no photorealism."
+  },
+  "visual_composition": {
+    "orientation": "Front facade faces slightly right, the building's left side is visible, and depth recedes toward image left.",
+    "shape": "A tiny old one-story pre-war brick office, compact and slightly crooked, on an irregular stone-and-dirt base.",
+    "palette": "Faded mint plaster, exposed dull-red brick patches, dark weathered wood, rusty brown metal, muted blue-gray."
+  },
+  "content": {
+    "subject": "An ancient district maintenance office in a crooked one-story pre-war building.",
+    "description": "Faded mint plaster over brick, low roof with patched roofing felt, leaning gutter, two small windows, old porcelain insulators, external cable, and a stout weathered wooden entrance door.",
+    "recognition_details": [
+      "Mandatory hero detail: an oversized old dark-wood plank door with many repair patches, mismatched hinges, a polished central handle, and three different locks.",
+      "A galvanized snow shovel, coarse doormat, bucket catching a drip, and bundled heating pipes sit by the threshold.",
+      "One window has a faded lace curtain and a sleepy ginger cat on the sill."
+    ],
+    "miniature_base": "Tiny irregular cobblestone-and-mud patch with two tufts of stubborn grass.",
+    "target_impression": "The door predates every resident and still controls the entire district."
+  },
+  "anti_patterns": [
+    "No haunted-house fantasy, ornate mansion, text, full card, background, neighboring structures, photorealistic rot, dense grime, or clipped content.",
+    "Do not show the building's right side; do not make depth recede right."
+  ],
+  "final_prompt_summary": "Use case: stylized-concept. Asset type: transparent central illustration for a Machi Koro-style establishment card. Generate only an isolated cute tabletop-game miniature of an ancient Russian district maintenance office in a tiny crooked one-story pre-war brick building. Use faded mint plaster with a few simplified exposed dull-red brick patches, a low patched roofing-felt roof, leaning gutter, two small windows, porcelain insulators, external cable, and bundled heating pipes. Mandatory hero detail: an oversized old dark wooden plank entrance door with obvious repair patches, mismatched large hinges, polished handle, and three different locks. Add a galvanized snow shovel, coarse doormat, bucket catching a drip, two tufts of grass, and a sleepy ginger cat behind one lace-curtained window. Keep it municipal and mundane, not spooky or fantasy. Front facade faces slightly right, left side visible, depth recedes left. Cute polished Machi Koro miniature, chunky simplified forms, crisp dark outlines, flat clean colors, sparse detail, simple two-tone cel shading, cold muted palette. Native RGBA transparency with alpha=0 outside the compact stone-and-dirt base; no backdrop, sky, scenery, card furniture, glow, halo, checkerboard, cast shadow, text, letters, numbers, signs, labels, logos, graffiti, pseudo-writing, watermark, clipped content, dense realistic grime, or photorealism."
+}
