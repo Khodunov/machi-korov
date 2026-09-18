@@ -26,6 +26,9 @@ index=0
 for command_path in "${commands[@]}"; do
   ((index += 1))
   command_name="$(basename "$command_path")"
+  if [[ "$command_name" == *-all.sh ]]; then
+    continue
+  fi
   printf '\n[%d/%d] Generating %s\n' \
     "$index" \
     "${#commands[@]}" \
