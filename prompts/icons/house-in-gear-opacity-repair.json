@@ -1,0 +1,13 @@
+{
+  "tool": "built-in image_gen",
+  "source": "icons/house-in-gear-original.png",
+  "asset": "icons/house-in-gear.png",
+  "prompt": "Repair this exact icon as a transparent PNG. Preserve the existing white house inside gear silhouette and circular shape. Inside the circle, make ALL pixels fully opaque: flat solid dark green #17361A behind the opaque white pictogram. Remove all see-through patches within the green circle. Outside the circle must be REAL alpha transparency, not a checkerboard drawing, not white or black background. Smooth antialiased edge only on outer circumference. No redesign, no text, no texture, no gradients. Output RGBA transparent PNG.",
+  "validation": {
+    "inner_disk_radius_fraction": 0.43,
+    "inner_alpha_min": 252,
+    "inner_alpha_max": 254,
+    "corner_alpha": 0,
+    "note": "Near-opaque interior; no low-alpha holes. Not strictly alpha 255."
+  }
+}

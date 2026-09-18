@@ -1,0 +1,5 @@
+{
+  "tool": "built-in image_gen",
+  "prompt": "A single square board game category badge: solid dark green circular disk #17361A with one bold white pictogram of a house enclosed inside a cogwheel. Flat clean geometry, legible at small size, centered. Circle occupies 85% of square width, pictogram 58% of circle. Genuine transparent background outside disk; opaque green inside. No text, no numbers, no gradients, no shadows, no extra objects.",
+  "asset": "icons/house-in-gear.png"
+}

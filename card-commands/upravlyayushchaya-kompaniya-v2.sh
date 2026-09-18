@@ -7,7 +7,7 @@ set -euo pipefail
 .venv/bin/python skills/generate-card/scripts/card_compositor.py \
   --template backgrounds/green.png \
   --overlay buildings/upravlyayushchaya-kompaniya-v2.png \
-  --title-icon icons/house.png \
+  --title-icon icons/house-in-gear.png \
   --shadow \
   --output cards/upravlyayushchaya-kompaniya-v2.png \
   --x-frac 0.50 \
@@ -17,22 +17,16 @@ set -euo pipefail
   --activation-number '11–12' \
   --title 'Управляющая компания' \
   --title-color '#17361A' \
-  --bottom-text $'Получи 2 монеты за каждую карту\nпанельки и новостройки' \
+  --bottom-text $'Получите по 2 монеты за каждую\nсвою «Панельку» и «Новостройку».' \
   --bottom-text-y-frac 0.825 \
   --bottom-text-spacing-px 5 \
   --title-font fonts/Boingster-Regular.ttf \
-  --title-font-size-frac 0.078 \
+  --title-font-size-frac 0.052 \
   --title-icon-scale 1.88 \
-  --title-icon-gap-px 12 \
-  --title-icon-y-offset-px -10 \
+  --title-icon-gap-px 10 \
+  --title-icon-y-offset-px -8 \
   --bottom-text-font fonts/CCUltimatum-Bold.ttf \
   --bottom-text-font-size-frac 0.0377 \
   --activation-font fonts/CCUltimatum-Bold.ttf \
   --activation-font-size-frac 0.118 \
-  --coin-font fonts/Boingster-Regular.ttf \
-  --caption 'Каждая точка под контролем' \
-  --caption-font fonts/Boingster-Regular.ttf \
-  --caption-font-size-frac 0.030 \
-  --caption-x-frac 0.58 \
-  --caption-y-frac 0.915 \
-  --caption-color '#D8E5C8'
+  --coin-font fonts/Boingster-Regular.ttf

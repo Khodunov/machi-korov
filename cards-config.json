@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "render_defaults": {
+    "show_caption": false
+  },
+  "cards": [
+    {
+      "slug": "upravlyayushchaya-kompaniya",
+      "title": "Управляющая компания",
+      "source_card": "Фруктовый рынок",
+      "set": "base",
+      "caption": "Каждая точка под контролем",
+      "category": "green",
+      "activation": "11–12",
+      "cost": 2,
+      "copies": 6,
+      "rules_text": "Получите по 2 монеты за каждую\nсвою «Панельку» и «Новостройку».",
+      "rules_status": "approved",
+      "symbol": {
+        "name": "Дом в шестерёнке",
+        "asset": "icons/house-in-gear.png",
+        "status": "generated"
+      },
+      "art_variants": [
+        "upravlyayushchaya-kompaniya-v1-final",
+        "upravlyayushchaya-kompaniya-v2",
+        "upravlyayushchaya-kompaniya-v3",
+        "upravlyayushchaya-kompaniya-v4",
+        "upravlyayushchaya-kompaniya-v5-revised",
+        "upravlyayushchaya-kompaniya-v6"
+      ],
+      "art_notes": {
+        "upravlyayushchaya-kompaniya-v2": "Добавить на входе объявление «ГОРЯЧАЯ ВОДА ОТКЛЮЧЕНА», сохранив остальное изображение без изменений.",
+        "status": "pending_imagegen"
+      }
+    }
+  ]
+}
