@@ -15,11 +15,12 @@
   --bottom-text-y-frac 0.84 \
   --bottom-text-spacing-px 6 \
   --title-font fonts/Boingster-Regular.ttf \
-  --title-font-size-frac 0.058 \
-  --title-icon-scale 1.5 \
+  --title-font-size-frac 0.078 \
+  --title-icon-scale 2.25 \
+  --title-icon-gap-px 12 \
   --title-icon-y-offset-px -10 \
   --bottom-text-font fonts/CCUltimatum-Bold.ttf \
-  --bottom-text-font-size-frac 0.033 \
+  --bottom-text-font-size-frac 0.0366 \
   --activation-font fonts/CCUltimatum-Bold.ttf \
-  --activation-font-size-frac 0.1 \
+  --activation-font-size-frac 0.118 \
   --coin-font fonts/Boingster-Regular.ttf

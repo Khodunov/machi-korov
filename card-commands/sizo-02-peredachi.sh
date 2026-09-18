@@ -15,11 +15,12 @@ python3 skills/generate-card/scripts/card_compositor.py \
   --bottom-text-y-frac 0.83 \
   --bottom-text-spacing-px 5 \
   --title-font fonts/Boingster-Regular.ttf \
-  --title-font-size-frac 0.065 \
-  --title-icon-scale 1.8 \
-  --title-icon-y-offset-px -8 \
+  --title-font-size-frac 0.078 \
+  --title-icon-scale 2.25 \
+  --title-icon-gap-px 12 \
+  --title-icon-y-offset-px -10 \
   --bottom-text-font fonts/CCUltimatum-Bold.ttf \
-  --bottom-text-font-size-frac 0.040 \
+  --bottom-text-font-size-frac 0.0444 \
   --activation-font fonts/Boingster-Regular.ttf \
-  --activation-font-size-frac 0.1 \
+  --activation-font-size-frac 0.118 \
   --coin-font fonts/Boingster-Regular.ttf

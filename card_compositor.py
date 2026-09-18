@@ -35,10 +35,31 @@ from __future__ import annotations
 
 import argparse
 import re
+import sys
 from pathlib import Path
 from typing import Tuple
 
 from PIL import Image, ImageDraw, ImageFont
+
+def repo_root() -> Path:
+    path = Path(__file__).resolve()
+    for parent in (path.parent, *path.parents):
+        if (parent / "card_layout.py").exists():
+            return parent
+    return path.parent
+
+
+ROOT = repo_root()
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from card_layout import (  # noqa: E402
+    ACTIVATION_FONT_SIZE_FRAC,
+    TITLE_FONT_SIZE_FRAC,
+    TITLE_ICON_GAP_PX,
+    TITLE_ICON_SCALE,
+    TITLE_ICON_Y_OFFSET_PX,
+)
 
 Color = Tuple[int, int, int, int]
 
@@ -405,27 +426,27 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--coin-number", type=str, default=None)
     parser.add_argument("--coin-x-frac", type=float, default=0.1594)
     parser.add_argument("--coin-y-frac", type=float, default=0.8836)
-    parser.add_argument("--coin-font-size-frac", type=float, default=0.070)
+    parser.add_argument("--coin-font-size-frac", type=float, default=0.082)
     parser.add_argument("--coin-font", type=Path, default=DEFAULT_COIN_FONT, help="Font file for coin number.")
 
     # Activation number
     parser.add_argument("--activation-number", type=str, default=None)
     parser.add_argument("--activation-x-frac", type=float, default=0.50)
     parser.add_argument("--activation-y-frac", type=float, default=0.093)
-    parser.add_argument("--activation-font-size-frac", type=float, default=0.073)
+    parser.add_argument("--activation-font-size-frac", type=float, default=ACTIVATION_FONT_SIZE_FRAC)
     parser.add_argument("--activation-font", type=Path, default=DEFAULT_UI_FONT, help="Font file for top activation number.")
 
     # Title + optional icon
     parser.add_argument("--title", type=str, default=None)
     parser.add_argument("--title-x-frac", type=float, default=0.50, help="Center X of icon+title group.")
     parser.add_argument("--title-y-frac", type=float, default=0.257, help="Center Y of icon+title group.")
-    parser.add_argument("--title-font-size-frac", type=float, default=0.052)
+    parser.add_argument("--title-font-size-frac", type=float, default=TITLE_FONT_SIZE_FRAC)
     parser.add_argument("--title-font", type=Path, default=DEFAULT_UI_FONT, help="Font file for title.")
     parser.add_argument("--title-color", "--text-color", dest="title_color", type=str, default="#123E70")
     parser.add_argument("--title-icon", type=Path, default=None, help="Optional square icon image before title.")
-    parser.add_argument("--title-icon-scale", type=float, default=2.0, help="Icon side / title text height.")
-    parser.add_argument("--title-icon-gap-px", type=int, default=10)
-    parser.add_argument("--title-icon-y-offset-px", type=int, default=0)
+    parser.add_argument("--title-icon-scale", type=float, default=TITLE_ICON_SCALE, help="Icon side / title text height.")
+    parser.add_argument("--title-icon-gap-px", type=int, default=TITLE_ICON_GAP_PX)
+    parser.add_argument("--title-icon-y-offset-px", type=int, default=TITLE_ICON_Y_OFFSET_PX)
     parser.add_argument("--title-group-offset-x-px", type=int, default=0)
     parser.add_argument("--title-group-offset-y-px", type=int, default=0)
 
@@ -433,7 +454,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--bottom-text", type=str, default=None, help="Centered multiline rules text; supports actual newlines, literal \\n, or /n.")
     parser.add_argument("--bottom-text-x-frac", type=float, default=0.50)
     parser.add_argument("--bottom-text-y-frac", type=float, default=0.900)
-    parser.add_argument("--bottom-text-font-size-frac", type=float, default=0.030)
+    parser.add_argument("--bottom-text-font-size-frac", type=float, default=0.033)
     parser.add_argument("--bottom-text-font", type=Path, default=DEFAULT_UI_FONT, help="Font file for bottom rules text.")
     parser.add_argument("--bottom-text-color", type=str, default="#FFFFFF")
     parser.add_argument("--bottom-text-spacing-px", type=int, default=4)

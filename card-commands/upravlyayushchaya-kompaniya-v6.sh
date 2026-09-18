@@ -33,13 +33,14 @@ set -euo pipefail
   --bottom-text-y-frac 0.825 \
   --bottom-text-spacing-px 5 \
   --title-font fonts/Boingster-Regular.ttf \
-  --title-font-size-frac 0.043 \
-  --title-icon-scale 1.45 \
-  --title-icon-y-offset-px -8 \
+  --title-font-size-frac 0.078 \
+  --title-icon-scale 2.25 \
+  --title-icon-gap-px 12 \
+  --title-icon-y-offset-px -10 \
   --bottom-text-font fonts/CCUltimatum-Bold.ttf \
-  --bottom-text-font-size-frac 0.034 \
+  --bottom-text-font-size-frac 0.0377 \
   --activation-font fonts/CCUltimatum-Bold.ttf \
-  --activation-font-size-frac 0.086 \
+  --activation-font-size-frac 0.118 \
   --coin-font fonts/Boingster-Regular.ttf \
   --caption 'Каждая точка под контролем' \
   --caption-font fonts/Boingster-Regular.ttf \
