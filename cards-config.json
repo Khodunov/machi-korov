@@ -33,6 +33,37 @@
         "upravlyayushchaya-kompaniya-v2": "Добавить на входе объявление «ГОРЯЧАЯ ВОДА ОТКЛЮЧЕНА», сохранив остальное изображение без изменений.",
         "status": "pending_imagegen"
       }
+    },
+    {
+      "slug": "karaoke-klub",
+      "title": "Караоке-клуб",
+      "source_card": "Ресторан",
+      "set": "base",
+      "caption": "С караоке и пластиковыми стульями",
+      "category": "red",
+      "activation": "9–10",
+      "cost": 3,
+      "copies": 6,
+      "rules_text": "Получите 2 монеты у игрока, бросившего кубики.\nВ ход другого игрока.",
+      "rules_status": "approved",
+      "symbol": {
+        "name": "Бокал с вилкой",
+        "asset": "icons/glass-and-fork.png",
+        "status": "generated",
+        "shared_with": [
+          "shwarma"
+        ]
+      },
+      "art_variants": [
+        "karaoke-klub",
+        "karaoke-klub-01-podval-90h",
+        "karaoke-klub-06-tsokol",
+        "karaoke-klub-07-byvshee-kafe",
+        "karaoke-klub-09-kirpich",
+        "karaoke-klub-10-pridorozhny"
+      ],
+      "art_status": "approved",
+      "show_caption": true
     }
   ]
 }

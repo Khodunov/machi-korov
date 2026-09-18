@@ -1,0 +1,80 @@
+{
+  "spec_version": "1.2",
+  "title": "Machi Koro-style round category icon spec",
+  "purpose": "Reusable specification for the small circular category badge placed immediately before a Machi Koro-style card title.",
+  "reference_observation": {
+    "badge": "The original Russian Machi Koro cards use a solid colored circular badge.",
+    "symbol": "Inside the circle is a simple white pictogram.",
+    "contrast": "The icon is essentially two-color: colored circle + white symbol.",
+    "style": "Flat, compact, highly legible, with no realistic rendering, texture, or 3D effects.",
+    "placement_context": "The badge is visually glued to the title row and should later be centered together with the title as one horizontal group."
+  },
+  "integration_context": {
+    "target_use": "Generate only the icon asset; it will be composited before the title by the card-rendering script.",
+    "canvas": "square",
+    "background": "Native RGBA transparency is mandatory outside the circular badge. Do not draw or bake a checkerboard, transparency-preview grid, black or white field, solid backdrop, gradient, glow, halo, vignette, shadow, or any other background representation into RGB.",
+    "output_preference": "RGBA PNG with alpha=0 outside the circular badge and clean antialiased alpha edges",
+    "composition": "one centered circular badge filling most of the square canvas"
+  },
+  "parameters": {
+    "icon_color": {
+      "type": "hex color string",
+      "default": "#58100E",
+      "description": "Fill color of the circular badge. For the current blue card family, use the same dark blue as the footer."
+    },
+    "subject": {
+      "type": "string",
+      "default": "a wine goblet and a dining fork side by side",
+      "description": "The white pictogram drawn inside the colored circle."
+    }
+  },
+  "badge_geometry": {
+    "circle": "perfect centered circle",
+    "circle_diameter": "approximately 82-88% of canvas width",
+    "outer_margin": "transparent margin around the circle",
+    "border": "no separate outline unless needed only for antialiasing; visually it should read as a flat solid circle"
+  },
+  "pictogram": {
+    "color": "#FFFFFF",
+    "subject": "a wine goblet and a dining fork side by side",
+    "description": "A chunky white four-tine fork on the left and a white stemmed wine goblet on the right, upright, equal height, separate readable silhouettes.",
+    "size": "approximately 50-58% of the circle diameter",
+    "position": "precisely centered inside the circle",
+    "shape_language": "very simple, chunky, geometric, slightly rounded, icon-like",
+    "detail_level": "very low",
+    "line_rule": "Prefer a solid white silhouette or a few thick white shapes; avoid thin line art."
+  },
+  "visual_style": {
+    "core": "Flat two-color Machi Koro category badge.",
+    "colors": "one configurable badge color plus pure white pictogram",
+    "shading": "none",
+    "gradient": "none",
+    "texture": "none",
+    "shadow": "none",
+    "rendering": "clean vector-style UI icon",
+    "small_size_priority": "must remain instantly recognizable when rendered very small beside a card title"
+  },
+  "anti_patterns": [
+    "do not generate only a colored pictogram without the round badge",
+    "do not make the pictogram the same color as the badge",
+    "do not add a white outer ring around the badge",
+    "do not use realistic house rendering",
+    "do not use gradients, highlights, bevels, texture, or shadows",
+    "do not add text",
+    "do not add card furniture or background scenery",
+    "do not output an opaque background or draw a checkerboard or transparency-preview grid; native RGBA alpha transparency is required",
+    "do not add a black or white field, solid backdrop, gradient, glow, halo, vignette, or shadow outside the badge",
+    "do not make the symbol too detailed or thin"
+  ],
+  "current_icon": {
+    "icon_color": "#58100E",
+    "subject": "a wine goblet and a dining fork side by side",
+    "expected_result": "Dark burgundy circular badge with a white goblet and fork and transparent exterior."
+  },
+  "final_prompt_summary": "Generate only a small Machi Koro-style category badge on a square canvas. Create one perfect solid circle in the supplied hex color, filling roughly 85% of the canvas. Inside it, center a very simple bold white pictogram of the subject defined in the parameters and pictogram sections. OUTPUT REQUIREMENT: native RGBA transparency is mandatory; every pixel outside the circular badge must have alpha=0. Do not render, draw, or bake a checkerboard, transparency-preview grid, black or white field, solid backdrop, gradient, glow, halo, vignette, shadow, or any other background representation into RGB. The result must be flat two-color vector-style artwork: colored circle plus white symbol, no border, no text, no shading, no gradient, no texture, no 3D effects, and no background.",
+  "generation": {
+    "tool": "built-in image_gen",
+    "source": "/Users/egor/.codex/generated_images/01a0b585-bcfb-7940-a569-e041184429aa/exec-effb02aa-70b8-4f57-9572-2a59e793ffed.png",
+    "asset": "icons/glass-and-fork.png"
+  }
+}

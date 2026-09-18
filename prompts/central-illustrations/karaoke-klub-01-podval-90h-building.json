@@ -1,0 +1,41 @@
+{
+  "spec_version": "1.1",
+  "title": "Karaoke Club 01 — basement inside a complete building",
+  "purpose": "Transparent central illustration for a red Machi Koro-style Karaoke Club card variant.",
+  "generation_prompt": "Мультяшное целое двухэтажное провинциальное здание с крышей, караоке 1990-х в полуподвале. Лестница вниз под козырьком, маленькие светящиеся окна, за ними поющие скуфы с микрофонами, телевизор и диско-шар. Вид снаружи три четверти, стиль настольной игры, белый фон, широкие поля, без текста.",
+  "research_basis": [
+    "Specialized Russian karaoke venues appeared in the mid-1990s, including basement locations.",
+    "Early systems used laser discs, wired microphones, CRT displays, and small song selections.",
+    "Sources: https://www.kommersant.ru/doc/660808 and https://www.kommersant.ru/doc/825705"
+  ],
+  "integration_context": {
+    "target_use": "Generate only the central illustration; it will be composited onto the existing red card template.",
+    "background_requirement": "Generate on an ordinary white background. Save the original, then locally remove the background to produce a separate transparent PNG.",
+    "text_policy": "Absolute no-text rule: no letters, numbers, words, song codes, labels, signage, logos, screen lyrics, graffiti, or pseudo-writing anywhere. Use only a microphone pictogram above the entrance.",
+    "orientation": "Front facade faces slightly right, the building's left side is visible, and depth recedes toward image left."
+  },
+  "style_goal": {
+    "core": "Same polished cartoon board-game language as the approved Karaoke Club card: chunky toy-like forms, rounded expressive adult caricatures, crisp dark outlines, clean flat colors, simple cel shading, low-to-moderate detail.",
+    "palette": "Cold concrete gray, faded burgundy, nicotine beige, dim amber, electric violet and cyan accents."
+  },
+  "content": {
+    "subject": "A complete two-story provincial building housing a 1990s basement karaoke club.",
+    "description": "An exterior view of an entire two-story worn provincial building with complete roof, facade, side wall and foundation. A staircase under a canopy descends into a semi-basement karaoke venue. Small lit basement windows offer partial glimpses of stocky middle-aged men singing into wired microphones, a bulky CRT television and a mirrored disco ball. The upper floor has ordinary small windows. The structure is fully enclosed, not a cutaway room.",
+    "recognition_details": [
+      "complete two-story building and roof",
+      "stairs descending below ground under a canopy",
+      "small illuminated basement windows",
+      "stocky men singing into microphones glimpsed through glass",
+      "CRT television and mirrored disco ball inside"
+    ],
+    "miniature_base": "A compact cracked-concrete slab with basement steps and a short metal railing, isolated on transparency.",
+    "omit": [
+      "cutaway or roofless room",
+      "huge storefront windows",
+      "text or logos",
+      "photorealism",
+      "clipped roof or base"
+    ]
+  },
+  "final_prompt_summary": "Мультяшное целое двухэтажное провинциальное здание с крышей, караоке 1990-х в полуподвале. Лестница вниз под козырьком, маленькие светящиеся окна, за ними поющие скуфы с микрофонами, телевизор и диско-шар. Вид снаружи три четверти, стиль настольной игры, белый фон, широкие поля, без текста."
+}

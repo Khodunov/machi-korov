@@ -1,7 +1,9 @@
+caption=$(.venv/bin/python -c 'import json; print(next(c for c in json.load(open("cards-config.json"))["cards"] if c["slug"] == "karaoke-klub")["caption"])')
+
 .venv/bin/python skills/generate-card/scripts/card_compositor.py \
   --template backgrounds/red.png \
   --overlay buildings/karaoke-klub.png \
-  --title-icon icons/microphone.png \
+  --title-icon icons/glass-and-fork.png \
   --shadow \
   --output cards/karaoke-klub.png \
   --x-frac 0.50 \
@@ -9,9 +11,9 @@
   --scale 0.69 \
   --coin-number 3 \
   --activation-number '9–10' \
-  --title 'Караоке клуб' \
+  --title 'Караоке-клуб' \
   --title-color '#58100E' \
-  --bottom-text $'Если другой игрок выбросил 9–10,\nполучи от него 2 монеты' \
+  --bottom-text $'Получите 2 монеты у игрока,\nбросившего кубики.\nВ ход другого игрока.' \
   --bottom-text-y-frac 0.84 \
   --bottom-text-spacing-px 6 \
   --title-font fonts/Boingster-Regular.ttf \
@@ -23,4 +25,10 @@
   --bottom-text-font-size-frac 0.0366 \
   --activation-font fonts/CCUltimatum-Bold.ttf \
   --activation-font-size-frac 0.118 \
-  --coin-font fonts/Boingster-Regular.ttf
+  --coin-font fonts/Boingster-Regular.ttf \
+  --caption "$caption" \
+  --caption-font fonts/Boingster-Regular.ttf \
+  --caption-font-size-frac 0.026 \
+  --caption-x-frac 0.58 \
+  --caption-y-frac 0.935 \
+  --caption-color "#F3D7C9"
