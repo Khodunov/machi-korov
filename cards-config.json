@@ -151,6 +151,36 @@
       "show_caption": true,
       "original_art": "buildings/shinomontazh.png",
       "original_command": "card-commands/shinomontazh.sh"
+    },
+    {
+      "slug": "novostroyka",
+      "title": "Новостройка",
+      "source_card": "Яблоневый сад",
+      "set": "base",
+      "caption": "Маленькая, зато своя",
+      "category": "blue",
+      "activation": "10",
+      "cost": 3,
+      "copies": 6,
+      "rules_text": "Получите 3 монеты за ЖКХ.\nВ ход любого игрока.",
+      "rules_status": "approved",
+      "symbol": {
+        "name": "Дом",
+        "asset": "icons/house.png",
+        "shared_with": [
+          "panelka"
+        ]
+      },
+      "art_variants": [
+        "novostroyka",
+        "novostroyka-01-murino-stena",
+        "novostroyka-02-devyatkino-kolodets",
+        "novostroyka-03-pik-bashni",
+        "novostroyka-04-samolet-grebenka",
+        "novostroyka-05-megadom-stupeni"
+      ],
+      "art_status": "approved",
+      "show_caption": true
     }
   ]
 }
