@@ -1,28 +1,4 @@
-python skills/generate-card/scripts/card_compositor.py \
-  --template backgrounds/green.png \
-  --overlay buildings/shinomontazh.png \
-  --title-icon icons/shop-stall.png \
-  --shadow \
-  --output cards/autoservice.png \
-  --x-frac 0.50 \
-  --y-frac 0.51 \
-  --flip-horizontal \
-  --scale 0.72 \
-  --coin-number 5 \
-  --activation-number '7' \
-  --title 'Автосервис' \
-  --title-color '#17361A' \
-  --bottom-text $'Получите по 3 монеты из банка\nза каждое ваше предприятие\nс символом {icon}.\nВ свой ход.' \
-  --bottom-inline-icon icons/soviet-car.png \
-  --bottom-text-y-frac 0.84 \
-  --bottom-text-spacing-px 6 \
-  --title-font fonts/Boingster-Regular.ttf \
-  --title-font-size-frac 0.078 \
-  --title-icon-scale 1.88 \
-  --title-icon-gap-px 12 \
-  --title-icon-y-offset-px -10 \
-  --bottom-text-font fonts/CCUltimatum-Bold.ttf \
-  --bottom-text-font-size-frac 0.05 \
-  --activation-font fonts/Boingster-Regular.ttf \
-  --activation-font-size-frac 0.118 \
-  --coin-font fonts/Boingster-Regular.ttf
+set -euo pipefail
+
+# Legacy entry point for the original autoservice illustration.
+bash card-commands/autoservice.sh

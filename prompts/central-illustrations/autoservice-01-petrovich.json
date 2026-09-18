@@ -1,0 +1,156 @@
+{
+  "spec_version": "1.1",
+  "title": "У Петровича",
+  "purpose": "Reusable specification for the central subject illustration that will be composited onto a blank Machi Koro-style card furniture template. The generated art should reproduce the iconic 'floating miniature scene' look of Machi Koro while adapting the depicted subject matter to grim, recognizable Russian/post-Soviet everyday reality.",
+  "integration_context": {
+    "target_use": "Generate only the central content illustration to be pasted onto an existing blank card template.",
+    "background_requirement": "Native RGBA transparency is mandatory. Outside the requested subject and its integral miniature base, every pixel must have alpha=0. Preserve clean antialiased alpha edges and soft translucent alpha only for smoke or similar integral effects. Do not render, draw, or bake a checkerboard, transparency-preview grid, black field, white field, solid backdrop, gradient, glow, halo, vignette, cast shadow, or any other background representation into the RGB channels. Do not depict any environment, scenery, surface, sky, header, footer, card furniture, text, coin, icon, or frame.",
+    "text_policy": "Absolute no-text rule, including logos and pseudo-writing.",
+    "card_relationship": "The art should sit like a floating miniature object or sticker inside the middle of the card, leaving generous empty sky around it.",
+    "central_positioning": "The subject should be centered and self-contained, with enough margin around it so it can be placed in the open central sky region of the card."
+  },
+  "style_goal": {
+    "primary_rule": "Match the illustration language of the original Machi Koro establishment art.",
+    "secondary_rule": "Depict Russian/post-Soviet subjects and atmosphere without making the rendering more realistic.",
+    "core_formula": "Cute, simplified tabletop-game miniature scene + bleak, recognizable Russian everyday subject matter."
+  },
+  "what_machi_koro_art_looks_like": {
+    "miniature_scene_feel": "The subject is not a full landscape or realistic environment. It is a small isolated toy-like scene, almost like a board-game token, sticker, or floating diorama.",
+    "shape_language": "Large clean shapes, simple geometry, and compact clustered forms. Each object is simplified into a few readable masses.",
+    "perspective": "Loose playful three-quarter perspective. Enough depth to feel dimensional, but not strict architectural or camera-accurate perspective.",
+    "linework": "Clear outlines or sharp separations between forms. Interior detail lines should be sparse.",
+    "shading": "Simple graphic shading using one or two darker tones. No realistic lighting model.",
+    "materials": "Concrete, wood, leaves, roofs, metal, dirt, and glass should be communicated mostly by color and silhouette, not by texture or realistic rendering.",
+    "detail_density": "Low to moderate. Every important feature should remain readable at small card size.",
+    "silhouette_priority": "The outer silhouette of the subject must read instantly and be visually iconic.",
+    "scene_boundary": "The subject should feel self-contained, often resting on a small stylized ground base or compact support shape rather than blending into a large background."
+  },
+  "visual_composition": {
+    "occupancy": "The content illustration should usually occupy roughly the middle 30-45% of the card height when composited, with wide air around it.",
+    "shape": "Prefer compact clustered compositions rather than tall full-frame scenes.",
+    "orientation": "Front and right side visible, facing slightly right.",
+    "floating_behavior": "The scene should visually float in open space, not connect to the bottom skyline strip of the card.",
+    "base": "When appropriate, place the subject on a small stylized ground slab, courtyard patch, platform, or tiny environmental base that belongs to the object itself.",
+    "background": "None. The output must be an actual RGBA PNG cutout with alpha=0 outside the miniature, never an image depicting a checkerboard, transparency-preview grid, solid field, gradient, glow, halo, vignette, shadow, or other backdrop."
+  },
+  "russian_grimness_rules": {
+    "principle": "Russian grimness must come from the things being depicted, not from realistic rendering technique.",
+    "use": [
+      "cold blue-gray and concrete-gray palette",
+      "utilitarian post-Soviet forms",
+      "worn but simplified everyday structures",
+      "mismatched repairs or colors",
+      "bare trees or sparse vegetation when relevant",
+      "isolated warm-lit windows when appropriate",
+      "deadpan humor and familiar urban bleakness"
+    ],
+    "do_not_use": [
+      "photorealism",
+      "architectural-visualization detail",
+      "gritty material texture",
+      "cinematic lighting",
+      "dense grime or realistic dirt",
+      "atmospheric realism"
+    ],
+    "guardrail": "If there is a choice between making the subject more Russian or more Machi Koro-like, preserve Machi Koro rendering first and express Russianness through object choice, colors, and a few culturally diagnostic details."
+  },
+  "palette": {
+    "base": [
+      "muted blue-gray",
+      "cold concrete gray",
+      "desaturated navy",
+      "powder blue",
+      "slate blue"
+    ],
+    "secondary": [
+      "muted olive",
+      "dull teal",
+      "faded rust-brown",
+      "dirty beige"
+    ],
+    "warm_accents": [
+      "a few amber-yellow lit windows",
+      "small warm details only where helpful"
+    ],
+    "saturation": "low to moderate",
+    "overall_brightness": "somewhat darker and duller than standard Machi Koro art, but still clean and readable"
+  },
+  "allowed_subject_types": {
+    "examples": [
+      "panel apartment blocks",
+      "kiosks",
+      "garages",
+      "playgrounds",
+      "tram stops",
+      "bus shelters",
+      "corner shops",
+      "courtyard utilities",
+      "small Soviet-era service buildings",
+      "other Russian/post-Soviet everyday urban or peri-urban archetypes"
+    ],
+    "selection_rule": "Choose subjects that are instantly recognizable and culturally specific, but still simple enough to become iconic miniatures."
+  },
+  "subject_construction_rules": {
+    "general": [
+      "Reduce the subject to a compact iconic miniature.",
+      "Choose only the few details needed for recognition.",
+      "Exaggerate or simplify proportions slightly when useful.",
+      "Keep objects chunky and readable.",
+      "Use a compact number of forms.",
+      "Front and right side visible, facing slightly right."
+    ],
+    "building_specific": [
+      "A building should read as a toy-like block, not as a carefully rendered facade.",
+      "Windows should be simplified rectangles, not detailed constructions.",
+      "Balconies should be simplified into blocky protrusions or colored panels.",
+      "Roof details should be few and clear.",
+      "Panel seams or other repetitive structure should be present only in a small number of major lines.",
+      "All signs, fascia panels, menu boards, plaques, posters, and storefront surfaces must be blank or purely geometric unless the content section explicitly requests a brand logo. A requested logo may include its authentic embedded lettering, but no other writing or text-like marks are allowed."
+    ],
+    "environment_specific": [
+      "Trees should be graphic silhouettes or simplified masses.",
+      "Ground should be a small stylized patch rather than a full realistic courtyard.",
+      "Props should be few and iconic."
+    ]
+  },
+  "content": {
+    "subject": "У Петровича",
+    "description": "A squat post-Soviet red-brick garage with heavy faded teal metal doors, small corrugated-metal lean-to and a stove chimney. Outside an open bay: an old boxy beige Volga-like sedan with hood up. A potbellied middle-aged mechanic in an oil-stained white sleeveless vest and unfastened dark overalls holds a huge wrench and explains the repair to a slim young male car owner. Exactly two people with expressive cartoon faces. A small cat sleeps on a salvaged car seat beside the garage. The mechanic is the main humorous character; oversized belly, greasy hands and confident relaxed posture, kind deadpan humor.",
+    "desired_read": "Russian 1990s–2000s humorous everyday auto repair",
+    "recognition_details": [
+      "A squat post-Soviet red-brick garage with heavy faded teal metal doors, small corrugated-metal lean-to and a stove chimney. Outside an open bay: an old boxy beige Volga-like sedan with hood up. A potbellied middle-aged mechanic in an oil-stained white sleeveless vest and unfastened dark overalls holds a huge wrench and explains the repair to a slim young male car owner. Exactly two people with expressive cartoon faces. A small cat sleeps on a salvaged car seat beside the garage. The mechanic is the main humorous character; oversized belly, greasy hands and confident relaxed posture, kind deadpan humor."
+    ],
+    "miniature_base": "A compact raised asphalt/concrete slab with clean outlined edges",
+    "simplify": [
+      "Chunky garage geometry",
+      "One large visual joke, few props"
+    ],
+    "omit": [
+      "All text-like marks and logos",
+      "Unrelated scenery and inflatable tube figures"
+    ],
+    "target_impression": "Same illustrator and graphic cartoon rendering as the supplied existing garage"
+  },
+  "anti_patterns": [
+    "Do not generate a full card.",
+    "Do not generate sky, clouds, footer, or any fixed furniture.",
+    "Do not create a realistic painting of a building.",
+    "Do not create a full cityscape background.",
+    "Do not make the scene connect visually to the bottom of the card.",
+    "Do not output an opaque background or draw a checkerboard or transparency-preview grid; native RGBA alpha transparency is required.",
+    "Do not generate incidental letters, numbers, words, menus, prices, labels, graffiti, license-plate characters, or pseudo-text anywhere in the illustration. An explicitly requested brand logo, including its embedded lettering, is the only exception.",
+    "Do not turn the subject into generic clip-art with no Russian specificity.",
+    "Do not use heavy textures or gritty realism."
+  ],
+  "final_prompt_summary": "Use the attached image ONLY as a visual style reference, not an edit target. Create a NEW standalone central illustration for the same board-game series. Match its bold crisp dark outlines, smooth graphic cel shading, chunky toy-like buildings and cars, clean saturated accents and compact raised asphalt diorama base. Do not copy the inflatable tube man. Show the complete garage plus front and RIGHT side in a readable three-quarter view, building facing slightly right. The building is the main mass; characters are secondary but readable, at most two people. Entire scene isolated with genuine alpha transparency outside the physical scene and base. Wide clear margin on all sides, no clipping. No sky, no environment, no card border, no header, no footer, no coin. Absolute NO TEXT: no letters, numbers, logos, signs, labels, license plate characters, writing or pseudo-writing anywhere, including clothes, car plates and screens. Do not include signboards. All plates plain blank. No photorealism or painterly gritty texture. Landscape compact composition. A squat post-Soviet red-brick garage with heavy faded teal metal doors, small corrugated-metal lean-to and a stove chimney. Outside an open bay: an old boxy beige Volga-like sedan with hood up. A potbellied middle-aged mechanic in an oil-stained white sleeveless vest and unfastened dark overalls holds a huge wrench and explains the repair to a slim young male car owner. Exactly two people with expressive cartoon faces. A small cat sleeps on a salvaged car seat beside the garage. The mechanic is the main humorous character; oversized belly, greasy hands and confident relaxed posture, kind deadpan humor.",
+  "reference_image": "buildings/shinomontazh.png",
+  "generation": {
+    "tool": "built-in image_gen",
+    "mode": "generate",
+    "source_asset": "buildings/autoservice-01-petrovich-source.png",
+    "final_asset": "buildings/autoservice-01-petrovich.png",
+    "status": "generated",
+    "note": "Reference-image requests encountered network errors; selected result generated from the written style description.",
+    "submitted_prompt": "Create fresh original artwork; reference style is a clean cartoon board-game miniature. Create a NEW standalone central illustration for the same board-game series. Match its bold crisp dark outlines, smooth graphic cel shading, chunky toy-like buildings and cars, clean saturated accents and compact raised asphalt diorama base. Do not copy the inflatable tube man. Show the complete garage plus front and RIGHT side in a readable three-quarter view, building facing slightly right. The building is the main mass; characters are secondary but readable, at most two people. Entire scene isolated with genuine alpha transparency outside the physical scene and base. Wide clear margin on all sides, no clipping. No sky, no environment, no card border, no header, no footer, no coin. Absolute NO TEXT: no letters, numbers, logos, signs, labels, license plate characters, writing or pseudo-writing anywhere, including clothes, car plates and screens. Do not include signboards. All plates plain blank. No photorealism or painterly gritty texture. Landscape compact composition. A squat post-Soviet red-brick garage with heavy faded teal metal doors, small corrugated-metal lean-to and a stove chimney. Outside an open bay: an old boxy beige Volga-like sedan with hood up. A potbellied middle-aged mechanic in an oil-stained white sleeveless vest and unfastened dark overalls holds a huge wrench and explains the repair to a slim young male car owner. Exactly two people with expressive cartoon faces. A small cat sleeps on a salvaged car seat beside the garage. The mechanic is the main humorous character; oversized belly, greasy hands and confident relaxed posture, kind deadpan humor."
+  }
+}

@@ -64,6 +64,93 @@
       ],
       "art_status": "approved",
       "show_caption": true
+    },
+    {
+      "slug": "setevoy-magazin",
+      "title": "Сетевой магазин",
+      "source_card": "Магазин",
+      "set": "base",
+      "caption": "Всегда ближе, чем кажется",
+      "category": "green",
+      "activation": "4",
+      "cost": 2,
+      "copies": 6,
+      "rules_text": "Получите 3 монеты из банка.\nВ свой ход.",
+      "rules_status": "approved",
+      "symbol": {
+        "name": "Торговая лавка",
+        "asset": "icons/shop-stall.png",
+        "shared_with": [
+          "pivnoy-laryok"
+        ]
+      },
+      "art_variants": [
+        "setevoy-magazin",
+        "setevoy-magazin-pyaterochka",
+        "setevoy-magazin-magnit",
+        "setevoy-magazin-diksi",
+        "setevoy-magazin-verny",
+        "setevoy-magazin-maria-ra"
+      ],
+      "art_status": "approved",
+      "show_caption": true
+    },
+    {
+      "slug": "hram",
+      "title": "Храм",
+      "source_card": "Стадион",
+      "set": "base",
+      "caption": "Духовенство налоги не платит",
+      "category": "purple",
+      "activation": "6",
+      "cost": 6,
+      "copies": 5,
+      "rules_text": "Получите по 2 монеты у каждого соперника.\nВ свой ход.",
+      "rules_status": "approved",
+      "symbol": {
+        "name": "Башня",
+        "asset": "icons/purple-tower.png"
+      },
+      "art_variants": [
+        "hram",
+        "hram-01-maybach-v2",
+        "hram-02-vsem-mirom-v2",
+        "hram-03-svechi-kartoy-v2",
+        "hram-04-blagodetel-v2"
+      ],
+      "art_status": "approved",
+      "show_caption": true
+    },
+    {
+      "slug": "autoservice",
+      "title": "Автосервис",
+      "source_card": "Сыроварня",
+      "set": "base",
+      "caption": "Никогда такого не было и вот опять зима",
+      "category": "green",
+      "activation": "7",
+      "cost": 5,
+      "copies": 6,
+      "rules_text": "Получите по 3 монеты\nза каждый свой гараж.\nВ свой ход.",
+      "rules_status": "approved",
+      "symbol": {
+        "name": "Торговая лавка",
+        "asset": "icons/shop-stall.png",
+        "proposed_asset": "icons/factory.png",
+        "status": "pending_review"
+      },
+      "art_variants": [
+        "autoservice",
+        "autoservice-01-petrovich",
+        "autoservice-02-patsany",
+        "autoservice-03-pervyy-sneg",
+        "autoservice-05-malyarka",
+        "autoservice-07-gazel"
+      ],
+      "art_status": "approved",
+      "show_caption": true,
+      "original_art": "buildings/shinomontazh.png",
+      "original_command": "card-commands/shinomontazh.sh"
     }
   ]
 }

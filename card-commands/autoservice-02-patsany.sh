@@ -1,20 +1,22 @@
-caption=$(.venv/bin/python -c 'import json; print(next(c for c in json.load(open("cards-config.json"))["cards"] if c["slug"] == "setevoy-magazin")["caption"])')
+set -euo pipefail
+
+caption=$(.venv/bin/python -c 'import json; print(next(c for c in json.load(open("cards-config.json"))["cards"] if c["slug"] == "autoservice")["caption"])')
 
 .venv/bin/python skills/generate-card/scripts/card_compositor.py \
   --template backgrounds/green.png \
-  --overlay buildings/setevoy-magazin-pyaterochka.png \
+  --overlay buildings/autoservice-02-patsany.png \
   --title-icon icons/shop-stall.png \
   --shadow \
-  --output cards/setevoy-magazin-pyaterochka.png \
-  --x-frac 0.48 \
-  --y-frac 0.53 \
-  --scale 0.79 \
-  --coin-number 2 \
-  --activation-number 4 \
-  --title 'Сетевой магазин' \
+  --output cards/autoservice-02-patsany.png \
+  --x-frac 0.50 \
+  --y-frac 0.51 \
+  --scale 0.72 \
+  --coin-number 5 \
+  --activation-number '7' \
+  --title 'Автосервис' \
   --title-color '#17361A' \
-  --bottom-text $'Получите 3 монеты из банка.\nВ свой ход.' \
-  --bottom-text-y-frac 0.82 \
+  --bottom-text $'Получите по 3 монеты\nза каждый свой гараж.\nВ свой ход.' \
+  --bottom-text-y-frac 0.815 \
   --bottom-text-spacing-px 6 \
   --title-font fonts/Boingster-Regular.ttf \
   --title-font-size-frac 0.078 \
@@ -22,7 +24,7 @@ caption=$(.venv/bin/python -c 'import json; print(next(c for c in json.load(open
   --title-icon-gap-px 12 \
   --title-icon-y-offset-px -10 \
   --bottom-text-font fonts/CCUltimatum-Bold.ttf \
-  --bottom-text-font-size-frac 0.05 \
+  --bottom-text-font-size-frac 0.0366 \
   --activation-font fonts/CCUltimatum-Bold.ttf \
   --activation-font-size-frac 0.118 \
   --coin-font fonts/Boingster-Regular.ttf \
