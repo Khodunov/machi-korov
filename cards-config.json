@@ -424,6 +424,33 @@
         "status": "cleanup_complete",
         "processing_script": "scripts/remove_npz_checkerboard.py"
       }
+    },
+    {
+      "slug": "garazhnyy-kooperativ",
+      "title": "Гаражный кооператив",
+      "source_card": "Ферма",
+      "set": "base",
+      "caption": "Второй дом бати",
+      "category": "blue",
+      "activation": "2",
+      "cost": 1,
+      "copies": 6,
+      "rules_text": "Получите 1 монету из банка.\nВ ход любого игрока.",
+      "rules_status": "approved",
+      "symbol": {
+        "name": "Автомобиль",
+        "asset": "icons/soviet-car.png"
+      },
+      "art_variants": [
+        "garazhnyy-kooperativ",
+        "garazhnyy-kooperativ-batina-volga",
+        "garazhnyy-kooperativ-kartoshka-v2",
+        "garazhnyy-kooperativ-rakushka-v2",
+        "garazhnyy-kooperativ-rybalka-v2",
+        "garazhnyy-kooperativ-seychas-zavedem-v2"
+      ],
+      "art_status": "approved",
+      "show_caption": true
     }
   ]
 }
