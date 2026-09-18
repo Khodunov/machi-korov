@@ -207,6 +207,36 @@
       ],
       "show_caption": true,
       "art_status": "approved"
+    },
+    {
+      "slug": "shwarma",
+      "title": "Шавуха",
+      "source_card": "Кафе",
+      "set": "base",
+      "caption": "С сырным лавашом или обычную?",
+      "category": "red",
+      "activation": "3",
+      "cost": 2,
+      "copies": 6,
+      "rules_text": "Получите 1 монету у игрока,\nбросившего кубики.\nВ ход другого игрока.",
+      "rules_status": "approved",
+      "symbol": {
+        "name": "Бокал с вилкой",
+        "asset": "icons/glass-and-fork.png",
+        "shared_with": [
+          "karaoke-klub"
+        ]
+      },
+      "art_variants": [
+        "shwarma",
+        "shwarma-01-tsokol-v5",
+        "shwarma-02-marshrutka-v5",
+        "shwarma-03-zima-v5",
+        "shwarma-04-shkolniki-v5",
+        "shwarma-05-stolik-v5"
+      ],
+      "art_status": "approved",
+      "show_caption": true
     }
   ]
 }
