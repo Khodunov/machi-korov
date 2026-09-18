@@ -364,6 +364,32 @@
       ],
       "art_status": "approved",
       "show_caption": true
+    },
+    {
+      "slug": "sizo",
+      "title": "СИЗО",
+      "source_card": "Телецентр",
+      "set": "base",
+      "caption": "Сначала садишься, а потом присаживаешься",
+      "category": "purple",
+      "activation": "6",
+      "cost": 7,
+      "copies": 5,
+      "rules_text": "Получите 5 монет у игрока\nна свой выбор.\nВ свой ход.",
+      "rules_status": "approved",
+      "symbol": {
+        "name": "Башня",
+        "asset": "icons/purple-tower.png"
+      },
+      "art_variants": [
+        "sizo",
+        "sizo-01-avtozak",
+        "sizo-02-peredachi",
+        "sizo-03-kresty",
+        "sizo-04-matrosskaya-tishina"
+      ],
+      "art_status": "approved",
+      "show_caption": true
     }
   ]
 }
