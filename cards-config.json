@@ -237,6 +237,41 @@
       ],
       "art_status": "approved",
       "show_caption": true
+    },
+    {
+      "slug": "panelka",
+      "title": "Панелька",
+      "source_card": "Пшеничное поле",
+      "set": "base",
+      "caption": "Базовый айтем любого российского города",
+      "category": "blue",
+      "activation": "1",
+      "cost": 1,
+      "copies": 11,
+      "rules_text": "Получите 1 монету за ЖКХ.\nВ ход любого игрока.",
+      "rules_status": "approved",
+      "symbol": {
+        "name": "Дом",
+        "asset": "icons/house.png",
+        "shared_with": [
+          "novostroyka"
+        ]
+      },
+      "art_variants": [
+        "panelka",
+        "panelka-01-kover-v2",
+        "panelka-02-lebedi-v2",
+        "panelka-03-ogorod-v2",
+        "panelka-04-uteplenie-v2",
+        "panelka-05-kosmodrom-v2",
+        "panelka-06-balkony-v2",
+        "panelka-07-korabl-v2",
+        "panelka-08-sugrob-v2",
+        "panelka-09-mozaika-v2",
+        "panelka-10-tropinka-v4"
+      ],
+      "art_status": "approved",
+      "show_caption": true
     }
   ]
 }
