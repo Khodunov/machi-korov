@@ -18,7 +18,7 @@
   --bottom-text-spacing-px 6 \
   --title-font fonts/Boingster-Regular.ttf \
   --title-font-size-frac 0.078 \
-  --title-icon-scale 2.25 \
+  --title-icon-scale 1.88 \
   --title-icon-gap-px 12 \
   --title-icon-y-offset-px -10 \
   --bottom-text-font fonts/CCUltimatum-Bold.ttf \
