@@ -181,6 +181,32 @@
       ],
       "art_status": "approved",
       "show_caption": true
+    },
+    {
+      "slug": "otdel-fsb",
+      "title": "Отдел ФСБ",
+      "source_card": "Деловой центр",
+      "set": "base",
+      "caption": "Пройдёмте с нами",
+      "category": "purple",
+      "activation": "6",
+      "cost": 8,
+      "copies": 5,
+      "rules_text": "Можете обменять одно своё\nпредприятие на чужое.\nФиолетовые карты не участвуют.\nВ свой ход.",
+      "rules_status": "approved",
+      "symbol": {
+        "name": "Башня",
+        "asset": "icons/purple-tower.png"
+      },
+      "art_variants": [
+        "otdel-fsb",
+        "otdel-fsb-01-seryy-korpus",
+        "otdel-fsb-02-kolonny",
+        "otdel-fsb-03-kirpich",
+        "otdel-fsb-04-sovetskiy"
+      ],
+      "show_caption": true,
+      "art_status": "approved"
     }
   ]
 }
