@@ -5,7 +5,7 @@ caption=$(.venv/bin/python -c 'import json; print(next(c for c in json.load(open
 .venv/bin/python skills/generate-card/scripts/card_compositor.py \
   --template backgrounds/green.png \
   --overlay buildings/eksport-v-kitay-01-pogruzchik-v2.png \
-  --title-icon icons/truck.png \
+  --title-icon icons/factory-green.png \
   --shadow \
   --output cards/eksport-v-kitay-01-pogruzchik-v2.png \
   --x-frac 0.50 \

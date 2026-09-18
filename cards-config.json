@@ -31,8 +31,10 @@
       ],
       "art_notes": {
         "upravlyayushchaya-kompaniya-v2": "Добавить на входе объявление «ГОРЯЧАЯ ВОДА ОТКЛЮЧЕНА», сохранив остальное изображение без изменений.",
-        "status": "pending_imagegen"
-      }
+        "status": "complete",
+        "processing_script": "scripts/update_uk_notice.py"
+      },
+      "art_status": "approved"
     },
     {
       "slug": "karaoke-klub",
@@ -134,10 +136,12 @@
       "rules_text": "Получите по 3 монеты\nза каждый свой гараж.\nВ свой ход.",
       "rules_status": "approved",
       "symbol": {
-        "name": "Торговая лавка",
-        "asset": "icons/shop-stall.png",
-        "proposed_asset": "icons/factory.png",
-        "status": "pending_review"
+        "name": "Фабрика",
+        "asset": "icons/factory-green.png",
+        "shared_with": [
+          "eksport-v-kitay"
+        ],
+        "status": "generated"
       },
       "art_variants": [
         "autoservice",
@@ -351,8 +355,12 @@
       "rules_text": "Получите по 3 монеты за каждый\nсвой «Лесоповал» и «НПЗ».\nВ свой ход.",
       "rules_status": "approved",
       "symbol": {
-        "name": "Грузовик",
-        "asset": "icons/truck.png"
+        "name": "Фабрика",
+        "asset": "icons/factory-green.png",
+        "shared_with": [
+          "autoservice"
+        ],
+        "status": "generated"
       },
       "art_variants": [
         "eksport-v-kitay",

@@ -1,0 +1,8 @@
+{
+  "use_case": "text-localization",
+  "instruction": "Replace only the lower-right notice ВОДЫ НЕ БУДЕТ with ГОРЯЧАЯ / ВОДА / ОТКЛЮЧЕНА; preserve the paper, red underline and all other artwork.",
+  "method": "User-approved local perspective text replacement after built-in imagegen network failures",
+  "script": "scripts/update_uk_notice.py",
+  "source": "buildings/upravlyayushchaya-kompaniya-v2-source.png",
+  "output": "buildings/upravlyayushchaya-kompaniya-v2-notice-source.png"
+}

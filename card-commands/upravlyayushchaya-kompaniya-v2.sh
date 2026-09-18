@@ -1,7 +1,9 @@
 set -euo pipefail
 
+.venv/bin/python scripts/update_uk_notice.py
+
 .venv/bin/python skills/generate-card/scripts/remove_light_background.py \
-  buildings/upravlyayushchaya-kompaniya-v2-source.png \
+  buildings/upravlyayushchaya-kompaniya-v2-notice-source.png \
   buildings/upravlyayushchaya-kompaniya-v2.png
 
 .venv/bin/python skills/generate-card/scripts/card_compositor.py \

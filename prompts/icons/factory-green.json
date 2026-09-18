@@ -1,0 +1,9 @@
+{
+  "use_case": "precise-object-edit",
+  "reference": "icons/factory.png",
+  "prompt": "Change only the blue circle and window holes to dark green #17361A; preserve the white factory pictogram and transparent exterior.",
+  "tool": "built-in image_gen",
+  "source": "icons/factory-green-source.png",
+  "output": "icons/factory-green.png",
+  "local_processing": "scripts/clean_factory_green.py; user-approved local background extraction"
+}
