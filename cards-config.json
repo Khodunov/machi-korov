@@ -307,6 +307,36 @@
       ],
       "art_status": "approved",
       "show_caption": true
+    },
+    {
+      "slug": "lesopoval",
+      "title": "Лесоповал",
+      "source_card": "Лес",
+      "set": "base",
+      "caption": "Распил начинается здесь",
+      "category": "blue",
+      "activation": "5",
+      "cost": 3,
+      "copies": 6,
+      "rules_text": "Получите 1 монету из банка.\nВ ход любого игрока.",
+      "rules_status": "approved",
+      "symbol": {
+        "name": "Ресурсы",
+        "asset": "icons/resources.png",
+        "shared_with": [
+          "npz"
+        ]
+      },
+      "art_variants": [
+        "lesopoval",
+        "lesopoval-01-dvuruchnaya-pila-v2",
+        "lesopoval-02-pilorama-v2",
+        "lesopoval-03-trelevochnik-v2",
+        "lesopoval-04-stalinskiy-lespromkhoz-v2",
+        "lesopoval-05-uzkokoleyka-v2"
+      ],
+      "art_status": "approved",
+      "show_caption": true
     }
   ]
 }
