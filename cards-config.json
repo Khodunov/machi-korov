@@ -272,6 +272,41 @@
       ],
       "art_status": "approved",
       "show_caption": true
+    },
+    {
+      "slug": "pivnoy-laryok",
+      "title": "Пивной ларёк",
+      "source_card": "Пекарня",
+      "set": "base",
+      "caption": "Сюда ты гонял бате за пивом",
+      "category": "green",
+      "activation": "2–3",
+      "cost": 1,
+      "copies": 11,
+      "rules_text": "Получите 1 монету из банка.\nВ свой ход.",
+      "rules_status": "approved",
+      "symbol": {
+        "name": "Торговая лавка",
+        "asset": "icons/shop-stall.png",
+        "shared_with": [
+          "setevoy-magazin"
+        ]
+      },
+      "art_variants": [
+        "pivnoy-laryok",
+        "pivnoy-laryok-01-zhvachka-v3",
+        "pivnoy-laryok-02-domoy-v3",
+        "pivnoy-laryok-03-kozyrek-v3",
+        "pivnoy-laryok-04-tropa-v3",
+        "pivnoy-laryok-05-futbol-v3",
+        "pivnoy-laryok-06-ostrovok-v3",
+        "pivnoy-laryok-07-bez-sdachi-v3",
+        "pivnoy-laryok-08-minutka-v3",
+        "pivnoy-laryok-09-kot-v3",
+        "pivnoy-laryok-10-novyy-god-v3"
+      ],
+      "art_status": "approved",
+      "show_caption": true
     }
   ]
 }
