@@ -139,5 +139,11 @@
     "Do not turn the subject into generic clip-art with no Russian specificity.",
     "Do not use heavy textures or gritty realism."
   ],
-  "final_prompt_summary": "Create a NEW oil refinery illustration in the same style, proportions, scale and silhouette as the supplied npz reference. Reference is for style, not an edit target. Three stepped distillation columns in the middle, two storage tanks grouped on the left, curved pipe bundles at front right. A white flag with the recognizable Tatneft green-and-red geometric emblem, no wordmark. Flag must be large and legible on a short pole to right of tallest tower and BELOW its top. Same silver and cold blue-gray steel, orange pipes, yellow railings, compact concrete slab, crisp outlines and toy-like shaded illustration. Only modest layout differences from reference. Render only the isolated refinery, NOT a card. Entire object inside frame with margin. Native RGBA transparent background, alpha zero outside object and smoke. NO glow, halo, vignette, opaque backdrop, checkerboard or ground shadow. No lettering, numbers, words, labels or pseudo-text anywhere; only requested emblem on flag. Landscape 3:2 canvas."
+  "final_prompt_summary": "Create a NEW oil refinery illustration in the same style, proportions, scale and silhouette as the supplied npz reference. Reference is for style, not an edit target. Three stepped distillation columns in the middle, two storage tanks grouped on the left, curved pipe bundles at front right. A white flag with the recognizable Tatneft green-and-red geometric emblem, no wordmark. Flag must be large and legible on a short pole to right of tallest tower and BELOW its top. Same silver and cold blue-gray steel, orange pipes, yellow railings, compact concrete slab, crisp outlines and toy-like shaded illustration. Only modest layout differences from reference. Render only the isolated refinery, NOT a card. Entire object inside frame with margin. Native RGBA transparent background, alpha zero outside object and smoke. NO glow, halo, vignette, opaque backdrop, checkerboard or ground shadow. No lettering, numbers, words, labels or pseudo-text anywhere; only requested emblem on flag. Landscape 3:2 canvas.",
+  "local_processing": {
+    "method": "User-approved local checkerboard extraction with reviewed smoke protection",
+    "script": "scripts/remove_npz_checkerboard.py",
+    "source": "buildings/npz-tatneft-source.png",
+    "output": "buildings/npz-tatneft.png"
+  }
 }

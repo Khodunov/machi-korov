@@ -390,6 +390,40 @@
       ],
       "art_status": "approved",
       "show_caption": true
+    },
+    {
+      "slug": "npz",
+      "title": "НПЗ",
+      "source_card": "Шахта",
+      "set": "base",
+      "caption": "Работает, пока не прилетело",
+      "category": "blue",
+      "activation": "9",
+      "cost": 6,
+      "copies": 6,
+      "rules_text": "Получите 5 монет из банка.\nВ ход любого игрока.",
+      "rules_status": "approved",
+      "symbol": {
+        "name": "Ресурсы",
+        "asset": "icons/resources.png",
+        "shared_with": [
+          "lesopoval"
+        ]
+      },
+      "art_variants": [
+        "npz",
+        "npz-bashneft",
+        "npz-gazprom-neft",
+        "npz-rosneft",
+        "npz-surgutneftegaz",
+        "npz-tatneft"
+      ],
+      "art_status": "approved",
+      "show_caption": true,
+      "art_notes": {
+        "status": "cleanup_complete",
+        "processing_script": "scripts/remove_npz_checkerboard.py"
+      }
     }
   ]
 }
