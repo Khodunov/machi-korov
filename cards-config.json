@@ -337,6 +337,33 @@
       ],
       "art_status": "approved",
       "show_caption": true
+    },
+    {
+      "slug": "eksport-v-kitay",
+      "title": "Экспорт в Китай",
+      "source_card": "Мебельная фабрика",
+      "set": "base",
+      "caption": "На взаимовыгодных условиях",
+      "category": "green",
+      "activation": "8",
+      "cost": 3,
+      "copies": 6,
+      "rules_text": "Получите по 3 монеты за каждый\nсвой «Лесоповал» и «НПЗ».\nВ свой ход.",
+      "rules_status": "approved",
+      "symbol": {
+        "name": "Грузовик",
+        "asset": "icons/truck.png"
+      },
+      "art_variants": [
+        "eksport-v-kitay",
+        "eksport-v-kitay-01-pogruzchik-v2",
+        "eksport-v-kitay-02-konteynerovoz-v2",
+        "eksport-v-kitay-03-tanker-v2",
+        "eksport-v-kitay-04-gruzoviki-v2",
+        "eksport-v-kitay-05-sostavy-v2"
+      ],
+      "art_status": "approved",
+      "show_caption": true
     }
   ]
 }
