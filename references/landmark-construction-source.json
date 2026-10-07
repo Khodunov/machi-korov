@@ -1,0 +1,21 @@
+{
+  "source_url": "https://cdn.1j1ju.com/medias/89/cb/e8-machi-koro-rulebook.pdf",
+  "source_file": "references/machi-koro-original-rules-idw.pdf",
+  "sha256": "65cbf6ef3f3cc8a1ac5b8cae657b2fbd27f4d69c348593037e00617ef2bc54ac",
+  "pdf_page_one_based": 7,
+  "drawing_indices": [
+    3391,
+    3406
+  ],
+  "title_badge_drawing_indices": [
+    17786,
+    17787
+  ],
+  "method": "Extract original vector curves and fills; no tracing or generative redraw.",
+  "outputs": [
+    "icons/landmark-construction-original.svg",
+    "icons/landmark-construction-original.png",
+    "icons/landmark.svg",
+    "icons/landmark.png"
+  ]
+}

@@ -84,6 +84,21 @@ Generated final cards are written under `cards/` and ignored by Git. Commit the 
 
 ## What the compositor can do
 
+### Two-sided landmarks
+
+Landmarks use `skills/generate-card/scripts/landmark_compositor.py`. They have no
+dice or activation number, a construction cost of 0–99, and paired built/unbuilt
+sides derived from the same artwork. The title, rules and cost are retained on both
+sides. The reverse is specific to each landmark.
+
+Run `bash card-commands/landmark-layout-demo.sh` to regenerate the first layout
+specimen, paired preview in `cards/landmark-layout-preview.png`, and blank furniture
+exports in `backgrounds/landmark-{front,back}.png`. The specimen uses existing
+panelka artwork and sample text; it is not a finished landmark card.
+See [the landmark workflow](skills/generate-card/references/landmarks.md) for real card commands.
+
+### Establishments
+
 - place, trim, scale, position, and horizontally flip a transparent central illustration
 - optionally add a dark half-transparent shadow behind it, shifted equally down and right
 - draw the coin number, activation number, title, and multiline rules text

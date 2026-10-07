@@ -1,11 +1,21 @@
 ---
 name: generate-card
-description: Create a complete Machi Koro-style card in this repository, from collecting card parameters and generating prompt-driven artwork through a reproducible card command, rendered preview, and user-directed refinements. Use when adding or iterating on a card rather than making an isolated compositor-code change.
+description: Create and refine Machi Koro-style establishment cards or two-sided landmarks in this repository, from artwork prompts through reproducible rendering and previews. Use for adding cards, landmarks, or their layouts, rather than isolated compositor fixes.
 ---
 
 # Generate Card
 
 Build one card end to end while preserving the repository's prompt, asset, and command conventions.
+
+## Choose the card kind
+
+Establishments use the existing colored templates and `scripts/card_compositor.py`.
+Landmarks (достопримечательности) use `scripts/landmark_compositor.py`; read
+[references/landmarks.md](references/landmarks.md) for the two-sided layout and command.
+They have no activation number or dice, support a cost of 0–99, and reuse one illustration
+on a colored built side and a muted under-construction side. Do not use the shared
+establishment back for a landmark. For layout-only requests, reuse existing art as a
+clearly identified specimen; defer new artwork and actual card content until requested.
 
 ## Collect the card specification
 
@@ -13,7 +23,7 @@ Inspect existing backgrounds, prompts, icons, fonts, and `card-commands/` first.
 
 - filesystem-safe card slug and displayed title;
 - card family/background color;
-- activation number and single-digit coin cost;
+- activation number and single-digit coin cost for establishments; construction cost for landmarks;
 - exact rules text and intended line breaks;
 - central subject and its culturally diagnostic details;
 - existing category icon to reuse, a new icon subject, or no icon;
@@ -45,7 +55,7 @@ Do not silently overwrite an existing source asset unless the user requested reg
 
 ## Create the reproducible card command
 
-Create `card-commands/<card-slug>.sh`, using the closest existing command as a layout reference. Commands run from the repository root and must invoke the packaged compositor:
+Create `card-commands/<card-slug>.sh`, using the closest existing command as a layout reference. Commands run from the repository root. For landmarks use the paired-output command in the landmark reference. For establishments invoke the packaged compositor:
 
 ```bash
 python skills/generate-card/scripts/card_compositor.py \
