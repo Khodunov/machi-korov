@@ -1,0 +1,26 @@
+{
+  "id": "money-bundle",
+  "asset_type": "building_type_icon",
+  "version": 1,
+  "canvas": {
+    "background": "transparent",
+    "aspect_ratio": "1:1"
+  },
+  "palette": {
+    "badge": "#58100E",
+    "pictogram": "#FFFFFF"
+  },
+  "composition": {
+    "badge": "One solid dark red circle, centered, filling approximately 85% of the canvas. The area outside the circle must be fully transparent.",
+    "pictogram": "One compact tied bundle of banknotes, centered inside the circle, filling approximately 55% of the circle. Show the bundle as a single object: a slightly rounded stack with one broad paper band around the middle. Use a bold, simple silhouette that remains readable when printed small.",
+    "alignment": "Perfectly centered horizontally and vertically, with generous clear space around the pictogram."
+  },
+  "style": "Flat two-color board-game category icon. Clean vector-like edges, no gradients, no shadows, no texture, no outline beyond the white silhouette.",
+  "constraints": [
+    "Use only the dark red badge color and white pictogram color.",
+    "No currency symbols, numbers, letters, logos, coins, hands, people, buildings, or extra objects.",
+    "The banknotes and their paper band must read as one tied bundle, not several separate items.",
+    "No transparency holes inside the dark red circle except where required by the white pictogram itself.",
+    "Keep the entire badge inside the canvas with transparent padding on all sides."
+  ]
+}

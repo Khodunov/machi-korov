@@ -1,0 +1,61 @@
+{
+  "spec_version": "1.1",
+  "title": "Floating Machi Koro-style basement microloan office illustration spec",
+  "purpose": "Central illustration for the red establishment card Микрозаймы.",
+  "integration_context": {
+    "target_use": "Generate only the central content illustration to be composited onto an existing blank Machi Koro-style card template.",
+    "background_requirement": "Native RGBA transparency is mandatory. Outside the basement facade fragment and its integral miniature pavement base, every pixel must have alpha=0. No sky, scenery, card furniture, text, coin, icon, frame, glow, halo, or backdrop.",
+    "text_policy": "The only permitted text is the exact single Cyrillic word МИКРОЗАЙМ on one crooked sign above the entrance. Render it clearly and correctly, with no extra characters. No other letters, numbers, words, prices, menus, labels, logos, graffiti, license-plate characters, or pseudo-writing may appear anywhere.",
+    "card_relationship": "A floating miniature object or sticker inside the card's open middle region, with generous transparent space around it.",
+    "central_positioning": "Centered, compact, self-contained, fully visible, with ample margin on every side."
+  },
+  "style_goal": {
+    "primary_rule": "Match the cute simplified establishment-art language of the existing project references: chunky toy-like geometry, crisp dark outlines, clean flat color blocks, and simple two-tone cel shading.",
+    "secondary_rule": "Depict a recognizable, unsettling Russian basement microloan office whose chthonic quality comes from being buried below street level, oppressive architecture, security hardware, and sickly warm interior light rather than supernatural horror or realism.",
+    "core_formula": "Charming tabletop-game miniature plus a bleak, predatory Russian basement lending office."
+  },
+  "visual_composition": {
+    "shape": "A compact fragment of the ground and basement levels of a worn Soviet apartment block, dominated by a sunken entrance and barred service window.",
+    "orientation": "Front facade faces slightly right, the building's left side is visible, and depth recedes toward image left. Do not show the building's right side.",
+    "base": "A small irregular slab of cracked pavement and stained concrete enclosing the stairwell, fully isolated on transparency.",
+    "background": "None; transparent pixels outside the miniature."
+  },
+  "content": {
+    "subject": "A microloan office hidden in the basement of a worn Russian apartment block.",
+    "description": "A self-contained cutout of a dirty beige-gray concrete basement facade. A straight, coherent flight of five narrow concrete steps descends toward a fully visible cramped dark metal door under a low corrugated canopy; the steps end cleanly at a small landing in front of the threshold and no railing or masonry crosses the door. Beside it sits a small barred service window almost at ground level, glowing unhealthy amber-yellow from within. Behind the bars are a cash tray with a few plain coins, a cheap desk lamp, and the vague empty back of an office chair. Add a bent black handrail following the outer edge of the stairwell, exposed conduit, junction box, drainpipe, wall cracks, damp tide marks, one cold CCTV camera, and a heavy utility grille. Above the door hangs one crooked, aggressively bright internally illuminated advertisement sign bearing the exact Cyrillic word МИКРОЗАЙМ in clearly readable red block letters on a hot yellow field, with a cheap red bulb border. A neat queue of ordinary Russian adults follows a physically coherent path: it begins on the open foreground pavement entirely outside the railing, curves around the free lower end of the handrail, turns onto the bottom step, and then climbs upward single-file within the stairway toward the landing and door. No person or body part intersects, passes through, straddles, or appears on the wrong side of any railing, wall, stair edge, or post. Their tired postures and small wallets or plain shopping bags suggest everyday financial desperation without caricaturing poverty. The stairwell feels like a mouth leading underground, ominous but still humorous and readable as a board-game miniature.",
+    "desired_read": "An instantly recognizable Russian basement microloan office: accessible, predatory, cramped, and faintly infernal, rendered as a cute floating miniature.",
+    "recognition_details": [
+      "sunken concrete stairwell descending below street level to a narrow metal door",
+      "small barred service window with cash tray, plain coins, and sickly amber light",
+      "CCTV camera, exposed cables, junction box, drainpipe, and bent handrail",
+      "worn Soviet beige-gray facade with damp lower edge and mismatched repairs",
+      "one crooked, glaring red-and-yellow illuminated sign with the exact word МИКРОЗАЙМ",
+      "a clear orderly queue following the pavement, curving around the lower end of the railing, and climbing the stairs single-file without intersecting the railing"
+    ],
+    "miniature_base": "A compact irregular pavement slab with chipped curb edges, a shallow dark puddle, sparse dead grass, and the recessed stairwell cut into it.",
+    "simplify": [
+      "architecture and security hardware into chunky, readable toy-like masses",
+      "wear, cracks, dampness, and rust into a few flat graphic patches rather than realistic texture"
+    ],
+    "omit": [
+      "all text except the exact word МИКРОЗАЙМ on the single entrance sign; no other words, letters, numbers, currency signs, prices, labels, logos, posters, graffiti, paperwork, banknote markings, screen text, or pseudo-writing",
+      "vehicles, surrounding streets or buildings, gore, monsters, occult symbols, photorealism, cinematic horror, humiliating depictions of poverty, and full-card composition"
+    ],
+    "target_impression": "A whimsical board-game illustrator has drawn the most depressing yet brightly advertised microloan office in a Russian residential district, with a visible queue willingly descending into it."
+  },
+  "palette": {
+    "base": ["cold concrete gray", "dirty beige", "desaturated blue-gray", "charcoal metal"],
+    "secondary": ["mossy gray-green damp marks", "faded rust-brown", "dull olive repairs"],
+    "warm_accents": ["sickly amber-yellow basement light", "small muted orange rust accents"],
+    "saturation": "low to moderate",
+    "overall_brightness": "dark and oppressive but clean, playful, and readable at card size"
+  },
+  "anti_patterns": [
+    "Do not generate a full card, full apartment tower, full streetscape, sky, or background.",
+    "Do not use photorealism, gritty photographic texture, cinematic lighting, or literal supernatural horror.",
+    "Do not generate any text except the exact word МИКРОЗАЙМ on the single entrance sign. No other letters, numbers, words, currency signs, prices, labels, signage, logos, posters, graffiti, or pseudo-text anywhere.",
+    "Do not include any additional signboards, menu boards, banners, or surfaces designed for writing.",
+    "Do not clip the facade, canopy, stairs, railings, window, camera, drainpipe, or miniature base."
+  ],
+  "final_prompt_summary": "Use case: precise-object-edit. Asset type: transparent central illustration for a Machi Koro-style establishment card. Edit the existing microloan-office illustration while preserving the building, glowing sign, exact word МИКРОЗАЙМ, barred window, clear door, stair geometry, handrail geometry, palette, lighting, CCTV camera, pipes, worn materials, pavement base, camera angle, transparency, and cartoon rendering. Correct only the spatial arrangement of the people. Arrange five or six ordinary adults into one continuous physically coherent queue: three stand fully on the open foreground pavement outside the railing; the line curves around the unobstructed lower endpoint and final vertical post of the handrail; it then turns naturally onto the bottom step; two people stand centered on separate steps inside the stairway boundary; and one person may wait on the landing near the door. Every person faces generally toward the entrance. No person, limb, torso, head, bag, or coat may intersect, pass through, straddle, be bisected by, or appear on the impossible side of any railing, rail post, wall, stair edge, curb, door, or another person. Preserve clear gaps between bodies and railings. The queue path must be obvious at first glance as pavement → around the lower rail post → up the stairs → landing → door. Keep the sign and window fully visible and the door recognizable. Preserve the same people where possible, varied ages and clothing, humane tired expressions, and the same cute miniature style. Preserve native RGBA transparency and all unaffected details. No additional text beyond МИКРОЗАЙМ, no letters, numbers, currency signs, prices, labels, logos, posters, graffiti, watermarks, branded clothing, or pseudo-writing. No background, checkerboard, sky, neighboring buildings, cars, photorealism, or clipped content."
+}
