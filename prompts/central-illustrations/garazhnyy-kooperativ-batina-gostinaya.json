@@ -1,0 +1,9 @@
+{
+  "title": "garazhnyy-kooperativ-batina-gostinaya",
+  "tool": "built-in image_gen",
+  "reference": "buildings/garazhnyy-kooperativ.png",
+  "final_prompt_summary": "Уютная рисованная диорама в стиле референса: два кирпичных гаража. В открытом гараже ковёр на стене, диван, кот и двое мужчин у старого телевизора. Третий жарит шашлык у входа. Жигули стоят снаружи на мокром асфальте. Компактное основание, вид сверху в три четверти, приглушённые цвета. Обычный белый фон с полями, без надписей.",
+  "postprocessing": "Local edge-connected light background removal; min RGB >=175 and channel range <=30 to remove the exterior ground shadow; original remover edge antialiasing retained",
+  "source": "buildings/garazhnyy-kooperativ-batina-gostinaya-source.png",
+  "output": "buildings/garazhnyy-kooperativ-batina-gostinaya.png"
+}

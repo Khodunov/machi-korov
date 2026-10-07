@@ -1,0 +1,299 @@
+[
+  {
+    "use_case": "illustration-story",
+    "title": "А вот ту жвачку!",
+    "tool": "built-in image_gen",
+    "prompt": "Рисованная изометрическая миниатюра для настольной карты: старый серый киоск 90-х, наклонный козырёк, пёстрая витрина. Весна: школьник с ранцем на цыпочках выбирает жвачку, другой надувает небольшой розовый пузырь, продавщица у окна. Естественные пропорции людей, небольшие головы, сдержанные лица с глазами, носом и ртом. Тонкий тушевой контур, матовая гуашь, плоская светотень, приглушённая серо-зелёная палитра. Вид спереди и справа, компактный островок плитки целиком с полями на белом фоне. Без карикатуры, 3D и текста; упаковки без букв.",
+    "edit_prompt": null,
+    "source": "buildings/pivnoy-laryok-01-zhvachka-v2-source.png",
+    "cutout": "buildings/pivnoy-laryok-01-zhvachka-v2.png",
+    "card": "cards/pivnoy-laryok-01-zhvachka-v2.png",
+    "background": "Plain white generated source; local edge-connected background removal.",
+    "references": [],
+    "orientation": "Use generated orientation without mirroring.",
+    "visual_style_references": [
+      "buildings/pivnoy-laryok.png",
+      "buildings/panelka-01-kover-v2.png"
+    ],
+    "local_processing": {
+      "background_regions": [
+        [
+          0.83,
+          0.15,
+          0.995,
+          0.15,
+          0.995,
+          0.67,
+          0.83,
+          0.67
+        ]
+      ]
+    }
+  },
+  {
+    "use_case": "illustration-story",
+    "title": "По одной — и домой",
+    "tool": "built-in image_gen",
+    "prompt": "Рисованная изометрическая миниатюра для настольной карты: старый серый пивной киоск 90-х с наклонным козырьком и витринами. Двое обычных мужчин пьют пиво у ящика с рыбой, сумка с батоном, спящая собака. Реалистичные человеческие пропорции, небольшие головы, сдержанные лица. Тонкий тушевой контур, матовая гуашь, плоская светотень, приглушённая серо-зелёная палитра. Витрина в цветных упаковках без букв. Вид спереди и справа, компактный островок плитки, белый фон. Без карикатуры, 3D и текста.",
+    "edit_prompt": null,
+    "source": "buildings/pivnoy-laryok-02-domoy-v2-source.png",
+    "cutout": "buildings/pivnoy-laryok-02-domoy-v2.png",
+    "card": "cards/pivnoy-laryok-02-domoy-v2.png",
+    "background": "Plain white generated source; local edge-connected background removal.",
+    "references": [],
+    "orientation": "Use generated orientation without mirroring.",
+    "visual_style_references": [
+      "buildings/pivnoy-laryok.png",
+      "buildings/panelka-01-kover-v2.png"
+    ],
+    "local_processing": {}
+  },
+  {
+    "use_case": "illustration-story",
+    "title": "Под козырьком",
+    "tool": "built-in image_gen",
+    "prompt": "Рисованная изометрическая миниатюра для настольной карты: старый серый киоск 90-х, наклонный козырёк, пёстрая витрина. Осенний дождь: мужчина, бабушка с тележкой и велосипедист тесно укрываются под козырьком; рядом небольшая пустая остановка с протекающей крышей. Естественные пропорции людей, небольшие головы, сдержанные лица с глазами, носом и ртом. Тонкий тушевой контур, матовая гуашь, плоская светотень, приглушённая серо-зелёная палитра. Вид спереди и справа, компактный островок плитки целиком с полями на белом фоне. Без карикатуры, 3D и текста; упаковки без букв.",
+    "edit_prompt": null,
+    "source": "buildings/pivnoy-laryok-03-kozyrek-v2-source.png",
+    "cutout": "buildings/pivnoy-laryok-03-kozyrek-v2.png",
+    "card": "cards/pivnoy-laryok-03-kozyrek-v2.png",
+    "background": "Plain white generated source; local edge-connected background removal.",
+    "references": [],
+    "orientation": "Use generated orientation without mirroring.",
+    "visual_style_references": [
+      "buildings/pivnoy-laryok.png",
+      "buildings/panelka-01-kover-v2.png"
+    ],
+    "local_processing": {}
+  },
+  {
+    "use_case": "illustration-story",
+    "title": "Тропа народная",
+    "tool": "built-in image_gen",
+    "prompt": "Рисованная изометрическая миниатюра для настольной карты: старый серый киоск 90-х, наклонный козырёк, пёстрая витрина. Зима: двое взрослых в больших пуховиках с покупками осторожно расходятся на узкой тропинке между сугробами, снег на крыше, продавщица в тёплом окне. Естественные пропорции людей, небольшие головы, сдержанные лица с глазами, носом и ртом. Тонкий тушевой контур, матовая гуашь, плоская светотень, приглушённая серо-зелёная палитра. Вид спереди и справа, компактный островок плитки целиком с полями на белом фоне. Без карикатуры, 3D и текста; упаковки без букв.",
+    "edit_prompt": null,
+    "source": "buildings/pivnoy-laryok-04-tropa-v2-source.png",
+    "cutout": "buildings/pivnoy-laryok-04-tropa-v2.png",
+    "card": "cards/pivnoy-laryok-04-tropa-v2.png",
+    "background": "Plain white generated source; local edge-connected background removal.",
+    "references": [],
+    "orientation": "Use generated orientation without mirroring.",
+    "visual_style_references": [
+      "buildings/pivnoy-laryok.png",
+      "buildings/panelka-01-kover-v2.png"
+    ],
+    "local_processing": {
+      "background_regions": [
+        [
+          0.8,
+          0.04,
+          0.995,
+          0.04,
+          0.995,
+          0.45,
+          0.8,
+          0.45
+        ]
+      ]
+    }
+  },
+  {
+    "use_case": "illustration-story",
+    "title": "Большой футбол",
+    "tool": "built-in image_gen",
+    "prompt": "Рисованная изометрическая миниатюра для настольной карты: старый серый пивной киоск 90-х, наклонный козырёк, пёстрая витрина. Летний вечер: трое взрослых мужчин с пивом и продавщица смотрят маленький телевизор с футбольным полем над окном выдачи; один присел, другие наклонились. Естественные пропорции людей, небольшие головы, сдержанные лица с глазами, носом и ртом. Тонкий тушевой контур, матовая гуашь, плоская светотень, приглушённая серо-зелёная палитра. Вид спереди и справа, компактный островок плитки целиком с полями на белом фоне. Без карикатуры, 3D и текста; упаковки без букв.",
+    "edit_prompt": null,
+    "source": "buildings/pivnoy-laryok-05-futbol-v2-source.png",
+    "cutout": "buildings/pivnoy-laryok-05-futbol-v2.png",
+    "card": "cards/pivnoy-laryok-05-futbol-v2.png",
+    "background": "Plain white generated source; local edge-connected background removal.",
+    "references": [],
+    "orientation": "Use generated orientation without mirroring.",
+    "visual_style_references": [
+      "buildings/pivnoy-laryok.png",
+      "buildings/panelka-01-kover-v2.png"
+    ],
+    "local_processing": {}
+  },
+  {
+    "use_case": "illustration-story",
+    "title": "Островок торговли",
+    "tool": "built-in image_gen",
+    "prompt": "Рисованная изометрическая миниатюра для настольной карты: старый серый пивной киоск 90-х, наклонный козырёк, пёстрая витрина. Весенняя оттепель: мужчина балансирует на доске и кирпичах над лужей, продавщица протягивает пакет; голубь стоит на отдельном кирпиче. Естественные пропорции людей, небольшие головы, сдержанные лица с глазами, носом и ртом. Тонкий тушевой контур, матовая гуашь, плоская светотень, приглушённая серо-зелёная палитра. Вид спереди и справа, компактный островок плитки целиком с полями на белом фоне. Без карикатуры, 3D и текста; упаковки без букв.",
+    "edit_prompt": null,
+    "source": "buildings/pivnoy-laryok-06-ostrovok-v2-source.png",
+    "cutout": "buildings/pivnoy-laryok-06-ostrovok-v2.png",
+    "card": "cards/pivnoy-laryok-06-ostrovok-v2.png",
+    "background": "Plain white generated source; local edge-connected background removal.",
+    "references": [],
+    "orientation": "Use generated orientation without mirroring.",
+    "visual_style_references": [
+      "buildings/pivnoy-laryok.png",
+      "buildings/panelka-01-kover-v2.png"
+    ],
+    "local_processing": {
+      "wall_cleanup": {
+        "source_box": [
+          660,
+          555,
+          760,
+          655
+        ],
+        "target_polygon": [
+          [
+            1001,
+            272
+          ],
+          [
+            1093,
+            238
+          ],
+          [
+            1093,
+            520
+          ],
+          [
+            1001,
+            555
+          ]
+        ]
+      },
+      "background_regions": [
+        [
+          0.86,
+          0.22,
+          0.999,
+          0.22,
+          0.999,
+          0.51,
+          0.86,
+          0.51
+        ]
+      ]
+    }
+  },
+  {
+    "use_case": "illustration-story",
+    "title": "Без сдачи",
+    "tool": "built-in image_gen",
+    "prompt": "Рисованная изометрическая миниатюра для настольной карты: старый серый пивной киоск 90-х, наклонный козырёк, пёстрая витрина. Осень: взрослый мужчина в кожаной куртке недоумённо рассматривает горсть леденцов на палочках, в другой руке бутылка пива; продавщица в окне. Естественные пропорции людей, небольшие головы, сдержанные лица с глазами, носом и ртом. Тонкий тушевой контур, матовая гуашь, плоская светотень, приглушённая серо-зелёная палитра. Вид спереди и справа, компактный островок плитки целиком с полями на белом фоне. Без карикатуры, 3D и текста; упаковки без букв.",
+    "edit_prompt": null,
+    "source": "buildings/pivnoy-laryok-07-bez-sdachi-v2-source.png",
+    "cutout": "buildings/pivnoy-laryok-07-bez-sdachi-v2.png",
+    "card": "cards/pivnoy-laryok-07-bez-sdachi-v2.png",
+    "background": "Plain white generated source; local edge-connected background removal.",
+    "references": [],
+    "orientation": "Use generated orientation without mirroring.",
+    "visual_style_references": [
+      "buildings/pivnoy-laryok.png",
+      "buildings/panelka-01-kover-v2.png"
+    ],
+    "local_processing": {
+      "background_regions": [
+        [
+          0.8,
+          0.0,
+          0.995,
+          0.0,
+          0.995,
+          0.6,
+          0.8,
+          0.6
+        ]
+      ]
+    }
+  },
+  {
+    "use_case": "illustration-story",
+    "title": "На минутку",
+    "tool": "built-in image_gen",
+    "prompt": "Рисованная изометрическая миниатюра тушью и матовой гуашью: серый ржавый киоск со сладостями и бутылками, рядом жёлтая маршрутка. Водитель у киоска покупает воду и показывает пальцем «минутку» пассажиру в двери машины; водительское сиденье пусто. Обычные взрослые пропорции, реалистичные сдержанные лица, приглушённые цвета. Компактный островок плитки на белом фоне, без букв и 3D.",
+    "edit_prompt": "Расширь белые поля справа: вся маршрутка должна полностью помещаться в кадре с запасом. Остальное сохрани.",
+    "source": "buildings/pivnoy-laryok-08-minutka-v2-source.png",
+    "cutout": "buildings/pivnoy-laryok-08-minutka-v2.png",
+    "card": "cards/pivnoy-laryok-08-minutka-v2.png",
+    "background": "Plain white generated source; local edge-connected background removal.",
+    "references": [],
+    "orientation": "Use generated orientation without mirroring.",
+    "visual_style_references": [
+      "buildings/pivnoy-laryok.png",
+      "buildings/panelka-01-kover-v2.png"
+    ],
+    "local_processing": {
+      "background_seeds": [
+        [
+          550,
+          320
+        ]
+      ]
+    }
+  },
+  {
+    "use_case": "illustration-story",
+    "title": "Рыбный инспектор",
+    "tool": "built-in image_gen",
+    "prompt": "Рисованная миниатюра тушью и гуашью: ржавый киоск, двое мужчин беседуют у полочки с бутылками, кот крадёт рыбу, рядом велосипед и осенние листья. Реалистичные люди и сдержанные лица. Серо-зелёная палитра, вид спереди и справа. Весь островок плитки на белом фоне, без букв, без 3D.",
+    "edit_prompt": null,
+    "source": "buildings/pivnoy-laryok-09-kot-v2-source.png",
+    "cutout": "buildings/pivnoy-laryok-09-kot-v2.png",
+    "card": "cards/pivnoy-laryok-09-kot-v2.png",
+    "background": "Plain white generated source; local edge-connected background removal.",
+    "references": [],
+    "orientation": "Use generated orientation without mirroring.",
+    "visual_style_references": [
+      "buildings/pivnoy-laryok.png",
+      "buildings/panelka-01-kover-v2.png"
+    ],
+    "local_processing": {
+      "background_regions": [
+        [
+          0.81,
+          0,
+          0.995,
+          0,
+          0.995,
+          0.65,
+          0.81,
+          0.65
+        ]
+      ],
+      "background_seeds": [
+        [
+          200,
+          370
+        ]
+      ]
+    }
+  },
+  {
+    "use_case": "illustration-story",
+    "title": "Последний покупатель",
+    "tool": "built-in image_gen",
+    "prompt": "Рисованная изометрическая миниатюра для настольной карты: старый серый пивной киоск 90-х, наклонный козырёк, пёстрая витрина. Новогодний вечер: мужчина держит под мышкой ёлку и забирает пакет у продавщицы в праздничном колпаке; снег, простая гирлянда, сумка с мандаринами. Естественные пропорции людей, небольшие головы, сдержанные лица с глазами, носом и ртом. Тонкий тушевой контур, матовая гуашь, плоская светотень, приглушённая серо-зелёная палитра. Вид спереди и справа, компактный островок плитки целиком с полями на белом фоне. Без карикатуры, 3D, плакатов и текста; упаковки без букв.",
+    "edit_prompt": null,
+    "source": "buildings/pivnoy-laryok-10-novyy-god-v2-source.png",
+    "cutout": "buildings/pivnoy-laryok-10-novyy-god-v2.png",
+    "card": "cards/pivnoy-laryok-10-novyy-god-v2.png",
+    "background": "Plain white generated source; local edge-connected background removal.",
+    "references": [],
+    "orientation": "Use generated orientation without mirroring.",
+    "visual_style_references": [
+      "buildings/pivnoy-laryok.png",
+      "buildings/panelka-01-kover-v2.png"
+    ],
+    "local_processing": {
+      "background_regions": [
+        [
+          0.035,
+          0.34,
+          0.29,
+          0.34,
+          0.29,
+          0.55,
+          0.035,
+          0.55
+        ]
+      ]
+    }
+  }
+]

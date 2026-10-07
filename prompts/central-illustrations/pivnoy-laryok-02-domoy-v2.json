@@ -1,0 +1,18 @@
+{
+  "use_case": "illustration-story",
+  "title": "По одной — и домой",
+  "tool": "built-in image_gen",
+  "prompt": "Рисованная изометрическая миниатюра для настольной карты: старый серый пивной киоск 90-х с наклонным козырьком и витринами. Двое обычных мужчин пьют пиво у ящика с рыбой, сумка с батоном, спящая собака. Реалистичные человеческие пропорции, небольшие головы, сдержанные лица. Тонкий тушевой контур, матовая гуашь, плоская светотень, приглушённая серо-зелёная палитра. Витрина в цветных упаковках без букв. Вид спереди и справа, компактный островок плитки, белый фон. Без карикатуры, 3D и текста.",
+  "edit_prompt": null,
+  "source": "buildings/pivnoy-laryok-02-domoy-v2-source.png",
+  "cutout": "buildings/pivnoy-laryok-02-domoy-v2.png",
+  "card": "cards/pivnoy-laryok-02-domoy-v2.png",
+  "background": "Plain white generated source; local edge-connected background removal.",
+  "references": [],
+  "orientation": "Use generated orientation without mirroring.",
+  "visual_style_references": [
+    "buildings/pivnoy-laryok.png",
+    "buildings/panelka-01-kover-v2.png"
+  ],
+  "local_processing": {}
+}

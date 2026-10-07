@@ -1,0 +1,18 @@
+{
+  "use_case": "illustration-story",
+  "title": "Большой футбол",
+  "tool": "built-in image_gen",
+  "prompt": "Рисованная изометрическая миниатюра для настольной карты: старый серый пивной киоск 90-х, наклонный козырёк, пёстрая витрина. Летний вечер: трое взрослых мужчин с пивом и продавщица смотрят маленький телевизор с футбольным полем над окном выдачи; один присел, другие наклонились. Естественные пропорции людей, небольшие головы, сдержанные лица с глазами, носом и ртом. Тонкий тушевой контур, матовая гуашь, плоская светотень, приглушённая серо-зелёная палитра. Вид спереди и справа, компактный островок плитки целиком с полями на белом фоне. Без карикатуры, 3D и текста; упаковки без букв.",
+  "edit_prompt": null,
+  "source": "buildings/pivnoy-laryok-05-futbol-v2-source.png",
+  "cutout": "buildings/pivnoy-laryok-05-futbol-v2.png",
+  "card": "cards/pivnoy-laryok-05-futbol-v2.png",
+  "background": "Plain white generated source; local edge-connected background removal.",
+  "references": [],
+  "orientation": "Use generated orientation without mirroring.",
+  "visual_style_references": [
+    "buildings/pivnoy-laryok.png",
+    "buildings/panelka-01-kover-v2.png"
+  ],
+  "local_processing": {}
+}

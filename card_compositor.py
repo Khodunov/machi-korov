@@ -70,6 +70,13 @@ DEFAULT_UI_FONT = Path("/usr/share/fonts/truetype/comfortaa/Comfortaa-Bold.ttf")
 SHADOW_COLOR = (48, 48, 48)
 SHADOW_OPACITY = 0.5
 SHADOW_OFFSET_FRAC = 0.012
+DEFAULT_COIN_CENTER = (0.169, 0.909)
+COIN_CENTERS_BY_TEMPLATE = {
+    "blue": (0.1689, 0.9095),
+    "green": (0.1694, 0.9085),
+    "purple": (0.1621, 0.8955),
+    "red": (0.1694, 0.9082),
+}
 
 
 def trim_transparent(im: Image.Image) -> Image.Image:
@@ -320,11 +327,14 @@ def composite(args: argparse.Namespace) -> None:
     canvas.alpha_composite(overlay, (paste_x, paste_y))
 
     if args.coin_number is not None:
+        default_coin_x, default_coin_y = COIN_CENTERS_BY_TEMPLATE.get(
+            args.template.stem.lower(), DEFAULT_COIN_CENTER
+        )
         draw_coin_number(
             canvas,
             args.coin_number,
-            x_frac=args.coin_x_frac,
-            y_frac=args.coin_y_frac,
+            x_frac=args.coin_x_frac if args.coin_x_frac is not None else default_coin_x,
+            y_frac=args.coin_y_frac if args.coin_y_frac is not None else default_coin_y,
             font_size_frac=args.coin_font_size_frac,
             font_path=args.coin_font,
         )
@@ -424,8 +434,8 @@ def parse_args() -> argparse.Namespace:
 
     # Coin number
     parser.add_argument("--coin-number", type=str, default=None)
-    parser.add_argument("--coin-x-frac", type=float, default=0.1594)
-    parser.add_argument("--coin-y-frac", type=float, default=0.8836)
+    parser.add_argument("--coin-x-frac", type=float, default=None, help="Override the template's coin center X.")
+    parser.add_argument("--coin-y-frac", type=float, default=None, help="Override the template's coin center Y.")
     parser.add_argument("--coin-font-size-frac", type=float, default=0.082)
     parser.add_argument("--coin-font", type=Path, default=DEFAULT_COIN_FONT, help="Font file for coin number.")
 

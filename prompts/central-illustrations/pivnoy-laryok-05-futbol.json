@@ -1,0 +1,16 @@
+{
+  "use_case": "illustration-story",
+  "title": "Большой футбол",
+  "tool": "built-in image_gen",
+  "prompt": "Мультяшная диорама для настольной карты: серый ржавый пивной ларёк как в первом референсе, стиль и лица как во втором. Летний вечер: три взрослых усатых мужичка с пивом теснятся у окна ларька, один присел, другой вытянул шею. Все вместе с продавщицей смотрят маленький пузатый телевизор с зелёным футбольным полем внутри. Витрина плотно заполнена цветными сладостями, сигаретами и янтарными бутылками. Крупные головы, видимые глаза, носы и рты, чистые контуры, мягкая рисованная фактура. Вид спереди и справа, компактный островок земли целиком с полями. Обычный белый фон, без текста и логотипов.",
+  "edit_prompt": null,
+  "source": "buildings/pivnoy-laryok-05-futbol-source.png",
+  "cutout": "buildings/pivnoy-laryok-05-futbol.png",
+  "card": "cards/pivnoy-laryok-05-futbol.png",
+  "background": "Plain white generated source; local edge-connected background removal.",
+  "references": [
+    "buildings/pivnoy-laryok.png",
+    "buildings/panelka-01-kover.png"
+  ],
+  "orientation": "Use generated orientation without mirroring."
+}

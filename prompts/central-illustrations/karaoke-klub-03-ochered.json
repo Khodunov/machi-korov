@@ -1,0 +1,29 @@
+{
+  "spec_version": "1.1",
+  "title": "Karaoke Club 03 — one song per table",
+  "purpose": "Transparent central illustration for a red Machi Koro-style Karaoke Club card variant.",
+  "generation_prompt": "Мультяшная миниатюра современного российского караоке: ведущий держит микрофон высоко между двумя столами и показывает очередь цветными кружками на планшете без текста. Слева лысый скуф просит ещё песню, справа три ярко накрашенные женщины требуют свой выход. Звукорежиссёр ждёт у пульта, сверху большой диско-шар. Стиль настольной игры, чистые контуры, плоские цвета, компактная сцена три четверти. Светлый белый фон, без текста и логотипов.",
+  "research_basis": [
+    "Many Russian karaoke halls use a shared rotation: one song from each table in queue order.",
+    "A host, sound engineer, and backing vocalist commonly mediate the main hall.",
+    "Sources: https://karaokeclub-golos.ru/pravila/ and https://shusha.ru/about/karaoke"
+  ],
+  "integration_context": {
+    "target_use": "Generate only the central illustration for the existing red card template.",
+    "background_requirement": "Native RGBA transparency outside the miniature; no checkerboard, scenery, or card furniture.",
+    "text_policy": "Absolute no-text rule. The host's clipboard must contain colored geometric tokens only, with no marks resembling writing.",
+    "orientation": "Front facade faces slightly right, left side visible, depth recedes toward image left."
+  },
+  "style_goal": {
+    "core": "Same polished cartoon board-game style as the approved Karaoke Club card.",
+    "palette": "Burgundy exterior, dark teal glass, warm amber, purple stage light, white microphone highlights."
+  },
+  "content": {
+    "subject": "A modern provincial karaoke hall where two tables comically dispute whose turn it is.",
+    "description": "A substantial two-story club with many ordinary windows. Through the main hall windows, a calm host in a bright jacket stands between two rival tables, holding the only wireless microphone high out of reach and pointing to a clipboard filled only with colored circles. At the left table, a stubborn bald man in a loosened tie insists on one more song; at the right, three heavily made-up women point toward the stage in theatrical outrage. A tiny sound engineer and backing vocalist wait patiently at their booth. Nobody fights; the scene is a comic frozen standoff. A large disco ball hangs above the host.",
+    "recognition_details": ["two rival tables", "host holding microphone out of reach", "geometric queue clipboard", "patient sound booth", "large disco ball"],
+    "miniature_base": "Compact wet paved forecourt with entrance steps and no ramp.",
+    "omit": ["physical violence", "written queue", "angry mob", "photorealism", "clipped content"]
+  },
+  "final_prompt_summary": "Use case: stylized-concept. Asset type: transparent central illustration for a Machi Koro-style card. Generate a substantial isolated two-story provincial Russian karaoke club in the same approved cartoon style and general architectural family as the existing Karaoke Club card: burgundy panels, gray pilasters, practical roof ventilation, normal small windows, recessed central entrance under a curved canopy, steps with short rails, NO ramp, and one microphone pictogram with no letters. Front faces slightly right, LEFT side visible, depth recedes left. Through the broadest central windows show a humorous shared-queue dispute in the main hall. A calm professional host in a bright jacket stands between two tables, holding the only wireless microphone high out of reach and pointing to a clipboard that contains only large colored circles and blank geometric tokens—absolutely no writing. At the left table a stocky bald middle-aged man with stubble and loosened tie pleads dramatically for one more song while friends restrain him affectionately by the shoulders. At the right table three heavily made-up adult women with teased hair and bright party clothes point theatrically toward the stage, insisting it is their turn. A tiny sound engineer and a patient backing vocalist wait at a control booth. Nobody fights; make it an affectionate frozen comic standoff. A large mirrored disco ball hangs prominently above the host, with purple/cyan/amber light dots. Chunky toy-like architecture and people, rounded expressive adult caricatures, crisp dark outlines, flat colors, simple cel shading, readable at card size. Native RGBA transparency outside the building and compact wet forecourt. No checkerboard, backdrop, sky, cars, card furniture, text, letters, numbers, queue marks, lyrics, signs, logos, labels, pseudo-writing, violence, identifiable people, photorealism, or clipping."
+}

@@ -1,0 +1,15 @@
+{
+  "use_case": "illustration-story",
+  "title": "Рыбный инспектор",
+  "tool": "built-in image_gen",
+  "prompt": "Одна мультяшная диорама в стиле референса: серый ржавый пивной ларёк, пёстрая витрина сладостей, сигарет и бутылок. Золотая осень: два взрослых усатых мужичка с пивом беседуют у боковой полочки киоска. Полосатый кот с бутылочного ящика тайком стаскивает за хвост их вяленую рыбину. Рядом велосипед и жёлтые листья. Крупные головы, выразительные глаза, носы и рты, мягкая рисованная фактура. Вид спереди и справа, компактный островок целиком с полями на обычном белом фоне. Без текста и логотипов.",
+  "edit_prompt": null,
+  "source": "buildings/pivnoy-laryok-09-kot-source.png",
+  "cutout": "buildings/pivnoy-laryok-09-kot.png",
+  "card": "cards/pivnoy-laryok-09-kot.png",
+  "background": "Plain white generated source; local edge-connected background removal.",
+  "references": [
+    "tmp/imagegen/pivnoy-laryok/style-reference.jpg"
+  ],
+  "orientation": "Use generated orientation without mirroring."
+}

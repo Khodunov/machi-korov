@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "panelka-01-kover",
+    "prompt": "Create a Machi Koro-style board-game illustration. Frosty winter daytime. A wide squat beige five-story Soviet prefab panel apartment block, small open balconies and visible panel seams. In its snowy front courtyard a grandmother in a headscarf raises a carpet beater to a large burgundy red carpet hanging over a metal inverted-U rail. Small puff of snow. Beside her a child with a toy shovel imitates her on a tiny rug on the snow. A sled and trodden path. Large simple geometric rug ornament. Main focus red carpet against white snow. Cute simplified miniature diorama on a small ground slab, chunky cartoon people, clean outlines, muted colors, soft simple painted shading. Three-quarter view from above showing front and right side. Entire scene visible, generous margin including above antennas. Plain white background. No external cast shadow, writing, logos or card frame. Outline pale objects clearly.",
+    "source": "buildings/panelka-01-kover-source.png",
+    "cutout": "buildings/panelka-01-kover.png",
+    "card": "cards/panelka-01-kover.png",
+    "generated_path": "/Users/egor/.codex/generated_images/01a09522-7217-7793-aec9-92fdabde1167/exec-69253aaf-72dd-4186-840a-14a653662554.png"
+  },
+  {
+    "slug": "panelka-02-lebedi",
+    "prompt": "Create a Machi Koro-style board-game illustration. May spring. Squat gray five-story prefab panel apartment block, faded green plinth and simple entrance canopy. A resident with a paintbrush repaints a white swan sculpted from an old tire; a second white tire swan rests in a blue tire pond. A real pigeon between them. Small paint bucket, first flowers and a short border of half-buried tires. Main focus two iconic white curved swan necks and bright blue tire pond. Cute simplified miniature diorama on a small ground slab, chunky cartoon people, clean outlines, muted colors, soft simple painted shading. Three-quarter view from above showing front and right side. Entire scene visible, generous margin including above antennas. Plain white background. No external cast shadow, writing, logos or card frame. Outline pale objects clearly.",
+    "source": "buildings/panelka-02-lebedi-source.png",
+    "cutout": "buildings/panelka-02-lebedi.png",
+    "card": "cards/panelka-02-lebedi.png",
+    "generated_path": "/Users/egor/.codex/generated_images/01a09522-7217-7793-aec9-92fdabde1167/exec-db52f7f0-a215-44df-a32d-65fec38cadc2.png"
+  },
+  {
+    "slug": "panelka-03-ogorod",
+    "prompt": "Create a Machi Koro-style board-game illustration. August late summer. Long low five-story prefab panel block with faded light green inserts and one brown wooden lower balcony. Immediately below windows two miniature vegetable beds, cucumber vines on supports, a small cold-frame greenhouse built from old window frames. A woman with a watering can tends the beds while a ginger cat sprawls in the sun on the best garden bed. Main focus lush cucumber greenery and glass greenhouse lid beside concrete facade. Cute simplified miniature diorama on a small ground slab, chunky cartoon people, clean outlines, muted colors, soft simple painted shading. Three-quarter view from above showing front and right side. Entire scene visible, generous margin including above antennas. Plain white background. No external cast shadow, writing, logos or card frame. Outline pale objects clearly.",
+    "source": "buildings/panelka-03-ogorod-source.png",
+    "cutout": "buildings/panelka-03-ogorod.png",
+    "card": "cards/panelka-03-ogorod.png",
+    "generated_path": "/Users/egor/.codex/generated_images/01a09522-7217-7793-aec9-92fdabde1167/exec-b8a9887d-0179-48fc-b603-97fbe9a12127.png"
+  },
+  {
+    "slug": "panelka-04-uteplenie",
+    "prompt": "Create a Machi Koro-style board-game illustration. October autumn. Compact nine-story prefab panel block with a patchwork facade of apartment-sized rectangular external insulation patches: peach, mint, cream, with exposed gray panel concrete between. Balconies glazed in mismatched ways. In the very simple courtyard a caretaker with a rake gathers golden leaves under one yellow birch; a cat sleeps in the neat leaf pile. Main focus the colorful patchwork insulation mosaic, only a few large clear facade patches. Cute simplified miniature diorama on a small ground slab, chunky cartoon people, clean outlines, muted colors, soft simple painted shading. Three-quarter view from above showing front and right side. Entire scene visible, generous margin including above antennas. Plain white background. No external cast shadow, writing, logos or card frame. Outline pale objects clearly.",
+    "source": "buildings/panelka-04-uteplenie-source.png",
+    "cutout": "buildings/panelka-04-uteplenie.png",
+    "card": "cards/panelka-04-uteplenie.png",
+    "generated_path": "/Users/egor/.codex/generated_images/01a09522-7217-7793-aec9-92fdabde1167/exec-c309f465-1a5d-48d1-9bcc-d34bba634db9.png"
+  },
+  {
+    "slug": "panelka-05-kosmodrom",
+    "prompt": "Create a Machi Koro-style board-game illustration. Early autumn. Ochre-gray nine-story prefab apartment block with deep vertical balcony stacks and a distinct stairwell strip. In front a recognizable old Soviet metal climbing rocket painted faded red and blue, some simple rusty areas, circular climbing rungs and pointed nose. A child in a bright jacket near the top. Beside it a chunky old metal playground toy car with a cat proudly sitting behind the wheel. Sparse autumn grass. Main focus the tall colorful playground rocket. Cute simplified miniature diorama on a small ground slab, chunky cartoon people, clean outlines, muted colors, soft simple painted shading. Three-quarter view from above showing front and right side. Entire scene visible, generous margin including above antennas. Plain white background. No external cast shadow, writing, logos or card frame. Outline pale objects clearly.",
+    "source": "buildings/panelka-05-kosmodrom-source.png",
+    "cutout": "buildings/panelka-05-kosmodrom.png",
+    "card": "cards/panelka-05-kosmodrom.png",
+    "generated_path": "/Users/egor/.codex/generated_images/01a09522-7217-7793-aec9-92fdabde1167/exec-9394914b-105f-4c7f-a809-e3fc4997f833.png"
+  }
+]

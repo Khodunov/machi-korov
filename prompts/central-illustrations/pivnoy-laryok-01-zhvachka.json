@@ -1,0 +1,13 @@
+{
+  "use_case": "illustration-story",
+  "title": "А вот ту жвачку!",
+  "tool": "built-in image_gen",
+  "prompt": "Новая сцена в точности в мультяшном стиле референса, тот же серый ларёк и пёстрая витрина. Поздняя весна. Мальчик с ранцем стоит на цыпочках и показывает на жвачку высоко в витрине, продавщица выглядывает из окошка; второй мальчик надувает розовый пузырь. Те же лица и округлые пропорции. Без телевизора. Компактная диорама целиком с полями на обычном белом фоне, без текста.",
+  "edit_prompt": "Два школьника с ранцами у серого ржавого киоска со сладостями: один тянется к жвачке на витрине, другой надувает розовый пузырь. Добрая продавщица в платке. Мультяшная диорама для настольной игры, выразительные детские лица, вид спереди и справа, белый фон, без текста.",
+  "source": "buildings/pivnoy-laryok-01-zhvachka-source.png",
+  "cutout": "buildings/pivnoy-laryok-01-zhvachka.png",
+  "card": "cards/pivnoy-laryok-01-zhvachka.png",
+  "background": "Plain white generated source; local edge-connected background removal.",
+  "references": [],
+  "orientation": "Use generated orientation without mirroring."
+}

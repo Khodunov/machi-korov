@@ -1,0 +1,145 @@
+[
+  {
+    "use_case": "illustration-story",
+    "title": "А вот ту жвачку!",
+    "tool": "built-in image_gen",
+    "prompt": "Новая сцена в точности в мультяшном стиле референса, тот же серый ларёк и пёстрая витрина. Поздняя весна. Мальчик с ранцем стоит на цыпочках и показывает на жвачку высоко в витрине, продавщица выглядывает из окошка; второй мальчик надувает розовый пузырь. Те же лица и округлые пропорции. Без телевизора. Компактная диорама целиком с полями на обычном белом фоне, без текста.",
+    "edit_prompt": "Два школьника с ранцами у серого ржавого киоска со сладостями: один тянется к жвачке на витрине, другой надувает розовый пузырь. Добрая продавщица в платке. Мультяшная диорама для настольной игры, выразительные детские лица, вид спереди и справа, белый фон, без текста.",
+    "source": "buildings/pivnoy-laryok-01-zhvachka-source.png",
+    "cutout": "buildings/pivnoy-laryok-01-zhvachka.png",
+    "card": "cards/pivnoy-laryok-01-zhvachka.png",
+    "background": "Plain white generated source; local edge-connected background removal.",
+    "references": [],
+    "orientation": "Use generated orientation without mirroring."
+  },
+  {
+    "use_case": "illustration-story",
+    "title": "По одной — и домой",
+    "tool": "built-in image_gen",
+    "prompt": "Новая сцена в точности в мультяшном стиле референса, тот же серый ларёк и пёстрая витрина. Летний вечер. Два взрослых усатых мужичка пьют пиво за перевёрнутым ящиком с рыбой на бумаге: один жестикулирует, другой держит сумку с батоном. Собака спит у ног. Те же лица и округлые пропорции. Без телевизора. Компактная диорама целиком с полями на обычном белом фоне, без текста.",
+    "edit_prompt": null,
+    "source": "buildings/pivnoy-laryok-02-domoy-source.png",
+    "cutout": "buildings/pivnoy-laryok-02-domoy.png",
+    "card": "cards/pivnoy-laryok-02-domoy.png",
+    "background": "Plain white generated source; local edge-connected background removal.",
+    "references": [
+      "tmp/imagegen/pivnoy-laryok/series-reference.jpg"
+    ],
+    "orientation": "Use generated orientation without mirroring."
+  },
+  {
+    "use_case": "illustration-story",
+    "title": "Под козырьком",
+    "tool": "built-in image_gen",
+    "prompt": "Та же мультяшная диорама и стиль лиц. Осенний дождь: под козырьком ларька тесно прячутся усатый мужчина, бабушка с тележкой и велосипедист. Рядом пустая маленькая остановка с протекающей крышей. Без телевизора и надписей. Целиком с полями на белом фоне.",
+    "edit_prompt": null,
+    "source": "buildings/pivnoy-laryok-03-kozyrek-source.png",
+    "cutout": "buildings/pivnoy-laryok-03-kozyrek.png",
+    "card": "cards/pivnoy-laryok-03-kozyrek.png",
+    "background": "Plain white generated source; local edge-connected background removal.",
+    "references": [
+      "tmp/imagegen/pivnoy-laryok/series-reference.jpg"
+    ],
+    "orientation": "Use generated orientation without mirroring."
+  },
+  {
+    "use_case": "illustration-story",
+    "title": "Тропа народная",
+    "tool": "built-in image_gen",
+    "prompt": "Новая иллюстрация для настольной карты. Референс 1 — серый ржавый ларёк и его архитектура, референс 2 — мультяшный стиль и лица. Снежная зима: ларёк с толстой снежной шапкой и инеем на витринах окружён сугробами. К тёплому окошку протоптана узкая дорожка, на которой осторожно расходятся два покупателя в огромных пуховиках с покупками в руках. Витрины с плотными рядами цветных упаковок сладостей, сигарет и янтарных бутылок. Милые большеголовые персонажи с глазами, носами и ртами, чистые контуры, мягкая рисованная фактура. Компактная диорама на островке земли, вид спереди и справа, целиком с полями, обычный белый фон. Без надписей и логотипов.",
+    "edit_prompt": "Мультяшная рисованная диорама: серый ржавый пивной киоск 90-х, широкий наклонный козырёк в снегу, пёстрая витрина сладостей и янтарных бутылок, тёплое окно с продавщицей в платке. Два взрослых усатых мужчины в огромных пуховиках с покупками осторожно расходятся на узкой тропинке между сугробами. Крупные головы, выразительные глаза, круглые носы, мягкая фактура настольной иллюстрации, приглушённые цвета. Вид спереди и справа, компактный снежный островок целиком с полями, белый фон, без текста и логотипов.",
+    "source": "buildings/pivnoy-laryok-04-tropa-source.png",
+    "cutout": "buildings/pivnoy-laryok-04-tropa.png",
+    "card": "cards/pivnoy-laryok-04-tropa.png",
+    "background": "Plain white generated source; local edge-connected background removal.",
+    "references": [],
+    "orientation": "Use generated orientation without mirroring."
+  },
+  {
+    "use_case": "illustration-story",
+    "title": "Большой футбол",
+    "tool": "built-in image_gen",
+    "prompt": "Мультяшная диорама для настольной карты: серый ржавый пивной ларёк как в первом референсе, стиль и лица как во втором. Летний вечер: три взрослых усатых мужичка с пивом теснятся у окна ларька, один присел, другой вытянул шею. Все вместе с продавщицей смотрят маленький пузатый телевизор с зелёным футбольным полем внутри. Витрина плотно заполнена цветными сладостями, сигаретами и янтарными бутылками. Крупные головы, видимые глаза, носы и рты, чистые контуры, мягкая рисованная фактура. Вид спереди и справа, компактный островок земли целиком с полями. Обычный белый фон, без текста и логотипов.",
+    "edit_prompt": null,
+    "source": "buildings/pivnoy-laryok-05-futbol-source.png",
+    "cutout": "buildings/pivnoy-laryok-05-futbol.png",
+    "card": "cards/pivnoy-laryok-05-futbol.png",
+    "background": "Plain white generated source; local edge-connected background removal.",
+    "references": [
+      "buildings/pivnoy-laryok.png",
+      "buildings/panelka-01-kover.png"
+    ],
+    "orientation": "Use generated orientation without mirroring."
+  },
+  {
+    "use_case": "illustration-story",
+    "title": "Островок торговли",
+    "tool": "built-in image_gen",
+    "prompt": "Мультяшная диорама: серый ржавый киоск 90-х с широким козырьком и витриной цветных сладостей и пива. Весна, лужа, остатки снега. Усатый мужчина в кепке балансирует на кирпичах и доске, продавщица в платке передаёт пакет; голубь на кирпиче. Милые крупные головы, выразительные глаза и круглые носы, мягкая рисованная фактура настольной игры. Вид спереди и справа, компактный островок целиком с полями, белый фон, без надписей.",
+    "edit_prompt": null,
+    "source": "buildings/pivnoy-laryok-06-ostrovok-source.png",
+    "cutout": "buildings/pivnoy-laryok-06-ostrovok.png",
+    "card": "cards/pivnoy-laryok-06-ostrovok.png",
+    "background": "Plain white generated source; local edge-connected background removal.",
+    "references": [],
+    "orientation": "Use generated orientation without mirroring."
+  },
+  {
+    "use_case": "illustration-story",
+    "title": "Без сдачи",
+    "tool": "built-in image_gen",
+    "prompt": "Мультяшная диорама настольной игры: серый ржавый киоск 90-х с широким наклонным козырьком и пёстрой витриной сладостей, сигарет и янтарного пива. Осень. Усатый работяга в кожаной куртке удивлённо смотрит на пять леденцов в одной руке, в другой бутылка пива; улыбающаяся продавщица в платке в окошке. Крупные головы, выразительные глаза, круглые носы, мягкая рисованная фактура, приглушённые цвета. Вид спереди и справа, компактный островок плитки целиком с полями на белом фоне, без надписей.",
+    "edit_prompt": null,
+    "source": "buildings/pivnoy-laryok-07-bez-sdachi-source.png",
+    "cutout": "buildings/pivnoy-laryok-07-bez-sdachi.png",
+    "card": "cards/pivnoy-laryok-07-bez-sdachi.png",
+    "background": "Plain white generated source; local edge-connected background removal.",
+    "references": [],
+    "orientation": "Use generated orientation without mirroring."
+  },
+  {
+    "use_case": "illustration-story",
+    "title": "На минутку",
+    "tool": "built-in image_gen",
+    "prompt": "Одна мультяшная диорама в стиле референса: серый ржавый пивной ларёк, пёстрая витрина сладостей, сигарет и бутылок. Жаркое лето: водитель покупает минералку и считает монеты у окна. Рядом жёлтая маршрутка с недовольным пассажиром в открытой двери, водитель показывает ему один палец: подожди. Крупные головы, выразительные глаза, носы и рты, мягкая рисованная фактура. Вид спереди и справа, компактный островок целиком с полями на обычном белом фоне. Без текста и логотипов.",
+    "edit_prompt": "Исправь только сюжет: убери мужчину за рулём, оставь водительское сиденье пустым. Мужчина у киоска держит минералку одной рукой, другой показывает ожидающему пассажиру один поднятый указательный палец. Остальное сохрани. Белый фон.",
+    "source": "buildings/pivnoy-laryok-08-minutka-source.png",
+    "cutout": "buildings/pivnoy-laryok-08-minutka.png",
+    "card": "cards/pivnoy-laryok-08-minutka.png",
+    "background": "Plain white generated source; local edge-connected background removal.",
+    "references": [
+      "tmp/imagegen/pivnoy-laryok/style-reference.jpg"
+    ],
+    "orientation": "Use generated orientation without mirroring."
+  },
+  {
+    "use_case": "illustration-story",
+    "title": "Рыбный инспектор",
+    "tool": "built-in image_gen",
+    "prompt": "Одна мультяшная диорама в стиле референса: серый ржавый пивной ларёк, пёстрая витрина сладостей, сигарет и бутылок. Золотая осень: два взрослых усатых мужичка с пивом беседуют у боковой полочки киоска. Полосатый кот с бутылочного ящика тайком стаскивает за хвост их вяленую рыбину. Рядом велосипед и жёлтые листья. Крупные головы, выразительные глаза, носы и рты, мягкая рисованная фактура. Вид спереди и справа, компактный островок целиком с полями на обычном белом фоне. Без текста и логотипов.",
+    "edit_prompt": null,
+    "source": "buildings/pivnoy-laryok-09-kot-source.png",
+    "cutout": "buildings/pivnoy-laryok-09-kot.png",
+    "card": "cards/pivnoy-laryok-09-kot.png",
+    "background": "Plain white generated source; local edge-connected background removal.",
+    "references": [
+      "tmp/imagegen/pivnoy-laryok/style-reference.jpg"
+    ],
+    "orientation": "Use generated orientation without mirroring."
+  },
+  {
+    "use_case": "illustration-story",
+    "title": "Последний покупатель",
+    "tool": "built-in image_gen",
+    "prompt": "Одна мультяшная диорама в стиле референса: серый ржавый пивной ларёк, пёстрая витрина сладостей, сигарет и бутылок. Новогодний снежный вечер: на ларьке кривая гирлянда и маленькая ёлка за витриной. Продавщица в красном новогоднем колпаке передаёт пакет взрослому усатому мужчине с большой ёлкой под мышкой. Ветви мешают добраться до окна, на снегу сумка с мандаринами. Крупные головы, выразительные глаза, носы и рты, мягкая рисованная фактура. Вид спереди и справа, компактный островок целиком с полями на обычном белом фоне. Без текста и логотипов.",
+    "edit_prompt": null,
+    "source": "buildings/pivnoy-laryok-10-novyy-god-source.png",
+    "cutout": "buildings/pivnoy-laryok-10-novyy-god.png",
+    "card": "cards/pivnoy-laryok-10-novyy-god.png",
+    "background": "Plain white generated source; local edge-connected background removal.",
+    "references": [
+      "tmp/imagegen/pivnoy-laryok/style-reference.jpg"
+    ],
+    "orientation": "Use generated orientation without mirroring."
+  }
+]

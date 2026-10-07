@@ -1,0 +1,15 @@
+{
+  "use_case": "illustration-story",
+  "title": "Под козырьком",
+  "tool": "built-in image_gen",
+  "prompt": "Та же мультяшная диорама и стиль лиц. Осенний дождь: под козырьком ларька тесно прячутся усатый мужчина, бабушка с тележкой и велосипедист. Рядом пустая маленькая остановка с протекающей крышей. Без телевизора и надписей. Целиком с полями на белом фоне.",
+  "edit_prompt": null,
+  "source": "buildings/pivnoy-laryok-03-kozyrek-source.png",
+  "cutout": "buildings/pivnoy-laryok-03-kozyrek.png",
+  "card": "cards/pivnoy-laryok-03-kozyrek.png",
+  "background": "Plain white generated source; local edge-connected background removal.",
+  "references": [
+    "tmp/imagegen/pivnoy-laryok/series-reference.jpg"
+  ],
+  "orientation": "Use generated orientation without mirroring."
+}

@@ -3,20 +3,20 @@ set -euo pipefail
 caption=$(.venv/bin/python -c 'import json; print(next(c for c in json.load(open("cards-config.json"))["cards"] if c["slug"] == "autoservice")["caption"])')
 
 .venv/bin/python skills/generate-card/scripts/card_compositor.py \
-  --template backgrounds/green.png \
+  --template backgrounds/blue.png \
   --overlay buildings/autoservice-03-pervyy-sneg.png \
-  --title-icon icons/factory-green.png \
+  --title-icon icons/soviet-car.png \
   --shadow \
   --output cards/autoservice-03-pervyy-sneg.png \
   --x-frac 0.50 \
   --y-frac 0.51 \
   --scale 0.72 \
-  --coin-number 5 \
-  --activation-number '7' \
+  --coin-number 2 \
+  --activation-number '8' \
   --title 'Автосервис' \
-  --title-color '#17361A' \
-  --bottom-text $'Получите по 3 монеты\nза каждый свой гараж.\nВ свой ход.' \
-  --bottom-text-y-frac 0.815 \
+  --title-color '#123E70' \
+  --bottom-text $'Сет из вендингового автомата,\nавтомойки и автосервиса.\n1 сет приносит 2.\n2 сета приносит 3' \
+  --bottom-text-y-frac 0.84 \
   --bottom-text-spacing-px 6 \
   --title-font fonts/Boingster-Regular.ttf \
   --title-font-size-frac 0.078 \
@@ -28,4 +28,4 @@ caption=$(.venv/bin/python -c 'import json; print(next(c for c in json.load(open
   --activation-font fonts/CCUltimatum-Bold.ttf \
   --activation-font-size-frac 0.118 \
   --coin-font fonts/Boingster-Regular.ttf \
-  --caption "$caption" --caption-font fonts/Boingster-Regular.ttf --caption-font-size-frac 0.026 --caption-x-frac 0.58 --caption-y-frac 0.935 --caption-color "#D8E5C8"
+  --caption "$caption" --caption-font fonts/Boingster-Regular.ttf --caption-font-size-frac 0.026 --caption-x-frac 0.58 --caption-y-frac 0.935 --caption-color "#D9E8F3"

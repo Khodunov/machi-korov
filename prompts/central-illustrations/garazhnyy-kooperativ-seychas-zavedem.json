@@ -1,0 +1,9 @@
+{
+  "title": "garazhnyy-kooperativ-seychas-zavedem",
+  "tool": "built-in image_gen",
+  "reference": "buildings/garazhnyy-kooperativ.png",
+  "final_prompt_summary": "Новая рисованная миниатюра в стиле референса: два шлакоблочных гаража с зелёными воротами, старый Москвич с открытым капотом. Из-под машины торчат ноги механика, второй мужчина смотрит в мотор. Третий сидит в снятом автомобильном кресле у мангала и обмахивает шашлык снятой крыльчаткой вентилятора. Лишняя деталь на табуретке. Уютный гаражный юмор, компактная диорама на основании, вид сверху в три четверти, приглушённые цвета и чёткие формы. Обычный белый фон с полями, без текста.",
+  "postprocessing": "Local edge-connected light background removal",
+  "source": "buildings/garazhnyy-kooperativ-seychas-zavedem-source.png",
+  "output": "buildings/garazhnyy-kooperativ-seychas-zavedem.png"
+}

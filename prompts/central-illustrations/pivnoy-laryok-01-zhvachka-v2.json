@@ -1,0 +1,31 @@
+{
+  "use_case": "illustration-story",
+  "title": "А вот ту жвачку!",
+  "tool": "built-in image_gen",
+  "prompt": "Рисованная изометрическая миниатюра для настольной карты: старый серый киоск 90-х, наклонный козырёк, пёстрая витрина. Весна: школьник с ранцем на цыпочках выбирает жвачку, другой надувает небольшой розовый пузырь, продавщица у окна. Естественные пропорции людей, небольшие головы, сдержанные лица с глазами, носом и ртом. Тонкий тушевой контур, матовая гуашь, плоская светотень, приглушённая серо-зелёная палитра. Вид спереди и справа, компактный островок плитки целиком с полями на белом фоне. Без карикатуры, 3D и текста; упаковки без букв.",
+  "edit_prompt": null,
+  "source": "buildings/pivnoy-laryok-01-zhvachka-v2-source.png",
+  "cutout": "buildings/pivnoy-laryok-01-zhvachka-v2.png",
+  "card": "cards/pivnoy-laryok-01-zhvachka-v2.png",
+  "background": "Plain white generated source; local edge-connected background removal.",
+  "references": [],
+  "orientation": "Use generated orientation without mirroring.",
+  "visual_style_references": [
+    "buildings/pivnoy-laryok.png",
+    "buildings/panelka-01-kover-v2.png"
+  ],
+  "local_processing": {
+    "background_regions": [
+      [
+        0.83,
+        0.15,
+        0.995,
+        0.15,
+        0.995,
+        0.67,
+        0.83,
+        0.67
+      ]
+    ]
+  }
+}

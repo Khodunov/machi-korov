@@ -47,6 +47,11 @@ pip install -r requirements.txt
 
 ## Creating a card with the skill
 
+The approved standard for new cards is **1024 × 1536 pixels (2:3)**. Use the
+current blue, green, purple, and red templates in `backgrounds/`; the compositor
+preserves their dimensions in the final PNG. This format replaces the previous
+1100 × 1430 format (approved on 2026-10-07).
+
 Invoke the repository skill in Codex:
 
 ```text

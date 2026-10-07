@@ -1,0 +1,8 @@
+{
+  "status": "partial",
+  "completed_cards": 9,
+  "pending": "panelka-06-balkony",
+  "reason": "Repeated built-in generation and edit network errors, including minimal white-background prompts.",
+  "workflow": "built-in generation on white, local background removal",
+  "api_used": false
+}

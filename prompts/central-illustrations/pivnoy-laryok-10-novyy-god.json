@@ -1,0 +1,15 @@
+{
+  "use_case": "illustration-story",
+  "title": "Последний покупатель",
+  "tool": "built-in image_gen",
+  "prompt": "Одна мультяшная диорама в стиле референса: серый ржавый пивной ларёк, пёстрая витрина сладостей, сигарет и бутылок. Новогодний снежный вечер: на ларьке кривая гирлянда и маленькая ёлка за витриной. Продавщица в красном новогоднем колпаке передаёт пакет взрослому усатому мужчине с большой ёлкой под мышкой. Ветви мешают добраться до окна, на снегу сумка с мандаринами. Крупные головы, выразительные глаза, носы и рты, мягкая рисованная фактура. Вид спереди и справа, компактный островок целиком с полями на обычном белом фоне. Без текста и логотипов.",
+  "edit_prompt": null,
+  "source": "buildings/pivnoy-laryok-10-novyy-god-source.png",
+  "cutout": "buildings/pivnoy-laryok-10-novyy-god.png",
+  "card": "cards/pivnoy-laryok-10-novyy-god.png",
+  "background": "Plain white generated source; local edge-connected background removal.",
+  "references": [
+    "tmp/imagegen/pivnoy-laryok/style-reference.jpg"
+  ],
+  "orientation": "Use generated orientation without mirroring."
+}

@@ -1,0 +1,13 @@
+{
+  "use_case": "illustration-story",
+  "title": "Без сдачи",
+  "tool": "built-in image_gen",
+  "prompt": "Мультяшная диорама настольной игры: серый ржавый киоск 90-х с широким наклонным козырьком и пёстрой витриной сладостей, сигарет и янтарного пива. Осень. Усатый работяга в кожаной куртке удивлённо смотрит на пять леденцов в одной руке, в другой бутылка пива; улыбающаяся продавщица в платке в окошке. Крупные головы, выразительные глаза, круглые носы, мягкая рисованная фактура, приглушённые цвета. Вид спереди и справа, компактный островок плитки целиком с полями на белом фоне, без надписей.",
+  "edit_prompt": null,
+  "source": "buildings/pivnoy-laryok-07-bez-sdachi-source.png",
+  "cutout": "buildings/pivnoy-laryok-07-bez-sdachi.png",
+  "card": "cards/pivnoy-laryok-07-bez-sdachi.png",
+  "background": "Plain white generated source; local edge-connected background removal.",
+  "references": [],
+  "orientation": "Use generated orientation without mirroring."
+}

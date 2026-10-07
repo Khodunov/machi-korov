@@ -1,0 +1,13 @@
+{
+  "use_case": "illustration-story",
+  "title": "Островок торговли",
+  "tool": "built-in image_gen",
+  "prompt": "Мультяшная диорама: серый ржавый киоск 90-х с широким козырьком и витриной цветных сладостей и пива. Весна, лужа, остатки снега. Усатый мужчина в кепке балансирует на кирпичах и доске, продавщица в платке передаёт пакет; голубь на кирпиче. Милые крупные головы, выразительные глаза и круглые носы, мягкая рисованная фактура настольной игры. Вид спереди и справа, компактный островок целиком с полями, белый фон, без надписей.",
+  "edit_prompt": null,
+  "source": "buildings/pivnoy-laryok-06-ostrovok-source.png",
+  "cutout": "buildings/pivnoy-laryok-06-ostrovok.png",
+  "card": "cards/pivnoy-laryok-06-ostrovok.png",
+  "background": "Plain white generated source; local edge-connected background removal.",
+  "references": [],
+  "orientation": "Use generated orientation without mirroring."
+}

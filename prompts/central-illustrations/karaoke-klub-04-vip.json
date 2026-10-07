@@ -1,0 +1,28 @@
+{
+  "spec_version": "1.1",
+  "title": "Karaoke Club 04 — VIP rooms",
+  "purpose": "Transparent central illustration for a red Machi Koro-style Karaoke Club card variant.",
+  "generation_prompt": "Мультяшная миниатюра российского караоке с тремя VIP-комнатами: девичник с боа и микрофонами; застенчивый именинник в бумажной короне, которому помогает бэк-вокалистка; три серьёзных бизнесмена поют обнявшись. Между комнатами официанты с подносами, в центре большой диско-шар. Стиль настольной игры, округлые персонажи, чистые контуры, плоские цвета, компактная композиция три четверти. Светлый белый фон, без текста и логотипов.",
+  "research_basis": [
+    "Modern Russian karaoke venues often combine a common hall with private VIP rooms, food service, and professional backing vocals.",
+    "Sources: https://solokaraoke.ru/ and https://grammy-s.ru/"
+  ],
+  "integration_context": {
+    "target_use": "Generate only the central illustration for the existing red card template.",
+    "background_requirement": "Native RGBA transparency outside the miniature; no checkerboard, scenery, or card furniture.",
+    "text_policy": "Absolute no-text rule: no room numbers, menus, signs, screen lyrics, logos, labels, or pseudo-writing.",
+    "orientation": "Front facade faces slightly right, left side visible, depth recedes toward image left."
+  },
+  "style_goal": {
+    "core": "Same polished cartoon board-game style as the approved Karaoke Club card.",
+    "palette": "Dark burgundy, smoked glass, fake gold, violet, cyan, warm table lamps."
+  },
+  "content": {
+    "subject": "A multi-room modern karaoke club with three very different VIP parties visible through small windows.",
+    "description": "A two-story club with separate bay-like room windows. One room contains an exuberant bachelorette party with bright makeup, feather boas, and a woman singing from a sofa arm. Another holds a shy birthday man in a paper crown while a glamorous professional backing vocalist leans in and carries the duet as he whispers into his microphone. A third room contains three serious businessmen singing an unexpectedly sentimental trio with arms around shoulders. Waiters squeeze between rooms carrying trays. A large central disco ball visually unites the windows.",
+    "recognition_details": ["separate VIP rooms", "bachelorette party", "backing vocalist rescuing shy singer", "sentimental businessmen trio", "central disco ball"],
+    "miniature_base": "Compact dark paved forecourt with velvet-rope posts but no writing and no ramp.",
+    "omit": ["room numbers", "luxury brand logos", "sexualization", "photorealism", "clipped content"]
+  },
+  "final_prompt_summary": "Use case: stylized-concept. Asset type: transparent central illustration for a Machi Koro-style card. Generate an isolated substantial two-story modern provincial Russian karaoke club with several private VIP rooms, in the same approved cartoon visual language as the existing Karaoke Club card. Use dark burgundy facade panels, gray structural bands, smoked glass, modest fake-gold accents, practical roof equipment, recessed entrance with curved canopy, steps and NO ramp, and a simple microphone pictogram with no letters. Front faces slightly right, LEFT side visible, depth recedes left. Through separate normal-size bay-like windows show three distinct rooms. Room one: an exuberant adult bachelorette party with heavy bright makeup, slightly smudged mascara, feather boas, colorful non-explicit party dresses, one woman singing from the arm of a sofa while friends wave microphones. Room two: a shy stocky birthday man in a plain paper crown whispers into a microphone while a glamorous professional adult backing vocalist leans in and heroically carries the duet; friends applaud. Room three: three serious middle-aged businessmen in loosened ties sing an unexpectedly sentimental trio with arms around shoulders. Cartoon waiters squeeze between rooms carrying unlabelled trays. One large mirrored disco ball hangs centrally and throws violet/cyan/amber dots across all rooms. Fake-leather sofas, cheap glamour, small lamps, microphones, and blank abstract screens. Chunky toy-like forms, rounded expressive adult caricatures, crisp outlines, flat colors, simple cel shading. Native RGBA transparency outside the building and compact forecourt with a few plain rope posts. No checkerboard, backdrop, sky, cars, card furniture, text, letters, numbers, room labels, menus, lyrics, signs, logos, pseudo-writing, nudity, sexualization, identifiable people, photorealism, or clipping."
+}

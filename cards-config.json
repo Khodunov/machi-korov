@@ -124,11 +124,11 @@
       "show_caption": true
     },
     {
-      "slug": "autoservice",
-      "title": "Автосервис",
+      "slug": "avtorynok",
+      "title": "Авторынок",
       "source_card": "Сыроварня",
       "set": "base",
-      "caption": "Никогда такого не было и вот опять зима",
+      "caption": "",
       "category": "green",
       "activation": "7",
       "cost": 5,
@@ -142,6 +142,25 @@
           "eksport-v-kitay"
         ],
         "status": "generated"
+      },
+      "art_variants": [],
+      "art_status": "pending",
+      "show_caption": false
+    },
+    {
+      "slug": "autoservice",
+      "title": "Автосервис",
+      "set": "expansion",
+      "caption": "Никогда такого не было и вот опять зима",
+      "category": "blue",
+      "activation": "8",
+      "cost": 2,
+      "copies": 6,
+      "rules_text": "Сет из вендингового автомата,\nавтомойки и автосервиса.\n1 сет приносит 2.\n2 сета приносит 3",
+      "rules_status": "approved",
+      "symbol": {
+        "name": "Автомобиль",
+        "asset": "icons/soviet-car.png"
       },
       "art_variants": [
         "autoservice",
@@ -358,7 +377,7 @@
         "name": "Фабрика",
         "asset": "icons/factory-green.png",
         "shared_with": [
-          "autoservice"
+          "avtorynok"
         ],
         "status": "generated"
       },

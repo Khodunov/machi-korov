@@ -1,0 +1,29 @@
+{
+  "spec_version": "1.1",
+  "title": "Karaoke Club 05 — corporate party",
+  "purpose": "Transparent central illustration for a red Machi Koro-style Karaoke Club card variant.",
+  "generation_prompt": "Мультяшная миниатюра российского корпоратива в караоке: пузатый начальник в бумажной короне героически поёт на сцене, коллеги одновременно аплодируют и прикрывают уши, две бэк-вокалистки спасают припев, уставший звукорежиссёр бросается к пульту. Большой диско-шар и конфетти. Стиль настольной игры, округлые персонажи, чистые контуры, плоские цвета, компактная композиция три четверти. Светлый белый фон, без текста и логотипов.",
+  "research_basis": [
+    "Contemporary karaoke venues use stages, professional sound, concert lighting, hosts, sound engineers, and backing vocalists.",
+    "Karaoke is a common format for birthdays and corporate events.",
+    "Sources: https://grammy-s.ru/ and https://www.restoclub.ru/uploads/menufile/2/e/1/d/2e1d3c4a18db544b504d5270fa69d6e3.pdf"
+  ],
+  "integration_context": {
+    "target_use": "Generate only the central illustration for the existing red card template.",
+    "background_requirement": "Native RGBA transparency outside the miniature; no checkerboard, scenery, or card furniture.",
+    "text_policy": "Absolute no-text rule: no company branding, banners, name tags, screen lyrics, signs, logos, labels, or pseudo-writing.",
+    "orientation": "Front facade faces slightly right, left side visible, depth recedes toward image left."
+  },
+  "style_goal": {
+    "core": "Same polished cartoon board-game style as the approved Karaoke Club card.",
+    "palette": "Burgundy and charcoal exterior, cold blue control booth, magenta stage, amber tables."
+  },
+  "content": {
+    "subject": "A corporate karaoke party where the boss performs heroically and the sound engineer saves everyone.",
+    "description": "A substantial two-story club with a main stage visible through central windows. A portly middle-aged boss in an open-collar shirt and crooked plain paper crown stands in a power pose on stage, singing far too passionately into a microphone. Coworkers at banquet tables simultaneously cheer, record with blank-screen phones, and discreetly cover one ear. In a side control booth, a small exhausted sound engineer lunges across a mixing console to lower a huge feedback meter, while two glamorous backing vocalists smile professionally and support the chorus. A disco ball hangs above the boss; confetti has just started, with no text or branding.",
+    "recognition_details": ["boss in paper crown on stage", "mixed coworker reactions", "heroic sound engineer at console", "professional backing vocalists", "large disco ball and confetti"],
+    "miniature_base": "Compact wet paved forecourt with entrance steps, no ramp.",
+    "omit": ["company logos", "readable phones", "humiliation", "photorealism", "clipped content"]
+  },
+  "final_prompt_summary": "Use case: stylized-concept. Asset type: transparent central illustration for a Machi Koro-style card. Generate an isolated substantial two-story provincial Russian karaoke club in the same approved cartoon architectural and character style as the existing Karaoke Club card: burgundy and charcoal facade, gray pilasters, practical ventilation, rows of normal windows, recessed entrance under a curved canopy, entrance steps and NO ramp, simple microphone pictogram with no letters. Front faces slightly right, LEFT side visible, depth recedes left. Through central main-hall windows show a corporate karaoke climax. A portly pale Slavic middle-aged boss in an open-collar shirt and crooked plain paper crown stands in a heroic power pose on a small stage, singing far too passionately into a microphone. Coworkers at banquet tables show mixed affectionate reactions: some cheer with raised hands, some hold phones whose screens are blank color rectangles, two discreetly cover one ear while smiling. In a side control-booth window, a small exhausted sound engineer lunges dramatically across a mixing console to turn down a large abstract feedback meter made only of colored bars. Two glamorous adult backing vocalists in tasteful stage outfits smile professionally and carry the chorus. A large mirrored disco ball hangs above the boss; geometric confetti has just begun to fall. Add microphones, speakers, simple stage lights, unlabelled glasses and plates, and blank abstract screens. Same chunky toy-like board-game rendering, rounded expressive adult caricatures, crisp dark outlines, flat colors, simple cel shading, burgundy/charcoal exterior with cold blue booth, magenta stage, and amber tables. Native RGBA transparency outside the building and compact wet forecourt. No checkerboard, backdrop, sky, cars, card furniture, text, letters, numbers, company branding, banners, name tags, screen lyrics, logos, labels, pseudo-writing, humiliation, identifiable people, photorealism, or clipping."
+}

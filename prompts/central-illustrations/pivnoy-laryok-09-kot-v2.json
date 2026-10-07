@@ -1,0 +1,37 @@
+{
+  "use_case": "illustration-story",
+  "title": "Рыбный инспектор",
+  "tool": "built-in image_gen",
+  "prompt": "Рисованная миниатюра тушью и гуашью: ржавый киоск, двое мужчин беседуют у полочки с бутылками, кот крадёт рыбу, рядом велосипед и осенние листья. Реалистичные люди и сдержанные лица. Серо-зелёная палитра, вид спереди и справа. Весь островок плитки на белом фоне, без букв, без 3D.",
+  "edit_prompt": null,
+  "source": "buildings/pivnoy-laryok-09-kot-v2-source.png",
+  "cutout": "buildings/pivnoy-laryok-09-kot-v2.png",
+  "card": "cards/pivnoy-laryok-09-kot-v2.png",
+  "background": "Plain white generated source; local edge-connected background removal.",
+  "references": [],
+  "orientation": "Use generated orientation without mirroring.",
+  "visual_style_references": [
+    "buildings/pivnoy-laryok.png",
+    "buildings/panelka-01-kover-v2.png"
+  ],
+  "local_processing": {
+    "background_regions": [
+      [
+        0.81,
+        0,
+        0.995,
+        0,
+        0.995,
+        0.65,
+        0.81,
+        0.65
+      ]
+    ],
+    "background_seeds": [
+      [
+        200,
+        370
+      ]
+    ]
+  }
+}

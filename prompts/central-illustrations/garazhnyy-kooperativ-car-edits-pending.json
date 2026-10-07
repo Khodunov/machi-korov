@@ -1,0 +1,13 @@
+{
+  "status": "pending",
+  "tool": "built-in image_gen",
+  "volga_prompt": "Replace only the car with a gray GAZ-24 Volga sedan, round headlights and chrome grille. Keep everything else unchanged. White background, no text.",
+  "zaz_prompt": "Замени машину на жёлтый Запорожец ЗАЗ-968М. Всё остальное сохрани. Белый фон.",
+  "zaz_correction": "Исправь только машину: убери заднюю боковую дверь и её ручку, оставь одну длинную переднюю дверь на видимом боку двухдверного Запорожца. Удали надпись с передней панели. Всё остальное сохрани.",
+  "zaz_draft": "buildings/garazhnyy-kooperativ-rakushka-zaz-draft-source.png",
+  "known_issues": [
+    "ZAZ draft has an extra rear side door and incidental lettering; correction required",
+    "Volga edit requests failed with network errors"
+  ],
+  "postprocessing": "Local edge-connected white-background removal applied to separate draft PNG"
+}

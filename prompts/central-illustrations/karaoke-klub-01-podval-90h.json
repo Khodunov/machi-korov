@@ -1,0 +1,35 @@
+{
+  "spec_version": "1.1",
+  "title": "Karaoke Club 01 — 1990s basement",
+  "purpose": "Transparent central illustration for a red Machi Koro-style Karaoke Club card variant.",
+  "generation_prompt": "Мультяшная миниатюра российского караоке в подвале 1990-х: лестница вниз, ЭЛТ-телевизор, проводные микрофоны, спутанные кабели, поющие скуфы, диско-шар. Стиль настольной игры, чистые контуры, плоские цвета, вид три четверти. Светлый белый фон, без текста.",
+  "research_basis": [
+    "Specialized Russian karaoke venues appeared in the mid-1990s, including basement locations.",
+    "Early systems used laser discs, wired microphones, CRT displays, and small song selections.",
+    "Sources: https://www.kommersant.ru/doc/660808 and https://www.kommersant.ru/doc/825705"
+  ],
+  "integration_context": {
+    "target_use": "Generate only the central illustration; it will be composited onto the existing red card template.",
+    "background_requirement": "Native RGBA transparency with alpha=0 outside the miniature and its integral base; no checkerboard, sky, scenery, glow, card furniture, or backdrop.",
+    "text_policy": "Absolute no-text rule: no letters, numbers, words, song codes, labels, signage, logos, screen lyrics, graffiti, or pseudo-writing anywhere. Use only a microphone pictogram above the entrance.",
+    "orientation": "Front facade faces slightly right, the building's left side is visible, and depth recedes toward image left."
+  },
+  "style_goal": {
+    "core": "Same polished cartoon board-game language as the approved Karaoke Club card: chunky toy-like forms, rounded expressive adult caricatures, crisp dark outlines, clean flat colors, simple cel shading, low-to-moderate detail.",
+    "palette": "Cold concrete gray, faded burgundy, nicotine beige, dim amber, electric violet and cyan accents."
+  },
+  "content": {
+    "subject": "A shabby late-1990s karaoke club in the basement of a provincial apartment block.",
+    "description": "A compact cutaway-like building miniature showing a worn concrete ground floor and a below-grade basement entrance reached by steep steps under a rusty canopy. Narrow basement windows and an open stairwell reveal a cramped low-ceilinged karaoke room: patterned wallpaper, plastic chairs, cheap tables, one bulky CRT television, a large disc player, several long wired microphones, mismatched speakers, and a tiny mirrored disco ball. A stocky tracksuit-clad man sings with eyes closed while two friends solemnly join in; another squats under the table untangling an absurd nest of microphone cables; a patient woman holds a thick song catalogue with completely blank pages. The visual joke is early karaoke technology barely functioning but everyone singing with full conviction.",
+    "recognition_details": [
+      "below-grade entrance and small basement windows",
+      "bulky CRT television with abstract colored bars only",
+      "wired microphones and comic cable tangle",
+      "thick blank song catalogue",
+      "small mandatory mirrored disco ball"
+    ],
+    "miniature_base": "A compact cracked-concrete slab with basement steps and a short metal railing, isolated on transparency.",
+    "omit": ["full apartment tower", "readable screens", "modern flat panels", "photorealism", "clipped content"]
+  },
+  "final_prompt_summary": "Use case: stylized-concept. Asset type: transparent central illustration for a Machi Koro-style card. Generate a compact isolated miniature of a shabby late-1990s provincial Russian karaoke club in the basement of a worn concrete apartment building. Show only the lower building section in a three-quarter view: front faces slightly right, LEFT side visible, depth recedes left. A rusty canopy covers steep steps descending below grade. Narrow basement windows and a playful partial interior view reveal low ceilings, faded patterned wallpaper, plastic chairs, cheap tables, a bulky CRT TV with abstract color shapes only, a large laser-disc/DVD-style player with no marks, mismatched speakers, several long wired microphones, and one small mirrored disco ball. A stocky pale Slavic middle-aged man in a dark tracksuit sings with eyes closed; two friends solemnly sing along; another man crouches under a table untangling a comic nest of microphone cables; a patient woman holds a thick song catalogue whose pages are completely blank. Same cartoon style as the approved Karaoke Club card: chunky toy-like geometry, rounded expressive adult caricatures, crisp dark outlines, clean flat colors, simple cel shading, muted concrete/burgundy/beige palette with violet and cyan club accents. Native RGBA transparency outside the building and integral cracked-concrete base. No checkerboard, backdrop, sky, street, cars, full card, title, coin, text, letters, numbers, song codes, screen lyrics, signs, logos, labels, pseudo-writing, identifiable performers, photorealism, or clipped content."
+}

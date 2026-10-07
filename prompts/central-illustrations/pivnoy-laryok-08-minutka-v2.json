@@ -1,0 +1,25 @@
+{
+  "use_case": "illustration-story",
+  "title": "На минутку",
+  "tool": "built-in image_gen",
+  "prompt": "Рисованная изометрическая миниатюра тушью и матовой гуашью: серый ржавый киоск со сладостями и бутылками, рядом жёлтая маршрутка. Водитель у киоска покупает воду и показывает пальцем «минутку» пассажиру в двери машины; водительское сиденье пусто. Обычные взрослые пропорции, реалистичные сдержанные лица, приглушённые цвета. Компактный островок плитки на белом фоне, без букв и 3D.",
+  "edit_prompt": "Расширь белые поля справа: вся маршрутка должна полностью помещаться в кадре с запасом. Остальное сохрани.",
+  "source": "buildings/pivnoy-laryok-08-minutka-v2-source.png",
+  "cutout": "buildings/pivnoy-laryok-08-minutka-v2.png",
+  "card": "cards/pivnoy-laryok-08-minutka-v2.png",
+  "background": "Plain white generated source; local edge-connected background removal.",
+  "references": [],
+  "orientation": "Use generated orientation without mirroring.",
+  "visual_style_references": [
+    "buildings/pivnoy-laryok.png",
+    "buildings/panelka-01-kover-v2.png"
+  ],
+  "local_processing": {
+    "background_seeds": [
+      [
+        550,
+        320
+      ]
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "use_case": "illustration-story",
+  "title": "По одной — и домой",
+  "tool": "built-in image_gen",
+  "prompt": "Новая сцена в точности в мультяшном стиле референса, тот же серый ларёк и пёстрая витрина. Летний вечер. Два взрослых усатых мужичка пьют пиво за перевёрнутым ящиком с рыбой на бумаге: один жестикулирует, другой держит сумку с батоном. Собака спит у ног. Те же лица и округлые пропорции. Без телевизора. Компактная диорама целиком с полями на обычном белом фоне, без текста.",
+  "edit_prompt": null,
+  "source": "buildings/pivnoy-laryok-02-domoy-source.png",
+  "cutout": "buildings/pivnoy-laryok-02-domoy.png",
+  "card": "cards/pivnoy-laryok-02-domoy.png",
+  "background": "Plain white generated source; local edge-connected background removal.",
+  "references": [
+    "tmp/imagegen/pivnoy-laryok/series-reference.jpg"
+  ],
+  "orientation": "Use generated orientation without mirroring."
+}

@@ -1,0 +1,9 @@
+{
+  "title": "garazhnyy-kooperativ-rakushka",
+  "tool": "built-in image_gen",
+  "reference": "buildings/garazhnyy-kooperativ.png",
+  "final_prompt_summary": "Новая сцена в рисованном стиле приложенного гаража, миниатюра Machi Koro. Три дворовых металлических гаража: ржавый рыжий, голубой и оцинкованная ракушка с поднятой передней частью. В воротах ракушки поперёк застряла большая надутая зелёная лодка, хозяин тянет её наружу. Видны лыжи и колёса. Рядом маленькая Ока и сосед в раскладном кресле, который руководит. Компактная диорама на основании, вид сверху в три четверти, приглушённые цвета, чёткие крупные формы. Обычный белый фон, поля вокруг всей сцены. Без надписей.",
+  "postprocessing": "Local edge-connected light background removal",
+  "source": "buildings/garazhnyy-kooperativ-rakushka-source.png",
+  "output": "buildings/garazhnyy-kooperativ-rakushka.png"
+}

@@ -1,0 +1,57 @@
+{
+  "use_case": "illustration-story",
+  "title": "Островок торговли",
+  "tool": "built-in image_gen",
+  "prompt": "Рисованная изометрическая миниатюра для настольной карты: старый серый пивной киоск 90-х, наклонный козырёк, пёстрая витрина. Весенняя оттепель: мужчина балансирует на доске и кирпичах над лужей, продавщица протягивает пакет; голубь стоит на отдельном кирпиче. Естественные пропорции людей, небольшие головы, сдержанные лица с глазами, носом и ртом. Тонкий тушевой контур, матовая гуашь, плоская светотень, приглушённая серо-зелёная палитра. Вид спереди и справа, компактный островок плитки целиком с полями на белом фоне. Без карикатуры, 3D и текста; упаковки без букв.",
+  "edit_prompt": null,
+  "source": "buildings/pivnoy-laryok-06-ostrovok-v2-source.png",
+  "cutout": "buildings/pivnoy-laryok-06-ostrovok-v2.png",
+  "card": "cards/pivnoy-laryok-06-ostrovok-v2.png",
+  "background": "Plain white generated source; local edge-connected background removal.",
+  "references": [],
+  "orientation": "Use generated orientation without mirroring.",
+  "visual_style_references": [
+    "buildings/pivnoy-laryok.png",
+    "buildings/panelka-01-kover-v2.png"
+  ],
+  "local_processing": {
+    "wall_cleanup": {
+      "source_box": [
+        660,
+        555,
+        760,
+        655
+      ],
+      "target_polygon": [
+        [
+          1001,
+          272
+        ],
+        [
+          1093,
+          238
+        ],
+        [
+          1093,
+          520
+        ],
+        [
+          1001,
+          555
+        ]
+      ]
+    },
+    "background_regions": [
+      [
+        0.86,
+        0.22,
+        0.999,
+        0.22,
+        0.999,
+        0.51,
+        0.86,
+        0.51
+      ]
+    ]
+  }
+}

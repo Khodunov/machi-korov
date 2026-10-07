@@ -1,0 +1,8 @@
+{
+  "title": "garazhnyy-kooperativ-kartoshka",
+  "tool": "built-in image_gen",
+  "final_prompt_summary": "Уютная рисованная миниатюра Machi Koro: три советских бетонных гаража зимой, снег на крышах. Открытый гараж с тёплой лампой, погребом и картошкой. Два мужика играют в домино, третий жарит шашлык в валенках. Рядом санки с сумкой картошки. Компактная диорама на основании, вид сверху в три четверти, чёткие тёмные контуры, приглушённые цвета. Обычный белый фон. Без надписей.",
+  "postprocessing": "Local edge-connected background removal, min RGB >=175 and channel range <=30; edge antialiasing retained",
+  "source": "buildings/garazhnyy-kooperativ-kartoshka-source.png",
+  "output": "buildings/garazhnyy-kooperativ-kartoshka.png"
+}

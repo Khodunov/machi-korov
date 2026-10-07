@@ -1,0 +1,29 @@
+{
+  "spec_version": "1.1",
+  "title": "Karaoke Club 02 — 2000s DVD boom",
+  "purpose": "Transparent central illustration for a red Machi Koro-style Karaoke Club card variant.",
+  "generation_prompt": "Мультяшная миниатюра российского DVD-караоке 2000-х: провинциальное кафе, ранний плоский телевизор, DVD-плеер, стопка дисков, огромный каталог, офисный день рождения. Женщина поёт с двух микрофонов стоя на стуле, коллега целится пультом, начальник в бумажной короне, диско-шар. Стиль настольной игры, чистые контуры, плоские цвета, вид три четверти. Светлый белый фон, без текста и логотипов.",
+  "research_basis": [
+    "After 2000, inexpensive DVD players and karaoke discs made the format broadly accessible in Russia.",
+    "Song selection often relied on thick catalogues and numeric codes entered with a remote.",
+    "Sources: https://www.kommersant.ru/doc/660808 and https://www.show-master.ru/upload/iblock/5d1/show-master59.pdf"
+  ],
+  "integration_context": {
+    "target_use": "Generate only the central illustration for the existing red card template.",
+    "background_requirement": "Native RGBA transparency with alpha=0 outside the miniature and integral base; no checkerboard, scenery, glow, or card furniture.",
+    "text_policy": "Absolute no-text rule: no letters, numbers, words, song codes, labels, signs, logos, screen lyrics, or pseudo-writing. Use only a microphone pictogram.",
+    "orientation": "Front facade faces slightly right, left side visible, depth recedes toward image left."
+  },
+  "style_goal": {
+    "core": "Same polished cartoon board-game style as the approved Karaoke Club card.",
+    "palette": "Cherry laminate, smoky beige, chrome, electric blue, magenta, warm amber."
+  },
+  "content": {
+    "subject": "A gaudy provincial DVD-karaoke cafe from the mid-2000s during an office birthday party.",
+    "description": "A boxy one-story cafe with blue-tinted windows, cherry-red panels, chrome posts, and a curved canopy. Through several normal windows, a kitschy hall shows a flat CRT/plasma-era screen with abstract music-video colors, a DVD player, a tower of unmarked discs, a huge blank song catalogue, fake-leather sofas, and a mirrored disco ball. A determined office administrator in a glittery blouse stands on a plastic chair and belts a power ballad while holding two microphones; a bespectacled coworker aims an oversized remote at the player; the birthday boss wears a crooked paper crown and receives a cream cake with blank decorations; colleagues clap off-beat.",
+    "recognition_details": ["early flat screen and DVD player", "oversized remote", "tower of unmarked discs", "office birthday on fake-leather sofas", "prominent disco ball"],
+    "miniature_base": "A small tiled forecourt with one battered planter, isolated on transparency.",
+    "omit": ["readable catalogues", "brand logos", "modern luxury", "photorealism", "clipped content"]
+  },
+  "final_prompt_summary": "Use case: stylized-concept. Asset type: transparent central illustration for a Machi Koro-style card. Generate a compact isolated miniature of a gaudy mid-2000s provincial Russian DVD-karaoke cafe, a believable boxy one-story building with cherry-red facade panels, smoky beige stucco, blue-tinted normal-size windows, chrome posts, a curved canopy, and a simple microphone pictogram with no lettering. Front faces slightly right, LEFT side visible, depth recedes left. Through windows show a kitschy office birthday: an early flat CRT/plasma-style screen displaying only abstract colorful shapes, a chunky DVD player, a tower of completely unmarked discs, a huge thick song catalogue with blank pages, fake-leather sofas, plastic chairs, laminate tables, and one prominent mirrored disco ball. A determined middle-aged office administrator in a glittery blouse stands safely on a plastic chair and belts a power ballad while holding two microphones; a bespectacled coworker aims an oversized remote at the player; the birthday boss wears a crooked plain paper crown beside a cream cake with blank geometric decorations; colleagues clap off-beat. Same approved Karaoke Club cartoon language: chunky toy-like architecture, rounded expressive adult caricatures, crisp dark outlines, flat colors, simple cel shading, cherry/beige/chrome palette with electric blue, magenta, and amber accents. Native RGBA transparency outside the building and integral tiled forecourt. No checkerboard, backdrop, sky, cars, card furniture, text, letters, numbers, song codes, lyrics, signs, logos, labels, pseudo-writing, identifiable performers, photorealism, or clipping."
+}

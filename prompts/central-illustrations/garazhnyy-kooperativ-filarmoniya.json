@@ -1,0 +1,9 @@
+{
+  "title": "garazhnyy-kooperativ-filarmoniya",
+  "tool": "built-in image_gen",
+  "reference": "buildings/garazhnyy-kooperativ.png",
+  "final_prompt_summary": "Новая рисованная диорама в стиле референса: два гаража из рифлёного металла с двускатными крышами. В открытом гараже настенный ковёр, старые колонки и мужчина с электрогитарой, рядом товарищ барабанит по вёдрам и бочке. Перед ними шашлычник у мангала дирижирует шампуром; сосед в майке слушает сидя на шинах. Уютный смешной гаражный концерт. Компактная миниатюра Machi Koro на основании, вид сверху в три четверти, приглушённые цвета, крупные формы. Обычный белый фон с полями, без текста.",
+  "postprocessing": "Local edge-connected light background removal",
+  "source": "buildings/garazhnyy-kooperativ-filarmoniya-source.png",
+  "output": "buildings/garazhnyy-kooperativ-filarmoniya.png"
+}

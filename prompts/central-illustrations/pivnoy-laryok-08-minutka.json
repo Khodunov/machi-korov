@@ -1,0 +1,15 @@
+{
+  "use_case": "illustration-story",
+  "title": "На минутку",
+  "tool": "built-in image_gen",
+  "prompt": "Одна мультяшная диорама в стиле референса: серый ржавый пивной ларёк, пёстрая витрина сладостей, сигарет и бутылок. Жаркое лето: водитель покупает минералку и считает монеты у окна. Рядом жёлтая маршрутка с недовольным пассажиром в открытой двери, водитель показывает ему один палец: подожди. Крупные головы, выразительные глаза, носы и рты, мягкая рисованная фактура. Вид спереди и справа, компактный островок целиком с полями на обычном белом фоне. Без текста и логотипов.",
+  "edit_prompt": "Исправь только сюжет: убери мужчину за рулём, оставь водительское сиденье пустым. Мужчина у киоска держит минералку одной рукой, другой показывает ожидающему пассажиру один поднятый указательный палец. Остальное сохрани. Белый фон.",
+  "source": "buildings/pivnoy-laryok-08-minutka-source.png",
+  "cutout": "buildings/pivnoy-laryok-08-minutka.png",
+  "card": "cards/pivnoy-laryok-08-minutka.png",
+  "background": "Plain white generated source; local edge-connected background removal.",
+  "references": [
+    "tmp/imagegen/pivnoy-laryok/style-reference.jpg"
+  ],
+  "orientation": "Use generated orientation without mirroring."
+}

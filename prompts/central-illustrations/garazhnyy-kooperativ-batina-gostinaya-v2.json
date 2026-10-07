@@ -1,0 +1,9 @@
+{
+  "title": "garazhnyy-kooperativ-batina-gostinaya-v2",
+  "tool": "built-in image_gen",
+  "style_reference": "buildings/garazhnyy-kooperativ.png",
+  "final_prompt_summary": "В стиле референса нарисуй уютную гаражную диораму: те же контуры, палитра, гладкая светотень. Два кирпичных бокса. В открытом гараже диван вдоль стены, над ним выцветший ковёр, напротив небольшой плоский телевизор. На диване лицом к зрителю седой усатый батя 60 лет с животом в майке, сосед с кружкой сидит у входа. Читаемые глаза, носы и рты, естественные пропорции. Жигули снаружи. Без животных и мангала. Белый фон с полями.",
+  "postprocessing": "Local edge-connected near-white background removal",
+  "source": "buildings/garazhnyy-kooperativ-batina-gostinaya-v2-source.png",
+  "output": "buildings/garazhnyy-kooperativ-batina-gostinaya-v2.png"
+}
