@@ -300,6 +300,18 @@ def draw_centered_title_group(
 
 def composite(args: argparse.Namespace) -> None:
     template = Image.open(args.template).convert("RGBA")
+    if args.footer_rise_frac:
+        # Reflow only the straight-sided center; keep header, coin and corners intact.
+        width, height = template.size
+        top, skyline, footer_end = (round(height * f) for f in (0.30, 0.78, 0.85))
+        raised = skyline - round(height * args.footer_rise_frac)
+        if not top < raised < skyline:
+            raise ValueError("Footer rise must keep the illustration region positive")
+        original = template.copy()
+        template.paste(original.crop((0, top, width, skyline)).resize(
+            (width, raised - top), Image.Resampling.LANCZOS), (0, top))
+        template.paste(original.crop((0, skyline, width, footer_end)).resize(
+            (width, footer_end - raised), Image.Resampling.LANCZOS), (0, raised))
     overlay = Image.open(args.overlay).convert("RGBA")
 
     if not args.no_crop_overlay:
@@ -472,6 +484,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--bottom-inline-icon-token", type=str, default="{icon}")
     parser.add_argument("--bottom-inline-icon-scale", type=float, default=1.15, help="Inline icon side / bottom-text font size.")
     parser.add_argument("--bottom-inline-icon-y-offset-px", type=int, default=0)
+
+    parser.add_argument("--footer-rise-frac", type=float, default=0.0,
+                        help="Raise the footer while preserving header and coin geometry")
 
     # Optional flavor caption, placed independently from the rules.
     parser.add_argument("--caption", type=str, default=None)

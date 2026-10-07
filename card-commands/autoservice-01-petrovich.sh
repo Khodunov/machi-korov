@@ -9,14 +9,15 @@ caption=$(.venv/bin/python -c 'import json; print(next(c for c in json.load(open
   --shadow \
   --output cards/autoservice-01-petrovich.png \
   --x-frac 0.50 \
-  --y-frac 0.51 \
-  --scale 0.72 \
+  --y-frac 0.465 \
+  --scale 0.68 \
   --coin-number 2 \
   --activation-number '8' \
   --title 'Автосервис' \
   --title-color '#123E70' \
   --bottom-text $'Сет из вендингового автомата,\nавтомойки и автосервиса.\n1 сет приносит 2.\n2 сета приносит 3' \
-  --bottom-text-y-frac 0.84 \
+  --footer-rise-frac 0.09 \
+  --bottom-text-y-frac 0.785 \
   --bottom-text-spacing-px 6 \
   --title-font fonts/Boingster-Regular.ttf \
   --title-font-size-frac 0.078 \
@@ -24,7 +25,7 @@ caption=$(.venv/bin/python -c 'import json; print(next(c for c in json.load(open
   --title-icon-gap-px 12 \
   --title-icon-y-offset-px -10 \
   --bottom-text-font fonts/CCUltimatum-Bold.ttf \
-  --bottom-text-font-size-frac 0.0366 \
+  --bottom-text-font-size-frac 0.045 \
   --activation-font fonts/CCUltimatum-Bold.ttf \
   --activation-font-size-frac 0.118 \
   --coin-font fonts/Boingster-Regular.ttf \
