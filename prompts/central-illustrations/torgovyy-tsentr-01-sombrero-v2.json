@@ -1,0 +1,29 @@
+{
+  "spec_version": "2.0",
+  "title": "Сомбреро, Москва",
+  "purpose": "Cartoon style revision of the five shopping mall landmark variants",
+  "card_spec": {
+    "title": "Торговый центр",
+    "cost": 10,
+    "rules_text": "Каждое ваше предприятие\nс символом «Торговая лавка»\nили «Бокал с вилкой»\nприносит на 1 монету больше.",
+    "affected_cards": [
+      "pivnoy-laryok",
+      "setevoy-magazin",
+      "shwarma",
+      "karaoke-klub"
+    ]
+  },
+  "generation": {
+    "tool": "built-in imagegen",
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "/Users/egor/code/machi-korov/references/torgovyy-tsentr/sombrero-user-reference.png",
+      "/Users/egor/code/machi-korov/buildings/upravlyayushchaya-kompaniya-v5-revised.png"
+    ],
+    "reference_roles": [
+      "Architecture reference or restyle target",
+      "Cartoon style reference"
+    ],
+    "prompt": "Create a NEW cartoon illustration based on the architecture in the FIRST attached photograph, not a photo edit. The Moscow Sombrero mall: iconic central silver inverted truncated-cone entrance volume, wider at top, tapering at base, a necklace of alternating red and purple diamond tiles and dark diamond windows around its upper rim. Low beige rectangular wings on both sides, central recessed glass entrance under small rectangular canopy. Preserve this unusual recognizable bowl-like silhouette. Omit all rooftop signs, lettering, logos and photographic watermarks; retain the architectural diamond decorations. Tiny paved forecourt, a small rounded lawn patch, two green bollards and one tiny cartoon shopper. Exclude the high-rise apartment blocks behind it. Style reference is the LAST attached image (yellow building). Match its clean cartoon board-game miniature drawing: bold clean outlines, chunky simplified geometry, broad smooth colors, simple soft cel shading, very sparse surface wear. NO photorealistic rendering, NO fine gritty texture, NO intricate shop interiors. Elevated three-quarter view of a compact isolated building on a small paving slab. Building front and right side visible. All content entirely inside frame with generous transparent margins. Genuine RGBA alpha transparency outside the miniature. No backdrop, sky, halo, vignette or cast shadow outside the base. Absolutely NO text, letters, numbers, logos, pseudo-writing, billboards or license plate marks anywhere. No card furniture, title, price or rules. Keep a few characteristic Russian everyday details but make them chunky and cartoonish, matching the yellow reference building."
+  }
+}

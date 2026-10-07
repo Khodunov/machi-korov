@@ -1,0 +1,29 @@
+{
+  "spec_version": "2.0",
+  "title": "Купол",
+  "purpose": "Cartoon style revision of the five shopping mall landmark variants",
+  "card_spec": {
+    "title": "Торговый центр",
+    "cost": 10,
+    "rules_text": "Каждое ваше предприятие\nс символом «Торговая лавка»\nили «Бокал с вилкой»\nприносит на 1 монету больше.",
+    "affected_cards": [
+      "pivnoy-laryok",
+      "setevoy-magazin",
+      "shwarma",
+      "karaoke-klub"
+    ]
+  },
+  "generation": {
+    "tool": "built-in imagegen",
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "/Users/egor/code/machi-korov/buildings/torgovyy-tsentr-03-kupol.png",
+      "/Users/egor/code/machi-korov/buildings/upravlyayushchaya-kompaniya-v5-revised.png"
+    ],
+    "reference_roles": [
+      "Architecture reference or restyle target",
+      "Cartoon style reference"
+    ],
+    "prompt": "Restyle the FIRST image to be substantially MORE CARTOONISH and less realistic, using the LAST yellow building image as the precise style guide. Preserve the round mall with turquoise dome, lavender and cream facade, attached small shawarma kiosk, shopper and cart, and its composition. Simplify the dome to a few big blue glass sections, windows to large graphic panes with only a few simple merchandise shapes. Remove fine grime, dense cracks, intricate reflections and excessive texture. Keep a few readable wear marks. Style reference is the LAST attached image (yellow building). Match its clean cartoon board-game miniature drawing: bold clean outlines, chunky simplified geometry, broad smooth colors, simple soft cel shading, very sparse surface wear. NO photorealistic rendering, NO fine gritty texture, NO intricate shop interiors. Elevated three-quarter view of a compact isolated building on a small paving slab. Building front and right side visible. All content entirely inside frame with generous transparent margins. Genuine RGBA alpha transparency outside the miniature. No backdrop, sky, halo, vignette or cast shadow outside the base. Absolutely NO text, letters, numbers, logos, pseudo-writing, billboards or license plate marks anywhere. No card furniture, title, price or rules. Keep a few characteristic Russian everyday details but make them chunky and cartoonish, matching the yellow reference building."
+  }
+}
