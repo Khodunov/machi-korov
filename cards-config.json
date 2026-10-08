@@ -534,6 +534,33 @@
         "bank-vtb"
       ],
       "art_status": "approved"
+    },
+    {
+      "slug": "kazino",
+      "title": "Казино",
+      "set": "expansion",
+      "caption": null,
+      "category": "red",
+      "activation": "7",
+      "cost": 3,
+      "copies": 6,
+      "rules_text": "Попавший игрок бросает 2 кубика.\nДубль — вы платите ему 2 монеты.\nИначе он платит вам 3 монеты.",
+      "rules_status": "draft",
+      "symbol": null,
+      "art_variants": [
+        "kazino-01-proigrysh-v3",
+        "kazino-02-stolbik-v2",
+        "kazino-03-tsokol-v3",
+        "kazino-04-ludoman-v3",
+        "kazino-05-pavilon-v2",
+        "kazino-06-mem-v2"
+      ],
+      "art_status": "generated",
+      "show_caption": false,
+      "variant_captions": {
+        "kazino-06-mem-v2": "йобаный рот этого казино"
+      },
+      "art_notes": "Версия 3: карты 1 и 3 — цельные здания без разрезов, вывески КАЗИНО; сюжеты проигрыша, рулетка за окном. Карта 4 — три игрока, уставший красноглазый игрок у автомата с рычагом. Карты 2, 5, 6 сохранены из v2."
     }
   ]
 }
