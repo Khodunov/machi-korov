@@ -1,5 +1,7 @@
 set -euo pipefail
 
+caption=$(.venv/bin/python -c 'import json; print(next(c for c in json.load(open("cards-config.json"))["cards"] if c["slug"] == "kazino")["caption"])')
+
 .venv/bin/python skills/generate-card/scripts/card_compositor.py \
   --template backgrounds/red.png \
   --overlay buildings/kazino-06-mem-v2.png \
@@ -16,5 +18,5 @@ set -euo pipefail
   --bottom-text-font fonts/CCUltimatum-Bold.ttf --bottom-text-font-size-frac 0.034 \
   --activation-font fonts/CCUltimatum-Bold.ttf --activation-font-size-frac 0.118 \
   --coin-font fonts/Boingster-Regular.ttf \
-  --caption 'йобаный рот этого казино' --caption-font fonts/Boingster-Regular.ttf \
+  --caption "$caption" --caption-font fonts/Boingster-Regular.ttf \
   --caption-font-size-frac 0.028 --caption-x-frac 0.58 --caption-y-frac 0.935 --caption-color '#EDD3CD'

@@ -128,7 +128,7 @@
       "title": "Авторынок",
       "source_card": "Сыроварня",
       "set": "base",
-      "caption": "",
+      "caption": "не бита не крашена",
       "category": "green",
       "activation": "7",
       "cost": 5,
@@ -148,7 +148,7 @@
         "avtorynok-06-bagazhnik-v2"
       ],
       "art_status": "generated",
-      "show_caption": false
+      "show_caption": true
     },
     {
       "slug": "autoservice",
@@ -183,7 +183,7 @@
       "title": "Вендинговый автомат",
       "source_card": null,
       "set": "new",
-      "caption": null,
+      "caption": "Пни, чтобы выдал",
       "category": "red",
       "activation": "4",
       "cost": 2,
@@ -202,7 +202,7 @@
         "vending-machine"
       ],
       "art_status": "generated",
-      "show_caption": false
+      "show_caption": true
     },
     {
       "slug": "novostroyka",
@@ -337,7 +337,7 @@
       "title": "ПВЗ",
       "source_card": null,
       "set": "new",
-      "caption": null,
+      "caption": "Забери заказ до завтра",
       "category": "blue",
       "activation": "3",
       "cost": 2,
@@ -353,7 +353,7 @@
         "pvz-yandex-market-brick-v3"
       ],
       "art_status": "approved",
-      "show_caption": false
+      "show_caption": true
     },
     {
       "slug": "sklad-marketpleysa",
@@ -602,7 +602,7 @@
       "slug": "kazino",
       "title": "Казино",
       "set": "expansion",
-      "caption": null,
+      "caption": "йобаный рот этого казино",
       "category": "red",
       "activation": "7",
       "cost": 3,
@@ -625,7 +625,7 @@
         "kazino-06-mem-v2"
       ],
       "art_status": "generated",
-      "show_caption": false,
+      "show_caption": true,
       "variant_captions": {
         "kazino-06-mem-v2": "йобаный рот этого казино"
       },
