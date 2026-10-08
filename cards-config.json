@@ -136,15 +136,18 @@
       "rules_text": "Получите по 3 монеты\nза каждый свой гараж.\nВ свой ход.",
       "rules_status": "approved",
       "symbol": {
-        "name": "Фабрика",
-        "asset": "icons/factory-green.png",
-        "shared_with": [
-          "eksport-v-kitay"
-        ],
-        "status": "generated"
+        "name": "Автомобиль",
+        "asset": "icons/soviet-car.png"
       },
-      "art_variants": [],
-      "art_status": "pending",
+      "art_variants": [
+        "avtorynok-01-torg-v2",
+        "avtorynok-02-koleso-v2",
+        "avtorynok-03-zima-v2",
+        "avtorynok-04-dnishche-v2",
+        "avtorynok-05-magnit-v3",
+        "avtorynok-06-bagazhnik-v2"
+      ],
+      "art_status": "generated",
       "show_caption": false
     },
     {
@@ -376,9 +379,7 @@
       "symbol": {
         "name": "Фабрика",
         "asset": "icons/factory-green.png",
-        "shared_with": [
-          "avtorynok"
-        ],
+        "shared_with": [],
         "status": "generated"
       },
       "art_variants": [

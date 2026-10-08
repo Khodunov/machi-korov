@@ -1,0 +1,5 @@
+set -euo pipefail
+
+.venv/bin/python skills/generate-card/scripts/card_compositor.py --template backgrounds/green.png --overlay buildings/avtorynok-06-bagazhnik-v2.png --output cards/avtorynok-06-bagazhnik-v2.png --title-icon icons/soviet-car.png --shadow --x-frac 0.50 --y-frac 0.47 --scale 0.78 --coin-number 5 --activation-number 7 --title 'Авторынок' --title-color '#17361A' --bottom-text 'Получите по 3 монеты
+за каждый свой гараж.
+В свой ход.' --footer-rise-frac 0.09 --bottom-text-y-frac 0.785 --bottom-text-spacing-px 8 --title-font fonts/Boingster-Regular.ttf --title-font-size-frac 0.078 --title-icon-scale 1.88 --title-icon-gap-px 12 --title-icon-y-offset-px -10 --bottom-text-font fonts/CCUltimatum-Bold.ttf --bottom-text-font-size-frac 0.05 --activation-font fonts/CCUltimatum-Bold.ttf --activation-font-size-frac 0.118 --coin-font fonts/Boingster-Regular.ttf
