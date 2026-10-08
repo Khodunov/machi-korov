@@ -53,6 +53,14 @@ When a new icon is needed, generate it from its filled prompt and save it as `ic
 
 Do not silently overwrite an existing source asset unless the user requested regeneration or replacement.
 
+## Starter cards
+
+«Панелька» and «Пивной ларёк» each have 11 cards: 5 starter cards without
+any cost number or coin badge, and 6 purchasable cards costing 1 coin.
+Keep the five starter artwork slugs in `starter_variants` in `cards-config.json`;
+the compositor applies this policy by output filename. Preserve this split when
+replacing or adding artwork variants.
+
 ## Create the reproducible card command
 
 Create `card-commands/<card-slug>.sh`, using the closest existing command as a layout reference. Commands run from the repository root. For landmarks use the paired-output command in the landmark reference. For establishments invoke the packaged compositor:

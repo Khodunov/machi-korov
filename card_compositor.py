@@ -34,12 +34,13 @@ Example:
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import sys
 from pathlib import Path
 from typing import Tuple
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 def repo_root() -> Path:
     path = Path(__file__).resolve()
@@ -298,6 +299,28 @@ def draw_centered_title_group(
     draw.multiline_text((text_x, text_y), title, font=font, fill=fill, align="center")
 
 
+def is_starter_variant(output: Path) -> bool:
+    """Resolve the cost policy from the shared card configuration."""
+    config = json.loads((ROOT / "cards-config.json").read_text())
+    return any(output.stem in card.get("starter_variants", [])
+               for card in config["cards"])
+
+
+def remove_cost_badge(template: Image.Image, template_name: str) -> None:
+    """Cover the baked-in coin with nearby footer texture before adding text."""
+    cx, cy = COIN_CENTERS_BY_TEMPLATE.get(template_name, DEFAULT_COIN_CENTER)
+    width, height = template.size
+    rx, ry = round(width * 0.074), round(height * 0.049)
+    x, y = round(width * cx), round(height * cy)
+    box = (x - rx, y - ry, x + rx, y + ry)
+    offset = round(width * 0.20)
+    texture = template.crop((box[0] + offset, box[1], box[2] + offset, box[3]))
+    mask = Image.new("L", texture.size)
+    ImageDraw.Draw(mask).ellipse((3, 3, texture.width - 4, texture.height - 4), fill=255)
+    mask = mask.filter(ImageFilter.GaussianBlur(2))
+    template.paste(texture, box[:2], mask)
+
+
 def composite(args: argparse.Namespace) -> None:
     template = Image.open(args.template).convert("RGBA")
     if args.footer_rise_frac:
@@ -312,6 +335,9 @@ def composite(args: argparse.Namespace) -> None:
             (width, raised - top), Image.Resampling.LANCZOS), (0, top))
         template.paste(original.crop((0, skyline, width, footer_end)).resize(
             (width, footer_end - raised), Image.Resampling.LANCZOS), (0, raised))
+    hide_cost = args.hide_cost or is_starter_variant(args.output)
+    if hide_cost:
+        remove_cost_badge(template, args.template.stem.lower())
     overlay = Image.open(args.overlay).convert("RGBA")
 
     if not args.no_crop_overlay:
@@ -338,7 +364,7 @@ def composite(args: argparse.Namespace) -> None:
         )
     canvas.alpha_composite(overlay, (paste_x, paste_y))
 
-    if args.coin_number is not None:
+    if args.coin_number is not None and not hide_cost:
         default_coin_x, default_coin_y = COIN_CENTERS_BY_TEMPLATE.get(
             args.template.stem.lower(), DEFAULT_COIN_CENTER
         )
@@ -445,6 +471,8 @@ def parse_args() -> argparse.Namespace:
     )
 
     # Coin number
+    parser.add_argument("--hide-cost", action="store_true",
+                        help="Hide the coin badge and price (automatic for configured starter variants).")
     parser.add_argument("--coin-number", type=str, default=None)
     parser.add_argument("--coin-x-frac", type=float, default=None, help="Override the template's coin center X.")
     parser.add_argument("--coin-y-frac", type=float, default=None, help="Override the template's coin center Y.")

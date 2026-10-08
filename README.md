@@ -87,6 +87,14 @@ It runs every `card-commands/*.sh` file in filename order, uses the project virt
 
 Generated final cards are written under `cards/` and ignored by Git. Commit the filled prompts, generated source artwork, and `card-commands/<card-name>.sh`.
 
+For «Панелька» and «Пивной ларёк», each set of 11 cards contains 5 starter
+cards without a cost badge and 6 purchasable cards costing 1 coin.
+`starter_variants` in `cards-config.json` explicitly lists the five starter
+illustrations (the first five entries of each current `art_variants` list).
+Both compositor copies apply this rule automatically by output filename,
+including individual commands and batch builds. `--hide-cost` also hides the
+badge for a standalone render.
+
 ## What the compositor can do
 
 ### Two-sided landmarks
