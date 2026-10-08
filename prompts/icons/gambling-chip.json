@@ -1,0 +1,30 @@
+{
+  "id": "gambling-chip",
+  "asset_type": "building_type_icon",
+  "version": 1,
+  "shared_category": [
+    "Букмекерская контора",
+    "Казино"
+  ],
+  "canvas": {
+    "background": "transparent",
+    "aspect_ratio": "1:1"
+  },
+  "palette": {
+    "badge": "#58100E",
+    "pictogram": "#FFFFFF"
+  },
+  "composition": {
+    "badge": "One solid dark red circle, centered, filling approximately 85% of the square canvas. Everything outside the circle is fully transparent.",
+    "pictogram": "One large white casino-style gaming chip viewed almost front-on with a slight tilt. Use a bold circular silhouette, four pairs of simple edge notches, one thick inner ring, and one plain solid central circle. The chip fills approximately 55% of the badge.",
+    "alignment": "Perfectly centered horizontally and vertically, with generous clear space around the pictogram."
+  },
+  "style": "Flat two-color board-game category icon matching the existing repository badges. Clean vector-like edges, no gradients, no shadows, no texture, no outline beyond the white silhouette.",
+  "constraints": [
+    "Use only the dark red badge color and white pictogram color.",
+    "No currency symbols, numbers, letters, card suits, dice pips, logos, words, hands, people, buildings, roulette wheel, playing cards, or extra objects.",
+    "The object must read as a single gaming chip at very small print size.",
+    "No transparency holes inside the dark red circle except where required around the white pictogram.",
+    "Keep the entire badge inside the canvas with transparent padding on all sides."
+  ]
+}
