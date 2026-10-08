@@ -505,6 +505,35 @@
       ],
       "art_status": "approved",
       "show_caption": true
+    },
+    {
+      "slug": "bank",
+      "title": "Банк",
+      "set": "new",
+      "category": "red",
+      "activation": "8",
+      "cost": 0,
+      "caption": "Корпорация зла",
+      "show_caption": true,
+      "rules_text": "При покупке заплатите каждому игроку по 2 монеты.\nВозьмите 2 монеты у бросившего кубики,\nа если собран сет — 4 монеты.\nЕсли у него нет денег, он отдаёт бизнес.",
+      "rules_status": "approved",
+      "symbol": {
+        "name": "Пачка денег",
+        "asset": "icons/money-bundle.png",
+        "shared_with": [
+          "mikrozaymy",
+          "lombard"
+        ]
+      },
+      "art_variants": [
+        "bank-sber",
+        "bank-tinkoff",
+        "bank-alfa",
+        "bank-yandex",
+        "bank-pochta",
+        "bank-vtb"
+      ],
+      "art_status": "approved"
     }
   ]
 }
