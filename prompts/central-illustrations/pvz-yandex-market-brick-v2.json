@@ -1,0 +1,9 @@
+{
+  "use_case": "precise-object-edit",
+  "title": "ПВЗ — кирпичный Яндекс Маркет с грустными рабочими",
+  "tool": "built-in image_gen",
+  "source": "buildings/pvz-amazon.png",
+  "output": "buildings/pvz-yandex-market-brick-v2.png",
+  "transparent_background": true,
+  "prompt": "Replace only the Amazon branding with recognizable Yandex Market branding. Replace the roof sign with a weathered yellow sign bearing a red geometric market mark and the exact Cyrillic text «Яндекс Маркет». Repaint the parcel locker into yellow, black and red Yandex Market styling and remove every Amazon mark. Keep the tired bearded worker carrying three boxes, the sad employee scanning a parcel in the doorway, the weary elderly woman with her wheeled bag, and the sad man rummaging through the discarded box and packing trash. Preserve the exact building, props, snow, puddles, character positions, exhausted expressions, complete-building composition, drawing style and native RGBA transparency. Do not add or remove people or objects. No new text beyond «Яндекс Маркет»."
+}

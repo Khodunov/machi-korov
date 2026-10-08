@@ -1,0 +1,96 @@
+{
+  "spec_version": "1.1",
+  "title": "Floating Machi Koro-style marketplace fulfillment warehouse illustration spec",
+  "purpose": "Central illustration for the green establishment card Склад маркетплейса.",
+  "integration_context": {
+    "target_use": "Generate only the central content illustration to be composited onto an existing blank Machi Koro-style card template.",
+    "background_requirement": "Native RGBA transparency is mandatory. Outside the warehouse, vehicles, cargo and their integral miniature yard base, every pixel must have alpha=0. No sky, landscape, card furniture, glow, halo, frame or backdrop.",
+    "text_policy": "The only permitted text is the exact official brand word WILDBERRIES in white uppercase Latin letters on the purple facade stripe. No other letters, numbers, logos, gate numbers, license plates or pseudo-writing.",
+    "card_relationship": "A wide floating miniature logistics scene in the card's open middle region, with generous transparent space around it.",
+    "central_positioning": "Centered, compact, self-contained and fully visible, with clear margins on all sides."
+  },
+  "style_goal": {
+    "primary_rule": "Match the cute simplified establishment-art language of the existing project: chunky toy-like geometry, crisp dark outlines, clean flat color blocks and simple two-tone cel shading.",
+    "secondary_rule": "Make the subject unmistakably a huge modern Russian marketplace fulfillment center while keeping it readable at small card size.",
+    "core_formula": "Large e-commerce warehouse and a busy freight yard reduced to a charming board-game miniature."
+  },
+  "visual_composition": {
+    "shape": "A broad low warehouse dominates the back half of a compact asphalt yard; trucks and forklifts create a busy but orderly foreground rhythm.",
+    "orientation": "The loading facade faces slightly right, the building's left side is visible, and depth recedes toward image left. Do not show the building's right side.",
+    "base": "One compact irregular slab of industrial asphalt and concrete apron belonging to the miniature.",
+    "background": "None; fully transparent pixels outside the miniature."
+  },
+  "content": {
+    "subject": "A large Russian marketplace fulfillment warehouse with loading docks, semi-trailer trucks and many forklifts.",
+    "description": "A very large, low, boxy fulfillment warehouse with cold off-white and blue-gray insulated metal panels, a long flat roof, sparse rooftop ventilation boxes and one magenta-purple accent stripe. Center the exact white uppercase brand word WILDBERRIES on the front section of that stripe, clean and clearly readable, matching the familiar marketplace logo treatment. High on the building's left side wall, away from the logo and loading gates, show one large jagged blast hole torn through the metal panels. Bent panel fragments curl outward around a blackened opening; bright orange fire burns inside and pushes through the hole while one thick column of dark gray smoke rises above the roof. Keep the damage dramatic but compact and readable, with no injured people. The front loading facade has six large recessed dock gates with thick black rubber dock shelters, yellow safety bollards, bumpers and short metal dock ramps. Three full-size semi-trailer trucks are backed squarely into separate gates for loading or unloading; show their cabs angled outward into the yard and their plain white, gray and muted-blue trailers aligned with the docks. One additional truck waits in the open yard. Around the building, six compact yellow-orange forklifts with clearly visible twin forks work in coherent lanes: one raises a pallet stacked with plain cardboard boxes toward an open trailer, one lowers a pallet from a dock, two carry box pallets across the apron, and two wait or turn with empty forks held low. Forks must attach correctly to the front mast of every vehicle, pallets must rest physically on the forks, and no vehicle, pallet, person or building part may intersect another. Add a few tidy stacks of plain brown cartons on wooden pallets near open docks, two tiny workers in high-visibility jackets for scale, safety railings and wheel guides. Keep the warehouse much larger than every vehicle and make the loading gates and forklifts readable immediately.",
+    "desired_read": "A huge, high-throughput marketplace warehouse seen from its active loading yard: trucks docked at gates while a swarm of forklifts moves boxes.",
+    "recognition_details": [
+      "Long low insulated warehouse facade with a repeated row of black dock shelters and open loading gates",
+      "Several semi-trailer trucks backed tightly to the gates with additional freight traffic in the yard",
+      "Many yellow-orange forklifts visibly lifting, lowering and carrying pallets of plain cardboard boxes"
+    ],
+    "miniature_base": "A wide irregular asphalt-and-concrete slab with a few cracks, faded geometric lane stripes, wheel stops and a small dirty puddle; no surrounding roads, scenery or neighboring buildings.",
+    "simplify": [
+      "Compress the real-world scale into one broad toy-like warehouse block and a small number of large readable dock modules.",
+      "Use chunky trucks, forklifts, pallets and box stacks with sparse detail and strong silhouettes rather than realistic machinery complexity."
+    ],
+    "omit": [
+      "All text except the exact white uppercase word WILDBERRIES on the purple facade stripe; no other logos, letters, numbers, gate labels, license-plate characters, advertisements, signs or pseudo-writing.",
+      "Interior warehouse aisles, background cityscape, sky, fencing that obscures the action, photorealism, cinematic lighting, dense grime and chaotic vehicle collisions."
+    ],
+    "target_impression": "A marketplace logistics empire presented as a busy, slightly absurd, perfectly legible board-game miniature."
+  },
+  "palette": {
+    "base": [
+      "cold off-white warehouse panels",
+      "muted blue-gray metal",
+      "charcoal dock shelters",
+      "medium asphalt gray"
+    ],
+    "secondary": [
+      "one blank magenta-purple facade stripe",
+      "plain white and muted-blue trailers",
+      "brown cardboard pallets"
+    ],
+    "warm_accents": [
+      "yellow-orange forklifts",
+      "yellow safety bollards",
+      "small lime high-visibility jackets"
+    ],
+    "saturation": "moderate, with the forklifts as the clearest warm accents",
+    "overall_brightness": "clean and readable, slightly colder and duller than standard Machi Koro art"
+  },
+  "anti_patterns": [
+    "Do not generate a full card, header, footer, coin, activation number or category icon.",
+    "Do not generate sky, clouds, horizon, landscape, city background or an opaque field.",
+    "Do not use any text except the exact white uppercase word WILDBERRIES on the purple facade stripe; no gate numbers, license plates or text-like marks.",
+    "Do not make the warehouse small, vertical or shop-like; it must dominate the scene as a broad industrial fulfillment center.",
+    "Do not show forklifts with detached forks, forks at the rear, floating pallets, impossible loads or intersecting machinery.",
+    "Do not show random traffic chaos; every truck must align with a gate or a clear yard lane.",
+    "Do not use photorealism, architectural-visualization detail, heavy texture or a full industrial landscape.",
+    "Do not obscure the WILDBERRIES logo, loading gates, trucks or forklifts with the blast damage, fire or smoke; no injured people, bodies or gore."
+  ],
+  "final_prompt_summary": "Edit the selected third warehouse illustration with the WILDBERRIES logo without changing its composition. High on the left side wall, away from the logo and gates, add one jagged blast hole with bent metal-panel edges and bright orange fire. A compact dark gray smoke plume curves inward over the roof, tapers naturally and ends with generous clear space from the top and left canvas boundaries. Preserve the exact WILDBERRIES wordmark, warehouse shape, six loading gates, all trucks, forklifts, workers, pallets, boxes, yard, camera angle, palette, linework and transparent canvas. No injured people, gore or any additional text.",
+  "reference_sources": [
+    {
+      "url": "https://seller.ozon.ru/media/instructions/kak-vybrat-sklad-dlya-torgovli-na-ozon/",
+      "use": "Real fulfillment-center exterior: long blue facade, repeated dock shelters, numbered gate rhythm and a trailer backed into a bay; structural inspiration only, with no branding reproduced."
+    },
+    {
+      "url": "https://t.rbc.ru/tyumen/26/11/2024/6745b2a19a7947320b53c6e7",
+      "use": "Tyumen logistics complex: broad concrete apron, multiple warehouse blocks and scale relationship between docks and semi-trailers."
+    },
+    {
+      "url": "https://dela.ru/news/294559/",
+      "use": "Large Krasnoyarsk marketplace logistics site: low sprawling warehouse mass, truck parking and industrial-yard proportions."
+    }
+  ],
+  "card_spec": {
+    "title": "Склад маркетплейса",
+    "category": "green",
+    "activation": 9,
+    "cost": 2,
+    "caption": "Заказы просто огонь",
+    "rules_text": "Получите 1 монету из банка и ещё по 1 монете за каждый свой «ПВЗ». В свой ход."
+  }
+}

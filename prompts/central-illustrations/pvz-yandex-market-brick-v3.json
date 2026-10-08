@@ -1,0 +1,8 @@
+{
+  "use_case": "background-extraction",
+  "title": "ПВЗ — кирпичный Яндекс Маркет, финальный прозрачный cutout",
+  "tool": "built-in image_gen",
+  "output": "buildings/pvz-yandex-market-brick-v3.png",
+  "transparent_background": true,
+  "prompt": "Remove only the residual dark vignette, black corner fragments, gray haze and every background pixel surrounding the illustrated pickup-point diorama. Make all pixels outside the complete building, people, parcels, snow, plants, puddles and integral pavement base genuinely transparent. Preserve the exact Yandex Market building, readable sign, yellow parcel locker, tired worker carrying boxes, employee scanning a parcel, elderly woman, man rummaging in the box, all props, colors, linework, proportions, camera angle and composition."
+}

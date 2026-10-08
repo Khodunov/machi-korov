@@ -326,6 +326,55 @@
       "show_caption": true
     },
     {
+      "slug": "pvz",
+      "title": "ПВЗ",
+      "source_card": null,
+      "set": "new",
+      "caption": null,
+      "category": "blue",
+      "activation": "3",
+      "cost": 2,
+      "copies": 6,
+      "rules_text": "Получите 1 монету из банка.\nВ ход любого игрока.",
+      "rules_status": "approved",
+      "symbol": {
+        "name": "Коробка",
+        "asset": "icons/pvz-v3.png",
+        "status": "generated"
+      },
+      "art_variants": [
+        "pvz-yandex-market-brick-v3"
+      ],
+      "art_status": "approved",
+      "show_caption": false
+    },
+    {
+      "slug": "sklad-marketpleysa",
+      "title": "Склад маркетплейса",
+      "source_card": "Цветочный магазин",
+      "set": "new",
+      "caption": "Заказы просто огонь",
+      "category": "green",
+      "activation": "9",
+      "cost": 2,
+      "copies": 6,
+      "rules_text": "Получите 1 монету из банка и ещё\nпо 1 монете за каждый свой «ПВЗ».\nВ свой ход.",
+      "rules_status": "approved",
+      "symbol": {
+        "name": "Посылка с меткой пункта выдачи",
+        "asset": "icons/pvz-v3.png",
+        "shared_with": [
+          "pvz"
+        ],
+        "status": "generated"
+      },
+      "art_variants": [
+        "sklad-marketpleysa-v3-wildberries-explosion-v2"
+      ],
+      "art_status": "approved",
+      "show_caption": true
+    },
+    {
       "slug": "pivnoy-laryok",
       "title": "Пивной ларёк",
       "source_card": "Пекарня",

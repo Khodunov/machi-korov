@@ -1,0 +1,35 @@
+{
+  "spec_version": "1.2",
+  "title": "Machi Koro-style round category icon — коробка ПВЗ",
+  "purpose": "Small circular category badge for the blue ПВЗ card.",
+  "integration_context": {
+    "target_use": "Generate only the icon asset for card compositing.",
+    "canvas": "square",
+    "background": "Native RGBA transparency outside the circular badge.",
+    "output_preference": "RGBA PNG with clean antialiased edges"
+  },
+  "badge_geometry": {
+    "circle": "perfect centered circle",
+    "circle_color": "#0D3F78",
+    "circle_diameter": "approximately 85% of canvas width",
+    "outer_margin": "fully transparent",
+    "border": "none"
+  },
+  "pictogram": {
+    "color": "#FFFFFF",
+    "subject": "closed shipping box",
+    "description": "A bold pure-white cubic parcel box in a slight three-quarter view, with a visible top plane, front face, narrow side face, and one broad dark-blue packing-tape stripe running across the lid and down the front. Use only a few thick dark-blue negative-space separations. The silhouette must read immediately as a sturdy shipping box rather than a card, envelope or application tile.",
+    "size": "approximately 54% of the circle diameter",
+    "position": "precisely centered",
+    "detail_level": "very low"
+  },
+  "anti_patterns": [
+    "no location pin, letters, digits, words, logos, barcodes or labels",
+    "no outer ring",
+    "no thin lines",
+    "no gradients, highlights, texture, shadow, bevel or 3D",
+    "no scenery or card furniture",
+    "no opaque background outside the circle"
+  ],
+  "final_prompt_summary": "Use case: logo-brand. Generate only one small Machi Koro-style category badge on a square canvas. Create one centered blue circular badge with native RGBA transparency outside it. Inside, place a bold pure-white closed shipping box in a slight three-quarter view: visible top lid plane, front face, narrow side face, and one broad dark-blue packing-tape stripe crossing the top and running down the front. Use only a few thick negative-space separations. The pictogram must read instantly as a sturdy parcel box, not a card, envelope or app tile. No location pin, outer ring, text, letters, digits, logos, barcode, address label, ribbon, scenery or card furniture."
+}
