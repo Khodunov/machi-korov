@@ -1,0 +1,86 @@
+{
+  "title": "Кремль",
+  "cost": null,
+  "rules": "Если у вас нет монет, возьмите одну монету из банка в свой ход перед строительством.",
+  "generation": "Built-in image_gen; six individual illustrations",
+  "style_references": [
+    "buildings/panelka.png",
+    "buildings/hram-02-vsem-mirom-v2.png"
+  ],
+  "references": [
+    [
+      "Москва",
+      "https://www.wga.hu/html_m/s/solari/pietro/index.html"
+    ],
+    [
+      "Ярославль",
+      "https://style.rbc.ru/impressions/5f33fcca9a7947df3bba73ed"
+    ],
+    [
+      "Ростов",
+      "https://proehal.ru/rostov-velikij/rostovskij-kreml/"
+    ],
+    [
+      "Псков",
+      "https://commons.wikimedia.org/wiki/File:Pskov_asv07-2018_Kremlin_aerial7.jpg"
+    ],
+    [
+      "Казань",
+      "https://www.tutu.ru/geo/rossiya/kazan/article/guide/"
+    ],
+    [
+      "Нижний Новгород",
+      "https://www.ngiamz.ru/ru/nizhegorodskiy-kreml"
+    ]
+  ],
+  "variants": [
+    {
+      "slug": "kreml-01-moskva",
+      "name": "Москва",
+      "card": "cards/kreml-01-moskva.png",
+      "art": "buildings/kreml-01-moskva.png",
+      "prompt": "prompts/central-illustrations/kreml-01-moskva.json",
+      "command": "card-commands/kreml-01-moskva.sh"
+    },
+    {
+      "slug": "kreml-02-yaroslavl",
+      "name": "Ярославль",
+      "card": "cards/kreml-02-yaroslavl.png",
+      "art": "buildings/kreml-02-yaroslavl.png",
+      "prompt": "prompts/central-illustrations/kreml-02-yaroslavl.json",
+      "command": "card-commands/kreml-02-yaroslavl.sh"
+    },
+    {
+      "slug": "kreml-03-rostov",
+      "name": "Ростов",
+      "card": "cards/kreml-03-rostov.png",
+      "art": "buildings/kreml-03-rostov.png",
+      "prompt": "prompts/central-illustrations/kreml-03-rostov.json",
+      "command": "card-commands/kreml-03-rostov.sh"
+    },
+    {
+      "slug": "kreml-04-pskov",
+      "name": "Псков",
+      "card": "cards/kreml-04-pskov.png",
+      "art": "buildings/kreml-04-pskov.png",
+      "prompt": "prompts/central-illustrations/kreml-04-pskov.json",
+      "command": "card-commands/kreml-04-pskov.sh"
+    },
+    {
+      "slug": "kreml-05-kazan",
+      "name": "Казань",
+      "card": "cards/kreml-05-kazan.png",
+      "art": "buildings/kreml-05-kazan.png",
+      "prompt": "prompts/central-illustrations/kreml-05-kazan.json",
+      "command": "card-commands/kreml-05-kazan.sh"
+    },
+    {
+      "slug": "kreml-06-nizhniy-novgorod",
+      "name": "Нижний Новгород",
+      "card": "cards/kreml-06-nizhniy-novgorod.png",
+      "art": "buildings/kreml-06-nizhniy-novgorod.png",
+      "prompt": "prompts/central-illustrations/kreml-06-nizhniy-novgorod.json",
+      "command": "card-commands/kreml-06-nizhniy-novgorod.sh"
+    }
+  ]
+}

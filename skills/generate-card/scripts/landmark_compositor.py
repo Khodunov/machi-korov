@@ -31,7 +31,7 @@ def text(canvas, value, box, font_path, size, fill, minimum=26):
     raise ValueError(f"Text does not fit; shorten it or add line breaks: {value!r}")
 
 
-def template(built):
+def template(built, show_cost=True):
     """Code-native card furniture: no dice or activation-number region."""
     canvas = Image.new("RGBA", SIZE, "#FBF8F0")
     layer = Image.new("RGBA", SIZE)
@@ -53,8 +53,9 @@ def template(built):
                 d.rectangle((xx, yy, xx + 6, yy + 9), fill=pale)
     d.rectangle((76, 1185, 948, 1500), fill=footer)
     # Cost remains gold in both states, like a purchase affordance.
-    d.ellipse((111, 1325, 245, 1459), fill="#F4CC4E", outline="#594832", width=5)
-    d.ellipse((124, 1338, 232, 1446), outline="#594832", width=3)
+    if show_cost:
+        d.ellipse((111, 1325, 245, 1459), fill="#F4CC4E", outline="#594832", width=5)
+        d.ellipse((124, 1338, 232, 1446), outline="#594832", width=3)
     mask = Image.new("L", SIZE)
     ImageDraw.Draw(mask).rounded_rectangle((76, 30, 948, 1500), radius=48, fill=255)
     canvas.paste(layer, (0, 0), mask)
@@ -107,7 +108,7 @@ def title_group(canvas, title, built, icon_path=TITLE_ICON):
 
 def render(art, title, rules, cost, built, title_icon=TITLE_ICON,
            construction_icon=CONSTRUCTION_ICON, construction_width_frac=.46):
-    canvas = template(built)
+    canvas = template(built, show_cost=cost is not None)
     if not built:
         alpha = art.getchannel("A")
         art = ImageOps.colorize(ImageOps.grayscale(art), "#5B675E", "#E5E8DE").convert("RGBA")
@@ -120,8 +121,10 @@ def render(art, title, rules, cost, built, title_icon=TITLE_ICON,
     canvas.alpha_composite(shadow, (pos[0] + 12, pos[1] + 16))
     canvas.alpha_composite(fitted, pos)
     title_group(canvas, title, built, title_icon)
-    text(canvas, rules, (278, 1220, 905, 1450), RULES_FONT, 49, "#FFF9E9", 34)
-    text(canvas, str(cost), (131, 1350, 225, 1436), TITLE_FONT, 76, "#624324", 40)
+    rules_box = (278, 1220, 905, 1450) if cost is not None else (118, 1220, 906, 1450)
+    text(canvas, rules, rules_box, RULES_FONT, 49, "#FFF9E9", 34)
+    if cost is not None:
+        text(canvas, str(cost), (131, 1350, 225, 1436), TITLE_FONT, 76, "#624324", 40)
     if not built:
         canvas.alpha_composite(construction_layer(construction_icon, construction_width_frac))
     return canvas
@@ -132,9 +135,11 @@ def main():
     p.add_argument("--overlay", type=Path, required=True)
     p.add_argument("--title", required=True)
     p.add_argument("--rules", required=True, help="Use explicit line breaks.")
-    p.add_argument("--cost", type=int, required=True)
+    price = p.add_mutually_exclusive_group(required=True)
+    price.add_argument("--cost", type=int)
+    price.add_argument("--no-cost", action="store_true", help="Omit the cost coin for starting landmarks.")
     p.add_argument("--output-front", type=Path, required=True)
-    p.add_argument("--output-back", type=Path, required=True)
+    p.add_argument("--output-back", type=Path, help="Omit for always-active starting landmarks.")
     p.add_argument("--preview", type=Path)
     p.add_argument("--save-templates", type=Path, help="Optional directory for blank furniture.")
     p.add_argument("--title-icon", type=Path, default=TITLE_ICON)
@@ -143,13 +148,15 @@ def main():
     p.add_argument("--output-construction-layer", type=Path,
                    help="Export the independent transparent full-card construction overlay.")
     args = p.parse_args()
-    if not 0 <= args.cost <= 99:
+    if args.cost is not None and not 0 <= args.cost <= 99:
         p.error("--cost must be between 0 and 99")
     if not .1 <= args.construction_width_frac <= .65:
         p.error("--construction-width-frac must be between .1 and .65")
     if not args.title.strip() or not args.rules.strip():
         p.error("--title and --rules must not be empty")
-    outputs = [args.output_front, args.output_back] + ([args.preview] if args.preview else [])
+    if args.preview and not args.output_back:
+        p.error("--preview requires --output-back")
+    outputs = [args.output_front] + ([args.output_back] if args.output_back else []) + ([args.preview] if args.preview else [])
     if args.output_construction_layer:
         outputs.append(args.output_construction_layer)
     if len({path.resolve() for path in outputs}) != len(outputs):
@@ -167,6 +174,8 @@ def main():
         args.output_construction_layer.parent.mkdir(parents=True, exist_ok=True)
         construction_layer(args.construction_icon, args.construction_width_frac).save(args.output_construction_layer)
     for path, im in [(args.output_front, front), (args.output_back, back)]:
+        if path is None:
+            continue
         path.parent.mkdir(parents=True, exist_ok=True)
         im.save(path)
     if args.preview:
