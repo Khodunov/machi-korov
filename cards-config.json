@@ -179,6 +179,32 @@
       "original_command": "card-commands/shinomontazh.sh"
     },
     {
+      "slug": "vending-machine",
+      "title": "Вендинговый автомат",
+      "source_card": null,
+      "set": "new",
+      "caption": null,
+      "category": "red",
+      "activation": "4",
+      "cost": 2,
+      "rules_text": "Сет из вендингового автомата,\nавтомойки и автосервиса.\n1 сет приносит 2.\n2 сета приносит 3.",
+      "rules_status": "approved",
+      "symbol": {
+        "name": "Гаечный ключ",
+        "asset": "icons/service-triad.png",
+        "shared_with": [
+          "avtomoyka",
+          "autoservice"
+        ],
+        "status": "generated"
+      },
+      "art_variants": [
+        "vending-machine"
+      ],
+      "art_status": "generated",
+      "show_caption": false
+    },
+    {
       "slug": "novostroyka",
       "title": "Новостройка",
       "source_card": "Яблоневый сад",

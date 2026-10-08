@@ -1,0 +1,96 @@
+{
+  "spec_version": "1.0",
+  "title": "Machi Koro-style shared card back spec",
+  "purpose": "Generation-ready specification for the single card back shared by every card in the deck. Unlike prompts/central-illustration.json, this describes a full-bleed card face rather than a transparent floating miniature: the output is the complete printed back of the card.",
+  "integration_context": {
+    "target_use": "Generate the complete card back as one flat artwork. It is not composited onto backgrounds/*.png and is not passed through card_compositor.py.",
+    "background_requirement": "Fully opaque RGB output. No transparency, no checkerboard, no transparency-preview grid.",
+    "canvas": "Portrait, 1100 x 1430 px, matching the card fronts.",
+    "card_geometry": "The card body is a rounded rectangle inset in the canvas: x 50..1059, y 31..1406, corner radius 71 px, sitting on a cream #FCF9F1 field with a soft drop shadow. This registration must match backgrounds/*.png exactly so fronts and backs cut identically.",
+    "text_policy": "Absolute no-text rule. No letters, numbers, words, titles, logos, signage, plaques, banners, graffiti, license-plate characters, or pseudo-writing anywhere. All fascia and signboards must be blank color panels."
+  },
+  "style_goal": {
+    "primary_rule": "Match the flat graphic language already used by the skyline strip, clouds, dice header, and pale arc in backgrounds/*.png, so the back reads as part of the same deck.",
+    "secondary_rule": "Depict a Russian/post-Soviet city panorama without increasing realism.",
+    "core_formula": "Flat layered silhouette panorama + recognizable Russian landmarks + neutral graphite palette."
+  },
+  "neutrality_requirement": {
+    "principle": "The back is shared by all four card families, so it must not read as belonging to any one of them.",
+    "forbidden_hues": [
+      "the blue of backgrounds/blue.png",
+      "the green of backgrounds/green.png",
+      "the purple of backgrounds/purple.png",
+      "the red of backgrounds/red.png"
+    ],
+    "required": "Desaturated graphite / stone gray with a faint warm undertone. Chroma must stay low enough that the back looks equally at home behind every card colour."
+  },
+  "composition": {
+    "anatomy": "Mirror the vertical anatomy of the card fronts so front and back feel like one object: dark header band with oversized dice at the top, a thin pale arc beneath it, open sky with clouds, then the city in depth layers, then a dark ground band at the bottom.",
+    "bands": {
+      "header": "0.000-0.155 of card height, dark graphite, with six oversized low-contrast dice",
+      "arc": "a thin pale crescent immediately below the header, roughly 0.04 of card height thick",
+      "sky": "open, with soft flat clouds; the tallest silhouette should reach about 0.28-0.34 of card height",
+      "far_layer": "baseline at 0.700, lightest tone, greatest atmospheric recession",
+      "mid_layer": "baseline at 0.800, mid tone",
+      "near_layer": "baseline at 0.868, darker tone",
+      "foreground": "ground line at 0.918, darkest tone, then a flat ground band to the card edge"
+    },
+    "depth_rule": "Exactly three recession tones plus a foreground tone. Objects never straddle two layers. Nearer layers are darker; no gradients inside a silhouette.",
+    "clearance_rule": "Keep the horizontal band 0.08-0.38 free of near-layer massing so the church silhouette reads uninterrupted."
+  },
+  "landmarks": {
+    "church": {
+      "placement": "mid layer, centred near x 0.248, the hero of the composition",
+      "form": "Orthodox church: rectangular body, small apse on the right, central drum with a large onion dome, two flanking small domes, and a tall bell tower on the left topped by its own onion dome",
+      "accents": "Domes, the bell-tower opening, and three tall arched windows are the only warm element on the card: muted antique gold, not bright yellow. Each dome carries a small thin cross."
+    },
+    "moscow_city": {
+      "placement": "far layer, spanning roughly x 0.50-0.97",
+      "form": "A cluster of five to six modern towers of clearly differing silhouettes: one tall tapered twin-spire form, one gently twisting slab, one with stepped setbacks, and two or three plain slabs of varied height. Silhouette variety is what makes the cluster recognizable; do not render facade detail."
+    },
+    "shopping_mall": {
+      "placement": "near layer, centred near x 0.72",
+      "form": "Wide low retail box with a barrel-vault roof seated flush on the body, a horizontal glazing band broken by regular mullions, and a plain recessed entrance. No signage of any kind."
+    },
+    "tv_tower": {
+      "placement": "far layer, x 0.088",
+      "form": "Slender tapering concrete needle with a small observation pod and an antenna mast, reading as an Ostankino-type silhouette."
+    },
+    "panel_blocks": {
+      "placement": "mid and near layers, filling between the landmarks",
+      "form": "Blocky panel housing with simplified rectangular window grids. A handful of scattered windows are lit warm amber; the rest are a dim cool gray."
+    },
+    "foreground": {
+      "form": "A row of courtyard garages with dark door openings, a small kiosk with one lit window, a low retail box, and a few round bare-tree silhouettes on the ground line."
+    }
+  },
+  "palette": {
+    "cream_field": "#FCF9F1",
+    "header": "#363A40",
+    "dice": "#484D54",
+    "arc": "#DEDDD7",
+    "sky": "#CECFCB to #B0B3B3, top to bottom",
+    "cloud": "#EEEDE6",
+    "far_layer": "#969A9D",
+    "mid_layer": "#70757A",
+    "near_layer": "#50555B",
+    "foreground": "#3C4147",
+    "ground_band": "#2C3036",
+    "lit_window": "#E4C17E",
+    "dim_window": "#60656B",
+    "dome_gold": "#D6B26C",
+    "saturation": "very low outside the two warm accents"
+  },
+  "anti_patterns": [
+    "Do not use any of the four card-family hues as the dominant colour.",
+    "Do not render a realistic or painterly cityscape; keep flat silhouettes with no texture or gradient shading inside shapes.",
+    "Do not add text, signage, logos, or pseudo-glyphs anywhere.",
+    "Do not add outlines around the silhouettes; separation comes from tone alone.",
+    "Do not add a title, emblem, or logo lockup to the centre of the card.",
+    "Do not let the church be occluded by nearer buildings.",
+    "Do not extend artwork beyond the rounded card body onto the cream field.",
+    "Do not use more than three recession tones plus a foreground tone.",
+    "Do not add cast shadows between buildings."
+  ],
+  "final_prompt_summary": "Generate the complete shared back of a Machi Koro-style card: a portrait 1100x1430 image in which a rounded-rectangle card body (x 50..1059, y 31..1406, corner radius 71) sits on a cream #FCF9F1 field with a soft drop shadow. Inside the card, draw a flat, fully opaque Russian city panorama in a neutral graphite palette that belongs to no card colour family. Mirror the fronts' anatomy: a dark header band with six oversized low-contrast dice, a thin pale arc below it, open sky with soft flat clouds, then the city in exactly three recession tones (lightest far, darker mid, darkest near) plus a foreground tone and a dark ground band. Landmarks: an Orthodox church with a large central onion dome, two flanking small domes and a tall bell tower as the hero at left of centre, its domes and arched windows in muted antique gold; a cluster of Moscow City towers on the far layer at right, distinguished by silhouette variety alone (tapered twin spire, gently twisting slab, stepped setbacks, plain slabs); a wide low shopping mall with a barrel-vault roof and a mullioned glazing band on the near layer; an Ostankino-type TV needle at far left; panel-housing blocks with simplified window grids and a few warm-lit windows; and a foreground row of courtyard garages, a kiosk with one lit window, and round bare-tree silhouettes on the ground line. Keep the band from x 0.08 to 0.38 clear of nearer massing so the church silhouette reads. Flat shapes only: no outlines, no texture, no gradients inside silhouettes, no cast shadows. ABSOLUTE NO-TEXT RULE: no letters, numbers, words, logos, signage, plaques, or pseudo-writing anywhere; all fascia must be blank colour panels."
+}

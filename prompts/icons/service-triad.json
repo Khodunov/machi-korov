@@ -1,0 +1,53 @@
+{
+  "spec_version": "1.2",
+  "title": "Three-service set badge",
+  "purpose": "Shared set icon for the vending machine, car wash, and auto service cards.",
+  "integration_context": {
+    "target_use": "Generate only the small circular badge placed immediately before a card title.",
+    "canvas": "square",
+    "background": "Native RGBA transparency outside the circular badge.",
+    "output_preference": "RGBA PNG with alpha=0 outside the badge and clean antialiased edges"
+  },
+  "parameters": {
+    "icon_color": "#30343A",
+    "subject": "one combination wrench"
+  },
+  "badge_geometry": {
+    "circle": "one centered solid graphite circle",
+    "circle_diameter": "approximately 86% of the square canvas",
+    "outer_margin": "transparent",
+    "border": "none"
+  },
+  "pictogram": {
+    "color": "#FFFFFF",
+    "description": "Exactly one chunky combination wrench, diagonally oriented from lower-left to upper-right, with an open crescent jaw and one round box-end hole.",
+    "size": "approximately 55% of the badge diameter",
+    "position": "precisely centered",
+    "shape_language": "flat, chunky, geometric, slightly rounded",
+    "detail_level": "very low",
+    "line_rule": "one unified solid white tool silhouette"
+  },
+  "visual_style": {
+    "core": "Flat two-color Machi Koro category badge.",
+    "colors": "graphite circle plus pure white pictogram",
+    "rendering": "clean vector-style UI icon",
+    "small_size_priority": "the single wrench remains readable beside a card title"
+  },
+  "uniqueness_constraints": [
+    "Do not resemble the existing car, house, gear, factory, shop stall, truck, resources, tower, microphone, glass-and-fork, or shawarma icons.",
+    "Use exactly one object and no surrounding symbols."
+  ],
+  "anti_patterns": [
+    "no additional tools, drops, machines, cars, hands, or other objects",
+    "no text, letters, numbers, logos, labels, prices, or pseudo-writing",
+    "no white outer ring",
+    "no realistic rendering, gradients, highlights, bevels, texture, or shadows",
+    "no opaque background or transparency holes inside the badge"
+  ],
+  "final_prompt_summary": "Use case: logo-brand. Asset type: shared set badge for three Machi Koro-style cards. Create one solid graphite circle (#30343A) with transparent exterior. Inside it place exactly one bold white combination wrench, diagonally oriented from lower-left to upper-right, with an open crescent jaw and a round box-end hole. Flat two-color vector-style icon. No additional objects, text, logos, numbers, shading, texture, border, or background.",
+  "generation": {
+    "tool": "built-in image_gen",
+    "source": "/Users/pashavenediktov/.codex/generated_images/01a117e5-bb3c-7d52-acad-d40ff3964497/exec-4e9ea322-1f89-4116-b0de-3edd13f97103.png",
+    "asset": "icons/service-triad.png"
+  }
+}
