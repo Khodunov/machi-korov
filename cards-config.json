@@ -616,6 +616,34 @@
         "kazino-06-mem-v2": "йобаный рот этого казино"
       },
       "art_notes": "Версия 3: карты 1 и 3 — цельные здания без разрезов, вывески КАЗИНО; сюжеты проигрыша, рулетка за окном. Карта 4 — три игрока, уставший красноглазый игрок у автомата с рычагом. Карты 2, 5, 6 сохранены из v2."
+    },
+    {
+      "slug": "infobiz",
+      "title": "Инфобизнес",
+      "set": "new",
+      "category": "red",
+      "activation": "11",
+      "cost": 1,
+      "caption": "Главное — верить в себя",
+      "show_caption": true,
+      "rules_text": "Возьмите 2 монеты у бросившего кубики.\nОн бросает 1 кубик: если выпало 6,\nон забирает эту карточку.",
+      "rules_status": "approved",
+      "symbol": {
+        "name": "Пачка денег",
+        "asset": "icons/money-bundle.png",
+        "shared_with": [
+          "bank",
+          "mikrozaymy",
+          "lombard"
+        ]
+      },
+      "art_variants": [
+        "infobiz-hall",
+        "infobiz-slippers",
+        "infobiz-applause",
+        "infobiz-wishes"
+      ],
+      "art_status": "approved"
     }
   ]
 }
