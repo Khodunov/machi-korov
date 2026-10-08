@@ -18,6 +18,7 @@ for i, variant in enumerate(variants):
     draw.text((x, y + 612), f"{i + 1}. {variant['title']}", font=font, fill='#332b25')
 preview.save(ROOT / 'cards/kazino-v2-six-cards.jpg', quality=94)
 with ZipFile(ROOT / 'cards/kazino-v2-six-cards.zip', 'w', ZIP_DEFLATED) as archive:
+    archive.write(ROOT / 'icons/gambling-chip.png', 'icons/gambling-chip.png')
     for variant in variants:
         slug = variant['slug']
         for folder, ext in [('cards', '.png'), ('buildings', '.png'), ('prompts/central-illustrations', '.json'), ('card-commands', '.sh')]:

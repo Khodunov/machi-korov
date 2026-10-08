@@ -546,7 +546,13 @@
       "copies": 6,
       "rules_text": "Попавший игрок бросает 2 кубика.\nДубль — вы платите ему 2 монеты.\nИначе он платит вам 3 монеты.",
       "rules_status": "draft",
-      "symbol": null,
+      "symbol": {
+        "name": "Игровая фишка",
+        "asset": "icons/gambling-chip.png",
+        "shared_with": [
+          "bukmekerskaya-kontora"
+        ]
+      },
       "art_variants": [
         "kazino-01-proigrysh-v3",
         "kazino-02-stolbik-v2",

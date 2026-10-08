@@ -3,6 +3,8 @@ set -euo pipefail
 .venv/bin/python skills/generate-card/scripts/card_compositor.py \
   --template backgrounds/red.png \
   --overlay buildings/kazino-02-stolbik.png \
+  --title-icon icons/gambling-chip.png \
+  --title-icon-scale 1.55 --title-icon-gap-px 10 --title-icon-y-offset-px -5 \
   --shadow \
   --output cards/kazino-02-stolbik.png \
   --x-frac 0.50 --y-frac 0.50 --scale 0.70 \
