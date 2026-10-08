@@ -1,0 +1,64 @@
+{
+  "title": "МФЦ",
+  "source_card": "Парк развлечений",
+  "cost": 16,
+  "rules_text": "Если на двух кубиках выпал дубль, сделайте ещё один ход. В свой ход.",
+  "generation_method": "Built-in image_gen, real photo + existing card style references",
+  "variants": [
+    {
+      "slug": "mfc-01-moskva-v2",
+      "label": "Москва — Вешняки",
+      "reference_url": "https://yandex.ru/maps/org/tsentr_gosuslug_moi_dokumenty/79009784539/",
+      "prompt": "prompts/central-illustrations/mfc-01-moskva-v2.json",
+      "art": "buildings/mfc-01-moskva-v2.png",
+      "command": "card-commands/mfc-01-moskva-v2.sh",
+      "front": "cards/mfc-01-moskva-v2.png",
+      "back": "card-backs/mfc-01-moskva-v2.png",
+      "preview": "cards/mfc-01-moskva-v2-preview.png"
+    },
+    {
+      "slug": "mfc-02-domodedovo-v2",
+      "label": "Домодедово",
+      "reference_url": "https://domodedovod.ru/domodedovo/grafik-raboty-mfc-domodedovo-v-novogodnie-prazdniki/",
+      "prompt": "prompts/central-illustrations/mfc-02-domodedovo-v2.json",
+      "art": "buildings/mfc-02-domodedovo-v2.png",
+      "command": "card-commands/mfc-02-domodedovo-v2.sh",
+      "front": "cards/mfc-02-domodedovo-v2.png",
+      "back": "card-backs/mfc-02-domodedovo-v2.png",
+      "preview": "cards/mfc-02-domodedovo-v2-preview.png"
+    },
+    {
+      "slug": "mfc-03-chkalovsk-v2",
+      "label": "Чкаловск",
+      "reference_url": "https://tiflocentre.ru/news/dostupnyi-mfc-nizhiy-obl.php",
+      "prompt": "prompts/central-illustrations/mfc-03-chkalovsk-v2.json",
+      "art": "buildings/mfc-03-chkalovsk-v2.png",
+      "command": "card-commands/mfc-03-chkalovsk-v2.sh",
+      "front": "cards/mfc-03-chkalovsk-v2.png",
+      "back": "card-backs/mfc-03-chkalovsk-v2.png",
+      "preview": "cards/mfc-03-chkalovsk-v2-preview.png"
+    },
+    {
+      "slug": "mfc-04-vyezdnoe-v2",
+      "label": "Выездное",
+      "reference_url": "https://wikimapia.org/35608659/ru/МФЦ-Мои-Документы",
+      "prompt": "prompts/central-illustrations/mfc-04-vyezdnoe-v2.json",
+      "art": "buildings/mfc-04-vyezdnoe-v2.png",
+      "command": "card-commands/mfc-04-vyezdnoe-v2.sh",
+      "front": "cards/mfc-04-vyezdnoe-v2.png",
+      "back": "card-backs/mfc-04-vyezdnoe-v2.png",
+      "preview": "cards/mfc-04-vyezdnoe-v2-preview.png"
+    },
+    {
+      "slug": "mfc-05-falyonki-v2",
+      "label": "Фалёнки",
+      "reference_url": "https://commons.wikimedia.org/wiki/File:Kirov_Oblast_Falyonki_asv2019-05_img7.jpg",
+      "prompt": "prompts/central-illustrations/mfc-05-falyonki-v2.json",
+      "art": "buildings/mfc-05-falyonki-v2.png",
+      "command": "card-commands/mfc-05-falyonki-v2.sh",
+      "front": "cards/mfc-05-falyonki-v2.png",
+      "back": "card-backs/mfc-05-falyonki-v2.png",
+      "preview": "cards/mfc-05-falyonki-v2-preview.png"
+    }
+  ]
+}

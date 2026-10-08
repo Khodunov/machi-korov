@@ -1,0 +1,64 @@
+{
+  "title": "МФЦ",
+  "source_card": "Парк развлечений",
+  "cost": 16,
+  "rules_text": "Если на двух кубиках выпал дубль, сделайте ещё один ход. В свой ход.",
+  "generation_method": "Built-in image_gen",
+  "references": [
+    "https://www.mfc-nso.ru/offices/140831",
+    "https://schwartzgroup.ru/projects/vdnh",
+    "https://domodedovod.ru/domodedovo/grafik-raboty-mfc-domodedovo-v-novogodnie-prazdniki/"
+  ],
+  "variants": [
+    {
+      "slug": "mfc-01-ochered",
+      "label": "Очередь по кругу",
+      "prompt": "prompts/central-illustrations/mfc-01-ochered.json",
+      "art": "buildings/mfc-01-ochered.png",
+      "command": "card-commands/mfc-01-ochered.sh",
+      "front": "cards/mfc-01-ochered.png",
+      "back": "card-backs/mfc-01-ochered.png",
+      "preview": "cards/mfc-01-ochered-preview.png"
+    },
+    {
+      "slug": "mfc-02-spravki",
+      "label": "Справка на справку",
+      "prompt": "prompts/central-illustrations/mfc-02-spravki.json",
+      "art": "buildings/mfc-02-spravki.png",
+      "command": "card-commands/mfc-02-spravki.sh",
+      "front": "cards/mfc-02-spravki.png",
+      "back": "card-backs/mfc-02-spravki.png",
+      "preview": "cards/mfc-02-spravki-preview.png"
+    },
+    {
+      "slug": "mfc-03-sugroby",
+      "label": "Снег и документы",
+      "prompt": "prompts/central-illustrations/mfc-03-sugroby.json",
+      "art": "buildings/mfc-03-sugroby.png",
+      "command": "card-commands/mfc-03-sugroby.sh",
+      "front": "cards/mfc-03-sugroby.png",
+      "back": "card-backs/mfc-03-sugroby.png",
+      "preview": "cards/mfc-03-sugroby-preview.png"
+    },
+    {
+      "slug": "mfc-04-dvorets",
+      "label": "Дворец документов",
+      "prompt": "prompts/central-illustrations/mfc-04-dvorets.json",
+      "art": "buildings/mfc-04-dvorets.png",
+      "command": "card-commands/mfc-04-dvorets.sh",
+      "front": "cards/mfc-04-dvorets.png",
+      "back": "card-backs/mfc-04-dvorets.png",
+      "preview": "cards/mfc-04-dvorets-preview.png"
+    },
+    {
+      "slug": "mfc-05-panelka",
+      "label": "Окно под балконом",
+      "prompt": "prompts/central-illustrations/mfc-05-panelka.json",
+      "art": "buildings/mfc-05-panelka.png",
+      "command": "card-commands/mfc-05-panelka.sh",
+      "front": "cards/mfc-05-panelka.png",
+      "back": "card-backs/mfc-05-panelka.png",
+      "preview": "cards/mfc-05-panelka-preview.png"
+    }
+  ]
+}
