@@ -87,6 +87,12 @@ It runs every `card-commands/*.sh` file in filename order, uses the project virt
 
 Generated final cards are written under `cards/` and ignored by Git. Commit the filled prompts, generated source artwork, and `card-commands/<card-name>.sh`.
 
+To render only the current base set and collect all variants of each card type
+on its own full-resolution image, run `.venv/bin/python scripts/build_base_set.py`.
+It selects `set: "base"` and `art_variants` from `cards-config.json`, saves the
+15 comparison sheets and a manifest under `cards/base-set/`, and packages them
+in `cards/base-set-all-variations.zip`.
+
 For «Панелька» and «Пивной ларёк», each set of 11 cards contains 5 starter
 cards without a cost badge and 6 purchasable cards costing 1 coin.
 `starter_variants` in `cards-config.json` explicitly lists the five starter
@@ -188,6 +194,10 @@ python skills/generate-card/scripts/card_compositor.py \
 
 - `--title-icon` — optional square icon PNG placed before the title
 - `--title-icon-scale` — icon size as a multiple of the title text height
+- `--title-icon-size-frac` — fixed visible badge diameter as a fraction of card
+  width; overrides `--title-icon-scale` and trims faint transparent-edge artifacts.
+  Current base-set commands use `0.119140625` (122 px at 1024 px width), matching
+  the panelka reference independently of the title's letter height.
 - `--title-icon-gap-px` — gap between the icon and the title text
 - `--title-icon-y-offset-px` — extra vertical offset for the icon
 - `--title-group-offset-x-px` — extra horizontal offset for the combined icon+title group
@@ -205,6 +215,9 @@ If `--title-icon` is provided:
 5. centers the full **icon + title** group horizontally as a single unit
 
 This is designed to match the Machi Koro layout where the category badge is visually attached to the title row.
+
+Base-set captions are centered at X `0.50`, Y `0.935`, matching the approved
+panelka / FSB preview. Cards without a caption retain that choice.
 
 ---
 

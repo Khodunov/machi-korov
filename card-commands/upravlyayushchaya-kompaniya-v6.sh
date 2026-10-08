@@ -34,7 +34,7 @@ set -euo pipefail
   --bottom-text-spacing-px 5 \
   --title-font fonts/Boingster-Regular.ttf \
   --title-font-size-frac 0.052 \
-  --title-icon-scale 1.88 \
+  --title-icon-size-frac 0.119140625 \
   --title-icon-gap-px 10 \
   --title-icon-y-offset-px -8 \
   --bottom-text-font fonts/CCUltimatum-Bold.ttf \

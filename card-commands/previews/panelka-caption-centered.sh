@@ -1,26 +1,27 @@
 set -euo pipefail
 
-caption=$(.venv/bin/python -c 'import json; print(next(c for c in json.load(open("cards-config.json"))["cards"] if c["slug"] == "lesopoval")["caption"])')
+caption=$(.venv/bin/python -c 'import json; print(next(c for c in json.load(open("cards-config.json"))["cards"] if c["slug"] == "panelka")["caption"])')
 
 .venv/bin/python skills/generate-card/scripts/card_compositor.py \
   --template backgrounds/blue.png \
-  --overlay buildings/lesopoval-04-stalinskiy-lespromkhoz-v2.png \
-  --title-icon icons/resources.png \
+  --overlay buildings/panelka.png \
+  --title-icon icons/house.png \
   --shadow \
-  --output cards/lesopoval-04-stalinskiy-lespromkhoz-v2.png \
-  --x-frac 0.49 \
-  --y-frac 0.535 \
-  --scale 0.72 \
-  --coin-number 3 \
-  --activation-number 5 \
-  --title 'Лесоповал' \
+  --output cards/caption-centered/panelka.png \
+  --x-frac 0.53 \
+  --y-frac 0.51 \
+  --scale 0.68 \
+  --flip-horizontal \
+  --coin-number 1 \
+  --activation-number 1 \
+  --title 'Панелька' \
   --title-color '#123E70' \
-  --bottom-text $'Получите 1 монету из банка.\nВ ход любого игрока.' \
-  --bottom-text-y-frac 0.82 \
+  --bottom-text $'Получите 1 монету за ЖКХ.\nВ ход любого игрока.' \
+  --bottom-text-y-frac 0.83 \
   --bottom-text-spacing-px 6 \
   --title-font fonts/Boingster-Regular.ttf \
   --title-font-size-frac 0.078 \
-  --title-icon-size-frac 0.119140625 \
+  --title-icon-scale 1.88 \
   --title-icon-gap-px 12 \
   --title-icon-y-offset-px -10 \
   --bottom-text-font fonts/CCUltimatum-Bold.ttf \

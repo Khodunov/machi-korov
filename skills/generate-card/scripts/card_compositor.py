@@ -255,6 +255,7 @@ def draw_centered_title_group(
     fill: Color,
     title_icon_path: Path | None,
     title_icon_scale: float,
+    title_icon_size_frac: float | None,
     title_icon_gap_px: int,
     title_icon_y_offset_px: int,
     title_group_offset_x_px: int,
@@ -275,8 +276,19 @@ def draw_centered_title_group(
         if not title_icon_path.exists():
             raise FileNotFoundError(f"Title icon not found: {title_icon_path}")
         icon = Image.open(title_icon_path).convert("RGBA")
-        icon = trim_transparent(icon)
-        icon_size = max(1, int(round(text_h * title_icon_scale)))
+        if title_icon_size_frac is not None:
+            if title_icon_size_frac <= 0:
+                raise ValueError("--title-icon-size-frac must be positive")
+            # Exclude faint stray pixels so the visible badge, not its padding,
+            # has the same diameter across source assets and title lengths.
+            badge_bbox = icon.getchannel("A").point(lambda a: 255 if a >= 128 else 0).getbbox()
+            if badge_bbox is None:
+                raise ValueError("Title icon has no opaque badge")
+            icon = icon.crop(badge_bbox)
+            icon_size = max(1, int(round(canvas.width * title_icon_size_frac)))
+        else:
+            icon = trim_transparent(icon)
+            icon_size = max(1, int(round(text_h * title_icon_scale)))
         icon = icon.resize((icon_size, icon_size), Image.Resampling.LANCZOS)
         icon_gap = max(0, title_icon_gap_px)
 
@@ -400,6 +412,7 @@ def composite(args: argparse.Namespace) -> None:
             fill=parse_hex_color(args.title_color),
             title_icon_path=args.title_icon,
             title_icon_scale=args.title_icon_scale,
+            title_icon_size_frac=args.title_icon_size_frac,
             title_icon_gap_px=args.title_icon_gap_px,
             title_icon_y_offset_px=args.title_icon_y_offset_px,
             title_group_offset_x_px=args.title_group_offset_x_px,
@@ -495,6 +508,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--title-color", "--text-color", dest="title_color", type=str, default="#123E70")
     parser.add_argument("--title-icon", type=Path, default=None, help="Optional square icon image before title.")
     parser.add_argument("--title-icon-scale", type=float, default=TITLE_ICON_SCALE, help="Icon side / title text height.")
+    parser.add_argument("--title-icon-size-frac", type=float, default=None, help="Visible badge diameter / card width; overrides title-icon-scale.")
     parser.add_argument("--title-icon-gap-px", type=int, default=TITLE_ICON_GAP_PX)
     parser.add_argument("--title-icon-y-offset-px", type=int, default=TITLE_ICON_Y_OFFSET_PX)
     parser.add_argument("--title-group-offset-x-px", type=int, default=0)

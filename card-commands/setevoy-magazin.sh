@@ -19,7 +19,7 @@ caption=$(.venv/bin/python -c 'import json; print(next(c for c in json.load(open
   --bottom-text-spacing-px 6 \
   --title-font fonts/Boingster-Regular.ttf \
   --title-font-size-frac 0.078 \
-  --title-icon-scale 1.88 \
+  --title-icon-size-frac 0.119140625 \
   --title-icon-y-offset-px -10 \
   --title-icon-gap-px 12 \
   --bottom-text-font fonts/CCUltimatum-Bold.ttf \
@@ -27,4 +27,4 @@ caption=$(.venv/bin/python -c 'import json; print(next(c for c in json.load(open
   --activation-font fonts/CCUltimatum-Bold.ttf \
   --activation-font-size-frac 0.118 \
   --coin-font fonts/Boingster-Regular.ttf \
-  --caption "$caption" --caption-font fonts/Boingster-Regular.ttf --caption-font-size-frac 0.026 --caption-x-frac 0.58 --caption-y-frac 0.935 --caption-color "#D8E5C8"
+  --caption "$caption" --caption-font fonts/Boingster-Regular.ttf --caption-font-size-frac 0.026 --caption-x-frac 0.50 --caption-y-frac 0.935 --caption-color "#D8E5C8"

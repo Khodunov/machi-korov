@@ -4,13 +4,14 @@ caption=$(.venv/bin/python -c 'import json; print(next(c for c in json.load(open
 
 .venv/bin/python skills/generate-card/scripts/card_compositor.py \
   --template backgrounds/purple.png \
-  --overlay buildings/otdel-fsb-02-kolonny.png \
+  --overlay buildings/otdel-fsb.png \
   --title-icon icons/purple-tower.png \
   --shadow \
-  --output cards/otdel-fsb-02-kolonny.png \
+  --output cards/caption-centered/otdel-fsb.png \
   --x-frac 0.50 \
   --y-frac 0.50 \
   --scale 0.78 \
+  --flip-horizontal \
   --coin-number 8 \
   --activation-number 6 \
   --title 'Отдел ФСБ' \
@@ -20,7 +21,7 @@ caption=$(.venv/bin/python -c 'import json; print(next(c for c in json.load(open
   --bottom-text-spacing-px 5 \
   --title-font fonts/Boingster-Regular.ttf \
   --title-font-size-frac 0.078 \
-  --title-icon-size-frac 0.119140625 \
+  --title-icon-scale 1.88 \
   --title-icon-gap-px 12 \
   --title-icon-y-offset-px -10 \
   --bottom-text-font fonts/CCUltimatum-Bold.ttf \
