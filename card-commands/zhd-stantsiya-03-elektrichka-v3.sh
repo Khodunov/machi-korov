@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+.venv/bin/python skills/generate-card/scripts/landmark_compositor.py \
+  --overlay buildings/zhd-stantsiya-03-elektrichka-v3.png \
+  --title 'ЖД станция' \
+  --rules $'Можете бросать два кубика\nвместо одного в свой ход.' \
+  --cost 4 \
+  --output-front cards/zhd-stantsiya-03-elektrichka-v3.png \
+  --output-back card-backs/zhd-stantsiya-03-elektrichka-v3.png \
+  --preview cards/zhd-stantsiya-03-elektrichka-v3-preview.png
