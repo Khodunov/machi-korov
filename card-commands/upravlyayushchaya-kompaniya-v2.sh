@@ -31,4 +31,5 @@ set -euo pipefail
   --bottom-text-font-size-frac 0.0377 \
   --activation-font fonts/CCUltimatum-Bold.ttf \
   --activation-font-size-frac 0.118 \
-  --coin-font fonts/Boingster-Regular.ttf
+  --coin-font fonts/Boingster-Regular.ttf \
+  --caption 'Каждая точка под контролем' --caption-font fonts/Boingster-Regular.ttf --caption-font-size-frac 0.026 --caption-x-frac 0.50 --caption-y-frac 0.935 --caption-color '#E1ECD9'

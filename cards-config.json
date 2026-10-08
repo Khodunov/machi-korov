@@ -34,7 +34,8 @@
         "status": "complete",
         "processing_script": "scripts/update_uk_notice.py"
       },
-      "art_status": "approved"
+      "art_status": "approved",
+      "show_caption": true
     },
     {
       "slug": "karaoke-klub",
