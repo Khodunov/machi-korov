@@ -1,0 +1,7 @@
+{
+  "mode": "built-in image_gen",
+  "references": [
+    "card-backs/main-v6.png"
+  ],
+  "output": "card-backs/starter-v1.png"
+}

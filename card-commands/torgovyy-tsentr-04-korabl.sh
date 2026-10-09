@@ -3,7 +3,7 @@ set -euo pipefail
 .venv/bin/python skills/generate-card/scripts/landmark_compositor.py \
   --overlay buildings/torgovyy-tsentr-04-korabl.png \
   --title 'Торговый центр' \
-  --rules $'Каждое ваше предприятие\nс символом «Торговая лавка»\nили «Бокал с вилкой»\nприносит на 1 монету больше.' \
+  --rules $'Каждое ваше предприятие\nс символом {shop} или {restaurant}\nприносит на 1 монету больше.' \
   --cost 10 \
   --output-front cards/torgovyy-tsentr-04-korabl.png \
   --output-back card-backs/torgovyy-tsentr-04-korabl.png \

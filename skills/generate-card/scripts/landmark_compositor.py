@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import argparse
+import math
+import re
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont, ImageOps
@@ -13,6 +15,80 @@ TITLE_FONT = ROOT / "fonts/Boingster-Regular.ttf"
 RULES_FONT = ROOT / "fonts/CCUltimatum-Bold.ttf"
 TITLE_ICON = ROOT / "icons/landmark.png"
 CONSTRUCTION_ICON = ROOT / "icons/landmark-construction-original.png"
+RULES_ICONS = {
+    "{shop}": ROOT / "icons/shop-stall.png",
+    "{restaurant}": ROOT / "icons/glass-and-fork.png",
+}
+RULES_BOX = (118, 1165, 906, 1480)
+COST_BOX = (111, 1325, 245, 1459)
+
+
+def rules_line_left(y, height, show_cost):
+    """Left boundary beside the circular coin, including a 14 px gutter."""
+    left = RULES_BOX[0]
+    if show_cost:
+        cx = (COST_BOX[0] + COST_BOX[2]) / 2
+        cy = (COST_BOX[1] + COST_BOX[3]) / 2
+        radius = (COST_BOX[2] - COST_BOX[0]) / 2 + 14
+        distance = max(y - cy, cy - (y + height), 0)
+        if distance < radius:
+            left = max(left, math.ceil(cx + math.sqrt(radius**2 - distance**2)))
+    return left
+
+
+def rules_text(canvas, value, show_cost=True):
+    """Center vertically; let only rows beside the coin follow its contour."""
+    lines = value.replace("\\n", "\n").splitlines()
+    for token in re.findall(r"\{[^{}]+\}", value):
+        if token not in RULES_ICONS:
+            raise ValueError(f"Unknown rules icon: {token}")
+    assets = {token: load_trimmed(path) for token, path in RULES_ICONS.items()
+              if token in value}
+    for size in range(49, 33, -1):
+        font = ImageFont.truetype(str(RULES_FONT), size)
+        rendered = []
+        for line in lines:
+            runs = re.split(r"(\{[^{}]+\})", line)
+            parts = []
+            for run in filter(None, runs):
+                if run in assets:
+                    side = round(size * 1.35)
+                    part = assets[run].resize((side, side), Image.Resampling.LANCZOS)
+                else:
+                    b = font.getbbox(run)
+                    width = max(round(font.getlength(run)), b[2]) - min(0, b[0])
+                    part = Image.new("RGBA", (max(1, width), max(1, b[3]-b[1])))
+                    ImageDraw.Draw(part).text((-min(0, b[0]), -b[1]), run,
+                                              font=font, fill="#FFF9E9")
+                parts.append(part)
+            width = sum(part.width for part in parts)
+            height = max((part.height for part in parts), default=size)
+            row = Image.new("RGBA", (max(1, width), height))
+            x = 0
+            for part in parts:
+                row.alpha_composite(part, (x, (height-part.height)//2))
+                x += part.width
+            # Center visible ink, rather than font advance and side bearings.
+            bounds = row.getchannel("A").getbbox()
+            rendered.append(row.crop(bounds) if bounds else row)
+        height = sum(row.height for row in rendered) + 10 * (len(rendered)-1)
+        if max(row.width for row in rendered) <= RULES_BOX[2]-RULES_BOX[0] and height <= RULES_BOX[3]-RULES_BOX[1]:
+            y = round((RULES_BOX[1]+RULES_BOX[3]-height)/2)
+            positions = []
+            for row in rendered:
+                x = max((SIZE[0]-row.width)//2,
+                        rules_line_left(y, row.height, show_cost))
+                positions.append((x, y))
+                y += row.height + 10
+            if any(
+                x+row.width > RULES_BOX[2]
+                for row, (x, y) in zip(rendered, positions)
+            ):
+                continue
+            for row, pos in zip(rendered, positions):
+                canvas.alpha_composite(row, pos)
+            return
+    raise ValueError(f"Centered rules do not fit clear of the coin; adjust line breaks: {value!r}")
 
 
 def text(canvas, value, box, font_path, size, fill, minimum=26):
@@ -47,14 +123,14 @@ def template(built, show_cost=True):
     # Deterministic skyline, with no generated text or raster template dependencies.
     for i, x in enumerate(range(76, 948, 49)):
         h = (64, 98, 50, 125, 77, 106, 58)[i % 7]
-        d.rectangle((x, 1170 - h, x + 41, 1205), fill=skyline)
-        for yy in range(1185 - h, 1160, 25):
+        d.rectangle((x, 1130 - h, x + 41, 1165), fill=skyline)
+        for yy in range(1145 - h, 1120, 25):
             for xx in (x + 9, x + 26):
                 d.rectangle((xx, yy, xx + 6, yy + 9), fill=pale)
-    d.rectangle((76, 1185, 948, 1500), fill=footer)
+    d.rectangle((76, 1145, 948, 1500), fill=footer)
     # Cost remains gold in both states, like a purchase affordance.
     if show_cost:
-        d.ellipse((111, 1325, 245, 1459), fill="#F4CC4E", outline="#594832", width=5)
+        d.ellipse(COST_BOX, fill="#F4CC4E", outline="#594832", width=5)
         d.ellipse((124, 1338, 232, 1446), outline="#594832", width=3)
     mask = Image.new("L", SIZE)
     ImageDraw.Draw(mask).rounded_rectangle((76, 30, 948, 1500), radius=48, fill=255)
@@ -121,8 +197,7 @@ def render(art, title, rules, cost, built, title_icon=TITLE_ICON,
     canvas.alpha_composite(shadow, (pos[0] + 12, pos[1] + 16))
     canvas.alpha_composite(fitted, pos)
     title_group(canvas, title, built, title_icon)
-    rules_box = (278, 1220, 905, 1450) if cost is not None else (118, 1220, 906, 1450)
-    text(canvas, rules, rules_box, RULES_FONT, 49, "#FFF9E9", 34)
+    rules_text(canvas, rules, show_cost=cost is not None)
     if cost is not None:
         text(canvas, str(cost), (131, 1350, 225, 1436), TITLE_FONT, 76, "#624324", 40)
     if not built:

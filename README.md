@@ -116,6 +116,13 @@ exports in `backgrounds/landmark-{front,back}.png`. The specimen uses existing
 panelka artwork and sample text; it is not a finished landmark card.
 See [the landmark workflow](skills/generate-card/references/landmarks.md) for real card commands.
 
+Landmark effects are centered vertically within the footer. Lines are centered
+horizontally unless they need to flow around the original-size cost coin in the
+lower-left corner. The shopping
+mall uses `{shop}` and `{restaurant}` tokens to embed the existing category badges.
+After rendering, run `.venv/bin/python scripts/build_landmark_galleries.py` to
+refresh the seven five-player galleries and overview in `cards/landmarks-five-player/`.
+
 ### Establishments
 
 - place, trim, scale, position, and horizontally flip a transparent central illustration

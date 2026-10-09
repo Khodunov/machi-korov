@@ -43,7 +43,20 @@ with this layout. The demo exports `icons/landmark-construction-layer.png`.
 Both sides are 1024 × 1536, matching existing templates. Rounded card bounds:
 (76, 30)–(948, 1500). Title box: (118, 73)–(906, 228). Illustration: fit within
 710 × 710, centered at (512, 655), trimmed once and placed identically on both sides.
-Rules box: (278, 1220)–(905, 1450). Cost center: (178, 1392).
+Footer begins at Y=1145 and ends at Y=1500. Rules box:
+(118, 1165)–(906, 1480). The complete visible text/icon block is centered
+at Y=1322.5, the vertical midpoint of the footer, and X=512.
+The original 134 px cost coin sits at (111, 1325)–(245, 1459), centered
+at (178, 1392), with its original 76 px price font.
+Text fitting preserves the footer midpoint. Each line is centered by its
+visible ink bounds, including inline badges, then shifted right only if needed
+to flow around the circular coin with 14 px clearance. Lines above the coin
+remain centered on the card; never reserve a top-only strip for effects.
+Rules support `{shop}` (the shared shop-stall badge) and `{restaurant}`
+(the shared glass-and-fork badge). For the shopping mall use three lines:
+`Каждое ваше предприятие\nс символом {shop} или {restaurant}\nприносит на 1 монету больше.`
+Use up to three deliberate lines for current landmark effects; both states keep
+the same effect layout and category badge colors.
 The compositor bounds text and shrinks it only to readable minimum sizes; overflow
 raises an error. Add deliberate line breaks or shorten text rather than shrinking
 the whole card. Price accepts integers 0–99; establishment price behavior is unchanged.
