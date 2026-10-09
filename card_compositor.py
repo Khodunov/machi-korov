@@ -34,6 +34,7 @@ Example:
 from __future__ import annotations
 
 import argparse
+import math
 import json
 import re
 import sys
@@ -318,6 +319,64 @@ def is_starter_variant(output: Path) -> bool:
                for card in config["cards"])
 
 
+def draw_footer_rules(canvas, args, hide_cost):
+    """Center visible rules in the footer, reserving the caption and coin."""
+    w, h = canvas.size
+    left, right = round(w * 0.115), round(w * 0.885)
+    top = round(h * (0.79 - args.footer_rise_frac))
+    bottom = round(h * 0.963)
+    if args.caption:
+        caption_font = load_font(args.caption_font, round(w * args.caption_font_size_frac), "caption")
+        bounds = ImageDraw.Draw(canvas).multiline_textbbox(
+            (0, 0), normalize_multiline_text(args.caption), font=caption_font, align="center")
+        bottom = min(bottom, round(h * args.caption_y_frac - (bounds[3] - bounds[1]) / 2 - h * 0.012))
+    cx, cy = COIN_CENTERS_BY_TEMPLATE.get(args.template.stem.lower(), DEFAULT_COIN_CENTER)
+    cx, cy = cx * w, cy * h
+    radius = w * 0.074 + w * 0.014
+    value = normalize_multiline_text(args.bottom_text) or ""
+    maximum = round(w * args.bottom_text_font_size_frac)
+    minimum = min(maximum, round(w * 0.030))
+    for size in range(maximum, minimum - 1, -1):
+        rows = []
+        for line in value.split("\n"):
+            # A wide scratch surface prevents clipping before fit validation.
+            row = Image.new("RGBA", (w * 3, max(256, size * 4)))
+            common = dict(x_frac=0.5, y_frac=0.5, font_size_frac=size / row.width,
+                          font_path=args.bottom_text_font, fill=parse_hex_color(args.bottom_text_color),
+                          spacing_px=0)
+            if args.bottom_inline_icon and args.bottom_inline_icon_token in line:
+                draw_centered_text_with_inline_icon(
+                    row, line, **common, icon_path=args.bottom_inline_icon,
+                    icon_token=args.bottom_inline_icon_token, icon_scale=args.bottom_inline_icon_scale,
+                    icon_y_offset_px=args.bottom_inline_icon_y_offset_px)
+            else:
+                draw_centered_text(row, line, **common, font_label="bottom-text")
+            bounds = row.getchannel("A").getbbox()
+            rows.append(row.crop(bounds) if bounds else Image.new("RGBA", (1, size)))
+        gap = max(round(w * 0.007), args.bottom_text_spacing_px)
+        total = sum(row.height for row in rows) + gap * (len(rows) - 1)
+        if total > bottom - top:
+            continue
+        y = round((top + bottom - total) / 2)
+        positions = []
+        for row in rows:
+            row_left = left
+            if not hide_cost:
+                distance = max(y - cy, cy - (y + row.height), 0)
+                if distance < radius:
+                    row_left = max(left, math.ceil(cx + math.sqrt(radius**2 - distance**2)))
+            x = max(round((w - row.width) / 2), row_left)
+            positions.append((x, y))
+            y += row.height + gap
+        if any(x + row.width > right for row, (x, y) in zip(rows, positions)):
+            continue
+        for row, position in zip(rows, positions):
+            canvas.alpha_composite(row, position)
+        return dict(box=(left, top, right, bottom), font_size=size,
+                    rows=[(x, y, row.width, row.height) for row, (x, y) in zip(rows, positions)])
+    raise ValueError(f"Rules do not fit the footer clear of the coin: {value!r}")
+
+
 def remove_cost_badge(template: Image.Image, template_name: str) -> None:
     """Cover the baked-in coin with nearby footer texture before adding text."""
     cx, cy = COIN_CENTERS_BY_TEMPLATE.get(template_name, DEFAULT_COIN_CENTER)
@@ -420,33 +479,7 @@ def composite(args: argparse.Namespace) -> None:
         )
 
     if args.bottom_text is not None:
-        if args.bottom_inline_icon is not None and args.bottom_inline_icon_token in args.bottom_text:
-            draw_centered_text_with_inline_icon(
-                canvas,
-                args.bottom_text,
-                x_frac=args.bottom_text_x_frac,
-                y_frac=args.bottom_text_y_frac,
-                font_size_frac=args.bottom_text_font_size_frac,
-                font_path=args.bottom_text_font,
-                fill=parse_hex_color(args.bottom_text_color),
-                spacing_px=args.bottom_text_spacing_px,
-                icon_path=args.bottom_inline_icon,
-                icon_token=args.bottom_inline_icon_token,
-                icon_scale=args.bottom_inline_icon_scale,
-                icon_y_offset_px=args.bottom_inline_icon_y_offset_px,
-            )
-        else:
-            draw_centered_text(
-                canvas,
-                args.bottom_text,
-                x_frac=args.bottom_text_x_frac,
-                y_frac=args.bottom_text_y_frac,
-                font_size_frac=args.bottom_text_font_size_frac,
-                font_path=args.bottom_text_font,
-                font_label="bottom-text",
-                fill=parse_hex_color(args.bottom_text_color),
-                spacing_px=args.bottom_text_spacing_px,
-            )
+        draw_footer_rules(canvas, args, hide_cost)
 
     if args.caption is not None:
         draw_centered_text(
@@ -516,8 +549,8 @@ def parse_args() -> argparse.Namespace:
 
     # Bottom rules text
     parser.add_argument("--bottom-text", type=str, default=None, help="Centered multiline rules text; supports actual newlines, literal \\n, or /n.")
-    parser.add_argument("--bottom-text-x-frac", type=float, default=0.50)
-    parser.add_argument("--bottom-text-y-frac", type=float, default=0.900)
+    parser.add_argument("--bottom-text-x-frac", type=float, default=0.50, help="Legacy option; rules now follow automatic footer layout.")
+    parser.add_argument("--bottom-text-y-frac", type=float, default=0.900, help="Legacy option; rules are now vertically centered in the footer.")
     parser.add_argument("--bottom-text-font-size-frac", type=float, default=0.033)
     parser.add_argument("--bottom-text-font", type=Path, default=DEFAULT_UI_FONT, help="Font file for bottom rules text.")
     parser.add_argument("--bottom-text-color", type=str, default="#FFFFFF")

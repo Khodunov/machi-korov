@@ -33,6 +33,6 @@ caption=$(.venv/bin/python -c 'import json; print(next(c for c in json.load(open
   --caption "$caption" \
   --caption-font fonts/Boingster-Regular.ttf \
   --caption-font-size-frac 0.026 \
-  --caption-x-frac 0.58 \
+  --caption-x-frac 0.50 \
   --caption-y-frac 0.935 \
   --caption-color '#D8E5C8'

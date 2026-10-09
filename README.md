@@ -101,6 +101,31 @@ Both compositor copies apply this rule automatically by output filename,
 including individual commands and batch builds. `--hide-cost` also hides the
 badge for a standalone render.
 
+Establishment rules are vertically centered in the footer area above the flavor
+caption. Lines stay horizontally centered unless they need to move right around
+the original cost coin. The renderer fits the configured line breaks and inline
+icons, and fails rather than overlapping the coin or overflowing the footer.
+Legacy `--bottom-text-x-frac` and `--bottom-text-y-frac` options remain accepted
+for existing commands but no longer determine the rules position.
+
+Run `.venv/bin/python scripts/build_game_card_galleries.py` to rebuild all current
+establishments and produce paired galleries (faces above matching backs) in
+`cards/game-cards-with-backs/`, plus `cards/game-cards-with-backs.zip` containing
+the galleries, full-resolution PNGs, and copy manifest. Counts use `copies` from
+the configuration; Bank, Infobusiness, and Vending Machine retain a provisional
+six copies each until their counts are specified. Starter variants use the
+starter back; all other establishments use `main-v6`.
+
+### Duplex print PDFs
+
+Run `python scripts/build_game_card_print_pdf.py` after building the establishment
+galleries, and `python scripts/build_landmark_print_pdf.py` after building the
+landmark galleries. Final PDFs are saved in `output/pdf/*-rounded.pdf`.
+They use A4 sheets, exact 60 × 90 mm card outlines with 3 mm corner radii,
+and mirrored back positions for duplex printing with a long-edge flip at 100%.
+The final print PDFs are versioned; intermediate renders and superseded PDF
+drafts remain local. Image stream compaction is lossless.
+
 ## What the compositor can do
 
 ### Two-sided landmarks

@@ -19,4 +19,4 @@ caption=$(.venv/bin/python -c 'import json; print(next(c for c in json.load(open
   --activation-font fonts/CCUltimatum-Bold.ttf --activation-font-size-frac 0.118 \
   --coin-font fonts/Boingster-Regular.ttf \
   --caption "$caption" --caption-font fonts/Boingster-Regular.ttf \
-  --caption-font-size-frac 0.028 --caption-x-frac 0.58 --caption-y-frac 0.935 --caption-color '#EDD3CD'
+  --caption-font-size-frac 0.028 --caption-x-frac 0.50 --caption-y-frac 0.935 --caption-color '#EDD3CD'

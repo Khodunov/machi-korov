@@ -29,7 +29,9 @@ set -euo pipefail
   --activation-number '11–12' \
   --title 'Управляющая компания' \
   --title-color '#17361A' \
-  --bottom-text $'Получите по 2 монеты за каждую\nсвою «Панельку» и «Новостройку».' \
+  --bottom-text $'Получите по 2 монеты за каждый\nсвой {icon}.' \
+  --bottom-inline-icon icons/house.png \
+  --bottom-inline-icon-scale 1.35 \
   --bottom-text-y-frac 0.825 \
   --bottom-text-spacing-px 5 \
   --title-font fonts/Boingster-Regular.ttf \

@@ -14,7 +14,7 @@
       "activation": "11–12",
       "cost": 2,
       "copies": 6,
-      "rules_text": "Получите по 2 монеты за каждую\nсвою «Панельку» и «Новостройку».",
+      "rules_text": "Получите по 2 монеты за каждый\nсвой {icon}.",
       "rules_status": "approved",
       "symbol": {
         "name": "Дом в шестерёнке",
@@ -35,7 +35,11 @@
         "processing_script": "scripts/update_uk_notice.py"
       },
       "art_status": "approved",
-      "show_caption": true
+      "show_caption": true,
+      "rules_inline_icon": {
+        "token": "{icon}",
+        "asset": "icons/house.png"
+      }
     },
     {
       "slug": "karaoke-klub",
@@ -315,13 +319,13 @@
         "panelka-01-kover-v2",
         "panelka-02-lebedi-v2",
         "panelka-03-ogorod-v2",
-        "panelka-04-uteplenie-v2",
+        "panelka-10-tropinka-v4",
         "panelka-05-kosmodrom-v2",
         "panelka-06-balkony-v2",
         "panelka-07-korabl-v2",
         "panelka-08-sugrob-v2",
         "panelka-09-mozaika-v2",
-        "panelka-10-tropinka-v4"
+        "panelka-04-uteplenie-v2"
       ],
       "art_status": "approved",
       "show_caption": true,
@@ -330,7 +334,7 @@
         "panelka-01-kover-v2",
         "panelka-02-lebedi-v2",
         "panelka-03-ogorod-v2",
-        "panelka-04-uteplenie-v2"
+        "panelka-10-tropinka-v4"
       ]
     },
     {
